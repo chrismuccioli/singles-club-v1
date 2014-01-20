@@ -8,46 +8,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.png" />
   <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript">
+    WebFontConfig = { fontdeck: { id: '39874' } };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
 </head>
+
 <body class="responsive" ng-app="plangular">
 
   <nav>
     nav here
   </nav>
 
-  <header class="center px2 py4 white bg-black">
-    <img src="images/danielbachman.svg" alt="Daniel Bachman" class="fit" />
-    <div>
-      <h2 class="h2 caps">Side A: Coming Home*</h2>
+  <header class="center px2 py4 white bg-black bg-cover bg-center" style="background-image: url(images/daniel-hero.jpg)">
+    <img src="images/danielbachman.svg" alt="Daniel Bachman" class="fit m-x33 l-x33 mb4" />
+    <div class="container">
       <div plangular src="https://soundcloud.com/singlesclubfm/coming-home">
-        <p>{{ track.user.username }}</p>
-        <h1>{{ track.title }}</h1>
-        <a href ng-click="player.play(track)">Play</a>
-        <a href ng-click="player.pause()">Pause</a>
+        <h2 class="apercu h2 caps mb0">Side A: Coming Home*</h2>
+        <div class="section clearfix mb1">
+          <div class="col span_2_of_12">&nbsp;</div>
+          <div class="col span_8_of_12 clearfix">
+            <div class="left mr1">
+              <a href ng-click="player.play(track)" ng-hide="player.playing == track" class="white">Play</a>
+              <a href ng-click="player.pause()" ng-show="player.playing == track" class="white">Pause</a>
+            </div>
+            <div class="progress clearfix">
+              <div class="progress-background bg-white"></div>
+              <div class="progress-buffer"></div>
+              <div class="progress-played bg-green" style="width: {{ currentTime / duration * 100 }}%"></div>
+              <div class="progress-overlay" ng-click="seekTo($event)"></div>
+            </div>
+          </div>
+          <div class="col span_2_of_12">&nbsp;</div>
+        </div>
       </div>
-      <p class="small">*Audio is recommended for this feature. Just hit play and start reading.</p>
+      <p class="small green">*Audio is recommended for this feature.<br> Just hit play and start reading.</p>
       <img src="images/stereo.svg" alt="Stereo" />
     </div>
   </header>
 
+  <div class="white bg-black">
+    <a href class="white">Features</a>
+    <span>player</span>
+    <a href class="apercu caps button button-grey">Subscribe</a>
+  </div>
+
   <article class="">
-    <div class="white bg-grey px2 py4">
-      <h1 class="center">Bringing It All Back Home</h1>
-      <h2 class="center">A Day with Daniel Bachman</h2>
-      <p class="center">By Sunny Eckerle</p>
-      <p>After what seemed like an endless winter, longer and colder than usual, the final weekend of May offered a much needed warmth. With a 24-pack of High Life in the trunk and the windows down, we headed west. Soft hills rose into the Shenandoah Mountains. Cell service waned and eventually dropped out. Our landmark dependent directions became our only guide. "Over the bridge and right at the yellow mail box." We wound down a one-lane dirt path, climbing higher into the hills.
+    <div class="white bg-grey px2 py4 bg-cover bg-center" style="background-image: url(images/daniel-intro.jpg)">
+      <div class="container">
+        <img src="images/numeral-1.svg" width="47" height="122" class="block mx-auto" alt="1" />
+        <img src="images/bringingitallbackhome.png" alt="Bringing it all back home" class="fit" />
+        <h2 class="center apercu caps mb0">A Day with Daniel Bachman</h2>
+        <p class="center apercu">By Sunny Eckerle</p>
+        <div class="section clearfix">
+          <div class="col span_2_of_12">&nbsp;</div>
+          <div class="col span_8_of_12">
+            <p>After what seemed like an endless winter, longer and colder than usual, the final weekend of May offered a much needed warmth. With a 24-pack of High Life in the trunk and the windows down, we headed west. Soft hills rose into the Shenandoah Mountains. Cell service waned and eventually dropped out. Our landmark dependent directions became our only guide. "Over the bridge and right at the yellow mail box." We wound down a one-lane dirt path, climbing higher into the hills.</p>
+          </div>
+          <div class="col span_2_of_12"> </div>
+        </div>
+      </div>
     </div>
-<p>And so we arrived at Forest Floor Studios, just shy of Shenandoah National Park.  It’s easy to see why Daniel Bachman, the 22 year-old Virginia native, has chosen to record here. Previous releases from the finger-picking visionary were born at Forest Floor, as is his latest and last album on Tompkins Square, Jesus I’m a Sinner.</p>
-<p>The one room studio is unexpectedly well stocked. It's absolutely off the beaten path, yet no less legitimate for it. Surrounded by only the wind brushing through the leaves, the faint trickling of a stream, and the singing of the local bird residents, it's a fitting backdrop for the scratch and twang of Daniel's homey and rural finger-style creations.</p>
-<p>Hellos are exchanged with Daniel, beers are opened, and we're introduced to Forrest Marquisee, the producer at Forest Floor Studios. Inside the small studio, Daniel gets to work, starting where he and Forrest left off the day before. Much of the recording is finished when we arrive on Saturday, Daniel having been at the studio for a few days already. After only one false start, Daniel records the final track for the album with the front door open, the sounds from outside creeping through the screen door.</p>
-<p>Our remaining time is spent outside, learning about the studio, Rappahannock County, and Daniel's home state of Virginia. We head to the stream not 50 feet from the studio, and stand barefoot in it as Daniel tells us all about where we are, often pointing one way or another to a landmark that correlates to one of his songs. He knows this place well, his casual explanations clearly well worn from time and use. He enjoys sharing his love for his home, which he does most successfully through his music. Sun Over Old Rag, Seven Pines, 218 to Caledon - all song titles of his as well as references to the Old Dominion.</p>
+    <div class="container clearfix py4">
+      <div class="col span_2_of_12">&nbsp;</div>
+      <div class="col span_7_of_12">
+        <p>And so we arrived at Forest Floor Studios, just shy of Shenandoah National Park.  It’s easy to see why Daniel Bachman, the 22 year-old Virginia native, has chosen to record here. Previous releases from the finger-picking visionary were born at Forest Floor, as is his latest and last album on Tompkins Square, Jesus I’m a Sinner.</p>
+        <p>The one room studio is unexpectedly well stocked. It's absolutely off the beaten path, yet no less legitimate for it. Surrounded by only the wind brushing through the leaves, the faint trickling of a stream, and the singing of the local bird residents, it's a fitting backdrop for the scratch and twang of Daniel's homey and rural finger-style creations.</p>
+      </div>
+      <div class="col span_3_of_12">
+        <img src="images/jesusimasinner.jpg" alt="Jesus I'm a Sinner" class="fit" />
+      </div>
+    </div>
+    <div class="container clearfix">
+      <div class="section">
+        <div class="col span_1_of_12">&nbsp;</div>
+        <div class="col span_10_of_12">
+          <img src="images/daniel-studio.jpg" alt="Studio" class="fit" />
+        </div>
+        <div class="col span_1_of_12">&nbsp;</div>
+      </div>
+      <div class="section clearfix">
+        <div class="col span_2_of_12">&nbsp;</div>  
+        <div class="col span_8_of_12">
+          <p>Hellos are exchanged with Daniel, beers are opened, and we're introduced to Forrest Marquisee, the producer at Forest Floor Studios. Inside the small studio, Daniel gets to work, starting where he and Forrest left off the day before. Much of the recording is finished when we arrive on Saturday, Daniel having been at the studio for a few days already. After only one false start, Daniel records the final track for the album with the front door open, the sounds from outside creeping through the screen door.</p>
+          <p>Our remaining time is spent outside, learning about the studio, Rappahannock County, and Daniel's home state of Virginia. We head to the stream not 50 feet from the studio, and stand barefoot in it as Daniel tells us all about where we are, often pointing one way or another to a landmark that correlates to one of his songs. He knows this place well, his casual explanations clearly well worn from time and use. He enjoys sharing his love for his home, which he does most successfully through his music. Sun Over Old Rag, Seven Pines, 218 to Caledon - all song titles of his as well as references to the Old Dominion.</p>
+        </div>
+        <div class="col span_2_of_12">&nbsp;</div>  
+      </div>
+    </div>
+<aside style="background-image: url(images/daniel-water.jpg)" class="bg-cover px2 py4">
+  <p>Some svg text goes here</p>
+</aside>
 <p>Forrest gives us a tour of the area including a botany lesson, complete with tastings. We all pluck a bud of honeysuckle and carefully pull out the stemen for a small taste of sweetness. We're invited into Forrest's home, just up the hill, to see his father's guitar workshop and even try our hand at a few of the fully handmade instruments.</p>
 <p>As the morning warms into afternoon, rainclouds begin to creep across the sky and signal our time to move on. Forest Floor Studio is only the first stop of the day. In a semi-frantic rush, we help Daniel grab the last of his equipment, round up the unopened beers from the porch of the studio, and hop into Daniel's timeworn Volvo to start our trek back east, just as the rain starts to fall. The old car has served him well. This year alone, he’s spent 9 months on the road. This car has carried him across the country and back for many other years of touring and now, it carries us back east.</p>
+<img src="images/daniel-car.jpg" alt="Daniel's car" class="fit" />
+<img src="images/daniel-car-2.jpg" alt="Daniel's car" class="fit" />
 <p>As we wind down the narrow lane that brought us in, the mountains give way to a flatter landscape. The brief rain has left the spring greenery damp and warm, the humidity creeping in the open windows.</p>
 <p>Eventually, the car swings around a wide bend somewhere near Culpepper, and Daniel points out Mount Pony, a small, nondescript hill just off the highway. He tells us that, what to any passerby would appear as nothing more than a lump on the land, is actually a secret mountain fortress. "The inside is hollow. The Federal Reserve used to keep gold in there, back in the sixties and seventies." He points out a strange structure nearer the road as we pass the old guard hut.</p>
 <p>The depth in which Daniel knows this land and these places is only reinforced as the day goes on. Few people have as visceral and strong a connection to where they grew up as he does. He's moved away before, having lived in Philadelphia for a time, but it's clear he's never really left this place, in mind or spirit. The music he creates mirrors this region in its loose style, its extreme but unassuming beauty, its charming imperfectness. Today we've been introduced to his muse and given a deep understanding of the roots of what he creates.</p>
+<img src="images/daniel-driving.jpg" alt="Driving" class="fit" />
 <p>Our last destination is Fredericksburg. The house, Daniel's childhood home, is dim and cool, it's stillness disturbed only by the soft ticking of a clock and the few bits of dust that lazily drift in the sunlight that filters through the kitchen windows. The walls are covered in treasures we don't have time to explore. There are history books, artwork, and relics of Virginia's past, each with a story Daniel could tell, no doubt.</p>
 <p>Daniel decides against using his Guild guitar that we heard earlier in the day, instead choosing a 12-string that's perched in the living room, as though waiting for him. After a quick bit of tuning by ear, we head into the green and sunny backyard. Daniel takes a seat on the back patio with his guitar and as the sun begins to sink, we end the day in the place where it all began.</p>
+<div class="px2 py4 bg-cover white" style="background-image: url(images/daniel-end.jpg)">
+  <h3>Watch</h3>
+  <p>Daniel Bachman performs &ldquo;Jesus, I&rsquo;m a Sinner&rdquo;</p>
+</div>
 </article>
 
 <article>

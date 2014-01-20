@@ -14,6 +14,10 @@ $green: #79f6b9;
 .bg-grey  { background-color: $grey; }
 .bg-green { background-color: $green; }
 
+.bg-cover { background-size: cover; }
+.bg-contain { background-size: contain; }
+.bg-center { background-position: center center; }
+
 .button-grey {
   color: #fff;
   background-color: $grey;

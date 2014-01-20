@@ -54,9 +54,30 @@ Black: #111111
 Grey: #
 */
 body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Reader Regular', serif;
+  font-size-adjust: 0.53;
+  font-weight: normal;
+  font-style: normal;
   font-weight: 400;
   line-height: 2rem; }
+
+.apercu {
+  font-family: 'Apercu Regular', sans-serif;
+  font-size-adjust: 0.508;
+  font-weight: normal;
+  font-style: normal; }
+
+.apercu-medium {
+  font-family: 'Apercu Medium', Calibri, sans-serif;
+  font-size-adjust: 0.508;
+  font-weight: 600;
+  font-style: normal; }
+
+.apercu-bold {
+  font-family: 'Apercu Bold', Calibri, sans-serif;
+  font-size-adjust: 0.508;
+  font-weight: bold;
+  font-style: normal; }
 
 h1, .h1, h2, .h2, h3, h4, h5, h6, p, dl, ol, ul {
   margin-bottom: 2rem; }
@@ -249,6 +270,78 @@ h5, h6, dl, ol, ul, p, .p {
 .fit {
   max-width: 100%; }
 
+.x25 {
+  width: 25%; }
+
+.x50 {
+  width: 50%; }
+
+.x75 {
+  width: 75%; }
+
+.x100 {
+  width: 100%; }
+
+.x33 {
+  width: 33.33333%; }
+
+.x66 {
+  width: 66.66667%; }
+
+@media (max-width: 640px) {
+  .s-x25 {
+    width: 25%; }
+
+  .s-x50 {
+    width: 50%; }
+
+  .s-x75 {
+    width: 75%; }
+
+  .s-x100 {
+    width: 100%; }
+
+  .s-x33 {
+    width: 33.33333%; }
+
+  .s-x66 {
+    width: 66.66667%; } }
+@media (min-width: 641px) and (max-width: 1024px) {
+  .m-x25 {
+    width: 25%; }
+
+  .m-x50 {
+    width: 50%; }
+
+  .m-x75 {
+    width: 75%; }
+
+  .m-x100 {
+    width: 100%; }
+
+  .m-x33 {
+    width: 33.33333%; }
+
+  .m-x66 {
+    width: 66.66667%; } }
+@media (min-width: 1025px) {
+  .l-x25 {
+    width: 25%; }
+
+  .l-x50 {
+    width: 50%; }
+
+  .l-x75 {
+    width: 75%; }
+
+  .l-x100 {
+    width: 100%; }
+
+  .l-x33 {
+    width: 33.33333%; }
+
+  .l-x66 {
+    width: 66.66667%; } }
 .section {
   clear: both;
   padding: 0px;
@@ -349,7 +442,8 @@ h5, h6, dl, ol, ul, p, .p {
 .progress-played {
   top: .75rem;
   bottom: .75rem;
-  left: 0; }
+  left: 0;
+  border-radius: .25rem; }
 
 .progress-background {
   right: 0; }
@@ -383,6 +477,15 @@ h5, h6, dl, ol, ul, p, .p {
 
 .bg-green {
   background-color: #79f6b9; }
+
+.bg-cover {
+  background-size: cover; }
+
+.bg-contain {
+  background-size: contain; }
+
+.bg-center {
+  background-position: center center; }
 
 .button-grey {
   color: #fff;
