@@ -1,0 +1,27 @@
+// Progress bar for audio player
+
+.progress {
+  position: relative;
+  height: 2rem;
+  cursor: pointer;
+}
+.progress-background,
+.progress-buffer,
+.progress-played,
+.progress-overlay {
+  position: absolute;
+}
+.progress-background,
+.progress-buffer,
+.progress-played {
+  top: .75rem;
+  bottom: .75rem;
+  left: 0;
+}
+.progress-background {
+  right: 0;
+}
+.progress-overlay {
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+

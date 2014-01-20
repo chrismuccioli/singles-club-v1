@@ -1,0 +1,21 @@
+// Theme
+
+$black: #111111;
+$grey: #303030;
+$green: #79f6b9;
+
+.white { color: #fff; }
+.black { color: $black; }
+.grey  { color: $grey; }
+.green { color: $green; }
+
+.bg-white { background-color: #fff; }
+.bg-black { background-color: $black; }
+.bg-grey  { background-color: $grey; }
+.bg-green { background-color: $green; }
+
+.button-grey {
+  color: #fff;
+  background-color: $grey;
+}
+
