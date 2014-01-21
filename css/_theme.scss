@@ -18,8 +18,17 @@ $green: #79f6b9;
 .bg-contain { background-size: contain; }
 .bg-center { background-position: center center; }
 
+.round { border-radius: 2px; }
+
+.circle { border-radius: 50%; }
+
 .button-grey {
   color: #fff;
   background-color: $grey;
+}
+
+.button-border {
+  color: #fff;
+  border: 6px solid;
 }
 

@@ -1,5 +1,7 @@
 // Buttons
 
+.sq4 { width: 4rem; height: 4rem; }
+
 .button {
   display: inline-block;
   text-decoration: none;
@@ -10,7 +12,16 @@
   border-radius: 2px;
 }
 
-.button_block {
+.button-circle {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.button-block {
   display: block;
   text-align: center;
 }
