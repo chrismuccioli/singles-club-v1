@@ -30,5 +30,8 @@ $green: #79f6b9;
 .button-border {
   color: #fff;
   border: 6px solid;
+  &:hover {
+    color: $green;
+  }
 }
 
