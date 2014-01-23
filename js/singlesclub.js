@@ -2,12 +2,11 @@
 
 'use strict';
 
-var singlesclub = angular.module('singlesclub', []);
+var singlesclub = angular.module('singlesclub', ['ui.scrollfix']);
 var clientID = '0d33361983f16d2527b01fbf6408b7d7';
 
 /* PLANGULAR
    A Highly Customizable SoundCloud Player
-
    http://jxnblk.github.io/Plangular */
 singlesclub.directive('plangular', function ($document, $rootScope, $http) {
     // Define the audio engine

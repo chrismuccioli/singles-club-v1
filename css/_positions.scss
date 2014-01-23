@@ -13,3 +13,9 @@
 .b0 { bottom: 0; }
 .l0 { left: 0; }
 
+// ui-scrollfix
+.ui-scrollfix {
+  position: fixed;
+  z-index: 16;
+  top: 0;
+}

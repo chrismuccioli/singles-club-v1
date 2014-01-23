@@ -395,6 +395,11 @@ dl, ol, ul, p, .p {
 .l0 {
   left: 0; }
 
+.ui-scrollfix {
+  position: fixed;
+  z-index: 16;
+  top: 0; }
+
 .table {
   display: table;
   width: 100%; }
