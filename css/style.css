@@ -535,7 +535,16 @@ dl, ol, ul, p, .p {
   text-align: center;
   border-radius: 50%; }
   .button-circle svg {
-    padding: 6px; }
+    padding: .375rem; }
+
+.button-circle-big {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem; }
+  .button-circle-big svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: .675rem; }
 
 .button-block {
   display: block;

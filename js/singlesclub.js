@@ -1,19 +1,15 @@
-/*
-
-        PLANGULAR
-        A Highly Customizable SoundCloud Player
-
-        http://jxnblk.github.io/Plangular
-
- */
-
+// Singles Club app
 
 'use strict';
 
-var plangular = angular.module('plangular', []);
+var singlesclub = angular.module('singlesclub', []);
 var clientID = '0d33361983f16d2527b01fbf6408b7d7';
 
-plangular.directive('plangular', function ($document, $rootScope, $http) {
+/* PLANGULAR
+   A Highly Customizable SoundCloud Player
+
+   http://jxnblk.github.io/Plangular */
+singlesclub.directive('plangular', function ($document, $rootScope, $http) {
     // Define the audio engine
     var audio = $document[0].createElement('audio');
 
@@ -121,7 +117,7 @@ plangular.directive('plangular', function ($document, $rootScope, $http) {
   });
 
 // Filter to convert milliseconds to hours, minutes, seconds
-plangular.filter('playTime', function() {
+singlesclub.filter('playTime', function() {
     return function(ms) {
       var hours = Math.floor(ms / 36e5),
           mins = '0' + Math.floor((ms % 36e5) / 6e4),
