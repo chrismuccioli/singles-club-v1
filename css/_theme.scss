@@ -4,15 +4,22 @@ $black: #111111;
 $grey: #303030;
 $green: #79f6b9;
 
+// Feature 2
+$peach: #fde8d7;
+
 .white { color: #fff; }
 .black { color: $black; }
 .grey  { color: $grey; }
 .green { color: $green; }
 
+.peach { color: $peach; }
+
 .bg-white { background-color: #fff; }
 .bg-black { background-color: $black; }
 .bg-grey  { background-color: $grey; }
 .bg-green { background-color: $green; }
+
+.bg-peach { background-color: $peach; }
 
 .bg-cover { background-size: cover; }
 .bg-contain { background-size: contain; }

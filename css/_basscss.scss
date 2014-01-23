@@ -141,7 +141,7 @@ dl, ol, ul, p, .p {
 .bold { font-weight: bold; }
 .italic { font-style: italic; }
 .regular { font-weight: normal; }
-.caps { text-transform: uppercase; letter-spacing: .1em; }
+.caps { text-transform: uppercase; letter-spacing: .05em; }
 .center { text-align: center; }
 .right-align  { text-align: right; }
 
@@ -150,6 +150,8 @@ dl, ol, ul, p, .p {
 // Layout
 
 // Margins
+
+.mx-auto { margin-right: auto; margin-left: auto; }
 
 .mb0 { margin-bottom: 0; }
 
@@ -212,4 +214,6 @@ dl, ol, ul, p, .p {
 .right { float: right; }
 
 .fit { max-width: 100%; }
+
+.nowrap { white-space: nowrap; }
 

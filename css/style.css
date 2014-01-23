@@ -130,13 +130,17 @@ dl, ol, ul, p, .p {
 
 .caps {
   text-transform: uppercase;
-  letter-spacing: .1em; }
+  letter-spacing: .05em; }
 
 .center {
   text-align: center; }
 
 .right-align {
   text-align: right; }
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto; }
 
 .mb0 {
   margin-bottom: 0; }
@@ -280,6 +284,9 @@ dl, ol, ul, p, .p {
 
 .fit {
   max-width: 100%; }
+
+.nowrap {
+  white-space: nowrap; }
 
 .list-inline {
   list-style: none;
@@ -574,6 +581,9 @@ dl, ol, ul, p, .p {
 .green {
   color: #79f6b9; }
 
+.peach {
+  color: #fde8d7; }
+
 .bg-white {
   background-color: #fff; }
 
@@ -585,6 +595,9 @@ dl, ol, ul, p, .p {
 
 .bg-green {
   background-color: #79f6b9; }
+
+.bg-peach {
+  background-color: #fde8d7; }
 
 .bg-cover {
   background-size: cover; }
