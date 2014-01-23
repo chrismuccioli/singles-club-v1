@@ -36,9 +36,19 @@ $green: #79f6b9;
 
 .button-border {
   color: #fff;
-  border: 6px solid;
+  border-width: 4px;
+  border-style: solid;
+  // border color should inherit from the foreground color, but it's not...
+  border-color: #fff;
+  svg path {
+    fill: #fff;
+  }
   &:hover {
     color: $green;
+    border-color: $green;
+    svg path {
+      fill: $green;
+    }
   }
 }
 

@@ -516,15 +516,19 @@ dl, ol, ul, p, .p {
 
 .button-small {
   height: 3rem;
-  line-height: 3rem; }
+  line-height: 3rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem; }
 
 .button-circle {
   display: inline-block;
-  width: 4rem;
-  height: 4rem;
-  line-height: 4rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  line-height: 1.75rem;
   text-align: center;
   border-radius: 50%; }
+  .button-circle svg {
+    padding: 6px; }
 
 .button-block {
   display: block;
@@ -532,7 +536,7 @@ dl, ol, ul, p, .p {
 
 .progress {
   position: relative;
-  height: 2rem;
+  height: 2.25rem;
   cursor: pointer; }
 
 .progress-background,
@@ -544,8 +548,8 @@ dl, ol, ul, p, .p {
 .progress-background,
 .progress-buffer,
 .progress-played {
-  top: .75rem;
-  bottom: .75rem;
+  top: .875rem;
+  bottom: .875rem;
   left: 0;
   border-radius: .25rem; }
 
@@ -607,6 +611,31 @@ dl, ol, ul, p, .p {
 
 .button-border {
   color: #fff;
-  border: 6px solid; }
+  border-width: 4px;
+  border-style: solid;
+  border-color: #fff; }
+  .button-border svg path {
+    fill: #fff; }
   .button-border:hover {
-    color: #79f6b9; }
+    color: #79f6b9;
+    border-color: #79f6b9; }
+    .button-border:hover svg path {
+      fill: #79f6b9; }
+
+@-webkit-keyframes popin {
+  from {
+    -webkit-transform: scale(0.8); }
+
+  to {
+    -webkit-transform: scale(1); } }
+
+@keyframes popin {
+  from {
+    transform: scale(0.8); }
+
+  to {
+    transform: scale(1); } }
+
+.popin {
+  -webkit-animation: popin .1s linear;
+  animation: popin .1s linear; }
