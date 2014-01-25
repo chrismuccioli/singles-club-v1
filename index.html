@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="responsive" ng-app="singlesclub">
+<body class="responsive" ng-app="singlesclub" ng-controller="MenuCtrl">
 
   <nav class="absolute t0 r0 l0">
     <div class="container table white">
@@ -30,6 +30,24 @@
       </div>
     </div>
   </nav>
+
+  <div class="flyout white bg-black" ng-class="{ 'is-open': flyoutIsOpen }">
+    <ul class="list-simple px2 py2 nav-white">
+      <li>
+        <a href>Bringing it all back home</a>
+      </li>
+      <li>
+        <a href>Label Head</a>
+      </li>
+      <li>
+        <a href>Roadshow</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="fixed t0 l0 z4">
+    <a href ng-click="toggleMenu()" class="white">Menu</a>
+  </div>
 
   <header class="center py4 white bg-black bg-cover bg-center" style="background-image: url(images/daniel-hero.jpg)">
     <img src="images/danielbachman.svg" alt="Daniel Bachman" class="fit m-x33 l-x33 mt4 mb4" />

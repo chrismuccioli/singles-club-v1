@@ -5,6 +5,18 @@
 var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel']);
 var clientID = '0d33361983f16d2527b01fbf6408b7d7';
 
+singlesclub.controller('MenuCtrl', ['$scope', function($scope) {
+  $scope.herro = 'derp';
+
+  $scope.flyoutIsOpen = false;
+
+  $scope.toggleMenu = function() {
+    $scope.flyoutIsOpen = !$scope.flyoutIsOpen;
+    console.log(flyoutIsOpen);
+  };
+
+}]);
+
 /* PLANGULAR
    A Highly Customizable SoundCloud Player
    http://jxnblk.github.io/Plangular */

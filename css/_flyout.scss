@@ -1,0 +1,17 @@
+// Left flyout nav
+
+.flyout {
+  position: fixed;
+  top: 0; bottom: 0; left: 0;
+  z-index: 3;
+  width: 16rem;
+  -webkit-transform: translateX(-16rem);
+          transform: translateX(-16rem);
+  -webkit-transition: -webkit-transform .2s ease;
+          transition: transform .2s ease;
+  &.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  }
+}
+
