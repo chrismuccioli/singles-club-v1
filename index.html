@@ -189,8 +189,21 @@
       <p class="apercu caps mb0">Daniel Bachman performs<br> &ldquo;Jesus, I&rsquo;m a Sinner&rdquo;</p>
     </div>
 
-    <div class="p4 white bg-black">
-      Gallery FPO
+    <div id="photo-gallery" class="clearfix p4 white bg-black">
+      <div class="col col-8 pre-2 post-2">
+        <ul rn-carousel rn-carousel-indicator rn-carousel-control>
+          <li class="ml1 mr1">
+            <img src="images/daniel-car.jpg" alt="car" class="fit" />
+            <div class="clearfix">
+              <p class="small left">Daniel's car</p>
+              <p class="small right grey"> Photo by Chris Muccioli</p>
+            </div>
+          </li>
+          <li class="ml1 mr1">
+            <img src="images/daniel-car-2.jpg" alt="car" class="fit" />
+          </li>
+        </ul>
+      </div>
     </div>
   </article>
 
@@ -379,6 +392,8 @@
   </script>
 
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
+  <script src="js/angular-carousel.js"></script>
   <script src="js/scrollfix.js"></script>
   <script src="js/singlesclub.js"></script>
 

@@ -2,7 +2,7 @@
 
 'use strict';
 
-var singlesclub = angular.module('singlesclub', ['ui.scrollfix']);
+var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel']);
 var clientID = '0d33361983f16d2527b01fbf6408b7d7';
 
 /* PLANGULAR

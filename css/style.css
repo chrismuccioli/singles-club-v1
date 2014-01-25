@@ -583,6 +583,78 @@ dl, ol, ul, p, .p {
   bottom: 0;
   left: 0; }
 
+/* variables */
+/* general */
+.rn-carousel-container {
+  position: relative; }
+
+.rn-carousel-slides {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  white-space: nowrap;
+  overflow: visible;
+  padding: 0;
+  margin: 0; }
+
+.rn-carousel-slide {
+  white-space: normal;
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+/* indicators */
+.rn-carousel-indicator {
+  width: 100%;
+  text-align: center;
+  height: 20px;
+  position: relative;
+  bottom: 0;
+  cursor: pointer; }
+
+.rn-carousel-indicator span {
+  -webkit-transition: color .2s ease-out;
+  transition: color .2s ease-out;
+  padding: 0 5px;
+  color: #333; }
+
+.rn-carousel-indicator span:before {
+  content: "\25cf"; }
+
+.rn-carousel-indicator .active {
+  color: white; }
+
+/* controls */
+.rn-carousel-control {
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  opacity: 0.75;
+  cursor: pointer; }
+
+.rn-carousel-control:hover {
+  opacity: 1; }
+
+.rn-carousel-control.rn-carousel-control-prev {
+  left: 0.5em; }
+
+.rn-carousel-control.rn-carousel-control-prev:before {
+  content: "<"; }
+
+.rn-carousel-control.rn-carousel-control-next {
+  right: 0.5em; }
+
+.rn-carousel-control.rn-carousel-control-next:before {
+  content: ">"; }
+
 .white {
   color: #fff; }
 
@@ -648,21 +720,3 @@ dl, ol, ul, p, .p {
     border-color: #79f6b9; }
     .button-border:hover svg path {
       fill: #79f6b9; }
-
-@-webkit-keyframes popin {
-  from {
-    -webkit-transform: scale(0.8); }
-
-  to {
-    -webkit-transform: scale(1); } }
-
-@keyframes popin {
-  from {
-    transform: scale(0.8); }
-
-  to {
-    transform: scale(1); } }
-
-.popin {
-  -webkit-animation: popin .1s linear;
-  animation: popin .1s linear; }
