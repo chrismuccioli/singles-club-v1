@@ -736,7 +736,7 @@ html, body {
 .rn-carousel-control.rn-carousel-control-next:before {
   content: ">"; }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .mobile-hide {
     display: none; } }
 

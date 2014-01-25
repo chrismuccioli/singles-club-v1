@@ -12,21 +12,23 @@
 
 <body class="responsive" ng-app="singlesclub" ng-controller="MenuCtrl">
 
-  <nav class="absolute t0 r0 l0">
-    <div class="container table white">
-      <div class="table-cell col-5">
-        <p class="apercu small bold caps italic center mb0">Part record club. Part music journal.</p>
-      </div>
-      <div class="table-cell col-2 py1">
-        <img src="images/logo.svg" alt="Singles Club" />
-      </div>
-      <div class="table-cell col-5">
-        <ul class="apercu bold caps small center list-inline mb0 nav-white">
-          <li><a href>Subscribe</a></li>
-          <li><a href>Journal</a></li>
-          <li><a href>Blog</a></li>
-          <li><a href>Shop</a></li>
-        </ul>
+  <nav class="absolute t0 r0 l0 px2 mobile-hide">
+    <div class="container white">
+      <div class="table">
+        <div class="table-cell col-5">
+          <p class="apercu small bold caps italic center mb0">Part record club. Part music journal.</p>
+        </div>
+        <div class="table-cell col-2 py1">
+          <img src="images/logo.svg" alt="Singles Club" />
+        </div>
+        <div class="table-cell col-5">
+          <ul class="apercu bold caps small center list-inline mb0 nav-white">
+            <li><a href>Subscribe</a></li>
+            <li><a href>Journal</a></li>
+            <li><a href>Blog</a></li>
+            <li><a href>Shop</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
@@ -76,8 +78,9 @@
     </a>
   </div>
 
-  <div plangular src="https://soundcloud.com/singlesclubfm/coming-home" class="y100">
-  <header class="center min-y100 white bg-black bg-cover bg-center" style="background-image: url(images/daniel-hero.jpg)">
+  <div plangular src="https://soundcloud.com/singlesclubfm/coming-home" class="min-y100 bg-black bg-cover bg-center" style="background-image: url(images/daniel-hero.jpg)">
+  <header class="center white">
+    <div class="px2 py4">
       <img src="images/danielbachman.svg" alt="Daniel Bachman" class="fit m-x33 l-x33 mt4 mb4" />
       <div class="container">
         <h2 class="apercu h2 caps mb0">Side A: Coming Home*</h2>
@@ -131,6 +134,7 @@
         <p class="small green">*Audio is recommended for this feature.<br> Just hit play and start reading.</p>
         <img src="images/stereo.svg" alt="Stereo" />
       </div>
+    </div>
   </header>
 
   <div ui-scrollfix>
