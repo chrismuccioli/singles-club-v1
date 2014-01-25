@@ -14,10 +14,26 @@
 .l0 { left: 0; }
 
 // ui-scrollfix
+.ui-scrollfix-show {
+  display: none;
+}
+.ui-scrollfix-hide {
+  -webkit-transition: -webkit-transform .3s ease;
+          transition:         transform .3s ease;
+}
 .ui-scrollfix {
+  display: block;
   position: fixed;
-  z-index: 16;
+  z-index: 3;
   top: 0;
+  width: 100%;
+  .ui-scrollfix-show {
+    display: block;
+  }
+  .ui-scrollfix-hide {
+    -webkit-transform: translateX(-4rem);
+            transform: translateX(-4rem);
+  }
 }
 
 .z4 { z-index: 4; }

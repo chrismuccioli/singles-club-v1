@@ -10,7 +10,7 @@ singlesclub.controller('MenuCtrl', ['$scope', function($scope) {
 
   $scope.flyoutIsOpen = false;
 
-  $scope.toggleMenu = function() {
+  $scope.toggleFlyout = function() {
     $scope.flyoutIsOpen = !$scope.flyoutIsOpen;
     console.log(flyoutIsOpen);
   };

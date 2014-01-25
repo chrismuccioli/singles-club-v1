@@ -33,6 +33,20 @@ $peach: #fde8d7;
   a {
     color: #fff;
     text-decoration: none;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.button-icon {
+  svg path {
+    fill: #fff;
+  }
+  &:hover {
+    svg path {
+      fill: $green;
+    }
   }
 }
 

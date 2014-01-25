@@ -32,21 +32,48 @@
   </nav>
 
   <div class="flyout white bg-black" ng-class="{ 'is-open': flyoutIsOpen }">
-    <ul class="list-simple px2 py2 nav-white">
-      <li>
-        <a href>Bringing it all back home</a>
-      </li>
-      <li>
-        <a href>Label Head</a>
-      </li>
-      <li>
-        <a href>Roadshow</a>
-      </li>
-    </ul>
+    <div class="py3">
+      <ul class="list-simple nav-white">
+        <li>
+          <a href>Bringing it all back home</a>
+        </li>
+        <li>
+          <a href>Label Head</a>
+        </li>
+        <li>
+          <a href>Roadshow</a>
+        </li>
+      </ul>
+    </div>
+    <div class="absolute t0 r0 b0 py3 center" style="padding-right:.5rem;padding-left:.5rem;">
+      <div class="apercu caps mb1" style="line-height:1">
+        F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
+      </div>
+      <img src="images/issuemeta.svg" />
+    </div>
   </div>
 
   <div class="fixed t0 l0 z4">
-    <a href ng-click="toggleMenu()" class="white">Menu</a>
+    <a href ng-click="toggleFlyout()" class="inline-block bar px1 button-icon white" style="padding-top:.25rem;">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <g>
+        <path d="M2,7C1.448,7,1,6.552,1,6V2c0-0.552,0.448-1,1-1h28c0.553,0,1,0.448,1,1v4c0,0.552-0.447,1-1,1H2z"/>
+        <path d="M30,2v4H2V2H30 M30,0H2C0.895,0,0,0.895,0,2v4c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2V2C32,0.895,31.105,0,30,0L30,0z
+          "/>
+      </g>
+      <g>
+        <path d="M2,19c-0.552,0-1-0.447-1-1v-4c0-0.552,0.448-1,1-1h28c0.553,0,1,0.448,1,1v4c0,0.553-0.447,1-1,1H2z"/>
+        <path d="M30,14v4H2v-4H30 M30,12H2c-1.105,0-2,0.895-2,2v4c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2v-4
+          C32,12.895,31.105,12,30,12L30,12z"/>
+      </g>
+      <g>
+        <path d="M2,31c-0.552,0-1-0.447-1-1v-4c0-0.553,0.448-1,1-1h28c0.553,0,1,0.447,1,1v4c0,0.553-0.447,1-1,1H2z"/>
+        <path d="M30,26v4H2v-4H30 M30,24H2c-1.105,0-2,0.895-2,2v4c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2v-4
+          C32,24.895,31.105,24,30,24L30,24z"/>
+      </g>
+      </svg>
+    </a>
   </div>
 
   <header class="center py4 white bg-black bg-cover bg-center" style="background-image: url(images/daniel-hero.jpg)">
@@ -107,19 +134,20 @@
     </div>
   </header>
 
-  <!--<div class="clearfix py1 white bg-black">
-    <a href class="left white">Features</a>
-    <div class="right px1">
-      <a href class="apercu small caps button button-small button-grey">Subscribe</a>
+  <div ui-scrollfix>
+    <div class="ui-scrollfix-hide fixed t0 b0 l0 center white bg-black" style="padding: 3rem .5rem 0 .5rem;">
+      <div class="apercu caps mb1" style="line-height:1">
+        F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
+      </div>
+      <img src="images/issuemeta.svg" />
     </div>
-    <div class="clearfix">player</div>
-  </div>-->
-  <div class="table py1 white bg-black" ui-scrollfix>
-    <a href class="table-cell px1 white">Features</a>
-    <div class="table-cell x100 center px1">player</div>
-    <div class="table-cell px1 nowrap">
-      <a href class="apercu small caps button button-small mr1 button-grey">Subscribe</a>
-      <img src="images/S.svg" class="inline-block" />
+    <div class="clearfix bar white bg-black ui-scrollfix-show slidedown">
+      <div class="left nav-white">
+        <a href class="apercu px4 caps white">Features</a>
+      </div>
+      <div class="right px1 nowrap">
+        <a href class="apercu small caps button button-small button-grey">Subscribe</a>
+      </div>
     </div>
   </div>
 

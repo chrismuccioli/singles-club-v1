@@ -273,6 +273,9 @@ dl, ol, ul, p, .p {
 .inline-block {
   display: inline-block; }
 
+.hide {
+  display: none; }
+
 .clearfix {
   overflow: hidden; }
 
@@ -399,10 +402,24 @@ dl, ol, ul, p, .p {
 .l0 {
   left: 0; }
 
+.ui-scrollfix-show {
+  display: none; }
+
+.ui-scrollfix-hide {
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: transform .3s ease; }
+
 .ui-scrollfix {
+  display: block;
   position: fixed;
-  z-index: 16;
-  top: 0; }
+  z-index: 3;
+  top: 0;
+  width: 100%; }
+  .ui-scrollfix .ui-scrollfix-show {
+    display: block; }
+  .ui-scrollfix .ui-scrollfix-hide {
+    -webkit-transform: translateX(-4rem);
+    transform: translateX(-4rem); }
 
 .z4 {
   z-index: 4; }
@@ -534,8 +551,8 @@ dl, ol, ul, p, .p {
   border-radius: 2px; }
 
 .button-small {
-  height: 3rem;
-  line-height: 3rem;
+  height: 2rem;
+  line-height: 2rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem; }
 
@@ -596,14 +613,20 @@ dl, ol, ul, p, .p {
   bottom: 0;
   left: 0;
   z-index: 3;
-  width: 16rem;
-  -webkit-transform: translateX(-16rem);
-  transform: translateX(-16rem);
+  width: 20rem;
+  padding-right: 3rem;
+  padding-left: 1rem;
+  -webkit-transform: translateX(-24rem);
+  transform: translateX(-24rem);
   -webkit-transition: -webkit-transform .2s ease;
   transition: transform .2s ease; }
   .flyout.is-open {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
+
+.bar {
+  height: 3rem;
+  line-height: 3rem; }
 
 /* variables */
 /* general */
@@ -725,6 +748,13 @@ dl, ol, ul, p, .p {
 .nav-white a {
   color: #fff;
   text-decoration: none; }
+  .nav-white a:hover {
+    color: #79f6b9; }
+
+.button-icon svg path {
+  fill: #fff; }
+.button-icon:hover svg path {
+  fill: #79f6b9; }
 
 .button-grey {
   color: #fff;
@@ -742,3 +772,39 @@ dl, ol, ul, p, .p {
     border-color: #79f6b9; }
     .button-border:hover svg path {
       fill: #79f6b9; }
+
+@-webkit-keyframes popin {
+  from {
+    -webkit-transform: scale(0.8); }
+
+  to {
+    -webkit-transform: scale(1); } }
+
+@keyframes popin {
+  from {
+    transform: scale(0.8); }
+
+  to {
+    transform: scale(1); } }
+
+.popin {
+  -webkit-animation: popin .1s linear;
+  animation: popin .1s linear; }
+
+@-webkit-keyframes slidedown {
+  from {
+    -webkit-transform: translateY(-100%); }
+
+  to {
+    -webkit-transform: translateY(0); } }
+
+@keyframes slidedown {
+  from {
+    transform: translateY(-100%); }
+
+  to {
+    transform: translateY(0); } }
+
+.slidedown {
+  -webkit-animation: slidedown .1s ease;
+  animation: slidedown .1s ease; }

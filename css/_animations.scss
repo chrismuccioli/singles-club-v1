@@ -14,3 +14,17 @@
           animation: popin .1s linear;
 }
 
+@-webkit-keyframes slidedown {
+  from { -webkit-transform: translateY(-100%); }
+    to { -webkit-transform: translateY(0); }
+}
+@keyframes slidedown {
+  from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+.slidedown {
+  -webkit-animation: slidedown .1s ease;
+          animation: slidedown .1s ease;
+}
+
+

@@ -4,9 +4,11 @@
   position: fixed;
   top: 0; bottom: 0; left: 0;
   z-index: 3;
-  width: 16rem;
-  -webkit-transform: translateX(-16rem);
-          transform: translateX(-16rem);
+  width: 20rem;
+  padding-right: 3rem;
+  padding-left: 1rem;
+  -webkit-transform: translateX(-24rem);
+          transform: translateX(-24rem);
   -webkit-transition: -webkit-transform .2s ease;
           transition: transform .2s ease;
   &.is-open {
