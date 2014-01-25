@@ -676,10 +676,12 @@ html, body {
   position: relative;
   white-space: nowrap;
   overflow: visible;
+  font-size: 0;
   padding: 0;
   margin: 0; }
 
 .rn-carousel-slide {
+  font-size: 1rem;
   white-space: normal;
   vertical-align: top;
   display: inline-block;
@@ -736,6 +738,9 @@ html, body {
 .rn-carousel-control.rn-carousel-control-next:before {
   content: ">"; }
 
+@media (max-width: 640px) {
+  .rn-carousel-control {
+    display: none; } }
 @media (max-width: 768px) {
   .mobile-hide {
     display: none; } }

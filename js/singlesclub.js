@@ -17,6 +17,16 @@ singlesclub.controller('MenuCtrl', ['$scope', function($scope) {
 
 }]);
 
+singlesclub.controller('ModalCtrl', ['$scope', function($scope) {
+  $scope.modalIsOpen = false;
+  $scope.openModal = function() {
+    $scope.modalIsOpen = true;
+  };
+  $scope.closeModal = function() {
+    $scope.modalIsOpen = false;
+  };
+}]);
+
 /* PLANGULAR
    A Highly Customizable SoundCloud Player
    http://jxnblk.github.io/Plangular */

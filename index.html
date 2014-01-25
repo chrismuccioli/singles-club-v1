@@ -203,7 +203,7 @@
 
 </div><!-- end plangular -->
 
-  <article id="bringing-it-all-back-home" class="">
+  <article id="bringing-it-all-back-home">
     <div class="white bg-grey py4 mb3 bg-cover bg-center" style="background-image: url(images/daniel-intro.jpg)">
       <div class="container">
         <img src="images/numeral-1.svg" width="26" height="92" class="block mx-auto" alt="1" />
@@ -269,9 +269,9 @@
         <p>Daniel decides against using his Guild guitar that we heard earlier in the day, instead choosing a 12-string that's perched in the living room, as though waiting for him. After a quick bit of tuning by ear, we head into the green and sunny backyard. Daniel takes a seat on the back patio with his guitar and as the sun begins to sink, we end the day in the place where it all began.</p>
       </div>
     </div>
-    <div class="mt1 px2 py6 center bg-cover white" style="background-image: url(images/daniel-end.jpg)">
+    <div class="relative mt1 px2 py6 center bg-cover white" style="background-image: url(images/daniel-end.jpg)" ng-controller="ModalCtrl">
       <h3 class="apercu h2 caps">Watch</h3>
-      <a href class="button-circle button-circle-big mb4 button-border">
+      <a href ng-click="openModal()" class="button-circle button-circle-big mb4 button-border">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
         <g>
@@ -285,20 +285,52 @@
         </svg>
       </a>
       <p class="apercu caps mb0">Daniel Bachman performs<br> &ldquo;Jesus, I&rsquo;m a Sinner&rdquo;</p>
+      <div class="absolute t0 r0 b0 l0 p2" ng-show="modalIsOpen">
+        <div class="y100 white bg-green popin">
+          <a href ng-click="closeModal()">Close</a>
+          <p>Video player here</p>
+        </div>
+      </div>
     </div>
 
     <div id="photo-gallery" class="clearfix p4 white bg-black">
       <div class="col col-8 pre-2 post-2">
-        <ul rn-carousel rn-carousel-indicator rn-carousel-control>
-          <li class="ml1 mr1">
-            <img src="images/daniel-car.jpg" alt="car" class="fit" />
-            <div class="clearfix">
-              <p class="small left">Daniel's car</p>
-              <p class="small right grey"> Photo by Chris Muccioli</p>
+        <ul rn-carousel rn-carousel-control>
+          <li>
+            <div class="px1">
+              <img src="images/gallery1.jpg" alt="" class="fit" />
+              <div class="clearfix">
+                <p class="small left">A photograph</p>
+                <p class="small right grey"> Photo by Chris Muccioli</p>
+              </div>
             </div>
           </li>
-          <li class="ml1 mr1">
-            <img src="images/daniel-car-2.jpg" alt="car" class="fit" />
+          <li>
+            <div class="px1">
+              <img src="images/gallery2.jpg" alt="" class="fit" />
+              <div class="clearfix">
+                <p class="small left">Another photograph</p>
+                <p class="small right grey"> Photo by Chris Muccioli</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="px1">
+              <img src="images/gallery3.jpg" alt="" class="fit" />
+              <div class="clearfix">
+                <p class="small left">Photograph</p>
+                <p class="small right grey"> Photo by Chris Muccioli</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="px1">
+              <img src="images/gallery4.jpg" alt="" class="fit" />
+              <div class="clearfix">
+                <p class="small left">*sigh*</p>
+                <p class="small right grey"> Photo by Chris Muccioli</p>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
