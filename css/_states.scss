@@ -1,0 +1,8 @@
+// States
+
+.mobile-hide {
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+

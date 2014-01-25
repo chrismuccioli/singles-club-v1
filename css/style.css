@@ -242,6 +242,9 @@ dl, ol, ul, p, .p {
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
+.pl3 {
+  padding-left: 3rem; }
+
 .p4 {
   padding: 4rem; }
 
@@ -374,6 +377,34 @@ dl, ol, ul, p, .p {
 
   .l-x66 {
     width: 66.66667%; } }
+html, body {
+  height: 100%; }
+
+.banner {
+  width: 100%; }
+  .banner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+
+.min-y100 {
+  min-height: 100%; }
+
+.y100 {
+  height: 100%; }
+
+.y75 {
+  height: 75%; }
+
+.y50 {
+  height: 50%; }
+
+.y25 {
+  height: 25%; }
+
 .relative {
   position: relative; }
 
@@ -575,6 +606,11 @@ dl, ol, ul, p, .p {
     height: 1.75rem;
     padding: .675rem; }
 
+.button-icon {
+  display: inline-block; }
+  .button-icon svg {
+    padding: .675rem; }
+
 .button-block {
   display: block;
   text-align: center; }
@@ -699,6 +735,10 @@ dl, ol, ul, p, .p {
 
 .rn-carousel-control.rn-carousel-control-next:before {
   content: ">"; }
+
+@media (max-width: 640px) {
+  .mobile-hide {
+    display: none; } }
 
 .white {
   color: #fff; }
