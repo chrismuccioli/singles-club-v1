@@ -765,6 +765,9 @@ html, body {
   .mobile-show {
     display: none; } }
 
+body {
+  color: #303030; }
+
 .white {
   color: #fff; }
 
