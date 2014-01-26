@@ -2,8 +2,7 @@
 
 'use strict';
 
-var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel']);
-var clientID = '0d33361983f16d2527b01fbf6408b7d7';
+var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel', 'duParallax']);
 
 singlesclub.controller('MenuCtrl', ['$scope', function($scope) {
   $scope.herro = 'derp';
@@ -26,6 +25,12 @@ singlesclub.controller('ModalCtrl', ['$scope', function($scope) {
     $scope.modalIsOpen = false;
   };
 }]);
+
+singlesclub.controller('ParallaxCtrl', ['$scope', 'parallaxHelper', function($scope, parallaxHelper) {
+  $scope.background = parallaxHelper.createAnimator(-0.1);
+}]);
+
+
 
 /* PLANGULAR
    A Highly Customizable SoundCloud Player

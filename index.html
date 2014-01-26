@@ -138,7 +138,7 @@
   </header>
 
   <div ui-scrollfix>
-    <div class="ui-scrollfix-hide fixed t0 b0 l0 center white bg-black" style="padding: 3rem .5rem 0 .5rem;">
+    <div class="ui-scrollfix-hide mobile-hide fixed t0 b0 l0 center white bg-black" style="padding: 3rem .5rem 0 .5rem;">
       <div class="apercu caps mb1" style="line-height:1">
         F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
       </div>
@@ -233,8 +233,16 @@
         <p>Our remaining time is spent outside, learning about the studio, Rappahannock County, and Daniel's home state of Virginia. We head to the stream not 50 feet from the studio, and stand barefoot in it as Daniel tells us all about where we are, often pointing one way or another to a landmark that correlates to one of his songs. He knows this place well, his casual explanations clearly well worn from time and use. He enjoys sharing his love for his home, which he does most successfully through his music. Sun Over Old Rag, Seven Pines, 218 to Caledon - all song titles of his as well as references to the Old Dominion.</p>
       </div>
     </div>
-    <aside style="background-image: url(images/daniel-water.jpg); min-height: 128px;" class="bg-cover px2 py2 mt1 mb3 white">
-      <img src="images/sunoveroldrag_sevenpines.png" alt="lyrics" class="x50 fit" />
+    <aside
+      ng-controller="ParallaxCtrl"
+      style="background-image: url(images/daniel-water.jpg); min-height: 128px;"
+      class="bg-cover px2 py2 mt1 mb3 white">
+      <img
+        du-parallax
+        y="background"
+        src="images/sunoveroldrag_sevenpines.png"
+        alt="lyrics"
+        class="x50 fit" />
     </aside>
     <div class="container">
       <div class="col col-8 pre-2 post-2">
@@ -257,19 +265,30 @@
         <p>The depth in which Daniel knows this land and these places is only reinforced as the day goes on. Few people have as visceral and strong a connection to where they grew up as he does. He's moved away before, having lived in Philadelphia for a time, but it's clear he's never really left this place, in mind or spirit. The music he creates mirrors this region in its loose style, its extreme but unassuming beauty, its charming imperfectness. Today we've been introduced to his muse and given a deep understanding of the roots of what he creates.</p>
       </div>
     </div>
-    <!-- <img src="images/daniel-driving.jpg" alt="Driving" class="fit" /> -->
-    <div style="background-image: url(images/daniel-driving.jpg)" class="mt1 mb3 bg-cover bg-center">
-      <div class="container">
-        <img src="images/thisyearalone.png" alt="This year alone, he's spent 9 months on the road" class="fit" />
-      </div>
+  </article>
+
+  <section style="background-image: url(images/daniel-driving.jpg)" class="min-y100 mt1 mb3 bg-cover bg-center">
+    <div class="container" ng-controller="ParallaxCtrl">
+      <img
+        du-parallax
+        y="background"
+        src="images/thisyearalone.png"
+        alt="This year alone, he's spent 9 months on the road"
+        class="mt4 mb4 fit" />
     </div>
+  </section>
+
+  <article>
     <div class="container">
       <div class="col-8 pre-2 post-2">
         <p>Our last destination is Fredericksburg. The house, Daniel's childhood home, is dim and cool, it's stillness disturbed only by the soft ticking of a clock and the few bits of dust that lazily drift in the sunlight that filters through the kitchen windows. The walls are covered in treasures we don't have time to explore. There are history books, artwork, and relics of Virginia's past, each with a story Daniel could tell, no doubt.</p>
         <p>Daniel decides against using his Guild guitar that we heard earlier in the day, instead choosing a 12-string that's perched in the living room, as though waiting for him. After a quick bit of tuning by ear, we head into the green and sunny backyard. Daniel takes a seat on the back patio with his guitar and as the sun begins to sink, we end the day in the place where it all began.</p>
       </div>
     </div>
-    <div class="relative mt1 px2 py6 center bg-cover white" style="background-image: url(images/daniel-end.jpg)" ng-controller="ModalCtrl">
+  </article>
+
+  <section class="relative mt1 px2 min-y100 center bg-cover white" style="background-image: url(images/daniel-end.jpg)" ng-controller="ModalCtrl">
+    <div class="py4">
       <h3 class="apercu h2 caps">Watch</h3>
       <a href ng-click="openModal()" class="button-circle button-circle-big mb4 button-border">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -292,50 +311,50 @@
         </div>
       </div>
     </div>
+  </section>
 
-    <div id="photo-gallery" class="clearfix px1 py4 white bg-black">
-      <div class="col col-8 pre-2 post-2">
-        <ul rn-carousel rn-carousel-control>
-          <li>
-            <div class="px1">
-              <img src="images/gallery1.jpg" alt="" class="fit" />
-              <div class="clearfix">
-                <p class="small left">A photograph</p>
-                <p class="small right grey"> Photo by Chris Muccioli</p>
-              </div>
+  <section id="photo-gallery" class="clearfix px1 py4 white bg-black">
+    <div class="col col-8 pre-2 post-2">
+      <ul rn-carousel rn-carousel-control>
+        <li>
+          <div class="px1">
+            <img src="images/gallery1.jpg" alt="" class="fit" />
+            <div class="clearfix">
+              <p class="small left">A photograph</p>
+              <p class="small right grey"> Photo by Chris Muccioli</p>
             </div>
-          </li>
-          <li>
-            <div class="px1">
-              <img src="images/gallery2.jpg" alt="" class="fit" />
-              <div class="clearfix">
-                <p class="small left">Another photograph</p>
-                <p class="small right grey"> Photo by Chris Muccioli</p>
-              </div>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img src="images/gallery2.jpg" alt="" class="fit" />
+            <div class="clearfix">
+              <p class="small left">Another photograph</p>
+              <p class="small right grey"> Photo by Chris Muccioli</p>
             </div>
-          </li>
-          <li>
-            <div class="px1">
-              <img src="images/gallery3.jpg" alt="" class="fit" />
-              <div class="clearfix">
-                <p class="small left">Photograph</p>
-                <p class="small right grey"> Photo by Chris Muccioli</p>
-              </div>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img src="images/gallery3.jpg" alt="" class="fit" />
+            <div class="clearfix">
+              <p class="small left">Photograph</p>
+              <p class="small right grey"> Photo by Chris Muccioli</p>
             </div>
-          </li>
-          <li>
-            <div class="px1">
-              <img src="images/gallery4.jpg" alt="" class="fit" />
-              <div class="clearfix">
-                <p class="small left">*sigh*</p>
-                <p class="small right grey"> Photo by Chris Muccioli</p>
-              </div>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img src="images/gallery4.jpg" alt="" class="fit" />
+            <div class="clearfix">
+              <p class="small left">*sigh*</p>
+              <p class="small right grey"> Photo by Chris Muccioli</p>
             </div>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </li>
+      </ul>
     </div>
-  </article>
+  </section>
 
   <article id="label-head-josh-rosenthal" class="py3 bg-peach">
     <section class="apercu container center py4">
@@ -521,9 +540,12 @@
     })();
   </script>
 
+  <script src="js/config.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
   <script src="js/angular-carousel.js"></script>
+  <script src="js/angular-scroll.js"></script>
+  <script src="js/angular-parallax.js"></script>
   <script src="js/scrollfix.js"></script>
   <script src="js/singlesclub.js"></script>
 
