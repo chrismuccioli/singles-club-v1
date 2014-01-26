@@ -598,13 +598,13 @@ html, body {
     padding: .375rem; }
 
 .button-circle-big {
-  width: 3rem;
-  height: 3rem;
-  line-height: 3rem; }
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem; }
   .button-circle-big svg {
-    width: 1.75rem;
-    height: 1.75rem;
-    padding: .675rem; }
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1.25rem; }
 
 .button-icon {
   display: inline-block; }
@@ -721,19 +721,21 @@ html, body {
   top: 50%;
   margin-top: -35px;
   opacity: 0.75;
-  cursor: pointer; }
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem; }
 
 .rn-carousel-control:hover {
   opacity: 1; }
 
 .rn-carousel-control.rn-carousel-control-prev {
-  left: 0.5em; }
+  left: 2rem; }
 
 .rn-carousel-control.rn-carousel-control-prev:before {
   content: "<"; }
 
 .rn-carousel-control.rn-carousel-control-next {
-  right: 0.5em; }
+  right: 2rem; }
 
 .rn-carousel-control.rn-carousel-control-next:before {
   content: ">"; }
@@ -807,7 +809,7 @@ html, body {
 
 .button-border {
   color: #fff;
-  border-width: 4px;
+  border-width: .25rem;
   border-style: solid;
   border-color: #fff; }
   .button-border svg path {
@@ -817,6 +819,9 @@ html, body {
     border-color: #79f6b9; }
     .button-border:hover svg path {
       fill: #79f6b9; }
+
+.button-border-big {
+  border-width: .5rem; }
 
 @-webkit-keyframes popin {
   from {

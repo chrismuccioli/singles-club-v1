@@ -210,12 +210,14 @@
         <img src="images/bringingitallbackhome.png" alt="Bringing it all back home" class="fit" />
         <h2 class="center apercu caps mb0">A Day with Daniel Bachman</h2>
         <p class="center apercu">By Sunny Eckerle</p>
-        <div class="col-8 pre-2 post-2">
-          <p>After what seemed like an endless winter, longer and colder than usual, the final weekend of May offered a much needed warmth. With a 24-pack of High Life in the trunk and the windows down, we headed west. Soft hills rose into the Shenandoah Mountains. Cell service waned and eventually dropped out. Our landmark dependent directions became our only guide. "Over the bridge and right at the yellow mail box." We wound down a one-lane dirt path, climbing higher into the hills.</p>
-        </div>
       </div>
     </div>
     <div class="container clearfix mb1">
+      <div class="col-8 pre-2 post-2">
+        <p>After what seemed like an endless winter, longer and colder than usual, the final weekend of May offered a much needed warmth. With a 24-pack of High Life in the trunk and the windows down, we headed west. Soft hills rose into the Shenandoah Mountains. Cell service waned and eventually dropped out. Our landmark dependent directions became our only guide. "Over the bridge and right at the yellow mail box." We wound down a one-lane dirt path, climbing higher into the hills.</p>
+      </div>
+    </div>
+    <div class="container clearfix">
       <div class="col col-7 pre-2">
         <p>And so we arrived at Forest Floor Studios, just shy of Shenandoah National Park.  It’s easy to see why Daniel Bachman, the 22 year-old Virginia native, has chosen to record here. Previous releases from the finger-picking visionary were born at Forest Floor, as is his latest and last album on Tompkins Square, Jesus I’m a Sinner.</p>
         <p>The one room studio is unexpectedly well stocked. It's absolutely off the beaten path, yet no less legitimate for it. Surrounded by only the wind brushing through the leaves, the faint trickling of a stream, and the singing of the local bird residents, it's a fitting backdrop for the scratch and twang of Daniel's homey and rural finger-style creations.</p>
@@ -287,10 +289,10 @@
     </div>
   </article>
 
-  <section class="relative mt1 px2 min-y100 center bg-cover white" style="background-image: url(images/daniel-end.jpg)" ng-controller="ModalCtrl">
-    <div class="py4">
+  <section class="relative table min-y100 center bg-cover white" style="background-image: url(images/daniel-end.jpg)" ng-controller="ModalCtrl">
+    <div class="table-cell py4">
       <h3 class="apercu h2 caps">Watch</h3>
-      <a href ng-click="openModal()" class="button-circle button-circle-big mb4 button-border">
+      <a href ng-click="openModal()" class="button-circle button-circle-big mb4 button-border button-border-big">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
         <g>
@@ -373,7 +375,16 @@
         <p>“It was never new and it’ll never get old and it’s a folk song,” says Oscar Issac as a deeply committed and crotchety folk singer in the Coen Brothers’ decidedly excellent film Inside Llewyn Davis. Though that quote will become clichéd in no time at all, it seems an apt description of the San Francisco-based record label Tompkins Square Records. “We’re different from a lot of labels because I enjoy doing archival work,” says TSR founder and owner Josh Rosenthal, “but I also enjoy working with new artists. There are labels that do one of those things well, not that many do both.”</p>
         <p>Rosenthal, who is in his mid-40s has a lean frame and full-head of hair suggesting he’s much younger than one might assume. He founded the label in 2005 in New York City and named it after his beloved park that became the label’s namesake. Tompkins Square Records has become a refuge for serious music geeks that love timeless music. Releasing records from up-and-comers Daniel Bachman and Hiss Golden Messeneger coupled with re-issues of incredible forgotten oddities like finger picker Don Bikoff’s Celestial Explosion and 1930s rural string- band Charlie Poole and the Highlanders’ Complete Paramount and Brunswick Recordings, Rosenthal has created a perrenial label aesthetic.</p>
         <p>“The label puts out good music and entails no political bullshit,” says 24-year old Chicago-based psych-folk guitarist Ryley Walker, who’s releasing his debut full-length album, A Home for Me on TSR in April, “I’m honored to be on the same roster as so many forward thinking musicians from the past and present.”</p>
-        <img src="images/tompkinssquarelabel.svg" alt="Tompkin's Square label" width="500" height="500" class="block fit mx-auto mt1 mb3" />
+        <div ng-controller="ParallaxCtrl">
+          <img
+            du-parallax
+            rotation="rotation"
+            style="-webkit-transition: -webkit-transform .1s linear"
+            src="images/tompkinssquarelabel.svg"
+            alt="Tompkin's Square label"
+            width="500" height="500"
+            class="block fit mx-auto mt1 mb3" />
+        </div>
         <p>Folk and jazz. Rural and urban. New and old. American. TSR has released albums that fit within at least one of all of these descriptors, but Rosenthal still works the label’s discography into a cohesive whole, a rare case in which the label is as much a part of the records’ appeal as the music itself. At the heart of it is an impassioned, committed and restless label head.</p>
         <p>Rosenthal’s father’s record collection proved to be the spark for his developing musical passion. While his father listened to a lot of ethnic music at home, it was his dad’s Beatles and Simon and Garfunkel records that resulted in an early, classic rock n’ roll fixation that would continue into his teenage years.“In the early days it was Stones and Zeppelin,” he says, “My first concert was Tom Petty. And of course Lou Reed was from Long Island. In our teens we were heavy into the Velvet Underground. Local guys.”</p>
       </div>

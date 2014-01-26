@@ -55,15 +55,21 @@
   top: 50%;
   margin-top: -35px;
   opacity: 0.75;
-  cursor: pointer; }
+  cursor: pointer;
+
+  // Edits
+  display: inline-block;
+  padding: 1rem;
+  //background-color: pink;
+}
   .rn-carousel-control:hover {
     opacity: 1; }
   .rn-carousel-control.rn-carousel-control-prev {
-    left: 0.5em; }
+    left: 2rem; }
     .rn-carousel-control.rn-carousel-control-prev:before {
       content: "<"; }
   .rn-carousel-control.rn-carousel-control-next {
-    right: 0.5em; }
+    right: 2rem; }
     .rn-carousel-control.rn-carousel-control-next:before {
       content: ">"; }
 

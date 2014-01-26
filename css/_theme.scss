@@ -59,7 +59,7 @@ $peach: #fde8d7;
 
 .button-border {
   color: #fff;
-  border-width: 4px;
+  border-width: .25rem;
   border-style: solid;
   // border color should inherit from the foreground color, but it's not...
   border-color: #fff;
@@ -73,5 +73,8 @@ $peach: #fde8d7;
       fill: $green;
     }
   }
+}
+.button-border-big {
+  border-width: .5rem;
 }
 

@@ -11,7 +11,6 @@ singlesclub.controller('MenuCtrl', ['$scope', function($scope) {
 
   $scope.toggleFlyout = function() {
     $scope.flyoutIsOpen = !$scope.flyoutIsOpen;
-    console.log(flyoutIsOpen);
   };
 
 }]);
@@ -28,6 +27,7 @@ singlesclub.controller('ModalCtrl', ['$scope', function($scope) {
 
 singlesclub.controller('ParallaxCtrl', ['$scope', 'parallaxHelper', function($scope, parallaxHelper) {
   $scope.background = parallaxHelper.createAnimator(-0.1);
+  $scope.rotation = parallaxHelper.createAnimator(-.02);
 }]);
 
 
