@@ -5,4 +5,9 @@
     display: none;
   }
 }
+.mobile-show {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
 

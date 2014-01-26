@@ -33,22 +33,42 @@
     </div>
   </nav>
 
-  <div class="flyout aa white bg-black" ng-class="{ 'is-open': flyoutIsOpen }">
-    <div class="py3">
-      <ul class="list-simple nav-white">
+  <div class="flyout scroll-y apercu aa white bg-black" ng-class="{ 'is-open': flyoutIsOpen }">
+    <div class="py4">
+      <ul class="list-simple lh2 mb4 nav-white">
         <li>
-          <a href>Bringing it all back home</a>
+          <a href="#bringing-it-all-back-home" ng-click="toggleFlyout()" class="block mb2">
+            <span class="p bold">1. Bringing It All Back Home</span><br>
+            <span class="grey">A Day With Daniel Bachman</span>
+          </a>
         </li>
         <li>
-          <a href>Label Head</a>
+          <a href="#label-head-josh-rosenthal" ng-click="toggleFlyout()" class="block mb2">
+            <span class="p bold">2. Label Head: Josh Rosenthal</span><br>
+            <span class="grey">Why Tompkins Square Records is here to stay</span>
+          </a>
         </li>
         <li>
-          <a href>Roadshow</a>
+          <a href="#roadshow" ng-click="toggleFlyout()" class="block mb2">
+            <span class="p bold">3. Roadshow</span><br>
+            <span class="grey">Daniel shares some deep cuts he found on tour</span>
+          </a>
+        </li>
+        <li>
+          <a href="#discography" ng-click="toggleFlyout()" class="p bold block mb2">Discography</a>
         </li>
       </ul>
+      <ul class="list-simple nav-white mobile-show">
+        <li><a href="/">Home</a></li>
+        <li><a href="">Subscribe</a></li>
+        <li class="grey">Journal</li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Shop</a></li>
+      </ul>
+      <p>Share buttons</p>
     </div>
-    <div class="absolute t0 r0 b0 py3 center" style="padding-right:.5rem;padding-left:.5rem;">
-      <div class="apercu caps mb1" style="line-height:1">
+    <div class="absolute t0 r0 b0 py4 center" style="padding-right:.5rem;padding-left:.5rem;">
+      <div ng-click="toggleFlyout()" class="apercu caps mb1" style="line-height:1.125">
         F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
       </div>
       <img src="images/issuemeta.svg" />
@@ -138,15 +158,15 @@
   </header>
 
   <div ui-scrollfix>
-    <div class="ui-scrollfix-hide mobile-hide fixed t0 b0 l0 aa center white bg-black" style="padding: 3rem .5rem 0 .5rem;">
-      <div class="apercu caps mb1" style="line-height:1">
+    <div class="ui-scrollfix-hide mobile-hide fixed t0 b0 l0 aa center white bg-black" style="padding: 4rem .5rem 0 .5rem;">
+      <div ng-click="toggleFlyout()" class="apercu caps mb1" style="line-height:1.125">
         F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
       </div>
       <img src="images/issuemeta.svg" />
     </div>
     <div class="clearfix bar aa white bg-black ui-scrollfix-show slidedown">
       <div class="left nav-white mobile-hide">
-        <a href class="apercu pl3 caps white">Features</a>
+        <a href ng-click="toggleFlyout()" class="apercu pl3 caps white">Features</a>
       </div>
       <div class="right px1 nowrap mobile-hide">
         <a href class="apercu small caps button button-small button-grey">Subscribe</a>
@@ -437,7 +457,7 @@
     <img src="images/S.svg" class="block mx-auto mt1 mb3" />
   </article>
 
-  <article>
+  <article id="roadshow">
     <header class="container py3">
       <div class="col col-10 pre-1 post-1">
         <!--FEATURE 3-->

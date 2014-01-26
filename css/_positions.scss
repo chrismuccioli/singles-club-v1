@@ -13,6 +13,11 @@
 .b0 { bottom: 0; }
 .l0 { left: 0; }
 
+.scroll-y {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 // ui-scrollfix
 .ui-scrollfix-show {
   display: none;
