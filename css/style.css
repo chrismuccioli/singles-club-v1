@@ -792,6 +792,9 @@ html, body {
 .circle {
   border-radius: 50%; }
 
+.aa {
+  -webkit-font-smoothing: antialiased; }
+
 .nav-white a {
   color: #fff;
   text-decoration: none; }
