@@ -623,7 +623,10 @@ html, body {
 .button-icon {
   display: inline-block; }
   .button-icon svg {
-    padding: .675rem; }
+    padding: .75rem; }
+
+.button-icon-small svg {
+  padding: .5rem; }
 
 .button-block {
   display: block;
@@ -631,7 +634,7 @@ html, body {
 
 .progress {
   position: relative;
-  height: 2.25rem;
+  height: 2rem;
   cursor: pointer; }
 
 .progress-background,
@@ -643,8 +646,8 @@ html, body {
 .progress-background,
 .progress-buffer,
 .progress-played {
-  top: .875rem;
-  bottom: .875rem;
+  top: .75rem;
+  bottom: .75rem;
   left: 0;
   border-radius: .25rem; }
 
@@ -675,8 +678,10 @@ html, body {
     transform: translateX(0); }
 
 .bar {
-  height: 3rem;
-  line-height: 3rem; }
+  height: 2rem;
+  line-height: 2rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem; }
 
 /* variables */
 /* general */

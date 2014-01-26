@@ -76,7 +76,7 @@
   </div>
 
   <div class="fixed t0 l0 z4">
-    <a href ng-click="toggleFlyout()" class="inline-block bar button-icon white" style="padding:.25rem .375rem;">
+    <a href ng-click="toggleFlyout()" class="inline-block bar button-icon white" style="padding:.5rem .375rem;">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
       <g>
@@ -169,13 +169,12 @@
       <div class="right px1 nowrap mobile-hide">
         <a href class="apercu small caps button button-small button-grey">Subscribe</a>
       </div>
-      <div class="bar clearfix px3">
-        <div class="bar left">
+      <div class="clearfix px3">
+        <div class="left">
           <a href
             ng-click="player.play(track)"
             ng-hide="player.playing == track"
-            style="margin-top:.25rem;"
-            class="button-icon popin">
+            class="button-icon button-icon-small popin">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
               <g>
@@ -191,9 +190,7 @@
           <a href
             ng-click="player.pause()"
             ng-show="player.playing == track"
-            style="margin-top:.25rem;"
-            class="button-icon popin">
-            <!--<img src="images/icon-pause.svg" width="16" height="16" />-->
+            class="button-icon button-icon-small popin">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
               <g>
@@ -209,7 +206,7 @@
               </svg>
           </a>
         </div>
-        <div class="progress clearfix" style="margin-top:.25rem;">
+        <div class="progress clearfix" style="">
           <div class="progress-background bg-grey"></div>
           <div class="progress-buffer"></div>
           <div class="progress-played bg-green" style="width: {{ currentTime / duration * 100 }}%"></div>

@@ -2,7 +2,7 @@
 
 .progress {
   position: relative;
-  height: 2.25rem;
+  height: 2rem;
   cursor: pointer;
 }
 .progress-background,
@@ -14,8 +14,8 @@
 .progress-background,
 .progress-buffer,
 .progress-played {
-  top: .875rem;
-  bottom: .875rem;
+  top: .75rem;
+  bottom: .75rem;
   left: 0;
   border-radius: .25rem;
 }

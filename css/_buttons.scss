@@ -43,7 +43,12 @@
 .button-icon {
   display: inline-block;
   svg {
-    padding: .675rem;
+    padding: .75rem;
+  }
+}
+.button-icon-small {
+  svg {
+    padding: .5rem;
   }
 }
 
