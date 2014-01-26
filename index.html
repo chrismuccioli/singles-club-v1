@@ -8,6 +8,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.png" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <script type="text/javascript">
+    WebFontConfig = { fontdeck: { id: '39874' } };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+
 </head>
 
 <body class="responsive" ng-app="singlesclub" ng-controller="MenuCtrl">
@@ -546,21 +562,8 @@
     </section>
   </article>
 
-  <script type="text/javascript">
-    WebFontConfig = { fontdeck: { id: '39874' } };
-    (function() {
-      var wf = document.createElement('script');
-      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.type = 'text/javascript';
-      wf.async = 'true';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(wf, s);
-    })();
-  </script>
 
   <script src="js/config.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
   <script src="js/angular-carousel.js"></script>
   <script src="js/angular-scroll.js"></script>
