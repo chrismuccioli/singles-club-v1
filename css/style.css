@@ -273,6 +273,10 @@ dl, ol, ul, p, .p {
   padding-top: 6rem;
   padding-bottom: 6rem; }
 
+.py8 {
+  padding-top: 8rem;
+  padding-bottom: 8rem; }
+
 .inline {
   display: inline; }
 
