@@ -90,7 +90,8 @@ h2, .h2 {
   font-size: 1.5rem; }
 
 h3, .h3 {
-  font-size: 1rem; }
+  font-size: 1rem;
+  line-height: 1.75rem; }
 
 h4, .h4, h5, h6,
 small, .small {
@@ -648,8 +649,7 @@ html, body {
 .progress-played {
   top: .75rem;
   bottom: .75rem;
-  left: 0;
-  border-radius: .25rem; }
+  left: 0; }
 
 .progress-background {
   right: 0; }
@@ -782,11 +782,20 @@ body {
 .grey {
   color: #303030; }
 
+.mid-grey {
+  color: #666666; }
+
 .green {
   color: #79f6b9; }
 
 .peach {
   color: #fde8d7; }
+
+.bg-peach-to-cream {
+  background-image: linear-gradient(#fde8d7, #f7f3ef); }
+
+.bg-cream {
+  background-color: #f7f3ef; }
 
 .bg-white {
   background-color: #fff; }
@@ -796,6 +805,9 @@ body {
 
 .bg-grey {
   background-color: #303030; }
+
+.bg-mid-grey {
+  background-color: #666666; }
 
 .bg-green {
   background-color: #79f6b9; }
@@ -834,11 +846,11 @@ body {
 
 .button-grey {
   color: #fff;
-  background-color: #303030; }
+  background-color: #666666; }
 
 .button-border {
   color: #fff;
-  border-width: .25rem;
+  border-width: .125rem;
   border-style: solid;
   border-color: #fff; }
   .button-border svg path {
@@ -850,7 +862,7 @@ body {
       fill: #79f6b9; }
 
 .button-border-big {
-  border-width: .5rem; }
+  border-width: .25rem; }
 
 @-webkit-keyframes popin {
   from {

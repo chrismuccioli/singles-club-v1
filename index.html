@@ -53,19 +53,19 @@
     <div class="py4">
       <ul class="list-simple lh2 mb4 nav-white">
         <li>
-          <a href="#bringing-it-all-back-home" ng-click="toggleFlyout()" class="block mb2">
-            <span class="p bold">1. Bringing It All Back Home</span><br>
+          <a href="##bringing-it-all-back-home" ng-click="toggleFlyout()" class="block mb2">
+            <span class="h2 bold">1. Bringing It All Back Home</span><br>
             <span class="grey">A Day With Daniel Bachman</span>
           </a>
         </li>
         <li>
-          <a href="#label-head-josh-rosenthal" ng-click="toggleFlyout()" class="block mb2">
+          <a href="##label-head-josh-rosenthal" ng-click="toggleFlyout()" class="block mb2">
             <span class="p bold">2. Label Head: Josh Rosenthal</span><br>
             <span class="grey">Why Tompkins Square Records is here to stay</span>
           </a>
         </li>
         <li>
-          <a href="#roadshow" ng-click="toggleFlyout()" class="block mb2">
+          <a href="##roadshow" ng-click="toggleFlyout()" class="block mb2">
             <span class="p bold">3. Roadshow</span><br>
             <span class="grey">Daniel shares some deep cuts he found on tour</span>
           </a>
@@ -109,7 +109,7 @@
   <header class="px2 aa white">
       <div class="container py8">
         <img src="images/danielbachman.svg" alt="Daniel Bachman" class="fit m-x33 l-x33 mt4 mb4" />
-        <h2 class="apercu h2 caps mb0">Side A: Coming Home*</h2>
+        <h2 class="apercu-bold h2 caps mb0">Side A: Coming Home*</h2>
         <div class="clearfix mb1">
           <div class="col col-8 pre-2 post-2 clearfix">
             <div class="left mr1">
@@ -157,7 +157,7 @@
             </div>
           </div>
         </div>
-        <p class="small green">*Audio is recommended for this feature.<br> Just hit play and start reading.</p>
+        <p class="small green mb1">*Audio is recommended for this feature.<br> Just hit play and start reading.</p>
         <img src="images/stereo.svg" alt="Stereo" />
       </div>
   </header>
@@ -174,7 +174,7 @@
         <a href ng-click="toggleFlyout()" class="apercu pl3 caps white">Features</a>
       </div>
       <div class="right px1 nowrap mobile-hide">
-        <a href class="apercu small caps button button-small button-grey">Subscribe</a>
+        <a href class="apercu caps button button-small button-grey">Subscribe</a>
       </div>
       <div class="clearfix px3">
         <div class="left">
@@ -226,13 +226,13 @@
 </div><!-- end plangular -->
 
   <article id="bringing-it-all-back-home">
-    <div class="white bg-grey py4 mb3 bg-cover bg-center" style="background-image: url(images/daniel-intro.jpg)">
+    <div class="white aa bg-grey py4 mb3 bg-cover bg-center" style="background-image: url(images/daniel-intro.jpg)">
       <div class="container clearfix">
-        <div class="col col-10 pre-1 post-1">
-          <img src="images/numeral-1.svg" width="26" height="92" class="block mx-auto" alt="1" />
+        <div class="col col-8 pre-2 post-2">
+          <img src="images/numeral-1.svg" class="block mx-auto" alt="1" />
           <img src="images/bringingitallbackhome.png" alt="Bringing it all back home" class="fit" />
-          <h2 class="center apercu caps mb0">A Day with Daniel Bachman</h2>
-          <p class="center apercu">By Sunny Eckerle</p>
+          <h2 class="h2 responsive center apercu caps mb0">A Day with Daniel Bachman</h2>
+          <p class="center mb0">By Sunny Eckerle</p>
         </div>
       </div>
     </div>
@@ -265,7 +265,7 @@
       class="bg-cover px2 py2 mt1 mb3 white">
       <img
         du-parallax
-        y="background"
+        y="foreground"
         src="images/sunoveroldrag_sevenpines.png"
         alt="lyrics"
         class="x50 fit" />
@@ -293,14 +293,18 @@
     </div>
   </article>
 
-  <section style="background-image: url(images/daniel-driving.jpg)" class="min-y100 mt1 mb3 bg-cover bg-center">
+  <section
+    du-parallax
+    y="background"
+    style="background-image: url(images/daniel-driving.jpg)"
+    class="mt1 mb3 bg-cover bg-center">
     <div class="container" ng-controller="ParallaxCtrl">
       <img
         du-parallax
-        y="background"
+        y="foreground"
         src="images/thisyearalone.png"
         alt="This year alone, he's spent 9 months on the road"
-        class="mt4 mb4 fit" />
+        class="fit" />
     </div>
   </section>
 
@@ -315,8 +319,8 @@
 
   <section class="relative table min-y100 center bg-cover aa white" style="background-image: url(images/daniel-end.jpg)" ng-controller="ModalCtrl">
     <div class="table-cell py4">
-      <h3 class="apercu h2 caps">Watch</h3>
-      <a href ng-click="openModal()" class="button-circle button-circle-big mb4 button-border button-border-big">
+      <h3 class="apercu-bold h2 caps">Watch</h3>
+      <a href ng-click="openModal()" class="button-circle button-circle-big mb2 button-border button-border-big">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
         <g>
@@ -382,16 +386,16 @@
     </div>
   </section>
 
-  <article id="label-head-josh-rosenthal" class="py3 bg-peach">
-    <section class="apercu container center py4">
+  <article id="label-head-josh-rosenthal" class="py3 bg-peach-to-cream">
+    <section class="container center py4">
       <img src="images/numeral-2.svg" alt="2" />
       <div class="clearfix">
         <div class="col col-8 pre-2 post-2">
           <img src="images/labelhead.png" alt="Label head" class="fit" />
         </div>
       </div>
-      <h1 class="h1 caps mb0">Josh Rosenthal:</h1>
-      <h2 class="h2 caps mb2">Why Tompkins Square Records is here to stay.</h2>
+      <!--<h1 class="apercu h1 caps mb0">Josh Rosenthal:</h1>-->
+      <h2 class="apercu h2 caps mb2">Why Tompkins Square Records is here to stay</h2>
       <p>By Adam Lehrer</p>
     </section>
     <div class="container">
@@ -404,7 +408,7 @@
             du-parallax
             rotation="rotation"
             style="-webkit-transition: -webkit-transform .1s linear"
-            src="images/tompkinssquarelabel.svg"
+            src="images/tompkinslabel.png"
             alt="Tompkin's Square label"
             width="500" height="500"
             class="block fit mx-auto mt1 mb3" />
@@ -413,20 +417,20 @@
         <p>Rosenthal’s father’s record collection proved to be the spark for his developing musical passion. While his father listened to a lot of ethnic music at home, it was his dad’s Beatles and Simon and Garfunkel records that resulted in an early, classic rock n’ roll fixation that would continue into his teenage years.“In the early days it was Stones and Zeppelin,” he says, “My first concert was Tom Petty. And of course Lou Reed was from Long Island. In our teens we were heavy into the Velvet Underground. Local guys.”</p>
       </div>
     </div>
-    <div class="p4 mb2 white bg-black">
-      image FPO
+    <div class="mb2 bg-cover bg-center" style="background-image: url(images/velvetunderground.png); height: 512px">
     </div>
     <div class="container">
       <div class="col-8 pre-2 post-2">
         <p>Growing up in Long Island, Rosenthal fell in love with music while working at his high school radio station.“We were lucky enough to have one,” he says, “This was back in the 80s when the radio was still very powerful. Pretty much the only thing in town, there was no Internet. It was a powerful and sexy medium.”</p>
         <p>While there, Rosenthal immersed himself in the large record library at the station, discovering jazz, folk, blues and other forms of music that would later make up the bulk of Rosenthal’s record label. Along with instilling within him a passion for traditional American music, Rosenthal also credits his early days as a high school radio disc jockey with teaching him the basics of the record industry.“That’s where I started learning the business,” he says.</p>
         <p>Rosenthal held internships with PolyGram at the age of 16 and later at CMJ. He remembers making trips to New York City and hanging out with Bill Levenson, a pseudo-famous, rock n’ roll compilation producer described by Rosenthal as “sort of the king of the box set.” From Levenson he would learn to process of assembling a set of songs into a cohesive whole, a skill that would come in hand when developing Tompkins Square Records.</p>
-        <img src="images/columbiarecords.svg" alt="Columbia Records" class="block fit mx-auto mt1 mb3" />
+        <img src="images/columbia.png" alt="Columbia Records" class="block fit mx-auto mt1 mb3" />
         <p>Rosenthal eventually landed a job at Columbia Records working in their PR department and then a similar gig for Sony, but he soon tired of releasing music that he wasn’t passionate about. After his departure from the big leagues Tompkins Square Records would finally materialize. Eight years, six Grammy nominations and almost 100 releases later, Tompkins Square Records has become synonymous with a discernible level of excellence, making fans out of big time names like T. Bone Burnett, music producer and composer of the soundtrack for the aforementioned Inside Llewyn Davis, and Hal Willner, producer and former music director of Saturday Night Live. “When I see a record with the Tompkins Square marker I immediately buyit,” says Wilner in an interview with The Local East Village.</p>
       </div>
     </div>
     <div class="container">
-      <div class="col-10 pre-1 post-1 bg-grey" style="height: 256px">
+      <div class="col col-10 pre-1 post-1">
+        <img src="images/tompkinssquarerecord.png" alt="record" class="fit" />
       </div>
     </div>
     <div class="container">
@@ -439,10 +443,10 @@
     </div>
     <div class="container mt1 mb3">
       <div class="col col-4 pre-2">
-        <img src="images/live-at-caffe-lena.jpg" class="fit" />
+        <img src="images/liveatcaffelena.png" class="fit" />
       </div>
       <div class="col col-4 post-2">
-        <img src="images/ryley-walker.jpg" class="fit" />
+        <img src="images/ryleywalker.png" class="fit" />
       </div>
     </div>
     <div class="container">
@@ -451,36 +455,41 @@
         <p>Records like these tend to appeal to the music lover who peruse used record stores all day, making Tompkins Square Records artists like Daniel Bachman, who just put out his fourth LP, Jesus, I’m a Sinner all the more important for attracting the thrill-seeking younger  demographic.</p>
         <p>“What’s interesting about Daniels music is how he crosses the line between the sub-sect that are interested in that classic Americana, Jack Rose-style music but yet is featured on current sites like Pitchfork, Paste, etc.” says Rosenthal. “Seems insane that he can reach those types of audiences with that style of playing.”</p>
         <p>Rosenthal describes Bachman as “gifted”. It is an ear for artists like Bachman that has helped Rosenthal maintain the aesthetic of  Tompkins Square Records while looking forward to the future. Rosenthal has created a label that musicians believe in and want to be a part of. That, more than anything else defines what Tompkins Square Records has achieved.</p>
-      </div>
-    </div>
-    <div class="container mb3">
-      <div class="col-10 pre-1 post-1">
-        <p class="apercu bold italic p">“It’s just one dude who’s always a phone call away,” says Walker, “I’m looking to be a part of a label that fosters creativity and has its shit together.”</p>
+        <p>“It’s just one dude who’s always a phone call away,” says Walker, “I’m looking to be a part of a label that fosters creativity and has its shit together.”</p>
       </div>
     </div>
     <img src="images/S.svg" class="block mx-auto mt1 mb3" />
   </article>
 
-  <article id="roadshow">
+  <article id="roadshow" class="bg-cream">
     <header class="container py3">
-      <div class="col col-10 pre-1 post-1">
+      <div class="col col-12 center ">
+        <img src="images/numeral-3.svg" class="block mx-auto mb2" alt="1" />
         <!--FEATURE 3-->
-        <h1>Roadshow</h1>
-        <h2>Daniel shares some deep cuts he found on tour.</h2>
+        <h1 class="apercu h1 caps mb0">Roadshow</h1>
+        <h2 class="h2 caps mb2">Daniel shares some deep cuts he found on tour</h2>
       </div>
     </header>
 
     <section class="container py3">
-      <div class="bg-black mb3"> ... </div>
-      <div class="clearfix">
-        <div class="col col-4">
-          <p class="small caps mb0">Artist:</p>
-          <h1>White Cloud</h1>
-          <p class="small caps mb0">Album:</p>
-          <h1>S/T</h1>
+      <div class="clearfix mb2">
+        <div class="col col-12 ">
+          <img src="images/WhiteCloud.jpg" alt="White Cloud" class="fit" />
         </div>
-        <div class="col col-7 pre-1">
-          <p>I was at Chad's records in Chattanooga and found this guy - sticker said "rare country psych - good 1972".  So I was like cool.  Turned out it was Thomas Jefferson Kayes band on Nashville's Good Medicine label (a subsidiary of Starday-King)? .  He produced Link Wray - Gene Clark - and the first tune on this is all cried out - that was on Links Be What You Want To.  The jacket to the LP is textured snakeskin and pasted illustration of band.  Whole record is good except the 2nd song on A side - cheeseball Hound Dog.  Thanks for Nothin', All Cried Out, and Hoe-Bus (pre recording to his first solo rec) are great. "The sun don't shine the same on every doggie's ass . . . ." </p>
+      </div>
+      <div class="clearfix">
+        <div class="col col-3 pre-1">
+          <p class="apercu caps mb0 lh1 mid-grey">Artist:</p>
+          <h1 class="">White Cloud</h1>
+          <p class="apercu caps mb0 lh1 mid-grey">Album:</p>
+          <h1>S/T</h1>
+          <p class="apercu caps mb0 lh1 mid-grey">Listen:</p>
+          <div plangular src="https://soundcloud.com/singlesclubfm/coming-home">
+            <div ng-include src="'partials/player.html'" class="clearfix"></div>
+          </div>
+        </div>
+        <div class="col col-6 pre-1 post-1">
+          <p class="h3">I was at Chad's records in Chattanooga and found this guy - sticker said "rare country psych - good 1972".  So I was like cool.  Turned out it was Thomas Jefferson Kayes band on Nashville's Good Medicine label (a subsidiary of Starday-King)? .  He produced Link Wray - Gene Clark - and the first tune on this is all cried out - that was on Links Be What You Want To.  The jacket to the LP is textured snakeskin and pasted illustration of band.  Whole record is good except the 2nd song on A side - cheeseball Hound Dog.  Thanks for Nothin', All Cried Out, and Hoe-Bus (pre recording to his first solo rec) are great. "The sun don't shine the same on every doggie's ass . . . ." </p>
         </div>
       </div>
     </section>

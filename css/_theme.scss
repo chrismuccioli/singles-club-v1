@@ -3,11 +3,11 @@
 $black: #111111;
 $grey: #303030;
 $green: #79f6b9;
-// #666 for text
-//
+$mid-grey: #666;
 
 // Feature 2
 $peach: #fde8d7;
+$cream: #f7f3ef;
 
 body {
   color: $grey;
@@ -16,13 +16,19 @@ body {
 .white { color: #fff; }
 .black { color: $black; }
 .grey  { color: $grey; }
+.mid-grey { color: $mid-grey; }
 .green { color: $green; }
 
 .peach { color: $peach; }
+.bg-peach-to-cream {
+  background-image: linear-gradient($peach, $cream);
+}
+.bg-cream { background-color: $cream; }
 
 .bg-white { background-color: #fff; }
 .bg-black { background-color: $black; }
 .bg-grey  { background-color: $grey; }
+.bg-mid-grey { background-color: $mid-grey; }
 .bg-green { background-color: $green; }
 
 .bg-peach { background-color: $peach; }
@@ -60,12 +66,12 @@ body {
 
 .button-grey {
   color: #fff;
-  background-color: $grey;
+  background-color: $mid-grey;
 }
 
 .button-border {
   color: #fff;
-  border-width: .25rem;
+  border-width: .125rem;
   border-style: solid;
   // border color should inherit from the foreground color, but it's not...
   border-color: #fff;
@@ -81,6 +87,6 @@ body {
   }
 }
 .button-border-big {
-  border-width: .5rem;
+  border-width: .25rem;
 }
 
