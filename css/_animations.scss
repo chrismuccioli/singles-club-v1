@@ -4,6 +4,10 @@
   from { -webkit-transform: scale(.8); }
     to { -webkit-transform: scale(1); }
 }
+@-moz-keyframes popin {
+  from { -moz-transform: scale(.8); }
+    to { -moz-transform: scale(1); }
+}
 @keyframes popin {
   from { transform: scale(.8); }
     to { transform: scale(1); }
@@ -11,6 +15,7 @@
 
 .popin {
   -webkit-animation: popin .1s linear;
+     -moz-animation: popin .1s linear;
           animation: popin .1s linear;
 }
 
@@ -18,12 +23,17 @@
   from { -webkit-transform: translateY(-100%); }
     to { -webkit-transform: translateY(0); }
 }
+@-moz-keyframes slidedown {
+  from { -moz-transform: translateY(-100%); }
+    to { -moz-transform: translateY(0); }
+}
 @keyframes slidedown {
   from { transform: translateY(-100%); }
     to { transform: translateY(0); }
 }
 .slidedown {
   -webkit-animation: slidedown .1s ease;
+     -moz-animation: slidedown .1s ease;
           animation: slidedown .1s ease;
 }
 

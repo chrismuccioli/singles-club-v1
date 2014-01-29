@@ -879,6 +879,13 @@ body {
   to {
     -webkit-transform: scale(1); } }
 
+@-moz-keyframes popin {
+  from {
+    -moz-transform: scale(0.8); }
+
+  to {
+    -moz-transform: scale(1); } }
+
 @keyframes popin {
   from {
     transform: scale(0.8); }
@@ -888,6 +895,7 @@ body {
 
 .popin {
   -webkit-animation: popin .1s linear;
+  -moz-animation: popin .1s linear;
   animation: popin .1s linear; }
 
 @-webkit-keyframes slidedown {
@@ -896,6 +904,13 @@ body {
 
   to {
     -webkit-transform: translateY(0); } }
+
+@-moz-keyframes slidedown {
+  from {
+    -moz-transform: translateY(-100%); }
+
+  to {
+    -moz-transform: translateY(0); } }
 
 @keyframes slidedown {
   from {
@@ -906,4 +921,5 @@ body {
 
 .slidedown {
   -webkit-animation: slidedown .1s ease;
+  -moz-animation: slidedown .1s ease;
   animation: slidedown .1s ease; }
