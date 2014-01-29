@@ -26,18 +26,18 @@
 
 </head>
 
-<body class="responsive" ng-app="singlesclub" ng-controller="MenuCtrl">
+<body class="" ng-app="singlesclub" ng-controller="MenuCtrl">
 
-  <nav class="absolute t0 r0 l0 px2 mobile-hide">
+  <nav class="absolute t0 r0 l0 px2">
     <div class="container aa white">
       <div class="table">
-        <div class="table-cell col-5">
+        <div class="table-cell col-5 mobile-hide">
           <p class="apercu small bold caps italic center mb0">Part record club. Part music journal.</p>
         </div>
-        <div class="table-cell col-2 py1">
-          <img src="images/logo.svg" alt="Singles Club" />
+        <div class="table-cell center col-2 py1">
+          <img src="images/logo.svg" alt="Singles Club" class="inline-block" />
         </div>
-        <div class="table-cell col-5">
+        <div class="table-cell col-5 mobile-hide">
           <ul class="apercu bold caps small center list-inline mb0 nav-white">
             <li><a href>Subscribe</a></li>
             <li><a href>Journal</a></li>
@@ -55,23 +55,23 @@
         <li>
           <a href="##bringing-it-all-back-home" ng-click="toggleFlyout()" class="block mb2">
             <span class="h2 bold">1. Bringing It All Back Home</span><br>
-            <span class="grey">A Day With Daniel Bachman</span>
+            <span class="mid-grey">A Day With Daniel Bachman</span>
           </a>
         </li>
         <li>
           <a href="##label-head-josh-rosenthal" ng-click="toggleFlyout()" class="block mb2">
-            <span class="p bold">2. Label Head: Josh Rosenthal</span><br>
-            <span class="grey">Why Tompkins Square Records is here to stay</span>
+            <span class="h2 bold">2. Label Head: Josh Rosenthal</span><br>
+            <span class="mid-grey">Why Tompkins Square Records is here to stay</span>
           </a>
         </li>
         <li>
           <a href="##roadshow" ng-click="toggleFlyout()" class="block mb2">
-            <span class="p bold">3. Roadshow</span><br>
-            <span class="grey">Daniel shares some deep cuts he found on tour</span>
+            <span class="h2 bold">3. Roadshow</span><br>
+            <span class="mid-grey">Daniel shares some deep cuts he found on tour</span>
           </a>
         </li>
         <li>
-          <a href="#discography" ng-click="toggleFlyout()" class="p bold block mb2">Discography</a>
+          <a href="#discography" ng-click="toggleFlyout()" class="h2 bold block mb2">Discography</a>
         </li>
       </ul>
       <ul class="list-simple nav-white mobile-show">
@@ -225,13 +225,13 @@
 
   </div><!-- end plangular -->
 
-  <article id="bringing-it-all-back-home">
+  <article id="bringing-it-all-back-home" class="responsive">
     <div class="white aa bg-grey py4 mb3 bg-cover bg-center" style="background-image: url(images/daniel-intro.jpg)">
       <div class="container clearfix">
         <div class="col col-8 pre-2 post-2">
           <img src="images/numeral-1.svg" class="block mx-auto" alt="1" />
           <img src="images/bringingitallbackhome.png" alt="Bringing it all back home" class="fit" />
-          <h2 class="h2 responsive center apercu caps mb0">A Day with Daniel Bachman</h2>
+          <h2 class="h2 center apercu caps mb0">A Day with Daniel Bachman</h2>
           <p class="center mb0">By Sunny Eckerle</p>
         </div>
       </div>
@@ -311,7 +311,7 @@
     </div>
   </section>
 
-  <article>
+  <article class="responsive">
     <div class="container">
       <div class="col-8 pre-2 post-2">
         <p>Our last destination is Fredericksburg. The house, Daniel's childhood home, is dim and cool, it's stillness disturbed only by the soft ticking of a clock and the few bits of dust that lazily drift in the sunlight that filters through the kitchen windows. The walls are covered in treasures we don't have time to explore. There are history books, artwork, and relics of Virginia's past, each with a story Daniel could tell, no doubt.</p>
@@ -389,7 +389,7 @@
     </div>
   </section>
 
-  <article id="label-head-josh-rosenthal" class="py3 bg-peach-to-cream">
+  <article id="label-head-josh-rosenthal" class="responsive py3 bg-peach-to-cream">
     <section class="container center py4">
       <img src="images/numeral-2.svg" alt="2" />
       <div class="clearfix">
