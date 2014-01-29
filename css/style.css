@@ -481,6 +481,9 @@ html, body {
   display: table-cell;
   vertical-align: middle; }
 
+.table-row {
+  display: table-row; }
+
 .container {
   padding-right: 2rem;
   padding-left: 2rem; }
