@@ -64,6 +64,17 @@ body {
   }
 }
 
+.button-icon-grey {
+  svg path {
+    fill: $mid-grey;
+  }
+  &:hover {
+    svg path {
+      fill: $green;
+    }
+  }
+}
+
 .button-grey {
   color: #fff;
   background-color: $mid-grey;

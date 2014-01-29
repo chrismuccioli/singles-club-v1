@@ -844,6 +844,11 @@ body {
 .button-icon:hover svg path {
   fill: #79f6b9; }
 
+.button-icon-grey svg path {
+  fill: #666666; }
+.button-icon-grey:hover svg path {
+  fill: #79f6b9; }
+
 .button-grey {
   color: #fff;
   background-color: #666666; }

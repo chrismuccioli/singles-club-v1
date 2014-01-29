@@ -1,45 +1,46 @@
 <div class="clearfix">
-<div class="left">
-  <a href
-    ng-click="player.play(track)"
-    ng-hide="player.playing == track"
-    class="button-icon button-icon-small popin">
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-      <g>
-        <path d="M10,31c-0.14,0-0.281-0.029-0.413-0.09C9.229,30.748,9,30.393,9,30V2c0-0.393,0.229-0.749,0.587-0.911
-        C9.719,1.029,9.86,1,10,1c0.238,0,0.473,0.085,0.659,0.248l16,14C26.876,15.438,27,15.711,27,16s-0.124,0.562-0.342,0.752l-16,14
-        C10.473,30.915,10.238,31,10,31z"/>
-        <path d="M10,2l16,14L10,30V2 M10,0C9.72,0,9.438,0.059,9.174,0.179C8.459,0.503,8,1.215,8,2v28c0,0.785,0.459,1.497,1.174,1.821
-        C9.438,31.941,9.72,32,10,32c0.476,0,0.946-0.17,1.317-0.495l16-14C27.751,17.125,28,16.577,28,16c0-0.577-0.249-1.125-0.683-1.505
-        l-16-14C10.945,0.17,10.475,0,10,0L10,0z"/>
-      </g>
-    </svg>
-  </a>
-  <a href
-    ng-click="player.pause()"
-    ng-show="player.playing == track"
-    class="button-icon button-icon-small popin">
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-      <g>
-        <path d="M6,29c-0.552,0-1-0.447-1-1V4c0-0.552,0.448-1,1-1h6c0.552,0,1,0.448,1,1v24c0,0.553-0.448,1-1,1H6z"/>
-        <path d="M12,4v24H6V4H12 M12,2H6C4.895,2,4,2.895,4,4v24c0,1.105,0.895,2,2,2h6c1.105,0,2-0.895,2-2V4C14,2.895,13.105,2,12,2L12,2
-        z"/>
-      </g>
-      <g>
-        <path d="M20,29c-0.553,0-1-0.447-1-1V4c0-0.552,0.447-1,1-1h6c0.553,0,1,0.448,1,1v24c0,0.553-0.447,1-1,1H20z"/>
-        <path d="M26,4v24h-6V4H26 M26,2h-6c-1.105,0-2,0.895-2,2v24c0,1.105,0.895,2,2,2h6c1.105,0,2-0.895,2-2V4C28,2.895,27.105,2,26,2
-        L26,2z"/>
-      </g>
-    </svg>
-  </a>
-</div>
-<div class="progress clearfix" style="">
-  <div class="progress-background bg-grey"></div>
-  <div class="progress-buffer"></div>
-  <div class="progress-played bg-green" style="width: {{ currentTime / duration * 100 }}%"></div>
-  <div class="progress-overlay" ng-click="seekTo($event)"></div>
+  <div class="left">
+    <a href
+      ng-click="player.play(track)"
+      ng-hide="player.playing == track"
+      class="button-icon button-icon-small button-icon-grey popin">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+        <g>
+          <path d="M10,31c-0.14,0-0.281-0.029-0.413-0.09C9.229,30.748,9,30.393,9,30V2c0-0.393,0.229-0.749,0.587-0.911
+          C9.719,1.029,9.86,1,10,1c0.238,0,0.473,0.085,0.659,0.248l16,14C26.876,15.438,27,15.711,27,16s-0.124,0.562-0.342,0.752l-16,14
+          C10.473,30.915,10.238,31,10,31z"/>
+          <path d="M10,2l16,14L10,30V2 M10,0C9.72,0,9.438,0.059,9.174,0.179C8.459,0.503,8,1.215,8,2v28c0,0.785,0.459,1.497,1.174,1.821
+          C9.438,31.941,9.72,32,10,32c0.476,0,0.946-0.17,1.317-0.495l16-14C27.751,17.125,28,16.577,28,16c0-0.577-0.249-1.125-0.683-1.505
+          l-16-14C10.945,0.17,10.475,0,10,0L10,0z"/>
+        </g>
+      </svg>
+    </a>
+    <a href
+      ng-click="player.pause()"
+      ng-show="player.playing == track"
+      class="button-icon button-icon-small button-icon-grey popin">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+        <g>
+          <path d="M6,29c-0.552,0-1-0.447-1-1V4c0-0.552,0.448-1,1-1h6c0.552,0,1,0.448,1,1v24c0,0.553-0.448,1-1,1H6z"/>
+          <path d="M12,4v24H6V4H12 M12,2H6C4.895,2,4,2.895,4,4v24c0,1.105,0.895,2,2,2h6c1.105,0,2-0.895,2-2V4C14,2.895,13.105,2,12,2L12,2
+          z"/>
+        </g>
+        <g>
+          <path d="M20,29c-0.553,0-1-0.447-1-1V4c0-0.552,0.447-1,1-1h6c0.553,0,1,0.448,1,1v24c0,0.553-0.447,1-1,1H20z"/>
+          <path d="M26,4v24h-6V4H26 M26,2h-6c-1.105,0-2,0.895-2,2v24c0,1.105,0.895,2,2,2h6c1.105,0,2-0.895,2-2V4C28,2.895,27.105,2,26,2
+          L26,2z"/>
+        </g>
+      </svg>
+    </a>
+  </div>
+  <div class="progress clearfix" style="">
+    <div class="progress-background bg-mid-grey"></div>
+    <div class="progress-buffer"></div>
+    <div class="progress-played bg-green" style="width: {{ currentTime / duration * 100 }}%"></div>
+    <div class="progress-overlay" ng-click="seekTo($event)"></div>
+  </div>
 </div>
 <div class="clearfix">
   {{ track.title }}
