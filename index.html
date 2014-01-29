@@ -259,7 +259,7 @@
         <p>Our remaining time is spent outside, learning about the studio, Rappahannock County, and Daniel's home state of Virginia. We head to the stream not 50 feet from the studio, and stand barefoot in it as Daniel tells us all about where we are, often pointing one way or another to a landmark that correlates to one of his songs. He knows this place well, his casual explanations clearly well worn from time and use. He enjoys sharing his love for his home, which he does most successfully through his music. Sun Over Old Rag, Seven Pines, 218 to Caledon - all song titles of his as well as references to the Old Dominion.</p>
       </div>
     </div>
-    <aside
+    <section
       ng-controller="ParallaxCtrl"
       style="background-image: url(images/daniel-water.jpg); min-height: 128px;"
       class="bg-cover px2 py2 mt1 mb3 white">
@@ -269,7 +269,7 @@
         src="images/sunoveroldrag_sevenpines.png"
         alt="lyrics"
         class="x50 fit" />
-    </aside>
+    </section>
     <div class="container">
       <div class="col col-8 pre-2 post-2">
         <p>Forrest gives us a tour of the area including a botany lesson, complete with tastings. We all pluck a bud of honeysuckle and carefully pull out the stemen for a small taste of sweetness. We're invited into Forrest's home, just up the hill, to see his father's guitar workshop and even try our hand at a few of the fully handmade instruments.</p>
@@ -466,10 +466,9 @@
 
   <article id="roadshow" class="bg-cream">
     <header class="container py3">
-      <div class="col col-12 center ">
+      <div class="col col-10 pre-1 post-1 center">
         <img src="images/numeral-3.svg" class="block mx-auto mb2" alt="1" />
-        <!--FEATURE 3-->
-        <h1 class="apercu h1 caps mb0">Roadshow</h1>
+        <img src="images/roadshowlettering.png" alt="Roadshow" class="fit" />
         <h2 class="h2 caps mb2">Daniel shares some deep cuts he found on tour</h2>
       </div>
     </header>
@@ -483,7 +482,7 @@
       <div class="clearfix">
         <div class="col col-3 pre-1">
           <p class="apercu caps mb0 lh1 mid-grey">Artist:</p>
-          <h1 class="">White Cloud</h1>
+          <h1>White Cloud</h1>
           <p class="apercu caps mb0 lh1 mid-grey">Album:</p>
           <h1>S/T</h1>
           <p class="apercu caps mb0 lh1 mid-grey">Listen:</p>
@@ -498,77 +497,107 @@
     </section>
 
     <section class="container py3">
-      <div class="bg-black mb3"> ... </div>
+      <div class="clearfix mb2">
+        <img src="images/JimKennedy.jpg" alt="Jim Kennedy" class="fit" />
+      </div>
       <div class="clearfix">
-        <div class="col col-4">
-          <p class="small caps mb0">Artist:</p>
+        <div class="col col-3 pre-1">
+          <p class="apercu caps lh1 mb0 mid-grey">Artist:</p>
           <h1>Jim Kennedy</h1>
-          <p class="small caps mb0">Album:</p>
+          <p class="apercu caps lh1 mb0 mid-grey">Album:</p>
           <h1>Just Being Natural</h1>
+          <p class="apercu caps lh1 mb0 mid-grey">Listen:</p>
+          <div plangular src="https://soundcloud.com/singlesclubfm/coming-home">
+            <div ng-include src="'partials/player.html'" class="clearfix"></div>
+          </div>
         </div>
-        <div class="col col-7 pre-1">
-          <p>I got this record as payment for a gig in Memphis in April. Good 4 am downer vibe from Cedar Falls Iowa - Early 70's? On his own Label Old English Records. 6 &amp; 12 String - C.F. Martin. Couple cheesy cuts but its not a stinker. You Are The Reason is the best track. Dedicated to his closest friend "Ruby"</p>
+        <div class="col col-6 pre-1 post-1">
+          <p class="h3">I got this record as payment for a gig in Memphis in April. Good 4 am downer vibe from Cedar Falls Iowa - Early 70's? On his own Label Old English Records. 6 &amp; 12 String - C.F. Martin. Couple cheesy cuts but its not a stinker. You Are The Reason is the best track. Dedicated to his closest friend "Ruby"</p>
         </div>
       </div>
     </section>
 
     <section class="container py3">
-      <div class="bg-black mb3">...</div>
+      <div class="clearfix mb2">
+        <img src="images/ErnestMartin.jpg" alt="Ernest Martin" class="fit" />
+      </div>
       <div class="clearfix">
-        <div class="col col-4">
-          <p class="small caps mb0">Artist:</p>
+        <div class="col col-3 pre-1">
+          <p class="apercu caps lh1 mb0 mid-grey">Artist:</p>
           <h1>Ernest Martin</h1>
-          <p class="small caps mb0">Album:</p>
+          <p class="apercu caps lh1 mb0 mid-grey">Album:</p>
           <h1>The Last Inauguration</h1>
+          <p class="apercu caps lh1 mb0 mid-grey">Listen:</p>
+          <div plangular src="https://soundcloud.com/singlesclubfm/coming-home">
+            <div ng-include src="'partials/player.html'" class="clearfix"></div>
+          </div>
         </div>
-        <div class="col col-7 pre-1">
-          <p>I got the chance to go to the County/Rebel Records offices right outside of Charlottesville VA in April. Fun day looking through everything and talking.  Around the time when we we're leaving we started looking through a box of LPs that were going up for sale and I asked about this one and bought it up from him.  Ernest was from Powell Co. Ky and recorded 6 songs for Rich R Tone Records in the late 40's then turned his attention towards evangelism - 65 years in service and had a radio ministry for 55 years called Highway to Heaven.  He passed at home in June of 2002 at the age of 88. Killer hot shit bluegrass gospel record.  Just A Rose Will Do is on repeat.</p>
+        <div class="col col-6 pre-1 post-1">
+          <p class="h3">I got the chance to go to the County/Rebel Records offices right outside of Charlottesville VA in April. Fun day looking through everything and talking.  Around the time when we we're leaving we started looking through a box of LPs that were going up for sale and I asked about this one and bought it up from him.  Ernest was from Powell Co. Ky and recorded 6 songs for Rich R Tone Records in the late 40's then turned his attention towards evangelism - 65 years in service and had a radio ministry for 55 years called Highway to Heaven.  He passed at home in June of 2002 at the age of 88. Killer hot shit bluegrass gospel record.  Just A Rose Will Do is on repeat.</p>
         </div>
       </div>
     </section>
 
     <section class="container py3">
-      <div class="bg-black p4 mb3">...</div>
+      <div class="clearfix mb2">
+        <img src="images/PeterGreen.jpg" alt="Peter Green" class="fit" />
+      </div>
       <div class="clearfix">
-        <div class="col col-4">
-          <p class="small caps mb0">Artist:</p>
+        <div class="col col-3 pre-1">
+          <p class="apercu caps lh1 mb0 mid-grey">Artist:</p>
           <h1>Peter Green</h1>
-          <p class="small caps mb0">Album:</p>
+          <p class="apercu caps lh1 mb0 mid-grey">Album:</p>
           <h1>End Of The Game</h1>
+          <p class="apercu caps lh1 mb0 mid-grey">Listen:</p>
+          <div plangular src="https://soundcloud.com/singlesclubfm/coming-home">
+            <div ng-include src="'partials/player.html'" class="clearfix"></div>
+          </div>
         </div>
-        <div class="col col-7 pre-1">
-          <p>I picked this up at Red Onion Records in DC back in april.  Had been looking for it for a while and saw it.  After Green left Fleetwood Mac he was approached to do a record.  The band that he put together played a bizarre 17 hour recording session on LSD and probably a ton of other drugs.  It rips so hard.  Comes on real nice with some heavy wah - gets real dark.  Not sure if it brings you back around or not.</p>
+        <div class="col col-6 pre-1 post-1">
+          <p class="h3">I picked this up at Red Onion Records in DC back in april.  Had been looking for it for a while and saw it.  After Green left Fleetwood Mac he was approached to do a record.  The band that he put together played a bizarre 17 hour recording session on LSD and probably a ton of other drugs.  It rips so hard.  Comes on real nice with some heavy wah - gets real dark.  Not sure if it brings you back around or not.</p>
         </div>
       </div>
     </section>
 
     <section class="container py3">
-      <div class="bg-black p4 mb3">...</div>
+      <div class="clearfix mb2">
+        <img src="images/EarlyUpchurch.jpg" alt="Early Upchurch" class="fit" />
+      </div>
       <div class="clearfix">
-        <div class="col col-4">
-          <p class="small caps mb0">Artist:</p>
+        <div class="col col-3 pre-1">
+          <p class="apercu caps lh1 mb0 mid-grey">Artist:</p>
           <h1>Early Upchurch</h1>
-          <p class="small caps mb0">Album:</p>
+          <p class="apercu caps lh1 mb0 mid-grey">Album:</p>
           <h1>Everybody Will Be Happy Over There</h1>
+          <p class="apercu caps lh1 mb0 mid-grey">Listen:</p>
+          <div plangular src="https://soundcloud.com/singlesclubfm/coming-home">
+            <div ng-include src="'partials/player.html'" class="clearfix"></div>
+          </div>
         </div>
-        <div class="col col-7 pre-1">
-          <p>I played a wedding in Cleveland and my buddy who got married gave me a copy of this.  I love the Upchurch stuff.   First time I heard this stuff was in Cleveland (again) during a pretty heavy snowstorm in January at my friend Matt's house.  He gave us pretty strong drinks and we sat around and zoned out.  Was pumped to find this in the country rows at Academy in NY.   If I ever get a dog Im going to name it Randy - and when that dog dies Ill get another and name it Early.</p>
-          <p>Cabin on the cover is of Early's birthplace in Lambsburg VA - back the back cover there is a nice personalized letter from WPAQ owner Ralph Epperson and notes on the side by his daughter talking about growing up singing with her dad.</p>
+        <div class="col col-6 pre-1 post-1">
+          <p class="h3">I played a wedding in Cleveland and my buddy who got married gave me a copy of this.  I love the Upchurch stuff.   First time I heard this stuff was in Cleveland (again) during a pretty heavy snowstorm in January at my friend Matt's house.  He gave us pretty strong drinks and we sat around and zoned out.  Was pumped to find this in the country rows at Academy in NY.   If I ever get a dog Im going to name it Randy - and when that dog dies Ill get another and name it Early.</p>
+          <p class="h3">Cabin on the cover is of Early's birthplace in Lambsburg VA - back the back cover there is a nice personalized letter from WPAQ owner Ralph Epperson and notes on the side by his daughter talking about growing up singing with her dad.</p>
         </div>
       </div>
     </section>
 
     <section class="container py3">
-      <div class="bg-black p4 mb3">...</div>
+      <div class="clearfix mb2">
+        <img src="images/JerryGarcia.jpg" alt="Jerry Garcia" class="fit" />
+      </div>
       <div class="clearfix">
-        <div class="col col-4">
-          <p class="small caps mb0">Artist:</p>
+        <div class="col col-3 pre-1">
+          <p class="apercu caps lh1 mb0 mid-grey">Artist:</p>
           <h1>Jerry Garcia</h1>
-          <p class="small caps mb0">Album:</p>
+          <p class="apercu caps lh1 mb0 mid-grey">Album:</p>
           <h1>S/T</h1>
+          <p class="apercu caps lh1 mb0 mid-grey">Listen:</p>
+          <div plangular src="https://soundcloud.com/singlesclubfm/coming-home">
+            <div ng-include src="'partials/player.html'" class="clearfix"></div>
+          </div>
         </div>
-        <div class="col col-7 pre-1">
-          <p>Jerry and his first solo record.  Its my parents record.  I threw it on the list because it rules.  A side - dead standards.  B side - half brainwash weirdo space back into standards.  He played every instrument on the thing except for drums.  How did he have the time mannnn.</p>
+        <div class="col col-6 pre-1 post-1">
+          <p class="h3">Jerry and his first solo record.  Its my parents record.  I threw it on the list because it rules.  A side - dead standards.  B side - half brainwash weirdo space back into standards.  He played every instrument on the thing except for drums.  How did he have the time mannnn.</p>
         </div>
       </div>
     </section>
