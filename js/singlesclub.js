@@ -4,7 +4,7 @@
 
 var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel', 'duParallax']);
 
-singlesclub.controller('MenuCtrl', ['$scope', function($scope) {
+singlesclub.controller('MenuCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
   $scope.herro = 'derp';
 
   $scope.flyoutIsOpen = false;
@@ -12,6 +12,10 @@ singlesclub.controller('MenuCtrl', ['$scope', function($scope) {
   $scope.toggleFlyout = function() {
     $scope.flyoutIsOpen = !$scope.flyoutIsOpen;
   };
+
+  $rootScope.$on('$duScrollChanged', function($event, scrollY) {
+    console.log('Scrolled to ', scrollY);
+  });
 
 }]);
 
@@ -162,4 +166,59 @@ singlesclub.filter('playTime', function() {
       };
     };
   });
+
+/*
+singlesclub.directive('jxnLazyLoad', function(scrollPosition){
+
+    return{
+      scope: true,
+      // scope : {
+      //   y : '=',
+      //   x : '=',
+      //   rotation : '=',
+      //   opacity : '=', 
+      //   custom : '='
+      // },
+      link: function($scope, $element, $attr){
+        var element = $element[0];
+        var currentProperties;
+        scrollPosition.observe(function(scrollY){
+          var rect = element.getBoundingClientRect();
+          var param = {
+            scrollY : scrollY,
+            elemX: rect.left,
+            elemY: rect.top
+          };
+
+          //var properties = { x : 0, y : 0, rotation : 0, opacity: 1, custom: undefined};
+
+          // for(var key in properties){
+          //   if(angular.isFunction($scope[key])){
+          //     properties[key] = $scope[key](param);
+          //   } else if($scope[key]){
+          //     properties[key] = $scope[key];
+          //   }
+          // }
+
+          //Detect changes, if no changes avoid reflow
+          var hasChange = angular.isUndefined(currentProperties);
+          if(!hasChange) {
+            // for(key in properties){
+            //   if(properties[key] !== currentProperties[key]) {
+            //     hasChange = true;
+            //     break;
+            //   }
+            // }
+          }
+
+          if(hasChange) {
+            console.log('hasChange');
+            //applyProperties(properties, element);
+            //currentProperties = properties;
+          }
+        });
+      }
+    };
+});
+*/
 
