@@ -212,6 +212,12 @@ dl, ol, ul, p, .p {
 .ml4 {
   margin-left: 4rem; }
 
+.mb6 {
+  margin-bottom: 6rem; }
+
+.mb8 {
+  margin-bottom: 8rem; }
+
 .mx-auto {
   margin-right: auto;
   margin-left: auto; }
@@ -871,6 +877,12 @@ body {
 
 .button-border-big {
   border-width: .25rem; }
+
+.noselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @-webkit-keyframes popin {
   from {
