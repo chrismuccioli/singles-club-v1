@@ -813,7 +813,11 @@
   <script src="js/jquery.unveil.min.js"></script>
   <script>
     $(document).ready(function() {
-      $("img").unveil(256);
+      $("img").unveil(256, function() {
+          // $(this).load(function() {
+          //   $(this).width('auto').height('auto');
+          // });
+      });
     });
   </script>
 
