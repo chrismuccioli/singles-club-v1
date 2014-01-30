@@ -70,9 +70,6 @@
             <span class="mid-grey">Daniel shares some deep cuts he found on tour</span>
           </a>
         </li>
-        <li>
-          <a href="#discography" ng-click="toggleFlyout()" class="h2 bold block mb2" du-smooth-scroll>Discography</a>
-        </li>
       </ul>
       <ul class="list-simple nav-white mobile-show">
         <li><a href="/">Home</a></li>
@@ -565,7 +562,8 @@
         <p>Rosenthal’s father’s record collection proved to be the spark for his developing musical passion. While his father listened to a lot of ethnic music at home, it was his dad’s Beatles and Simon and Garfunkel records that resulted in an early, classic rock n’ roll fixation that would continue into his teenage years.“In the early days it was Stones and Zeppelin,” he says, “My first concert was Tom Petty. And of course Lou Reed was from Long Island. In our teens we were heavy into the Velvet Underground. Local guys.”</p>
       </div>
     </section>
-    <section class="mb6 bg-cover bg-center" style="background-image: url(images/velvetunderground.png); height: 512px">
+    <section ng-controller="ParallaxCtrl" class="mb6 clearfix">
+      <img du-parallax y="background2" src="images/velvetunderground.png" alt="Velvet Underground" class="fit" />
     </section>
     <section class="container mb4">
       <div class="col-8 pre-2 post-2">
