@@ -16,3 +16,14 @@
   display: table-row;
 }
 
+@media (min-width: 768px) {
+  .l-table {
+    display: table;
+    width: 100%;
+  }
+  .l-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
