@@ -112,21 +112,21 @@
     <header class="table-row y100 px2 aa white">
       <div class="table-cell x100 py8">
         <div class="container">
-          <img src="images/hero_danieltext.png" alt="Daniel Bachman" class="fit m-x33 l-x33 mt4 mb4" />
-          <h2 class="apercu-bold h2 caps mb0">Side A: Coming Home*</h2>
+          <img src="images/hero_danieltext.png" alt="Daniel Bachman" class="fit m-x50 l-x50 mt4 mb4" />
+          <h2 class="apercu-bold h2 caps">Side A: Coming Home*</h2>
           <a href="#bringing-it-all-back-home"
             ng-click="player.play(track)"
             ng-hide="player.playing == track"
-            class="button">
+            class="button button-gold mb2">
               Listen &amp; Begin
           </a>
           <a href="#!"
             ng-click="player.pause()"
             ng-show="player.playing == track"
-            class="button">
+            class="button button-grey mb2">
               Pause
           </a>
-          <p class="small green mb1">*Audio is recommended for this feature.<br> Just hit play and start reading.</p>
+          <p class="small gold mb1">*Audio is recommended for this feature.<br> Just hit play and start reading.</p>
           <img src="images/stereo.svg" alt="Stereo" />
         </div>
       </div>
@@ -198,7 +198,7 @@
           <div class="progress clearfix" style="">
             <div class="progress-background bg-grey"></div>
             <div class="progress-buffer"></div>
-            <div class="progress-played bg-green" style="width: {{ currentTime / duration * 100 }}%"></div>
+            <div class="progress-played bg-gold" style="width: {{ currentTime / duration * 100 }}%"></div>
             <div class="progress-overlay" ng-click="seekTo($event)"></div>
           </div>
         </div>
@@ -551,6 +551,28 @@
         <p>“It was never new and it’ll never get old and it’s a folk song,” says Oscar Issac as a deeply committed and crotchety folk singer in the Coen Brothers’ decidedly excellent film Inside Llewyn Davis. Though that quote will become clichéd in no time at all, it seems an apt description of the San Francisco-based record label Tompkins Square Records. “We’re different from a lot of labels because I enjoy doing archival work,” says TSR founder and owner Josh Rosenthal, “but I also enjoy working with new artists. There are labels that do one of those things well, not that many do both.”</p>
         <p>Rosenthal, who is in his mid-40s has a lean frame and full-head of hair suggesting he’s much younger than one might assume. He founded the label in 2005 in New York City and named it after his beloved park that became the label’s namesake. Tompkins Square Records has become a refuge for serious music geeks that love timeless music. Releasing records from up-and-comers Daniel Bachman and Hiss Golden Messeneger coupled with re-issues of incredible forgotten oddities like finger picker Don Bikoff’s Celestial Explosion and 1930s rural string- band Charlie Poole and the Highlanders’ Complete Paramount and Brunswick Recordings, Rosenthal has created a perrenial label aesthetic.</p>
         <p>“The label puts out good music and entails no political bullshit,” says 24-year old Chicago-based psych-folk guitarist Ryley Walker, who’s releasing his debut full-length album, A Home for Me on TSR in April, “I’m honored to be on the same roster as so many forward thinking musicians from the past and present.”</p>
+        <p>Folk and jazz. Rural and urban. New and old. American. TSR has released albums that fit within at least one of all of these descriptors, but Rosenthal still works the label’s discography into a cohesive whole, a rare case in which the label is as much a part of the records’ appeal as the music itself. At the heart of it is an impassioned, committed and restless label head.</p>
+      </div>
+    </section>
+    <section ng-controller="ParallaxCtrl" class="mb6 clearfix">
+      <img du-parallax y="background2" data-src="images/labelhead_daniel.jpg" src="images/blank-2500x1667.gif" alt="Velvet Underground" class="fit" />
+    </section>
+    <section class="container mb4">
+      <div class="col-8 pre-2 post-2">
+        <p>Rosenthal’s father’s record collection proved to be the spark for his developing musical passion. While his father listened to a lot of ethnic music at home, it was his dad’s Beatles and Simon and Garfunkel records that resulted in an early, classic rock n’ roll fixation that would continue into his teenage years.“In the early days it was Stones and Zeppelin,” he says, “My first concert was Tom Petty. And of course Lou Reed was from Long Island. In our teens we were heavy into the Velvet Underground. Local guys.”</p>
+        <p>Growing up in Long Island, Rosenthal fell in love with music while working at his high school radio station.“We were lucky enough to have one,” he says, “This was back in the 80s when the radio was still very powerful. Pretty much the only thing in town, there was no Internet. It was a powerful and sexy medium.”</p>
+        <p>While there, Rosenthal immersed himself in the large record library at the station, discovering jazz, folk, blues and other forms of music that would later make up the bulk of Rosenthal’s record label. Along with instilling within him a passion for traditional American music, Rosenthal also credits his early days as a high school radio disc jockey with teaching him the basics of the record industry.“That’s where I started learning the business,” he says.</p>
+        <p>Rosenthal held internships with PolyGram at the age of 16 and later at CMJ. He remembers making trips to New York City and hanging out with Bill Levenson, a pseudo-famous, rock n’ roll compilation producer described by Rosenthal as “sort of the king of the box set.” From Levenson he would learn to process of assembling a set of songs into a cohesive whole, a skill that would come in hand when developing Tompkins Square Records.</p>
+      </div>
+    </section>
+    <section class="container mb4">
+      <div class="col-4 pre-4 post-4">
+        <img data-src="images/labelhead_columbia.png" src="images/blank-500x500.gif" alt="Columbia Records" class="block fit mx-auto mt1 mb3" />
+      </div>
+    </section>
+    <section class="container mb6">
+      <div class="col-8 pre-2 post-2">
+        <p>Rosenthal eventually landed a job at Columbia Records working in their PR department and then a similar gig for Sony, but he soon tired of releasing music that he wasn’t passionate about. After his departure from the big leagues Tompkins Square Records would finally materialize. Eight years, six Grammy nominations and almost 100 releases later, Tompkins Square Records has become synonymous with a discernible level of excellence, making fans out of big time names like T. Bone Burnett, music producer and composer of the soundtrack for the aforementioned Inside Llewyn Davis, and Hal Willner, producer and former music director of Saturday Night Live. “When I see a record with the Tompkins Square marker I immediately buyit,” says Wilner in an interview with The Local East Village.</p>
         <div ng-controller="ParallaxCtrl">
           <img
             du-parallax
@@ -561,28 +583,6 @@
             alt="Tompkin's Square label"
             class="block fit mx-auto mt1 mb3" />
         </div>
-        <p>Folk and jazz. Rural and urban. New and old. American. TSR has released albums that fit within at least one of all of these descriptors, but Rosenthal still works the label’s discography into a cohesive whole, a rare case in which the label is as much a part of the records’ appeal as the music itself. At the heart of it is an impassioned, committed and restless label head.</p>
-        <p>Rosenthal’s father’s record collection proved to be the spark for his developing musical passion. While his father listened to a lot of ethnic music at home, it was his dad’s Beatles and Simon and Garfunkel records that resulted in an early, classic rock n’ roll fixation that would continue into his teenage years.“In the early days it was Stones and Zeppelin,” he says, “My first concert was Tom Petty. And of course Lou Reed was from Long Island. In our teens we were heavy into the Velvet Underground. Local guys.”</p>
-      </div>
-    </section>
-    <section ng-controller="ParallaxCtrl" class="mb6 clearfix">
-      <img du-parallax y="background2" data-src="images/labelhead_daniel.jpg" src="images/blank-2500x1667.gif" alt="Velvet Underground" class="fit" />
-    </section>
-    <section class="container mb4">
-      <div class="col-8 pre-2 post-2">
-        <p>Growing up in Long Island, Rosenthal fell in love with music while working at his high school radio station.“We were lucky enough to have one,” he says, “This was back in the 80s when the radio was still very powerful. Pretty much the only thing in town, there was no Internet. It was a powerful and sexy medium.”</p>
-        <p>While there, Rosenthal immersed himself in the large record library at the station, discovering jazz, folk, blues and other forms of music that would later make up the bulk of Rosenthal’s record label. Along with instilling within him a passion for traditional American music, Rosenthal also credits his early days as a high school radio disc jockey with teaching him the basics of the record industry.“That’s where I started learning the business,” he says.</p>
-        <p>Rosenthal held internships with PolyGram at the age of 16 and later at CMJ. He remembers making trips to New York City and hanging out with Bill Levenson, a pseudo-famous, rock n’ roll compilation producer described by Rosenthal as “sort of the king of the box set.” From Levenson he would learn to process of assembling a set of songs into a cohesive whole, a skill that would come in hand when developing Tompkins Square Records.</p>
-      </div>
-    </section>
-    <section class="container mb4">
-      <div class="col-4 pre-4 post-4">
-        <img data-src="images/columbia.png" src="images/blank-500x500.gif" alt="Columbia Records" class="block fit mx-auto mt1 mb3" />
-      </div>
-    </section>
-    <section class="container mb6">
-      <div class="col-8 pre-2 post-2">
-        <p>Rosenthal eventually landed a job at Columbia Records working in their PR department and then a similar gig for Sony, but he soon tired of releasing music that he wasn’t passionate about. After his departure from the big leagues Tompkins Square Records would finally materialize. Eight years, six Grammy nominations and almost 100 releases later, Tompkins Square Records has become synonymous with a discernible level of excellence, making fans out of big time names like T. Bone Burnett, music producer and composer of the soundtrack for the aforementioned Inside Llewyn Davis, and Hal Willner, producer and former music director of Saturday Night Live. “When I see a record with the Tompkins Square marker I immediately buyit,” says Wilner in an interview with The Local East Village.</p>
         <p>The record industry is as competitive as ever, and indies like Tompkins Square Records have to be careful about handling business to remain profitable or at the very least break even. Rosenthal is cognizant of these challenges. “It is really difficult to maintain profitability unless you have a real head of steam on something,” he says, “If you have a project that is really moving, a box set that’s selling and has some nice momentum on it,  then you can make some money. If you’re selling an LP you’re only going to make a couple bucks per unit on it and you have to wait until you make money back on it.”</p>
         <p>Despite the gloomy reality of the modern record industry, Rosenthal isn’t an overly tense type of record honcho, exuding warmth, relaxation and laid-back experienced cool within his speech. He chalks up the label’s growth and the discovery of new performers and old records to re-release as an organic process of word-of-mouth and solid advice.</p>
         <p>“It’s kind of interesting how things happen,” he says, “Sharon Van Etten emailed me a few years ago and I didn’t know who she was. She said you should really check out William Tyler from Nashville and I did, but I didn’t know who she was. I didn’t even know she was an artist. But I did follow up on her tip and signed William Tyler. And then William told me about Hiss Golden Messenger and I signed him, and then Michael Taylor from that band told me he was friendly with Alice Gerard. That was like four releases that happened because Sharon Van Etten emailed me.”</p>
@@ -760,7 +760,7 @@
           Jeffrey Silverstein
         </li>
         <li>
-          <p class="apercu h3 caps lh1 mb0">Developer</p>
+          <p class="apercu h3 caps lh1 mb0">Code</p>
           Brent Jackson
         </li>
       </ul>

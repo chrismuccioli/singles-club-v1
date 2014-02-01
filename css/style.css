@@ -736,6 +736,9 @@ body {
 .green {
   color: #79f6b9; }
 
+.gold {
+  color: #dea439; }
+
 .peach {
   color: #fde8d7; }
 
@@ -759,6 +762,9 @@ body {
 
 .bg-green {
   background-color: #79f6b9; }
+
+.bg-gold {
+  background-color: #dea439; }
 
 .bg-peach {
   background-color: #fde8d7; }
@@ -787,21 +793,29 @@ body {
   text-decoration: none; }
   .nav-white a:hover,
   .link-white:hover {
-    color: #79f6b9; }
+    color: #dea439; }
 
 .button-icon svg path {
   fill: #fff; }
 .button-icon:hover svg path {
-  fill: #79f6b9; }
+  fill: #dea439; }
 
 .button-icon-grey svg path {
   fill: #666666; }
 .button-icon-grey:hover svg path {
-  fill: #79f6b9; }
+  fill: #dea439; }
 
 .button-grey {
   color: #fff;
   background-color: #303030; }
+  .button-grey:hover {
+    background-color: #dea439; }
+
+.button-gold {
+  color: #fff;
+  background-color: #dea439; }
+  .button-gold:hover {
+    background-color: #c38a21; }
 
 .button-border {
   color: #fff;
@@ -811,10 +825,10 @@ body {
   .button-border svg path {
     fill: #fff; }
   .button-border:hover {
-    color: #79f6b9;
-    border-color: #79f6b9; }
+    color: #dea439;
+    border-color: #dea439; }
     .button-border:hover svg path {
-      fill: #79f6b9; }
+      fill: #dea439; }
 
 .button-border-big {
   border-width: .25rem; }
@@ -937,7 +951,7 @@ body {
   cursor: pointer;
   display: inline-block;
   padding: 1rem;
-  color: #79f6b9; }
+  color: #dea439; }
 
 .rn-carousel-control:hover {
   opacity: 1; }

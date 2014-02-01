@@ -5,6 +5,8 @@ $grey: #303030;
 $green: #79f6b9;
 $mid-grey: #666;
 
+$gold: #dea439;
+
 // Feature 2
 $peach: #fde8d7;
 $cream: #f7f3ef;
@@ -18,6 +20,7 @@ body {
 .grey  { color: $grey; }
 .mid-grey { color: $mid-grey; }
 .green { color: $green; }
+.gold { color: $gold; }
 
 .peach { color: $peach; }
 .bg-peach-to-cream {
@@ -30,6 +33,7 @@ body {
 .bg-grey  { background-color: $grey; }
 .bg-mid-grey { background-color: $mid-grey; }
 .bg-green { background-color: $green; }
+.bg-gold { background-color: $gold; }
 
 .bg-peach { background-color: $peach; }
 
@@ -48,7 +52,7 @@ body {
   color: #fff;
   text-decoration: none;
   &:hover {
-    color: $green;
+    color: $gold;
   }
 }
 
@@ -58,7 +62,7 @@ body {
   }
   &:hover {
     svg path {
-      fill: $green;
+      fill: $gold;
     }
   }
 }
@@ -69,7 +73,7 @@ body {
   }
   &:hover {
     svg path {
-      fill: $green;
+      fill: $gold;
     }
   }
 }
@@ -77,6 +81,17 @@ body {
 .button-grey {
   color: #fff;
   background-color: $grey;
+  &:hover {
+    background-color: $gold;
+  }
+}
+
+.button-gold {
+  color: #fff;
+  background-color: $gold;
+  &:hover {
+    background-color: darken($gold,10%);
+  }
 }
 
 .button-border {
@@ -89,10 +104,10 @@ body {
     fill: #fff;
   }
   &:hover {
-    color: $green;
-    border-color: $green;
+    color: $gold;
+    border-color: $gold;
     svg path {
-      fill: $green;
+      fill: $gold;
     }
   }
 }
