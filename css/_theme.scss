@@ -11,6 +11,9 @@ $gold: #dea439;
 $peach: #fde8d7;
 $cream: #f7f3ef;
 
+// Feature 3
+$tan: #aa9785;
+
 body {
   color: $grey;
 }
@@ -21,6 +24,7 @@ body {
 .mid-grey { color: $mid-grey; }
 .green { color: $green; }
 .gold { color: $gold; }
+.tan { color: $tan; }
 
 .peach { color: $peach; }
 .bg-peach-to-cream {

@@ -276,6 +276,9 @@ dl, ol, ul, p, .p {
   padding-top: 4rem;
   padding-bottom: 4rem; }
 
+.pb4 {
+  padding-bottom: 4rem; }
+
 .p6 {
   padding: 6rem; }
 
@@ -606,7 +609,13 @@ html, body {
     padding-right: 16.66667%; }
 
   .post-1 {
-    padding-right: 8.33333%; } }
+    padding-right: 8.33333%; }
+
+  .col--alpha {
+    margin-left: 0; }
+
+  .col--omega {
+    margin-right: 0; } }
 .outline, .outline * {
   outline: 1px solid blue; }
 
@@ -744,6 +753,9 @@ body {
 
 .gold {
   color: #dea439; }
+
+.tan {
+  color: #aa9785; }
 
 .peach {
   color: #fde8d7; }
