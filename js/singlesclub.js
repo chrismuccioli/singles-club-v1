@@ -2,7 +2,7 @@
 
 'use strict';
 
-var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel', 'duParallax']);
+var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel', 'duParallax', 'fitVids']);
 
 singlesclub.controller('MenuCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
   $scope.herro = 'derp';
