@@ -43,13 +43,12 @@ body {
 
 .aa { -webkit-font-smoothing: antialiased; }
 
-.nav-white {
-  a {
-    color: #fff;
-    text-decoration: none;
-    &:hover {
-      color: $green;
-    }
+.nav-white a,
+.link-white {
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: $green;
   }
 }
 

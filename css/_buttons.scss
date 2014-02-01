@@ -40,6 +40,8 @@
     padding: 1.25rem; 
   }
 }
+
+// Buttons for svg icons
 .button-icon {
   display: inline-block;
   svg {
@@ -52,6 +54,13 @@
   }
 }
 
+// Buttons for SS icons
+.button-ss-icon {
+  display: inline-block;
+  line-height: 2rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
 
 .button-block {
   display: block;
