@@ -53,19 +53,19 @@
     <div class="py4">
       <ul class="list-simple lh2 mb4 nav-white">
         <li>
-          <a href="##bringing-it-all-back-home" ng-click="toggleFlyout()" class="block mb2" du-smooth-scroll>
+          <a href="#bringing-it-all-back-home" ng-click="toggleFlyout()" class="block mb2">
             <span class="h2 bold">1. Bringing It All Back Home</span><br>
             <span class="mid-grey">A Day With Daniel Bachman</span>
           </a>
         </li>
         <li>
-          <a href="##label-head-josh-rosenthal" ng-click="toggleFlyout()" class="block mb2" du-smooth-scroll>
+          <a href="#label-head-josh-rosenthal" ng-click="toggleFlyout()" class="block mb2">
             <span class="h2 bold">2. Label Head: Josh Rosenthal</span><br>
             <span class="mid-grey">Why Tompkins Square Records is here to stay</span>
           </a>
         </li>
         <li>
-          <a href="##roadshow" ng-click="toggleFlyout()" class="block mb2" du-smooth-scroll>
+          <a href="#roadshow" ng-click="toggleFlyout()" class="block mb2">
             <span class="h2 bold">3. Roadshow</span><br>
             <span class="mid-grey">Daniel shares some deep cuts he found on tour</span>
           </a>
@@ -817,13 +817,11 @@
 
   <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
   <script src="js/jquery.unveil.min.js"></script>
+  <script src="js/jquery.smooth-scroll.min.js"></script>
   <script>
     $(document).ready(function() {
-      $("img").unveil(256, function() {
-          // $(this).load(function() {
-          //   $(this).width('auto').height('auto');
-          // });
-      });
+      $("img").unveil(256);
+      $('a').smoothScroll({speed: 250});
     });
   </script>
 
