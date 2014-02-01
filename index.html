@@ -110,23 +110,25 @@
 
   <div plangular src="https://soundcloud.com/singlesclubfm/coming-home" class="table center min-y100 bg-black bg-cover bg-center" style="background-image: url(images/Hero_Comp.jpg)">
     <header class="table-row y100 px2 aa white">
-      <div class="table-cell x100 py8">
-        <div class="container">
-          <img src="images/hero_danieltext.png" alt="Daniel Bachman" class="fit m-x50 l-x50 mt4 mb4" />
-          <h2 class="apercu-bold h2 caps">Side A: Coming Home*</h2>
-          <a href="#bringing-it-all-back-home"
-            ng-click="player.play(track)"
-            ng-hide="player.playing == track"
-            class="button button-gold caps mb2">
-              Listen &amp; Begin
-          </a>
-          <a href="#!"
-            ng-click="player.pause()"
-            ng-show="player.playing == track"
-            ng-cloak
-            class="button button-grey caps mb2">
-              Pause
-          </a>
+      <div class="table-cell x100">
+        <div class="container py4">
+          <img src="images/hero_danieltext.png" alt="Daniel Bachman" class="fit m-x50 l-x50 mt6 mb2" />
+          <div class="mb4">
+            <a href="#bringing-it-all-back-home"
+              ng-click="player.play(track)"
+              ng-hide="player.playing == track"
+              class="button button-gold caps mb2">
+                Listen &amp; Begin *
+            </a>
+            <a href="#!"
+              ng-click="player.pause()"
+              ng-show="player.playing == track"
+              ng-cloak
+              class="button button-grey caps mb2">
+                Pause
+            </a>
+          </div>
+          <h2 class="apercu-bold h2 caps mb1">Side A: Daniel Bachman &ndash; Coming Home</h2>
           <p class="small gold mb1">*Audio is recommended for this feature.<br> Just hit play and start reading.</p>
           <img src="images/stereo.svg" alt="Stereo" />
         </div>
@@ -142,7 +144,7 @@
       </div>
       <div class="clearfix bar aa white bg-black ui-scrollfix-show slidedown">
         <div class="left nav-white mobile-hide">
-          <a href ng-click="toggleFlyout()" class="apercu pl3 caps white">Features</a>
+          <a href ng-click="toggleFlyout()" class="apercu pl3 caps caps--t2 white">Features</a>
         </div>
         <div class="right px1 nowrap">
           <a
@@ -161,6 +163,7 @@
         </div>
         <div class="clearfix px1 ml2">
           <div class="left mr1">
+            <span class="left gold mobile-hide">Side A: Coming Home</span>
             <a href
               ng-click="player.play(track)"
               ng-hide="player.playing == track"
@@ -812,7 +815,7 @@
   <script>
     $(document).ready(function() {
       $("img").unveil(256);
-      $('a').smoothScroll({offset: 2, speed: 250});
+      $('a').smoothScroll({offset: 4, speed: 250});
     });
   </script>
 
