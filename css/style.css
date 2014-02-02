@@ -60,7 +60,7 @@ body {
   font-weight: normal;
   font-style: normal;
   font-weight: 400;
-  line-height: 2rem; }
+  line-height: 1.75rem; }
 
 .apercu {
   font-family: 'Apercu Regular', sans-serif;
@@ -100,7 +100,7 @@ small, .small {
   line-height: 1rem; }
 
 dl, ol, ul, p, .p {
-  font-size: 1.125rem; }
+  font-size: 1rem; }
 
 .responsive {
   /* @media (min-width: 1024px) {
@@ -114,12 +114,18 @@ dl, ol, ul, p, .p {
     }
   }*/ }
   @media (min-width: 768px) {
+    .responsive body {
+      line-height: 2rem; }
     .responsive .h1, .responsive.h1 {
       font-size: 4.5rem;
       line-height: 5rem; }
     .responsive .h2, .responsive.h2 {
       font-size: 2rem;
-      line-height: 3rem; } }
+      line-height: 3rem; }
+    .responsive dl, .responsive ol, .responsive ul, .responsive p, .responsive .p {
+      font-size: 1.125rem; }
+    .responsive .small {
+      font-size: .75rem; } }
 
 .bold {
   font-weight: bold; }
@@ -611,11 +617,11 @@ html, body {
   .post-1 {
     padding-right: 8.33333%; }
 
-  .col--alpha {
-    margin-left: 0; }
+  .mr0 {
+    margin-right: 0; }
 
-  .col--omega {
-    margin-right: 0; } }
+  .ml0 {
+    margin-left: 0; } }
 .outline, .outline * {
   outline: 1px solid blue; }
 
