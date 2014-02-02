@@ -51,9 +51,23 @@ body {
 
 .aa { -webkit-font-smoothing: antialiased; }
 
+a {
+  color: $gold;
+  text-decoration: none;
+  &:hover {
+    color: darken($gold,10%);
+  }
+}
 .nav-white a,
 .link-white {
   color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: $gold;
+  }
+}
+.link-grey {
+  color: $grey;
   text-decoration: none;
   &:hover {
     color: $gold;

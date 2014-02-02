@@ -11,6 +11,9 @@
   li {
     display: inline-block;
     margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
