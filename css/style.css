@@ -114,18 +114,18 @@ dl, ol, ul, p, .p {
     }
   }*/ }
   @media (min-width: 768px) {
-    .responsive body {
+    .responsive {
       line-height: 2rem; }
-    .responsive .h1, .responsive.h1 {
-      font-size: 4.5rem;
-      line-height: 5rem; }
-    .responsive .h2, .responsive.h2 {
-      font-size: 2rem;
-      line-height: 3rem; }
-    .responsive dl, .responsive ol, .responsive ul, .responsive p, .responsive .p {
-      font-size: 1.125rem; }
-    .responsive .small {
-      font-size: .75rem; } }
+      .responsive .h1, .responsive.h1 {
+        font-size: 4.5rem;
+        line-height: 5rem; }
+      .responsive .h2, .responsive.h2 {
+        font-size: 2rem;
+        line-height: 3rem; }
+      .responsive dl, .responsive ol, .responsive ul, .responsive p, .responsive .p {
+        font-size: 1.125rem; }
+      .responsive .small {
+        font-size: .75rem; } }
 
 .bold {
   font-weight: bold; }

@@ -117,9 +117,7 @@ dl, ol, ul, p, .p {
 // Apply the .responsive class directly to elements or their parents
 .responsive {
   @media (min-width: 768px) {
-    body{
-      line-height: 2rem;
-    }
+    line-height: 2rem;
     .h1, &.h1 {
       font-size: 4.5rem;
       line-height: 5rem;
