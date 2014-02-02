@@ -1,0 +1,791 @@
+<!doctype html> 
+<html lang="en"> 
+<head>
+  <meta charset="utf-8">
+  <title>Singles Club Issue 01</title>
+  <meta name="description" content="Singles Club Inaugural Issue">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="http://singlesclub.fm/journal/daniel-bachman">
+  <meta property="og:title" content="Singles Club Issue 01">
+  <meta property="og:description" content="Singles Club Inaugural Issue">
+  <meta property="fb:app_id" content="1450710301810527">
+
+  <script type="text/javascript">
+    WebFontConfig = { fontdeck: { id: '39874' } };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+  
+  <!--comment comment -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+
+</head>
+
+<body class="" ng-app="singlesclub" ng-controller="MenuCtrl">
+
+  <nav class="absolute t0 r0 l0">
+    <div class="container aa white">
+      <div class="l-table">
+        <div class="l-table-cell col-5 mobile-hide">
+          <p class="apercu small bold caps italic center mb0 pl3">Part record club. Part music journal.</p>
+        </div>
+        <div class="l-table-cell center col-2 py1">
+          <a href="/">
+            <img src="images/logo.svg" alt="Singles Club" class="inline-block fit" />
+          </a>
+        </div>
+        <div class="l-table-cell col-5 mobile-hide">
+          <ul class="apercu bold caps small center list-inline mb0 nav-white">
+            <li><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
+            <li><a href="/journal/daniel-bachman">Journal</a></li>
+            <li><a href="http://blog.singlesclub.fm">Blog</a></li>
+            <li><a href="http://shop.singlesclub.fm">Shop</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="flyout scroll-y apercu aa white bg-black" ng-class="{ 'is-open': flyoutIsOpen }">
+    <div class="py4">
+      <ul class="list-simple lh2 mb4 nav-white">
+        <li>
+          <a href="#bringing-it-all-back-home" ng-click="toggleFlyout()" class="block mb2">
+            <p class="h2 bold mb1">Bringing It All<br>Back Home</p>
+            <span class="mid-grey">A Day With Daniel Bachman</span>
+          </a>
+        </li>
+        <li>
+          <a href="#label-head-josh-rosenthal" ng-click="toggleFlyout()" class="block mb2">
+            <p class="h2 bold mb1">Label Head</p>
+            <span class="mid-grey">Why Tompkins Square Records<br>is here to stay</span>
+          </a>
+        </li>
+        <li>
+          <a href="#roadshow" ng-click="toggleFlyout()" class="block mb2">
+            <p class="h2 bold mb1">Roadshow</p>
+            <span class="mid-grey">Daniel shares some deep cuts<br>he found on tour</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="list-simple nav-white mobile-show">
+        <li><a href="/">Home</a></li>
+        <li><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
+        <li class="grey"><a href="/journal/daniel-bachman">Journal</a></li>
+        <li><a href="http://blog.singlesclub.fm">Blog</a></li>
+        <li><a href="http://shop.singlesclub.fm">Shop</a></li>
+      </ul>
+    </div>
+    <div class="absolute t0 r0 b0 py4 center" style="padding-right:.5rem;padding-left:.5rem;">
+      <div ng-click="toggleFlyout()" class="apercu caps mb1" style="line-height:1.125">
+        F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
+      </div>
+      <img src="images/issuemeta.svg" />
+    </div>
+  </div>
+
+  <div class="fixed t0 l0 z4">
+    <a href ng-click="toggleFlyout()" class="inline-block bar button-icon white" style="padding:.5rem .375rem;">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="16px" height="16px" viewBox="0.5 0.5 32 32" enable-background="new 0.5 0.5 32 32" xml:space="preserve">
+      <path d="M30.5,14.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0
+        C32.5,15.395,31.605,14.5,30.5,14.5L30.5,14.5z"/>
+      <path d="M30.5,4.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0C32.5,5.395,31.605,4.5,30.5,4.5
+        L30.5,4.5z"/>
+      <path d="M30.5,24.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0
+        C32.5,25.395,31.605,24.5,30.5,24.5L30.5,24.5z"/>
+      </svg>
+    </a>
+  </div>
+
+  <div plangular src="https://soundcloud.com/singlesclubfm/coming-home" class="table center min-y100 bg-black bg-cover bg-center" style="background-image: url(images/Hero_Comp.jpg)">
+    <header class="table-row y100 px2 aa white">
+      <div class="table-cell x100">
+        <div class="container py4">
+          <img src="images/hero_danieltext.png" alt="Daniel Bachman" class="fit m-x50 l-x50 mt6 mb2" />
+          <div class="mb4">
+            <a href="#bringing-it-all-back-home"
+              ng-click="player.play(track)"
+              ng-hide="player.playing == track"
+              class="button button-gold caps mb2">
+                Listen &amp; Begin
+            </a>
+            <a href="#!"
+              ng-click="player.pause()"
+              ng-show="player.playing == track"
+              ng-cloak
+              class="button button-grey caps mb2">
+                Pause
+            </a>
+          </div>
+          <h2 class="apercu-bold h2 caps mb1">Side A: Daniel Bachman &ndash; Coming Home</h2>
+          <p class="small gold mb1">Audio is recommended for this feature.<br> Just hit begin and start reading.</p>
+          <img src="images/stereo.svg" alt="Stereo" />
+        </div>
+      </div>
+    </header>
+
+    <div class="" ui-scrollfix>
+      <div class="ui-scrollfix-hide mobile-hide fixed t0 b0 l0 aa center white bg-black" style="padding: 4rem .5rem 0 .5rem;">
+        <div ng-click="toggleFlyout()" class="apercu caps mb1" style="line-height:1.125">
+          F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
+        </div>
+        <img src="images/issuemeta.svg" />
+      </div>
+      <div class="clearfix bar aa white bg-black ui-scrollfix-show slidedown">
+        <div class="left mr2 nav-white mobile-hide">
+          <a href ng-click="toggleFlyout()" class="apercu pl3 caps caps--t2 white">Features</a>
+        </div>
+        <div class="right px1 nowrap">
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=http://singlesclub.fm/journal/daniel-bachman"
+            target="_blank"
+            class="button-ss-icon link-white">
+              <span class="ss-icon ss-social ss-facebook"></span>
+          </a>
+          <a
+            href="https://twitter.com/intent/tweet?text=&url=http://singlesclub.fm/journal/daniel-bachman"
+            target="_blank"
+            class="button-ss-icon link-white">
+            <span class="ss-icon ss-social ss-twitter"></span>
+          </a>
+          <a href="http://subscribe.singlesclub.fm" class="apercu caps ml1 button button-small button-grey mobile-hide">Subscribe</a>
+        </div>
+        <div class="clearfix px1 ml3">
+          <div class="left mr1">
+            <span class="left mr1 gold mobile-hide">Side A: Coming Home</span>
+            <a href
+              ng-click="player.play(track)"
+              ng-hide="player.playing == track"
+              class="button-icon button-icon-small popin">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+                <g>
+                  <path d="M10,31c-0.14,0-0.281-0.029-0.413-0.09C9.229,30.748,9,30.393,9,30V2c0-0.393,0.229-0.749,0.587-0.911
+                  C9.719,1.029,9.86,1,10,1c0.238,0,0.473,0.085,0.659,0.248l16,14C26.876,15.438,27,15.711,27,16s-0.124,0.562-0.342,0.752l-16,14
+                  C10.473,30.915,10.238,31,10,31z"/>
+                  <path d="M10,2l16,14L10,30V2 M10,0C9.72,0,9.438,0.059,9.174,0.179C8.459,0.503,8,1.215,8,2v28c0,0.785,0.459,1.497,1.174,1.821
+                  C9.438,31.941,9.72,32,10,32c0.476,0,0.946-0.17,1.317-0.495l16-14C27.751,17.125,28,16.577,28,16c0-0.577-0.249-1.125-0.683-1.505
+                  l-16-14C10.945,0.17,10.475,0,10,0L10,0z"/>
+                </g>
+              </svg>
+            </a>
+            <a href
+              ng-click="player.pause()"
+              ng-show="player.playing == track"
+              class="button-icon button-icon-small popin">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+                <g>
+                  <path d="M6,29c-0.552,0-1-0.447-1-1V4c0-0.552,0.448-1,1-1h6c0.552,0,1,0.448,1,1v24c0,0.553-0.448,1-1,1H6z"/>
+                  <path d="M12,4v24H6V4H12 M12,2H6C4.895,2,4,2.895,4,4v24c0,1.105,0.895,2,2,2h6c1.105,0,2-0.895,2-2V4C14,2.895,13.105,2,12,2L12,2
+                  z"/>
+                </g>
+                <g>
+                  <path d="M20,29c-0.553,0-1-0.447-1-1V4c0-0.552,0.447-1,1-1h6c0.553,0,1,0.448,1,1v24c0,0.553-0.447,1-1,1H20z"/>
+                  <path d="M26,4v24h-6V4H26 M26,2h-6c-1.105,0-2,0.895-2,2v24c0,1.105,0.895,2,2,2h6c1.105,0,2-0.895,2-2V4C28,2.895,27.105,2,26,2
+                  L26,2z"/>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="progress clearfix" style="">
+            <div class="progress-background bg-grey"></div>
+            <div class="progress-buffer"></div>
+            <div class="progress-played bg-gold" style="width: {{ currentTime / duration * 100 }}%"></div>
+            <div class="progress-overlay" ng-click="seekTo($event)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- end plangular -->
+
+  <article id="bringing-it-all-back-home" class="responsive mt6">
+    <section class="py2">
+      <div class="container clearfix">
+        <div class="col col-10 pre-1 post-1">
+          <img src="images/daniel_headline.jpg" alt="Bringing it all back home" class="fit" />
+          <h2 class="h2 center apercu caps mb2">A Day with Daniel Bachman</h2>
+          <p class="apercu center lh2 mb0">Written by<br> Sunny Eckerle</p>
+        </div>
+      </div>
+    </section>
+    <section class="container clearfix">
+      <div class="col col-8 pre-2 post-2">
+        <p>After what seemed like an endless winter, longer and colder than usual, the final weekend of May offered a much needed warmth. With a 24-pack of High Life in the trunk and the windows down, we headed west. Soft hills rose into the Shenandoah Mountains. Cell service waned and eventually dropped out. Our landmark dependent directions became our only guide. "Over the bridge and right at the yellow mail box." We wound down a one-lane dirt path, climbing higher into the hills.</p>
+      </div>
+    </section>
+    <section class="container clearfix mb2">
+      <div class="col col-7 pre-2">
+        <p>And so we arrived at Forest Floor Studios, just shy of Shenandoah National Park.  It’s easy to see why Daniel Bachman, the 22 year-old Virginia native, has chosen to record here. Previous releases from the finger-picking visionary were born at Forest Floor, as is his latest and last album on Tompkins Square, Jesus I’m a Sinner.</p>
+        <p>The one room studio is unexpectedly well stocked. It's absolutely off the beaten path, yet no less legitimate for it. Surrounded by only the wind brushing through the leaves, the faint trickling of a stream, and the singing of the local bird residents, it's a fitting backdrop for the scratch and twang of Daniel's homey and rural finger-style creations.</p>
+      </div>
+      <div class="col col-3">
+        <img data-src="images/daniel_jesusimasinner.jpg" src="images/blank-500x500.gif" alt="Jesus I'm a Sinner" class="fit" />
+        <p class="small">Daniels latest LP, released October 2013</p>
+      </div>
+    </section>
+    <section class="container col-10 pre-1 post-1 mb4">
+      <img data-src="images/daniel_image_comp.jpg" src="images/blank-1400x933.gif" alt="Studio" class="fit" />
+      <p class="small ">Daniel on the steps of Forrest Floor Studios</p>
+    </section>
+    <section class="container mb2">
+      <div class="col col-8 pre-2 post-2">
+        <p>Hellos are exchanged with Daniel, beers are opened, and we're introduced to Forrest Marquisee, the producer at Forest Floor Studios. Inside the small studio, Daniel gets to work, starting where he and Forrest left off the day before. Much of the recording is finished when we arrive on Saturday, Daniel having been at the studio for a few days already. After only one false start, Daniel records the final track for the album with the front door open, the sounds from outside creeping through the screen door.</p>
+        <p>Our remaining time is spent outside, learning about the studio, Rappahannock County, and Daniel's home state of Virginia. We head to the stream not 50 feet from the studio, and stand barefoot in it as Daniel tells us all about where we are, often pointing one way or another to a landmark that correlates to one of his songs. He knows this place well, his casual explanations clearly well worn from time and use. He enjoys sharing his love for his home, which he does most successfully through his music. Sun Over Old Rag, Seven Pines, 218 to Caledon - all song titles of his as well as references to the Old Dominion.</p>
+      </div>
+    </section>
+    <section
+      ng-controller="ParallaxCtrl"
+      style="background-image: url(images/Sunoveroldrag.jpg); min-height: 128px;"
+      class="bg-cover px2 py2 white">
+      <img
+        du-parallax
+        y="foreground"
+        data-src="images/sunoveroldrag_sevenpines.png"
+        src="images/blank-1074x1383.gif"
+        alt="lyrics"
+        class="x50 fit" />
+    </section>
+    <p class="small p1">Walking up the hill to Forrest&rsquo;s home</p>
+    <section class="container mt2 mb2">
+      <div class="col col-8 pre-2 post-2">
+        <p>Forrest gives us a tour of the area including a botany lesson, complete with tastings. We all pluck a bud of honeysuckle and carefully pull out the stemen for a small taste of sweetness. We're invited into Forrest's home, just up the hill, to see his father's guitar workshop and even try our hand at a few of the fully handmade instruments.</p>
+        <p>As the morning warms into afternoon, rainclouds begin to creep across the sky and signal our time to move on. Forest Floor Studio is only the first stop of the day. In a semi-frantic rush, we help Daniel grab the last of his equipment, round up the unopened beers from the porch of the studio, and hop into Daniel's timeworn Volvo to start our trek back east, just as the rain starts to fall. The old car has served him well. This year alone, he’s spent 9 months on the road. This car has carried him across the country and back for many other years of touring and now, it carries us back east.</p>
+      </div>
+    </section>
+    <section class="container mb2">
+      <div class="col col-7 pre-1">
+        <img data-src="images/DanielCar1.jpg" src="images/blank-1400x933.gif" alt="Daniel's car" class="mb2 fit" />
+      </div>
+      <div class="col col-4 mt2">
+        <img data-src="images/DanielCar2.jpg" src="images/blank-1400x933.gif" alt="Daniel's car" class="fit" />
+        <p class="small">Daniel&rsquo;s road-worn Volvo</p>
+      </div>
+    </section>
+    <section class="container mb2">
+      <div class="col-8 pre-2 post-2">
+        <p>As we wind down the narrow lane that brought us in, the mountains give way to a flatter landscape. The brief rain has left the spring greenery damp and warm, the humidity creeping in the open windows.</p>
+        <p>Eventually, the car swings around a wide bend somewhere near Culpepper, and Daniel points out Mount Pony, a small, nondescript hill just off the highway. He tells us that, what to any passerby would appear as nothing more than a lump on the land, is actually a secret mountain fortress. "The inside is hollow. The Federal Reserve used to keep gold in there, back in the sixties and seventies." He points out a strange structure nearer the road as we pass the old guard hut.</p>
+        <p>The depth in which Daniel knows this land and these places is only reinforced as the day goes on. Few people have as visceral and strong a connection to where they grew up as he does. He's moved away before, having lived in Philadelphia for a time, but it's clear he's never really left this place, in mind or spirit. The music he creates mirrors this region in its loose style, its extreme but unassuming beauty, its charming imperfectness. Today we've been introduced to his muse and given a deep understanding of the roots of what he creates.</p>
+      </div>
+    </section>
+  </article>
+
+  <section class="relative clearfix" ng-controller="ParallaxCtrl">
+    <img
+      data-src="images/Drive.jpg"
+      src="images/blank-1600x1067.gif"
+      class="absolute b0 x100"
+    />
+    <div class="relative container">
+      <img
+        du-parallax
+        y="foreground"
+        data-src="images/thisyearalone.png"
+        src="images/blank-1645x709.gif"
+        alt="This year alone, he's spent 9 months on the road"
+        class="fit"
+      />
+    </div>
+  </section>
+  <p class="small p1 mb2">The journey from Rappahannock to Fredericksberg, Virginia</p>
+
+  <article class="responsive">
+    <section class="container mb2">
+      <div class="col-8 pre-2 post-2">
+        <p>Our last destination is Fredericksburg. The house, Daniel's childhood home, is dim and cool, it's stillness disturbed only by the soft ticking of a clock and the few bits of dust that lazily drift in the sunlight that filters through the kitchen windows. The walls are covered in treasures we don't have time to explore. There are history books, artwork, and relics of Virginia's past, each with a story Daniel could tell, no doubt.</p>
+        <p>Daniel decides against using his Guild guitar that we heard earlier in the day, instead choosing a 12-string that's perched in the living room, as though waiting for him. After a quick bit of tuning by ear, we head into the green and sunny backyard. Daniel takes a seat on the back patio with his guitar and as the sun begins to sink, we end the day in the place where it all began.</p>
+      </div>
+    </section>
+  </article>
+
+  <section class="relative table responsive min-y100 center bg-cover aa white" style="background-image: url(images/Watch_Comp.jpg)" ng-controller="ModalCtrl">
+    <div class="table-cell py4">
+      <h3 class="apercu-bold h2 caps">Watch</h3>
+      <a href ng-click="openModal()" class="button-circle button-circle-big mb2 button-border button-border-big">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+        <g>
+          <path d="M10,31c-0.14,0-0.281-0.029-0.413-0.09C9.229,30.748,9,30.393,9,30V2c0-0.393,0.229-0.749,0.587-0.911
+            C9.719,1.029,9.86,1,10,1c0.238,0,0.473,0.085,0.659,0.248l16,14C26.876,15.438,27,15.711,27,16s-0.124,0.562-0.342,0.752l-16,14
+            C10.473,30.915,10.238,31,10,31z"/>
+          <path d="M10,2l16,14L10,30V2 M10,0C9.72,0,9.438,0.059,9.174,0.179C8.459,0.503,8,1.215,8,2v28c0,0.785,0.459,1.497,1.174,1.821
+            C9.438,31.941,9.72,32,10,32c0.476,0,0.946-0.17,1.317-0.495l16-14C27.751,17.125,28,16.577,28,16c0-0.577-0.249-1.125-0.683-1.505
+            l-16-14C10.945,0.17,10.475,0,10,0L10,0z"/>
+        </g>
+        </svg>
+      </a>
+      <p class="apercu caps mb0">Daniel Bachman performs<br> &ldquo;Jesus I&rsquo;m a Sinner&rdquo;</p>
+      <div class="fixed t0 r0 b0 l0 z4 scroll-y" ng-cloak ng-if="modalIsOpen">
+        <div class="fixed t0 r0 b0 l0 bg-black" ng-click="closeModal()">
+        </div>
+        <div class="container m2 white bg-black popin" fit-vids>
+          <iframe src="//player.vimeo.com/video/58702162?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <a href ng-click="closeModal()" class="absolute t0 r0 h2 m1 link-white">✖</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="photo-gallery" class="responsive clearfix px1 py4">
+    <div class="col col-8 pre-2 post-2 noselect">
+      <ul rn-carousel rn-carousel-control>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-1.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-2.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-3.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-4.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-5.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-6.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-7.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-8.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-9.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-10.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-11.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-13.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-14.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-15.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-16.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-17.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-18.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-19.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-20.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-21.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-22.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+        <li>
+          <div class="px1">
+            <img data-src="images/gallery-23.jpg" src="images/blank-1400x933.gif" alt="" class="fit" />
+            <p class="small">A photograph</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <article id="label-head-josh-rosenthal" class="responsive py4 bg-peach-to-cream">
+    <section class="container center mt4">
+      <div class="clearfix">
+        <div class="col col-8 pre-2 post-2">
+          <img src="images/labelhead_intro.png" alt="Label head" class="fit" />
+        </div>
+      </div>
+      <h2 class="apercu h2 caps mb2">Why Tompkins Square Records is here to stay</h2>
+      <p class="apercu lh2">Written by<br> Adam Lehrer</p>
+    </section>
+    <section class="container mb2">
+      <div class="col-8 pre-2 post-2">
+        <p>“It was never new and it’ll never get old and it’s a folk song,” says Oscar Issac as a deeply committed and crotchety folk singer in the Coen Brothers’ decidedly excellent film Inside Llewyn Davis. Though that quote will become clichéd in no time at all, it seems an apt description of the San Francisco-based record label Tompkins Square Records. “We’re different from a lot of labels because I enjoy doing archival work,” says TSR founder and owner Josh Rosenthal, “but I also enjoy working with new artists. There are labels that do one of those things well, not that many do both.”</p>
+        <p>Rosenthal, who is in his mid-40s has a lean frame and full-head of hair suggesting he’s much younger than one might assume. He founded the label in 2005 in New York City and named it after his beloved park that became the label’s namesake. Tompkins Square Records has become a refuge for serious music geeks that love timeless music. Releasing records from up-and-comers Daniel Bachman and Hiss Golden Messeneger coupled with re-issues of incredible forgotten oddities like finger picker Don Bikoff’s Celestial Explosion and 1930s rural string- band Charlie Poole and the Highlanders’ Complete Paramount and Brunswick Recordings, Rosenthal has created a perrenial label aesthetic.</p>
+        <p>“The label puts out good music and entails no political bullshit,” says 24-year old Chicago-based psych-folk guitarist Ryley Walker, who’s releasing his debut full-length album, A Home for Me on TSR in April, “I’m honored to be on the same roster as so many forward thinking musicians from the past and present.”</p>
+        <p>Folk and jazz. Rural and urban. New and old. American. TSR has released albums that fit within at least one of all of these descriptors, but Rosenthal still works the label’s discography into a cohesive whole, a rare case in which the label is as much a part of the records’ appeal as the music itself. At the heart of it is an impassioned, committed and restless label head.</p>
+      </div>
+    </section>
+    <section ng-controller="ParallaxCtrl" class="mb4 clearfix">
+      <img du-parallax y="background2" data-src="images/labelhead_daniel.jpg" src="images/blank-2500x1667.gif" alt="Velvet Underground" class="fit" />
+    </section>
+    <section class="container mb2">
+      <div class="col-8 pre-2 post-2">
+        <p>Rosenthal’s father’s record collection proved to be the spark for his developing musical passion. While his father listened to a lot of ethnic music at home, it was his dad’s Beatles and Simon and Garfunkel records that resulted in an early, classic rock n’ roll fixation that would continue into his teenage years.“In the early days it was Stones and Zeppelin,” he says, “My first concert was Tom Petty. And of course Lou Reed was from Long Island. In our teens we were heavy into the Velvet Underground. Local guys.”</p>
+        <p>Growing up in Long Island, Rosenthal fell in love with music while working at his high school radio station.“We were lucky enough to have one,” he says, “This was back in the 80s when the radio was still very powerful. Pretty much the only thing in town, there was no Internet. It was a powerful and sexy medium.”</p>
+        <p>While there, Rosenthal immersed himself in the large record library at the station, discovering jazz, folk, blues and other forms of music that would later make up the bulk of Rosenthal’s record label. Along with instilling within him a passion for traditional American music, Rosenthal also credits his early days as a high school radio disc jockey with teaching him the basics of the record industry.“That’s where I started learning the business,” he says.</p>
+        <p>Rosenthal held internships with PolyGram at the age of 16 and later at CMJ. He remembers making trips to New York City and hanging out with Bill Levenson, a pseudo-famous, rock n’ roll compilation producer described by Rosenthal as “sort of the king of the box set.” From Levenson he would learn to process of assembling a set of songs into a cohesive whole, a skill that would come in hand when developing Tompkins Square Records.</p>
+      </div>
+    </section>
+    <section class="container mb2">
+      <div class="col-4 pre-4 post-4">
+        <img data-src="images/labelhead_columbia.png" src="images/blank-650x111.gif" alt="Columbia Records" class="block fit mx-auto mt1 mb3" />
+      </div>
+    </section>
+    <section class="container">
+      <div class="col col-8 pre-2 post-2">
+        <p>Rosenthal eventually landed a job at Columbia Records working in their PR department and then a similar gig for Sony, but he soon tired of releasing music that he wasn’t passionate about. After his departure from the big leagues Tompkins Square Records would finally materialize. Eight years, six Grammy nominations and almost 100 releases later, Tompkins Square Records has become synonymous with a discernible level of excellence, making fans out of big time names like T. Bone Burnett, music producer and composer of the soundtrack for the aforementioned Inside Llewyn Davis, and Hal Willner, producer and former music director of Saturday Night Live. “When I see a record with the Tompkins Square marker I immediately buyit,” says Wilner in an interview with The Local East Village.</p>
+      </div>
+    </section>
+    <section class="container mb2">
+      <div class="col col-6 pre-3 post-3">
+        <div ng-controller="ParallaxCtrl">
+          <img
+            du-parallax
+            rotation="rotation"
+            style="-webkit-transition: -webkit-transform .1s linear"
+            data-src="images/labelhead_tompkins.png"
+            src="images/blank-1200x1190.png"
+            alt="Tompkin's Square label"
+            class="block fit mx-auto mt1 mb3" />
+        </div>
+      </div>
+    </section>
+    <section class="container mb2">
+      <div class="col col-8 pre-2 post-2">
+        <p>The record industry is as competitive as ever, and indies like Tompkins Square Records have to be careful about handling business to remain profitable or at the very least break even. Rosenthal is cognizant of these challenges. “It is really difficult to maintain profitability unless you have a real head of steam on something,” he says, “If you have a project that is really moving, a box set that’s selling and has some nice momentum on it,  then you can make some money. If you’re selling an LP you’re only going to make a couple bucks per unit on it and you have to wait until you make money back on it.”</p>
+        <p>Despite the gloomy reality of the modern record industry, Rosenthal isn’t an overly tense type of record honcho, exuding warmth, relaxation and laid-back experienced cool within his speech. He chalks up the label’s growth and the discovery of new performers and old records to re-release as an organic process of word-of-mouth and solid advice.</p>
+        <p>“It’s kind of interesting how things happen,” he says, “Sharon Van Etten emailed me a few years ago and I didn’t know who she was. She said you should really check out William Tyler from Nashville and I did, but I didn’t know who she was. I didn’t even know she was an artist. But I did follow up on her tip and signed William Tyler. And then William told me about Hiss Golden Messenger and I signed him, and then Michael Taylor from that band told me he was friendly with Alice Gerard. That was like four releases that happened because Sharon Van Etten emailed me.”</p>
+        <p>Recent Tompkins Square Records releases include a re-issue of the 1968 self-titled album by Dino Valenti, once a member of seminal San Franciso-psych band Quiksilver Psych Messenger, whose solo record serves as an important early document of psychedelic folk music. Live at Caffe Lena is a collection of the best music recorded at the Saratoga Springs coffee house of the same name, a landmark of American folk music. </p>
+      </div>
+    </section>
+    <section class="container">
+      <div class="col col-4 pre-2 mb4">
+        <img data-src="images/labelhead_cafelenna.png" src="images/blank-500x500.gif" class="fit" />
+      </div>
+      <div class="col col-4 post-2 mb4">
+        <img data-src="images/labelhead_riley.png" src="images/blank-500x500.gif" class="fit" />
+      </div>
+    </section>
+    <section class="container">
+      <div class="col col-8 pre-2 post-2">
+        <p>Newer releases, like the upcoming album by Walker, seem to be taking on a more experimental direction than previous albums, but Walker denies this, believing that all the music, new or old in some way maintains a far-out vibe.“I think when you get deep into the recordings Tompkins has released,” says Walker, “When I jam Lena Hughes, James Blackshaw of the numerous box  sets of archival tunes, it’s pretty outer limits.”</p>
+        <p>Records like these tend to appeal to the music lover who peruse used record stores all day, making Tompkins Square Records artists like Daniel Bachman, who just put out his fourth LP, Jesus, I’m a Sinner all the more important for attracting the thrill-seeking younger  demographic.</p>
+        <p>“What’s interesting about Daniels music is how he crosses the line between the sub-sect that are interested in that classic Americana, Jack Rose-style music but yet is featured on current sites like Pitchfork, Paste, etc.” says Rosenthal. “Seems insane that he can reach those types of audiences with that style of playing.”</p>
+        <p>Rosenthal describes Bachman as “gifted”. It is an ear for artists like Bachman that has helped Rosenthal maintain the aesthetic of  Tompkins Square Records while looking forward to the future. Rosenthal has created a label that musicians believe in and want to be a part of. That, more than anything else defines what Tompkins Square Records has achieved.</p>
+        <p>“It’s just one dude who’s always a phone call away,” says Walker, “I’m looking to be a part of a label that fosters creativity and has its shit together.”</p>
+      </div>
+    </section>
+  </article>
+
+  <article id="roadshow" class="pb4 bg-cream">
+    <header class="container">
+      <div class="col col-10 pre-1 post-1 center">
+        <img src="images/roadshow_intro.jpg" alt="Roadshow" class="fit" />
+        <h2 class="h2 caps mt2">Daniel shares some deep cuts he found on tour</h2>
+        <p class="apercu lh2 mb0">Written by<br> Daniel Bachman</p>
+      </div>
+    </header>
+
+    <section class="container py1">
+      <div class="clearfix">
+        <div class="col col-12 ">
+          <img data-src="images/WhiteCloud.jpg" src="images/blank-2500x900.gif" alt="White Cloud" class="fit" />
+        </div>
+      </div>
+      <div class="clearfix">
+        <div class="col col-3 pre-1">
+          <p class="apercu caps mb0 lh1 tan">Artist:</p>
+          <h1 class="h2 lh2">White Cloud</h1>
+          <p class="apercu caps mb0 lh1 tan">Album:</p>
+          <h1 class="h2 lh2">S/T</h1>
+        </div>
+        <div class="col col-7 post-1">
+          <p class="h3">I was at Chad's records in Chattanooga and found this guy - sticker said "rare country psych - good 1972".  So I was like cool.  Turned out it was Thomas Jefferson Kayes band on Nashville's Good Medicine label (a subsidiary of Starday-King)? .  He produced Link Wray - Gene Clark - and the first tune on this is all cried out - that was on Links Be What You Want To.  The jacket to the LP is textured snakeskin and pasted illustration of band.  Whole record is good except the 2nd song on A side - cheeseball Hound Dog.  Thanks for Nothin', All Cried Out, and Hoe-Bus (pre recording to his first solo rec) are great. "The sun don't shine the same on every doggie's ass . . . ." </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py1">
+      <div class="clearfix">
+        <img data-src="images/JimKennedy.jpg" src="images/blank-2500x900.gif" alt="Jim Kennedy" class="fit" />
+      </div>
+      <div class="clearfix">
+        <div class="col col-3 pre-1">
+          <p class="apercu caps lh1 mb0 tan">Artist:</p>
+          <h1 class="h2 lh2">Jim Kennedy</h1>
+          <p class="apercu caps lh1 mb0 tan">Album:</p>
+          <h1 class="h2 lh2">Just Being Natural</h1>
+        </div>
+        <div class="col col-7 post-1">
+          <p class="h3">I got this record as payment for a gig in Memphis in April. Good 4 am downer vibe from Cedar Falls Iowa - Early 70's? On his own Label Old English Records. 6 &amp; 12 String - C.F. Martin. Couple cheesy cuts but its not a stinker. You Are The Reason is the best track. Dedicated to his closest friend "Ruby"</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py1">
+      <div class="clearfix">
+        <img data-src="images/ErnestMartin.jpg" src="images/blank-2500x900.gif" alt="Ernest Martin" class="fit" />
+      </div>
+      <div class="clearfix">
+        <div class="col col-3 pre-1">
+          <p class="apercu caps lh1 mb0 tan">Artist:</p>
+          <h1 class="h2 lh2">Ernest Martin</h1>
+          <p class="apercu caps lh1 mb0 tan">Album:</p>
+          <h1 class="h2 lh2">The Last Inauguration</h1>
+        </div>
+        <div class="col col-7 post-1">
+          <p class="h3">I got the chance to go to the County/Rebel Records offices right outside of Charlottesville VA in April. Fun day looking through everything and talking.  Around the time when we we're leaving we started looking through a box of LPs that were going up for sale and I asked about this one and bought it up from him.  Ernest was from Powell Co. Ky and recorded 6 songs for Rich R Tone Records in the late 40's then turned his attention towards evangelism - 65 years in service and had a radio ministry for 55 years called Highway to Heaven.  He passed at home in June of 2002 at the age of 88. Killer hot shit bluegrass gospel record.  Just A Rose Will Do is on repeat.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py1">
+      <div class="clearfix">
+        <img data-src="images/roadshow_PeterGreen.jpg" src="images/blank-2500x900.gif" alt="Peter Green" class="fit" />
+      </div>
+      <div class="clearfix">
+        <div class="col col-3 pre-1">
+          <p class="apercu caps lh1 mb0 tan">Artist:</p>
+          <h1 class="h2 lh2">Peter Green</h1>
+          <p class="apercu caps lh1 mb0 tan">Album:</p>
+          <h1 class="h2 lh2">End Of The Game</h1>
+        </div>
+        <div class="col col-7 post-1">
+          <p class="h3">I picked this up at Red Onion Records in DC back in april.  Had been looking for it for a while and saw it.  After Green left Fleetwood Mac he was approached to do a record.  The band that he put together played a bizarre 17 hour recording session on LSD and probably a ton of other drugs.  It rips so hard.  Comes on real nice with some heavy wah - gets real dark.  Not sure if it brings you back around or not.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py1">
+      <div class="clearfix">
+        <img data-src="images/EarlyUpchurch.jpg" src="images/blank-2500x900.gif" alt="Early Upchurch" class="fit" />
+      </div>
+      <div class="clearfix">
+        <div class="col col-3 pre-1">
+          <p class="apercu caps lh1 mb0 tan">Artist:</p>
+          <h1 class="h2 lh2">Early Upchurch</h1>
+          <p class="apercu caps lh1 mb0 tan">Album:</p>
+          <h1 class="h2 lh2">Everybody Will Be Happy Over There</h1>
+        </div>
+        <div class="col col-7 post-1">
+          <p class="h3">I played a wedding in Cleveland and my buddy who got married gave me a copy of this.  I love the Upchurch stuff.   First time I heard this stuff was in Cleveland (again) during a pretty heavy snowstorm in January at my friend Matt's house.  He gave us pretty strong drinks and we sat around and zoned out.  Was pumped to find this in the country rows at Academy in NY.   If I ever get a dog Im going to name it Randy - and when that dog dies Ill get another and name it Early.</p>
+          <p class="h3">Cabin on the cover is of Early's birthplace in Lambsburg VA - back the back cover there is a nice personalized letter from WPAQ owner Ralph Epperson and notes on the side by his daughter talking about growing up singing with her dad.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py1">
+      <div class="clearfix">
+        <img data-src="images/roadshow_JerryGarcia.jpg" src="images/blank-2500x900.gif" alt="Jerry Garcia" class="fit" />
+      </div>
+      <div class="clearfix">
+        <div class="col col-3 pre-1">
+          <p class="apercu caps lh1 mb0 tan">Artist:</p>
+          <h1 class="h2 lh2">Jerry Garcia</h1>
+          <p class="apercu caps lh1 mb0 tan">Album:</p>
+          <h1 class="h2 lh2">S/T</h1>
+        </div>
+        <div class="col col-7 post-1">
+          <p class="h3">Jerry and his first solo record.  Its my parents record.  I threw it on the list because it rules.  A side - dead standards.  B side - half brainwash weirdo space back into standards.  He played every instrument on the thing except for drums.  How did he have the time mannnn.</p>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <section id="credits" class="px2 py3 bg-peach">
+    <h1 class="apercu h2 caps">Credits</h1>
+    <div class="clearfix">
+      <ul class="list-simple h3 col col-3 ml0">
+        <li class="mb1">
+          <p class="apercu caps lh1 mb0">Art Direction, Design &amp; Photography</p>
+          Chris Muccioli
+        </li>
+        <li class="mb1">
+          <p class="apercu caps lh1 mb0">Editor</p>
+          Jeffrey Silverstein
+        </li>
+        <li>
+          <p class="apercu caps lh1 mb0">Code</p>
+          Brent Jackson
+        </li>
+      </ul>
+      <ul class="list-simple col col-3">
+        <li class="mb1">
+          <p class="apercu caps lh1 mb0">Writers</p>
+          <p class="h3">
+            Sunny Eckerle<br>
+            Adam Lehrer<br>
+            Daniel Bachman
+          </p>
+        </li>
+        <li>
+          <p class="apercu caps lh1 mb0">Video Colorist</p>
+          Tomasz Werner
+        </li>
+      </ul>
+      <ul class="list-simple col col-3 mr0">
+        <p class="apercu caps lh1 mb0">Special Thanks</p>
+        <p class="h3">
+          Daniel Bachman<br>
+          Forrest Marquisee<br>
+          Michael Muccioli<br>
+          Josh Rosenthal<br>
+          Matt at Gotta Groove<br>
+          Diana at JLM<br>
+          VG Kids Printing<br>
+          Steady Printshop<br>
+          &amp; our Backers
+        </p>
+      </ul>
+    <div class="col col-3">
+      <h3 class="apercu p caps lh1 mb0">SIDE A: Coming Home</h3>
+      <p class="small">Written &amp; recorded by Daniel Bachman
+        at Forrest Floor Studios in Rappahannock, VA.</p>
+      <h3 class="apercu p caps lh1 mb0">SIDE B: Interview</h3>
+      <p class="small">Recorded &amp; mixed by Chris Muccioli
+        in Brooklyn, NY.</p>
+      <h3 class="apercu p caps lh1 mb0">SIDE A &amp; B</h3>
+      <p class="small">Mastered by Joe Lambert in Brooklyn, NY
+        Pressed by Gotta Groove in Cleveland, OH</p>
+      <div class="mb1">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Singles Club Inaugural Issue" data-url="http://singlesclub.fm/journal/daniel-bachman" data-via="singlesclubfm">Tweet</a>
+        <div class="fb-like" data-href="http://singlesclub.fm/journal/daniel-bachman" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+      </div>
+      <a href="http://subscribe.singlesclub.fm" class="apercu mall caps button button-small button-grey">Subscribe</a>
+    </div>
+  </section>
+
+  <footer class="center px2 py2 grey bg-black">
+    <ul class="list-inline">
+      <li><a href="mailto:hello@singlesclub.fm" class="apercu-bold caps link-grey">Contact</a></li>
+      <li><a href="http://shop.singlesclub.fm" class="apercu-bold caps link-grey">Shop</a></li>
+      <li><a href="http://subscribe.singlesclub.fm" class="apercu-bold caps link-grey">Subscribe</a></li>
+    </ul>
+    <p class="small mb0">P.O. Box 550 Brooklyn NY 11211<br>
+      © 2014 Singles Club LLC - All Rights Reserved</p>
+  </footer>
+
+
+  <script src="js/config.js"></script>
+
+  <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="js/jquery.unveil.min.js"></script>
+  <script src="js/jquery.smooth-scroll.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("img").unveil(512);
+      $('a').smoothScroll({offset: 4, speed: 250});
+    });
+  </script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
+  <script src="js/angular-carousel.js"></script>
+  <script src="js/angular-scroll.js"></script>
+  <script src="js/angular-parallax.js"></script>
+  <script src="js/scrollfix.js"></script>
+  <script src="js/angular-fitvids.js"></script>
+  <script src="js/singlesclub.js"></script>
+
+  <script>
+    // Twitter
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  </script>
+
+  <div id="fb-root"></div>
+  <script>
+    // Facebook
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1450710301810527";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+</body>
+</html>
