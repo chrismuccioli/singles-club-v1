@@ -114,6 +114,9 @@ dl, ol, ul, p, .p {
 .right-align {
   text-align: right; }
 
+@media (max-width: 768px) {
+  .mobile-center {
+    text-align: center; } }
 .lh1 {
   line-height: 1; }
 

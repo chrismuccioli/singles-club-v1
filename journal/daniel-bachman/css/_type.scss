@@ -120,6 +120,10 @@ dl, ol, ul, p, .p {
 .caps--t2 { letter-spacing: .2em; }
 .center { text-align: center; }
 .right-align  { text-align: right; }
+@media (max-width: 768px) {
+  .mobile-center { text-align: center; }
+}
 
 .lh1 { line-height: 1; }
 .lh2 { line-height: 1.25; }
+
