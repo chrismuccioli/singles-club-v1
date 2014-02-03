@@ -50,21 +50,27 @@
 .rn-carousel-control {
   -webkit-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
-  font-size: 30px;
+  font-size: 24px;
   position: absolute;
   top: 50%;
   margin-top: -35px;
-  opacity: 0.75;
+  opacity: 0.85;
   cursor: pointer;
 
   // Edits
   display: inline-block;
-  padding: 1rem;
-  color: $gold;
-  //background-color: pink;
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: #fff;
+  background-color: $gold;
+  border-radius: 50%;
 }
   .rn-carousel-control:hover {
-    opacity: 1; }
+    opacity: 1;
+    background-color: darken($gold,10%);
+  }
   .rn-carousel-control.rn-carousel-control-prev {
     left: 2rem; }
     .rn-carousel-control.rn-carousel-control-prev:before {
