@@ -123,6 +123,18 @@ dl, ol, ul, p, .p {
 .lh2 {
   line-height: 1.25; }
 
+.input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: .5rem 1rem;
+  font-size: .75rem;
+  line-height: 1rem;
+  height: 2rem;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none; }
+
 /*
   BASSCSS
 */
@@ -616,19 +628,26 @@ html, body {
   height: 4rem; }
 
 .button {
-  display: inline-block;
+  font-family: inherit;
   text-decoration: none;
-  height: 3rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  height: auto;
+  min-height: 3rem;
   line-height: 3rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding: 0 2rem;
   border-radius: 2px; }
 
 .button-small {
-  height: 2rem;
+  height: auto;
+  min-height: 2rem;
   line-height: 2rem;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem; }
+  padding: 0 1.5rem; }
 
 .button-circle {
   display: inline-block;
@@ -660,11 +679,11 @@ html, body {
 .button-ss-icon {
   display: inline-block;
   line-height: 2rem;
-  padding-right: .5rem;
-  padding-left: .5rem; }
+  padding: 0 .5rem; }
 
 .button-block {
   display: block;
+  width: 100%;
   text-align: center; }
 
 .progress {
@@ -816,6 +835,13 @@ a {
   text-decoration: none; }
   .link-grey:hover {
     color: #dea439; }
+
+.input-white {
+  background-color: #fff;
+  border-radius: .125rem; }
+  .input-white:focus {
+    outline: none;
+    border: 1px solid #dea439; }
 
 .button-icon svg path {
   fill: #fff; }
@@ -1016,8 +1042,8 @@ a {
 */
 @font-face {
   font-family: "SSSocial";
-  src: url("../fonts/ss-social-regular.eot");
-  src: url("../fonts/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ss-social-regular.woff") format("woff"), url("../fonts/ss-social-regular.ttf") format("truetype"), url("../fonts/ss-social-regular.svg#SSSocialRegular") format("svg");
+  src: url("/webfonts/ss-social-regular.eot");
+  src: url("/webfonts/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("/webfonts/ss-social-regular.woff") format("woff"), url("/webfonts/ss-social-regular.ttf") format("truetype"), url("/webfonts/ss-social-regular.svg#SSSocialRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
 

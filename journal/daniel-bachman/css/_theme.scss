@@ -74,6 +74,15 @@ a {
   }
 }
 
+.input-white {
+  background-color: #fff;
+  border-radius: .125rem;
+  &:focus {
+    outline: none;
+    border: 1px solid $gold;
+  }
+}
+
 .button-icon {
   svg path {
     fill: #fff;
