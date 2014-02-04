@@ -39,7 +39,7 @@ nav li:last-child a {
 	border-right: 0;
 }
 nav a:hover, nav a:active {
-	background-color: #79f6b9;
+	background-color: #dea439;
 	color: white;
 }
 nav a#pull {
@@ -358,7 +358,7 @@ a {
 }
 
 a:hover {
-	color: #5825fe;
+	color: #dea439;
 	text-decoration: none;
 }
 
@@ -425,7 +425,7 @@ h5 {
     font-size: 1.2em;
     line-height: 1.2em;
     letter-spacing: .05em;
-	color: #79f6b9;
+	color: #dea439;
 }
 
 h6 {
@@ -515,7 +515,7 @@ h6 {
 }
 
 .gold {
-	color: #79f6b9 !important;
+	color: #dea439 !important;
 }
 
 .offwhite {
@@ -527,7 +527,7 @@ h6 {
 }
 
 .bg_gold {
-	background-color: #79f6b9;
+	background-color: #dea439;
 }
 
 .bg_grey {
@@ -579,7 +579,7 @@ a.button, .button_small {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 14px;
-	background-color: #79f6b9;
+	background-color: #dea439;
 	font-weight: 600;
 	font-family:"Apercu Medium", Calibri, sans-serif;
     text-rendering: optimizeLegibility;
@@ -589,7 +589,7 @@ a.button, .button_small {
 }
 
 .button {
-	background: #79f6b9;
+	background: #dea439;
 }
 
 input {
@@ -686,7 +686,7 @@ ul.nav a {
 }
 
 ul.nav a:hover {
-	color: #79f6b9;
+	color: #dea439;
 }
 
 .tagline {
@@ -888,7 +888,7 @@ ul.nav a:hover {
 .feature h2 {
 	text-transform: uppercase;
 	text-align: center;
-	color: #79f6b9;
+	color: #dea439;
 	font-family: LydianBT-Italic, georgia; 
 	font-weight: bold; 
 	font-style: italic; 
@@ -953,7 +953,7 @@ ul.social a {
 }
 
 ul.social a:hover {
-	color: #79f6b9;
+	color: #dea439;
 }
 
 /*---        FOOTER        ---*/
@@ -986,7 +986,7 @@ ul.footerlinks a {
 }
 
 ul.footerlinks a:hover {
-	color: #79f6b9;
+	color: #dea439;
 }
 
 .copyright p {
