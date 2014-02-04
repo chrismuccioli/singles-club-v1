@@ -95,6 +95,12 @@ a {
     }
   }
 }
+.button-icon-gold {
+  svg path { fill: #fff; }
+  &:hover {
+    svg path { fill: #fff; }
+  }
+}
 
 .button-grey {
   color: #fff;
@@ -108,6 +114,7 @@ a {
   color: #fff;
   background-color: $gold;
   &:hover {
+    color: #fff;
     background-color: darken($gold,10%);
   }
 }
