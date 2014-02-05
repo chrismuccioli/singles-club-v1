@@ -490,6 +490,12 @@ html, body {
     -webkit-transform: translateX(-4rem);
     transform: translateX(-4rem); }
 
+.z1 {
+  z-index: 1; }
+
+.z2 {
+  z-index: 2; }
+
 .z3 {
   z-index: 3; }
 

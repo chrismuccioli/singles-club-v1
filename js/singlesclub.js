@@ -5,11 +5,11 @@
 var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel', 'duParallax', 'fitVids']);
 
 singlesclub.controller('MenuCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
-  $scope.herro = 'derp';
 
   $scope.flyoutIsOpen = false;
 
   $scope.toggleFlyout = function() {
+    console.log('toggleFlyout');
     $scope.flyoutIsOpen = !$scope.flyoutIsOpen;
   };
 

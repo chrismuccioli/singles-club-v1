@@ -40,9 +40,9 @@
 
 	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
 	<script src="js/modernizr-2.5.3-min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
 	
 	<!-- Slider Plugin -->
 	<script type="text/javascript" src="js/jquery.glide.js"></script>
@@ -92,37 +92,17 @@
       });
     });
   </script>
-  <!--
-  <script>
-    $(function() {
-      var pull 		= $('#pull');
-      menu 		= $('nav ul');
-      menuHeight	= menu.height();
-
-      $(pull).on('click', function(e) {
-        e.preventDefault();
-        menu.slideToggle();
-      });
-
-      $(window).resize(function(){
-        var w = $(window).width();
-        if(w > 320 && menu.is(':hidden')) {
-          menu.removeAttr('style');
-        }
-      });
-    });
-	</script>
-  -->
 
   <!-- new stylezzz -->
   <link href="css/style.css" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
 
 </head>
 
-<body>
+<body ng-app="singlesclub" ng-controller="MenuCtrl">
 
 <!-- new header nav -->
-  <nav class="absolute t0 r0 l0 z4">
+  <nav class="absolute t0 r0 l0 z1">
     <div class="container white">
       <div class="l-table">
         <div class="l-table-cell col-5 mobile-hide">
@@ -145,127 +125,31 @@
     </div>
   </nav>
 
-  <div class="flyout scroll-y apercu aa white bg-black" ng-class="{ 'is-open': flyoutIsOpen }">
+  <div class="flyout scroll-y apercu aa white bg-black mobile-show" ng-class="{ 'is-open': flyoutIsOpen }">
     <div class="py4">
-      <ul class="list-simple lh2 mb4 nav-white">
-        <li>
-          <a href="#bringing-it-all-back-home" ng-click="toggleFlyout()" class="block mb2">
-            <p class="h2 bold mb1">Bringing It All<br>Back Home</p>
-            <span class="mid-grey">A Day With Daniel Bachman</span>
-          </a>
-        </li>
-        <li>
-          <a href="#label-head-josh-rosenthal" ng-click="toggleFlyout()" class="block mb2">
-            <p class="h2 bold mb1">Label Head</p>
-            <span class="mid-grey">Why Tompkins Square Records<br>is here to stay</span>
-          </a>
-        </li>
-        <li>
-          <a href="#roadshow" ng-click="toggleFlyout()" class="block mb2">
-            <p class="h2 bold mb1">Roadshow</p>
-            <span class="mid-grey">Daniel shares some deep cuts<br>he found on tour</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="list-simple nav-white mobile-show">
+      <ul class="h2 bold list-simple nav-white">
         <li><a href="/">Home</a></li>
         <li><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
-        <li class="grey"><a href="/journal/daniel-bachman">Journal</a></li>
+        <li><a href="/journal/daniel-bachman">Journal</a></li>
         <li><a href="http://blog.singlesclub.fm">Blog</a></li>
         <li><a href="http://shop.singlesclub.fm">Shop</a></li>
       </ul>
     </div>
-    <div class="absolute t0 r0 b0 py4 center" style="padding-right:.5rem;padding-left:.5rem;">
-      <div ng-click="toggleFlyout()" class="apercu caps mb1" style="line-height:1.125">
-        F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
-      </div>
-      <img src="images/issuemeta.svg" />
-    </div>
   </div>
 
-  <div class="fixed t0 l0 z4">
-    <a href ng-click="toggleFlyout()" class="inline-block bar button-icon white" style="padding:.5rem .375rem;">
+  <div class="fixed t0 l0 z4 mobile-show">
+    <a href="#!" ng-click="toggleFlyout()" class="inline-block bar button-icon white" style="padding:.5rem .375rem;">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="16px" height="16px" viewBox="0.5 0.5 32 32" enable-background="new 0.5 0.5 32 32" xml:space="preserve">
-      <path d="M30.5,14.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0
-        C32.5,15.395,31.605,14.5,30.5,14.5L30.5,14.5z"/>
-      <path d="M30.5,4.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0C32.5,5.395,31.605,4.5,30.5,4.5
-        L30.5,4.5z"/>
-      <path d="M30.5,24.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0
-        C32.5,25.395,31.605,24.5,30.5,24.5L30.5,24.5z"/>
+        <path d="M30.5,14.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0 C32.5,15.395,31.605,14.5,30.5,14.5L30.5,14.5z"/>
+        <path d="M30.5,4.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0C32.5,5.395,31.605,4.5,30.5,4.5 L30.5,4.5z"/>
+        <path d="M30.5,24.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0 C32.5,25.395,31.605,24.5,30.5,24.5L30.5,24.5z"/>
       </svg>
     </a>
   </div>
 <!-- end new header nav -->
 
-<!--<nav class="clearfix">
-	<ul class="clearfix">
-		<li><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
-		<li><a href="/journal/daniel-bachman">Journal</a></li>
-		<li><a href="http://blog.singlesclub.fm">Blog</a></li>
-		<li><a href="http://shop.singlesclub.fm">Shop</a></li>
-	</ul>
-	<a href="#" id="pull">Menu</a>
-</nav>-->
 
-
-<!----Nav---->
-
-<!--<div class="navbarhome">
-	<div class="container top_margin_small bottom_margin_small">
-		<div class="col tagline span_5_of_12">
-			<h6>Part record club. Part music journal.</h6>
-		</div>
-		<div class="logo col span_2_of_12">
-			<img id="logomobile" src="img/logo_mobile.svg">
-			<img id="logohomedesktop" src="img/logo.svg">
-		</div>
-		<div class="col span_5_of_12">
-			<ul class="nav">
-				<li class="navmargin"><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
-				<li class="navmargin"><a href="/journal/daniel-bachman">Journal</a></li>
-				<li class="navmargin"><a href="http://singlesclubfm.tumblr.com">Blog</a></li>
-				<li class=""><a href="http://shop.singlesclub.fm">Shop</a></li>
-			</ul>
-		</div>
-			<div class="mobiletagline">
-				<h6>Part record club.</h6>
-				<h6>Part music journal.</h6>
-			</div>
-			<div class="learnmore">
-			<a href="#" id="learnmore"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				 width="56px" height="56px" viewBox="0 0 56 56" enable-background="new 0 0 56 56" xml:space="preserve">
-			<circle id="learnmorecircle" fill="#191818" cx="28" cy="28" r="28"/>
-			<polygon id="learnmorearrow" fill="#FFFFFF" points="36.756,40.296 27.509,49.542 18.264,40.296 "/>
-			<g>
-				<polygon id="learnmoretext" fill="#FFFFFF" points="15.684,20.229 12.122,20.229 12.122,13.273 10.313,13.273 10.313,21.919 15.684,21.919 	"/>
-				<polygon id="learnmoretext" fill="#FFFFFF" points="22.248,20.229 18.494,20.229 18.494,18.165 21.408,18.165 21.408,16.476 18.494,16.476 
-					18.494,14.963 22.128,14.963 22.128,13.273 16.685,13.273 16.685,21.919 22.248,21.919 	"/>
-				<path id="learnmoretext" fill="#FFFFFF" d="M27.523,13.273h-1.739l-2.927,8.646h1.946l0.611-1.979h2.478l0.611,1.979h1.946l-2.899-8.561L27.523,13.273
-					z M25.936,18.251l0.719-2.361l0.719,2.361H25.936z"/>
-				<path id="learnmoretext" fill="#FFFFFF" d="M37.217,15.785c0-1.549-1.026-2.512-2.68-2.512h-3.183v8.646h1.81v-3.622h0.621l2.254,3.622h2.033
-					l-2.361-3.811C36.658,17.76,37.217,16.903,37.217,15.785z M34.55,16.607h-1.386v-1.645h1.386c0.594,0,0.858,0.254,0.858,0.822
-					S35.144,16.607,34.55,16.607z"/>
-				<polygon id="learnmoretext" fill="#FFFFFF" points="43.814,13.273 43.814,18.458 40.93,13.273 39.088,13.273 39.088,21.919 40.898,21.919 
-					40.898,16.734 43.782,21.919 45.624,21.919 45.624,13.273 	"/>
-				<polygon id="learnmoretext" fill="#FFFFFF" points="16.086,29.786 14.193,24.773 12.231,24.773 12.231,33.419 14.04,33.419 14.04,28.822 
-					15.404,32.569 15.435,32.651 16.737,32.651 18.131,28.822 18.131,33.419 19.941,33.419 19.941,24.773 17.978,24.773 	"/>
-				<path id="learnmoretext" fill="#FFFFFF" d="M25.463,24.678c-0.742,0-1.404,0.153-2.023,0.47c-1.29,0.65-2.06,2.127-2.06,3.949
-					c0,0.964,0.191,1.791,0.568,2.46c0.737,1.299,1.92,1.958,3.515,1.958c0.759,0,1.42-0.149,2.025-0.458
-					c1.288-0.678,2.058-2.158,2.058-3.96c0-0.949-0.195-1.777-0.579-2.46C28.252,25.337,27.073,24.678,25.463,24.678z M27.062,31.146
-					c-0.423,0.457-0.946,0.68-1.599,0.68c-0.65,0-1.177-0.223-1.611-0.68c-0.424-0.459-0.639-1.148-0.639-2.05
-					c0-0.902,0.215-1.592,0.638-2.05c0.435-0.457,0.962-0.68,1.612-0.68c0.653,0,1.176,0.222,1.6,0.68
-					c0.437,0.461,0.649,1.131,0.649,2.05C27.712,30.015,27.5,30.685,27.062,31.146z"/>
-				<path id="learnmoretext" fill="#FFFFFF" d="M36.847,27.285c0-1.549-1.026-2.512-2.68-2.512h-3.183v8.646h1.809v-3.622h0.621l2.255,3.622h2.032
-					l-2.361-3.811C36.288,29.26,36.847,28.403,36.847,27.285z M34.18,28.107h-1.387v-1.645h1.387c0.594,0,0.857,0.254,0.857,0.822
-					S34.774,28.107,34.18,28.107z"/>
-				<polygon id="learnmoretext" fill="#FFFFFF" points="40.528,29.665 43.442,29.665 43.442,27.976 40.528,27.976 40.528,26.463 44.161,26.463 
-					44.161,24.773 38.718,24.773 38.718,33.419 44.282,33.419 44.282,31.729 40.528,31.729 	"/>
-			</g>
-				</svg></a>
-		</div>
-	</div>
-</div>-->
 
 <!----Slider---->
 
@@ -495,6 +379,16 @@
 					console.log(glide.current());
 				});
 		</script>
+
+  <!-- Angular -->
+  <script src="js/config.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
+  <script src="js/angular-carousel.js"></script>
+  <script src="js/angular-scroll.js"></script>
+  <script src="js/angular-parallax.js"></script>
+  <script src="js/scrollfix.js"></script>
+  <script src="js/angular-fitvids.js"></script>
+  <script src="js/singlesclub.js"></script>
 
 </body>
 </html>
