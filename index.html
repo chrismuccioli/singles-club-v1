@@ -14,15 +14,12 @@
 	<title>Singles Club - Part record club. Part music journal.</title>
 	<meta name="description" content="Part record club. Part music journal.">
 	<meta name="keywords" content="record club, vinyl, records, music, indie, lp">
-
 	<meta name="author" content="www.singlesclub.fm">
-
 	<meta http-equiv="cleartype" content="on">
 
 	<link rel="shortcut icon" href="http://www.singlesclub.fm/img/favicon.ico">
 	<link rel="apple-touch-icon" href="http://www.singlesclub.fm/img/favicon.png" />
 	
-	<!-- Type Kit -->
 	<link rel="stylesheet" href="//f.fontdeck.com/s/css/vX5BlftdJZQK4usld5QwM75OOFY/singlesclub.dev/39874.css" type="text/css" />
 
 	<!-- Responsive and mobile friendly stuff -->
@@ -40,13 +37,6 @@
 	<link href="webfonts/ss-social-regular.css" rel="stylesheet" />
 
 	<!-- Responsive Stylesheets -->
-	
-	<!--
-	<link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/css/1024.css">
-	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/css/768.css">
-	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="/css/480.css">
-	
-	 -->
 
 	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
 	<script src="js/modernizr-2.5.3-min.js"></script>
@@ -56,85 +46,83 @@
 	
 	<!-- Slider Plugin -->
 	<script type="text/javascript" src="js/jquery.glide.js"></script>
-	
-	
 	<!-- Font Deck -->
 	<script type="text/javascript">
-	WebFontConfig = { fontdeck: { id: '39874' } };
-	
-	(function() {
-	  var wf = document.createElement('script');
-	  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-	  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-	  wf.type = 'text/javascript';
-	  wf.async = 'true';
-	  var s = document.getElementsByTagName('script')[0];
-	  s.parentNode.insertBefore(wf, s);
-	})();
+    WebFontConfig = { fontdeck: { id: '39874' } };
+    
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
 	</script>
-	
 	<script type="text/javascript">
-var html = document.getElementsByTagName('html')[0];
-html.className += '  wf-loading';
-setTimeout(function() {
-  html.className = html.className.replace(' wf-loading', '');
-}, 5000);
+    var html = document.getElementsByTagName('html')[0];
+    html.className += '  wf-loading';
+    setTimeout(function() {
+      html.className = html.className.replace(' wf-loading', '');
+    }, 5000);
 
-WebFontConfig = { fontdeck: { id: '39874' } };
+    WebFontConfig = { fontdeck: { id: '39874' } };
 
-(function() {
-  var wf = document.createElement('script');
-  wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-  wf.type = 'text/javascript';
-  wf.async = 'true';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(wf, s);
-})();
-</script>
-	
-
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
 	<!--Webfont -->
 	<link rel="stylesheet" type="text/css" href="webfonts/MyFontsWebfontsKit.css">
-	
 	<!--Scroll To-->
-    <script type="text/javascript">
-        $(document).ready(function (){
-            $("#learnmore").click(function (){
-                //$(this).animate(function(){
-                    $('html, body').animate({
-                        scrollTop: $(".scrollto").offset().top
-                    }, 1000, 'linear');
-                //});
-            });
-        });
-    </script>
-    	<script>
-		$(function() {
-			var pull 		= $('#pull');
-				menu 		= $('nav ul');
-				menuHeight	= menu.height();
+  <script type="text/javascript">
+    $(document).ready(function (){
+      $("#learnmore").click(function (){
+        //$(this).animate(function(){
+        $('html, body').animate({
+          scrollTop: $(".scrollto").offset().top
+        }, 1000, 'linear');
+        //});
+      });
+    });
+  </script>
+  <!--
+  <script>
+    $(function() {
+      var pull 		= $('#pull');
+      menu 		= $('nav ul');
+      menuHeight	= menu.height();
 
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
+      $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
 
-			$(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
-		});
+      $(window).resize(function(){
+        var w = $(window).width();
+        if(w > 320 && menu.is(':hidden')) {
+          menu.removeAttr('style');
+        }
+      });
+    });
 	</script>
+  -->
+
+  <!-- new stylezzz -->
+  <link href="css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
 
 <!-- new header nav -->
-<!--
-  <nav class="absolute t0 r0 l0">
+  <nav class="absolute t0 r0 l0 z4">
     <div class="container white">
       <div class="l-table">
         <div class="l-table-cell col-5 mobile-hide">
@@ -208,7 +196,6 @@ WebFontConfig = { fontdeck: { id: '39874' } };
       </svg>
     </a>
   </div>
--->
 <!-- end new header nav -->
 
 <!--<nav class="clearfix">

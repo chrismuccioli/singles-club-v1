@@ -1,6 +1,7 @@
 /*---Mobile Nav---*/
 
 /* Clearfix */
+/*
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -272,6 +273,7 @@ ul.footerlinks li {
 
 /*---Mobile Nav---*/
 
+/*
 nav { 
 		height: auto;
 		border-bottom: 0;
@@ -300,7 +302,7 @@ nav a#pull {
 	position: relative;
 	text-align: center;
 }
-	
+*/	
 }
 
 /*Smartphone*/
@@ -371,7 +373,6 @@ p {
     font-weight: normal;
     letter-spacing: .2px;
     line-height: 22px;
-    color: #333333;
 }
 
 h1 {
