@@ -132,7 +132,86 @@ WebFontConfig = { fontdeck: { id: '39874' } };
 
 <body>
 
-<nav class="clearfix">
+<!-- new header nav -->
+<!--
+  <nav class="absolute t0 r0 l0">
+    <div class="container white">
+      <div class="l-table">
+        <div class="l-table-cell col-5 mobile-hide">
+          <p class="lydian h4 caps center mb0 pl3">Part record club. Part music journal.</p>
+        </div>
+        <div class="l-table-cell center col-2 py1">
+          <a href="/">
+            <img src="images/logo.svg" alt="Singles Club" class="inline-block fit" />
+          </a>
+        </div>
+        <div class="l-table-cell col-5 mobile-hide">
+          <ul class="apercu h4 caps caps--t2 center list-inline mb0 nav-white">
+            <li><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
+            <li><a href="/journal/daniel-bachman">Journal</a></li>
+            <li><a href="http://blog.singlesclub.fm">Blog</a></li>
+            <li><a href="http://shop.singlesclub.fm">Shop</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="flyout scroll-y apercu aa white bg-black" ng-class="{ 'is-open': flyoutIsOpen }">
+    <div class="py4">
+      <ul class="list-simple lh2 mb4 nav-white">
+        <li>
+          <a href="#bringing-it-all-back-home" ng-click="toggleFlyout()" class="block mb2">
+            <p class="h2 bold mb1">Bringing It All<br>Back Home</p>
+            <span class="mid-grey">A Day With Daniel Bachman</span>
+          </a>
+        </li>
+        <li>
+          <a href="#label-head-josh-rosenthal" ng-click="toggleFlyout()" class="block mb2">
+            <p class="h2 bold mb1">Label Head</p>
+            <span class="mid-grey">Why Tompkins Square Records<br>is here to stay</span>
+          </a>
+        </li>
+        <li>
+          <a href="#roadshow" ng-click="toggleFlyout()" class="block mb2">
+            <p class="h2 bold mb1">Roadshow</p>
+            <span class="mid-grey">Daniel shares some deep cuts<br>he found on tour</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="list-simple nav-white mobile-show">
+        <li><a href="/">Home</a></li>
+        <li><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
+        <li class="grey"><a href="/journal/daniel-bachman">Journal</a></li>
+        <li><a href="http://blog.singlesclub.fm">Blog</a></li>
+        <li><a href="http://shop.singlesclub.fm">Shop</a></li>
+      </ul>
+    </div>
+    <div class="absolute t0 r0 b0 py4 center" style="padding-right:.5rem;padding-left:.5rem;">
+      <div ng-click="toggleFlyout()" class="apercu caps mb1" style="line-height:1.125">
+        F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
+      </div>
+      <img src="images/issuemeta.svg" />
+    </div>
+  </div>
+
+  <div class="fixed t0 l0 z4">
+    <a href ng-click="toggleFlyout()" class="inline-block bar button-icon white" style="padding:.5rem .375rem;">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="16px" height="16px" viewBox="0.5 0.5 32 32" enable-background="new 0.5 0.5 32 32" xml:space="preserve">
+      <path d="M30.5,14.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0
+        C32.5,15.395,31.605,14.5,30.5,14.5L30.5,14.5z"/>
+      <path d="M30.5,4.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0C32.5,5.395,31.605,4.5,30.5,4.5
+        L30.5,4.5z"/>
+      <path d="M30.5,24.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0
+        C32.5,25.395,31.605,24.5,30.5,24.5L30.5,24.5z"/>
+      </svg>
+    </a>
+  </div>
+-->
+<!-- end new header nav -->
+
+<!--<nav class="clearfix">
 	<ul class="clearfix">
 		<li><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
 		<li><a href="/journal/daniel-bachman">Journal</a></li>
@@ -140,12 +219,12 @@ WebFontConfig = { fontdeck: { id: '39874' } };
 		<li><a href="http://shop.singlesclub.fm">Shop</a></li>
 	</ul>
 	<a href="#" id="pull">Menu</a>
-</nav>
+</nav>-->
 
 
 <!----Nav---->
 
-<div class="navbarhome">
+<!--<div class="navbarhome">
 	<div class="container top_margin_small bottom_margin_small">
 		<div class="col tagline span_5_of_12">
 			<h6>Part record club. Part music journal.</h6>
@@ -199,7 +278,7 @@ WebFontConfig = { fontdeck: { id: '39874' } };
 				</svg></a>
 		</div>
 	</div>
-</div>
+</div>-->
 
 <!----Slider---->
 
