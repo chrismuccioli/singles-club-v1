@@ -62,11 +62,12 @@ nav a#pull {
 .tagline {
 	display: none !important;
 }
-
+/*
 .navbar {
 	padding-top: 20px !important;
 	padding-bottom: 0px;
 }
+*/
 
 .slider {
 	height: 300px !important;
@@ -77,10 +78,13 @@ nav a#pull {
 	height: 100% !important;
 }
 
+/*
 .nav {
 	display: none;
 }
+*/
 
+/*
 .navmargin {
 	margin-right: 8px !important;
 }
@@ -88,37 +92,41 @@ nav a#pull {
 .navbarhome {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
+*/
 
+/*
 .logo {
 	margin-bottom: 10px !important;
 	text-align: center;
 	display: inline !important;
 }
-
+*/
+/*
 #logomobile{
 	margin-top: -10px !important;
 }
+*/
 
 #logohomedesktop {
 	display: none;
 }
 
 .shopbanner {
-	height: 300px !important;
+	height: 300px;
 }
 
 .shopbannercopy {
-	padding-top: 80px !important;
+	padding-top: 80px;
 }
 
 #slide1, #slide2, #slide3 {
-	background-position:center bottom !important;
-	background-size: 200% !important; 
+	background-position:center bottom;
+	background-size: 200%; 
 }
 
 .shopbanner {
 	background-position: center;
-	background-size: 200% !important;
+	background-size: 200%;
 }
 
 .slider-nav, .slider-arrows {
@@ -126,15 +134,15 @@ nav a#pull {
 }
 
 .feature {
-	min-height: 100% !important;
-	margin-bottom: 15px !important;
-	padding-left: 0px !important;
-	padding-right: 0px !important;
+	min-height: 100%;
+	margin-bottom: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .mobilemargin {
-	padding-left: 20px !important;
-	padding-right: 20px !important;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 #desktop {
@@ -146,37 +154,37 @@ nav a#pull {
 }
 
 .mobilenewsletter {
-	text-align: center !important;
+	text-align: center;
 }
 
 ul.social {
-	text-align: center !important;
+	text-align: center;
 }
 
 .social {
-	margin-top: 35px !important;
+	margin-top: 35px;
 }
 	
 ul.footerlinks {
-	margin-left: 0px !important;
+	margin-left: 0px;
 }
 
 ul.footerlinks li {
-	display: block !important;
+	display: block;
 	line-height: 2em;
 }
 
 .footermargin {
-	margin-right: 0px !important;
-	margin-left: 0px !important;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 
 .copyright {
-	margin-top: 40px !important;
+	margin-top: 40px;
 }
 
 .sub-description {
-	margin-top: 15px !important;
+	margin-top: 15px;
 }
 
 #plus {
@@ -198,22 +206,22 @@ ul.footerlinks li {
 }
 
 #slide2 {
-	background-image:url(../img/slider/mobile/slider_daniel2.jpg) !important;
+	background-image:url(../img/slider/mobile/slider_daniel2.jpg);
 	background-size: 100%;
 	background-position: center; 
 }
 
 #slide3 {
-	background-image:url(../img/slider/mobile/slider_singlesclub.jpg) !important;
+	background-image:url(../img/slider/mobile/slider_singlesclub.jpg);
 	background-size: 100%;
 	background-position: center; 
 }
 
 .feature {
-	margin-bottom: 0px !important;
-	padding-left: 20px !important;
-	padding-right: 20px !important;
-	z-index: 1 !important;
+	margin-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	z-index: 1;
 }
 
 #mobile h3 {
@@ -221,8 +229,6 @@ ul.footerlinks li {
 	margin-top: -10px;
 	margin-bottom: -10px;
 }
-
-
 
 .learnmore {
 	text-align: center;
@@ -235,7 +241,7 @@ ul.footerlinks li {
 }
 
 .headline-bar-copy {
-	margin-top: 15px !important;
+	margin-top: 15px;
 }
 
 #learnmoretext {
@@ -257,17 +263,17 @@ ul.footerlinks li {
 }
 
 .desktopnewsletter {
-	display: none !important;
+	display: none;
 }
 
 .slider {
-	height: 360px !important;
+	height: 360px;
 }
 
 .journalheadline {
-	padding-top: 82% !important;
-	background-size: 130% !important;
-	background-position: center top !important;
+	padding-top: 82%;
+	background-size: 130%;
+	background-position: center top;
 	margin-top: 100px;
 }
 
@@ -306,6 +312,7 @@ nav a#pull {
 }
 
 /*Smartphone*/
+/*
 @media only screen and (max-width : 320px) {
 	nav li {
 		display: block;
@@ -313,18 +320,21 @@ nav a#pull {
 		width: 100%;
 	}
 }
+*/
 
 
 @media only screen and (min-width: 480px) {
-
-#mobile, #plus, #circle, #logomobile, .learnmore, .mobiletagline, nav, .clearfix {
-	display: none;
-}
-
-.mobilenewsletter p{
-	display: none !important;
-}
-
+  #mobile,
+  #plus,
+  #circle,
+  #logomobile,
+  .learnmore,
+  .mobiletagline {
+    display: none;
+  }
+  .mobilenewsletter p{
+    display: none;
+  }
 }
 
 
@@ -344,14 +354,13 @@ button:focus {
 
 body {
 	background-color: black;
-    text-rendering: optimizeLegibility; 
-    font-size: 16px;
-    font-style: normal;
-    font-family: "Reader Regular", Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    font-weight: normal;
-    letter-spacing: .2px;
-    line-height: 22px;
-    color: #333333;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Reader Regular", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: normal;
+  /*letter-spacing: .2px;*/
+  line-height: 22px;
+  color: #333333;
 }
 
 a {
@@ -515,9 +524,11 @@ h6 {
 	color: #161616 !important;
 }
 
+/*
 .gold {
 	color: #dea439 !important;
 }
+*/
 
 .offwhite {
 	color: rgb(245, 245, 245) !important;	
