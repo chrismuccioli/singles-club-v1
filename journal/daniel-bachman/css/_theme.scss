@@ -1,9 +1,12 @@
 // Theme
 
-$black: #111111;
+$black: #000;
+$dark-grey: #111111;
 $grey: #303030;
-$green: #79f6b9;
 $mid-grey: #666;
+
+  // Deprecated
+  $green: #79f6b9;
 
 $gold: #dea439;
 
@@ -20,6 +23,7 @@ body {
 
 .white { color: #fff; }
 .black { color: $black; }
+.dark-grey { color: $dark-grey; }
 .grey  { color: $grey; }
 .mid-grey { color: $mid-grey; }
 .green { color: $green; }
@@ -34,6 +38,7 @@ body {
 
 .bg-white { background-color: #fff; }
 .bg-black { background-color: $black; }
+.bg-dark-grey { background-color: $dark-grey; }
 .bg-grey  { background-color: $grey; }
 .bg-mid-grey { background-color: $mid-grey; }
 .bg-green { background-color: $green; }
@@ -68,6 +73,13 @@ a {
 }
 .link-grey {
   color: $grey;
+  text-decoration: none;
+  &:hover {
+    color: $gold;
+  }
+}
+.link-mid-grey {
+  color: $mid-grey;
   text-decoration: none;
   &:hover {
     color: $gold;
