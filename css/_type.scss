@@ -100,3 +100,16 @@ dl, ol, ul, p, .p {
 .lh1 { line-height: 1; }
 .lh2 { line-height: 1.25; }
 
+// Prevent flashing fonts with fontdeck
+// The recommended method flashes the entire body - not sure what the psychological
+// impact of perceived load time is, but my guess is not that much better.
+// Instead this method only hides elements styled with the fonts that are loading
+//.wf-loading body {
+.wf-loading {
+  .apercu,
+  .apercu-medium,
+  .apercu-bold {
+    visibility: hidden;
+  }
+}
+
