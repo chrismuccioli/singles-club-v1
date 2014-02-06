@@ -5,14 +5,10 @@
 var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel', 'duParallax', 'fitVids']);
 
 singlesclub.controller('MenuCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
-
   $scope.flyoutIsOpen = false;
-
   $scope.toggleFlyout = function() {
-    console.log('toggleFlyout');
     $scope.flyoutIsOpen = !$scope.flyoutIsOpen;
   };
-
 }]);
 
 singlesclub.controller('ModalCtrl', ['$scope', function($scope) {
@@ -34,9 +30,7 @@ singlesclub.controller('ParallaxCtrl', ['$scope', 'parallaxHelper', function($sc
 
 
 
-/* PLANGULAR
-   A Highly Customizable SoundCloud Player
-   http://jxnblk.github.io/Plangular */
+/* PLANGULAR http://jxnblk.github.io/Plangular */
 singlesclub.directive('plangular', function ($document, $rootScope, $http) {
     // Define the audio engine
     var audio = $document[0].createElement('audio');
@@ -163,5 +157,4 @@ singlesclub.filter('playTime', function() {
       };
     };
   });
-
 
