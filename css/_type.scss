@@ -1,21 +1,5 @@
 // Typography 
 
-/*
-p - 18px
-h1 - 72px
-h2 - 32px
-h3 - 16px
-h4 - 12px
-
-new:
-h4 - 14px
-h5 - 12px
-
-*/
-
-
-// Typography
-
 body {
   font-family: 'Reader Regular', sans-serif;
   font-weight: normal;
@@ -48,7 +32,7 @@ body {
   letter-spacing: .05em;
 }
 
-h1, .h1, h2, .h2, h3, h4, h5, h6, p, dl, ol, ul {
+h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
   margin-bottom: 2rem;
 }
 
@@ -83,33 +67,22 @@ dl, ol, ul, p, .p {
 }
 
 // Responsive Type Scale
-// Apply the .responsive class directly to elements or their parents
-.responsive {
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  body {
     line-height: 2rem;
-    .h1, &.h1 {
-      font-size: 4.5rem;
-      line-height: 5rem;
-    }
-    .h2, &.h2 {
-      font-size: 2rem;
-      line-height: 3rem;
-    }
-    dl, ol, ul, p, .p {
-      font-size: 1.125rem;
-    }
-    .small { font-size: .75rem; }
   }
-  /* @media (min-width: 1024px) {
-    .h1, &.h1 {
-      font-size: 6rem;
-      line-height: 8rem;
-    }
-    .h2, &.h2 {
-      font-size: 3rem;
-      line-height: 4rem;
-    }
-  }*/
+  .h1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+  .h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  p, .p {
+    font-size: 1.125rem;
+  }
+  .small { font-size: .75rem; }
 }
 
 // Utilities
