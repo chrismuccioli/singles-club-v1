@@ -87,10 +87,17 @@
   </div>
   <!-- end new header nav -->
 
-  <header class="slideshow slideshow--large">
-    <div style="height:620px;background-image: url(/images/daniel_issue1.jpg)" class="slide bg-cover bg-center bg-dark-grey"></div>
-    <div style="height:620px;background-image: url(/images/daniel_issue1.jpg)" class="slide bg-cover bg-center bg-dark-grey"></div>
-    <div style="height:620px;background-image: url(/images/daniel_issue1.jpg)" class="slide bg-cover bg-center bg-dark-grey"></div>
+  <header class="slideshow slideshow--large" ng-controller="SlideshowCtrl">
+    <div
+      style="background-image: url(/images/daniel_issue1.jpg)"
+      ng-style="offset"
+      class="slide bg-cover bg-center bg-dark-grey"></div>
+    <div
+      style="background-image: url(/images/daniel_issue1.jpg)"
+      class="slide bg-cover bg-center bg-dark-grey"></div>
+    <div
+      style="background-image: url(/images/daniel_issue1.jpg)"
+      class="slide bg-cover bg-center bg-dark-grey"></div>
   </header>
 
   <section class="aa white bg-black py2">
