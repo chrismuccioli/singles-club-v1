@@ -843,6 +843,11 @@ a {
   .link-white:hover {
     color: #dea439; }
 
+.link-white-static {
+  color: #fff; }
+  .link-white-static:hover {
+    color: #fff; }
+
 .link-grey {
   color: #303030;
   text-decoration: none; }
