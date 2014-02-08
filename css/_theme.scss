@@ -71,6 +71,12 @@ a {
     color: $gold;
   }
 }
+.link-white-static {
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
 .link-grey {
   color: $grey;
   text-decoration: none;

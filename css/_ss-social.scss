@@ -1,5 +1,5 @@
-@charset "UTF-8";
 
+$webfont-path: '../fonts/';
 /*
 * Symbolset
 * www.symbolset.com
@@ -12,11 +12,11 @@
 
 @font-face {
   font-family: "SSSocialRegular";
-  src: url('ss-social-regular.eot');
-  src: url('ss-social-regular.eot?#iefix') format('embedded-opentype'),
-       url('ss-social-regular.woff') format('woff'),
-       url('ss-social-regular.ttf')  format('truetype'),
-       url('ss-social-regular.svg#SSSocialRegular') format('svg');
+  src: url('#{$webfont-path}ss-social-regular.eot');
+  src: url('#{$webfont-path}ss-social-regular.eot?#iefix') format('embedded-opentype'),
+       url('#{$webfont-path}ss-social-regular.woff') format('woff'),
+       url('#{$webfont-path}ss-social-regular.ttf')  format('truetype'),
+       url('#{$webfont-path}ss-social-regular.svg#SSSocialRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }

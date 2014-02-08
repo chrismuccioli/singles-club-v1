@@ -4,35 +4,37 @@
   <meta charset="utf-8">
   <title>Singles Club Issue 01</title>
   <meta name="description" content="Singles Club Inaugural Issue">
+	<meta name="keywords" content="record club, vinyl, records, music, indie, lp">
+	<meta name="author" content="www.singlesclub.fm">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/favicon.png" />
   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="css/style.css" />
-
+  <link rel="stylesheet" href="../../css/style.css" />
   <meta property="og:type" content="website">
   <meta property="og:image" content="">
   <meta property="og:url" content="http://singlesclub.fm/journal/daniel-bachman">
   <meta property="og:title" content="Singles Club Issue 01">
   <meta property="og:description" content="Singles Club Inaugural Issue">
   <meta property="fb:app_id" content="1450710301810527">
+	<script type="text/javascript">
+    var html = document.getElementsByTagName('html')[0];
+    html.className += '  wf-loading';
+    setTimeout(function() {
+      html.className = html.className.replace(' wf-loading', '');
+    }, 5000);
 
-  <script type="text/javascript">
     WebFontConfig = { fontdeck: { id: '39874' } };
+
     (function() {
       var wf = document.createElement('script');
-      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
       wf.type = 'text/javascript';
       wf.async = 'true';
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(wf, s);
     })();
   </script>
-  
-  <!--comment comment -->
-
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
-
 </head>
 
 <body class="" ng-app="singlesclub" ng-controller="MenuCtrl">
@@ -45,7 +47,7 @@
         </div>
         <div class="l-table-cell center col-2 py1">
           <a href="/">
-            <img src="images/logo.svg" alt="Singles Club" class="inline-block fit" />
+            <img src="/images/logo.svg" alt="Singles Club" class="inline-block fit" />
           </a>
         </div>
         <div class="l-table-cell col-5 mobile-hide">
@@ -677,7 +679,7 @@
   </article>
 
   <section id="credits" class="px2 py3 aa mid-grey bg-dark-grey">
-    <h1 class="apercu-medium h2 caps gold">Credits</h1>
+    <h1 class="apercu-medium p caps gold">Credits</h1>
     <div class="clearfix">
       <ul class="list-simple h3 col col-3 ml0">
         <li class="mb1">
@@ -732,8 +734,10 @@
         <p class="small">Mastered by Joe Lambert in Brooklyn, NY
           Pressed by Gotta Groove in Cleveland, OH</p>
         <div class="mb1">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Singles Club Inaugural Issue" data-url="http://singlesclub.fm/journal/daniel-bachman" data-via="singlesclubfm">Tweet</a>
-          <div class="fb-like" data-href="http://singlesclub.fm/journal/daniel-bachman" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+          <div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Singles Club Inaugural Issue" data-url="http://singlesclub.fm/journal/daniel-bachman" data-via="singlesclubfm">Tweet</a>
+          </div>
+          <div class="fb-like" data-href="http://singlesclub.fm/journal/daniel-bachman" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
         </div>
       </div>
     </div>
@@ -742,7 +746,7 @@
   <section class="px2 py3 aa bg-dark-grey">
     <div class="clearfix">
       <div class="col col-12">
-        <h1 class="apercu-medium h2 caps gold">Mail Club</h1>
+        <h1 class="apercu-medium p mb0 caps gold">Mail Club</h1>
       </div>
     </div>
     <form class="clearfix" action="http://singlesclub.us6.list-manage.com/subscribe/post" method="POST">
@@ -752,10 +756,10 @@
         <input type="text" value ="E-MAIL" name="MERGE0" class="input input-white small mb1 x100"  id="form" onclick="this.focus();this.select()"onfocus="this.value=''; this.onfocus=null;"/>
       </div>
       <div class="col col-1">
-        <input type="submit" id="submitbutton" value="ok" name="submit" class="apercu button button-small button-block mb1 caps button-gold"/>
+        <input type="submit" id="submitbutton" value="ok" name="submit" class="apercu button button-block mb1 caps button-gold"/>
       </div>
-      <div class="col col-4 pre-4 center">
-        <ul class="list list-inline">
+      <div class="col col-4 pre-4 right-align mobile-center">
+        <ul class="list list-inline p">
           <li class=""><a href="https://twitter.com/singlesclubfm" class="ss-icon">twitter</a></li>
           <li class=""><a href="http://www.facebook.com/singlesclubfm" class="ss-icon">facebook</a></li>
           <li class=""><a href="http://singlesclubfm.tumblr.com/" class="ss-icon">tumblr</a></li>
@@ -765,10 +769,9 @@
       </div>
     </form>
     <div class="clearfix">
-      <div class="col col-4 mobile-center mid-grey">
-        <p>Join our newsletter for new tunes, mix tapes, and features every month.</p>
+      <div class="col col-6 mobile-center mid-grey">
+        <p class="h4">Join our newsletter for new tunes, mix tapes, and features every month.</p>
       </div>
-    </div>
     </div>
   </section>
 
@@ -783,11 +786,11 @@
   </footer>
 
 
-  <script src="js/config.js"></script>
+  <script src="../../js/config.js"></script>
 
   <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script src="js/jquery.unveil.min.js"></script>
-  <script src="js/jquery.smooth-scroll.min.js"></script>
+  <script src="../../js/jquery.unveil.min.js"></script>
+  <script src="../../js/jquery.smooth-scroll.min.js"></script>
   <script>
     $(document).ready(function() {
       $("img").unveil(512);
@@ -796,12 +799,12 @@
   </script>
 
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
-  <script src="js/angular-carousel.js"></script>
-  <script src="js/angular-scroll.js"></script>
-  <script src="js/angular-parallax.js"></script>
-  <script src="js/scrollfix.js"></script>
-  <script src="js/angular-fitvids.js"></script>
-  <script src="js/singlesclub.js"></script>
+  <script src="../../js/angular-carousel.js"></script>
+  <script src="../../js/angular-scroll.js"></script>
+  <script src="../../js/angular-parallax.js"></script>
+  <script src="../../js/scrollfix.js"></script>
+  <script src="../../js/angular-fitvids.js"></script>
+  <script src="../../js/singlesclub.js"></script>
 
   <script>
     // Twitter

@@ -1,434 +1,195 @@
-<!DOCTYPE html>
-<!-- HTML5 Boilerplate -->
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
+<!doctype html>
+<html lang="en">
 <head>
-
 	<meta charset="utf-8">
-	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
 	<title>Singles Club - Part record club. Part music journal.</title>
 	<meta name="description" content="Part record club. Part music journal.">
 	<meta name="keywords" content="record club, vinyl, records, music, indie, lp">
-
 	<meta name="author" content="www.singlesclub.fm">
-
-	<meta http-equiv="cleartype" content="on">
-
-	<link rel="shortcut icon" href="http://www.singlesclub.fm/img/favicon.ico">
-	<link rel="apple-touch-icon" href="http://www.singlesclub.fm/img/favicon.png" />
-	
-	<!-- Type Kit -->
-	<link rel="stylesheet" href="//f.fontdeck.com/s/css/vX5BlftdJZQK4usld5QwM75OOFY/singlesclub.dev/39874.css" type="text/css" />
-
-	<!-- Responsive and mobile friendly stuff -->
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/html5reset.css" media="all">
-	<link rel="stylesheet" href="css/style.css" media="all">
-	<link rel="stylesheet" href="css/col.css" media="all">
-	<link rel="stylesheet" href="css/12cols.css" media="all">
-	
-	<!-- Symbol Set Stylesheets -->
-	<link href="webfonts/ss-social-regular.css" rel="stylesheet" />
-
-	<!-- Responsive Stylesheets -->
-	
-	<!--
-	<link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/css/1024.css">
-	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/css/768.css">
-	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="/css/480.css">
-	
-	 -->
-
-	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
-	<script src="js/modernizr-2.5.3-min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	
-	<!-- Slider Plugin -->
-	<script type="text/javascript" src="js/jquery.glide.js"></script>
-	
-	
-	<!-- Font Deck -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="/favicon.png" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link href="/css/style.css" rel="stylesheet" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="http://singlesclub.fm/journal/daniel-bachman">
+  <meta property="og:title" content="Singles Club Issue 01">
+  <meta property="og:description" content="Singles Club Inaugural Issue">
+  <meta property="fb:app_id" content="1450710301810527">
 	<script type="text/javascript">
-	WebFontConfig = { fontdeck: { id: '39874' } };
-	
-	(function() {
-	  var wf = document.createElement('script');
-	  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-	  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-	  wf.type = 'text/javascript';
-	  wf.async = 'true';
-	  var s = document.getElementsByTagName('script')[0];
-	  s.parentNode.insertBefore(wf, s);
-	})();
-	</script>
-	
-	<script type="text/javascript">
-var html = document.getElementsByTagName('html')[0];
-html.className += '  wf-loading';
-setTimeout(function() {
-  html.className = html.className.replace(' wf-loading', '');
-}, 5000);
+    var html = document.getElementsByTagName('html')[0];
+    html.className += '  wf-loading';
+    setTimeout(function() {
+      html.className = html.className.replace(' wf-loading', '');
+    }, 5000);
 
-WebFontConfig = { fontdeck: { id: '39874' } };
+    WebFontConfig = { fontdeck: { id: '39874' } };
 
-(function() {
-  var wf = document.createElement('script');
-  wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-  wf.type = 'text/javascript';
-  wf.async = 'true';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(wf, s);
-})();
-</script>
-	
-
-	<!--Webfont -->
-	<link rel="stylesheet" type="text/css" href="webfonts/MyFontsWebfontsKit.css">
-	
-	<!--Scroll To-->
-    <script type="text/javascript">
-        $(document).ready(function (){
-            $("#learnmore").click(function (){
-                //$(this).animate(function(){
-                    $('html, body').animate({
-                        scrollTop: $(".scrollto").offset().top
-                    }, 1000, 'linear');
-                //});
-            });
-        });
-    </script>
-    	<script>
-		$(function() {
-			var pull 		= $('#pull');
-				menu 		= $('nav ul');
-				menuHeight	= menu.height();
-
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
-
-			$(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
-		});
-	</script>
-
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
 </head>
 
-<body>
+<body ng-app="singlesclub" ng-controller="MenuCtrl">
 
-<nav class="clearfix">
-	<ul class="clearfix">
-		<li><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
-		<li><a href="/journal/daniel-bachman">Journal</a></li>
-		<li><a href="http://blog.singlesclub.fm">Blog</a></li>
-		<li><a href="http://shop.singlesclub.fm">Shop</a></li>
-	</ul>
-	<a href="#" id="pull">Menu</a>
-</nav>
+  <!-- new header nav -->
+  <nav class="absolute t0 r0 l0 z1">
+    <div class="container white">
+      <div class="l-table">
+        <div class="l-table-cell col-5 mobile-hide">
+          <p class="lydian h4 caps center mb0 pl3">Part record club. Part music journal.</p>
+        </div>
+        <div class="l-table-cell center col-2 py1">
+          <a href="/">
+            <img src="images/logo.svg" alt="Singles Club" class="inline-block fit" />
+          </a>
+        </div>
+        <div class="l-table-cell col-5 mobile-hide">
+          <ul class="apercu h4 caps caps--t2 center list-inline mb0 nav-white">
+            <li><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
+            <li><a href="/journal/daniel-bachman">Journal</a></li>
+            <li><a href="http://blog.singlesclub.fm">Blog</a></li>
+            <li><a href="http://shop.singlesclub.fm">Shop</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
 
+  <div class="flyout scroll-y apercu aa white bg-black mobile-show" ng-class="{ 'is-open': flyoutIsOpen }">
+    <div class="py4">
+      <ul class="h2 bold list-simple nav-white">
+        <li><a href="/">Home</a></li>
+        <li><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
+        <li><a href="/journal/daniel-bachman">Journal</a></li>
+        <li><a href="http://blog.singlesclub.fm">Blog</a></li>
+        <li><a href="http://shop.singlesclub.fm">Shop</a></li>
+      </ul>
+    </div>
+  </div>
 
-<!----Nav---->
+  <div class="fixed t0 l0 z4 mobile-show">
+    <a href ng-click="toggleFlyout()" class="inline-block bar button-icon white" style="padding:.5rem .375rem;">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="16px" height="16px" viewBox="0.5 0.5 32 32" enable-background="new 0.5 0.5 32 32" xml:space="preserve">
+        <path d="M30.5,14.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0 C32.5,15.395,31.605,14.5,30.5,14.5L30.5,14.5z"/>
+        <path d="M30.5,4.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0C32.5,5.395,31.605,4.5,30.5,4.5 L30.5,4.5z"/>
+        <path d="M30.5,24.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0 C32.5,25.395,31.605,24.5,30.5,24.5L30.5,24.5z"/>
+      </svg>
+    </a>
+  </div>
+  <!-- end new header nav -->
 
-<div class="navbarhome">
-	<div class="container top_margin_small bottom_margin_small">
-		<div class="col tagline span_5_of_12">
-			<h6>Part record club. Part music journal.</h6>
-		</div>
-		<div class="logo col span_2_of_12">
-			<img id="logomobile" src="img/logo_mobile.svg">
-			<img id="logohomedesktop" src="img/logo.svg">
-		</div>
-		<div class="col span_5_of_12">
-			<ul class="nav">
-				<li class="navmargin"><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
-				<li class="navmargin"><a href="/journal/daniel-bachman">Journal</a></li>
-				<li class="navmargin"><a href="http://singlesclubfm.tumblr.com">Blog</a></li>
-				<li class=""><a href="http://shop.singlesclub.fm">Shop</a></li>
-			</ul>
-		</div>
-			<div class="mobiletagline">
-				<h6>Part record club.</h6>
-				<h6>Part music journal.</h6>
-			</div>
-			<div class="learnmore">
-			<a href="#" id="learnmore"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				 width="56px" height="56px" viewBox="0 0 56 56" enable-background="new 0 0 56 56" xml:space="preserve">
-			<circle id="learnmorecircle" fill="#191818" cx="28" cy="28" r="28"/>
-			<polygon id="learnmorearrow" fill="#FFFFFF" points="36.756,40.296 27.509,49.542 18.264,40.296 "/>
-			<g>
-				<polygon id="learnmoretext" fill="#FFFFFF" points="15.684,20.229 12.122,20.229 12.122,13.273 10.313,13.273 10.313,21.919 15.684,21.919 	"/>
-				<polygon id="learnmoretext" fill="#FFFFFF" points="22.248,20.229 18.494,20.229 18.494,18.165 21.408,18.165 21.408,16.476 18.494,16.476 
-					18.494,14.963 22.128,14.963 22.128,13.273 16.685,13.273 16.685,21.919 22.248,21.919 	"/>
-				<path id="learnmoretext" fill="#FFFFFF" d="M27.523,13.273h-1.739l-2.927,8.646h1.946l0.611-1.979h2.478l0.611,1.979h1.946l-2.899-8.561L27.523,13.273
-					z M25.936,18.251l0.719-2.361l0.719,2.361H25.936z"/>
-				<path id="learnmoretext" fill="#FFFFFF" d="M37.217,15.785c0-1.549-1.026-2.512-2.68-2.512h-3.183v8.646h1.81v-3.622h0.621l2.254,3.622h2.033
-					l-2.361-3.811C36.658,17.76,37.217,16.903,37.217,15.785z M34.55,16.607h-1.386v-1.645h1.386c0.594,0,0.858,0.254,0.858,0.822
-					S35.144,16.607,34.55,16.607z"/>
-				<polygon id="learnmoretext" fill="#FFFFFF" points="43.814,13.273 43.814,18.458 40.93,13.273 39.088,13.273 39.088,21.919 40.898,21.919 
-					40.898,16.734 43.782,21.919 45.624,21.919 45.624,13.273 	"/>
-				<polygon id="learnmoretext" fill="#FFFFFF" points="16.086,29.786 14.193,24.773 12.231,24.773 12.231,33.419 14.04,33.419 14.04,28.822 
-					15.404,32.569 15.435,32.651 16.737,32.651 18.131,28.822 18.131,33.419 19.941,33.419 19.941,24.773 17.978,24.773 	"/>
-				<path id="learnmoretext" fill="#FFFFFF" d="M25.463,24.678c-0.742,0-1.404,0.153-2.023,0.47c-1.29,0.65-2.06,2.127-2.06,3.949
-					c0,0.964,0.191,1.791,0.568,2.46c0.737,1.299,1.92,1.958,3.515,1.958c0.759,0,1.42-0.149,2.025-0.458
-					c1.288-0.678,2.058-2.158,2.058-3.96c0-0.949-0.195-1.777-0.579-2.46C28.252,25.337,27.073,24.678,25.463,24.678z M27.062,31.146
-					c-0.423,0.457-0.946,0.68-1.599,0.68c-0.65,0-1.177-0.223-1.611-0.68c-0.424-0.459-0.639-1.148-0.639-2.05
-					c0-0.902,0.215-1.592,0.638-2.05c0.435-0.457,0.962-0.68,1.612-0.68c0.653,0,1.176,0.222,1.6,0.68
-					c0.437,0.461,0.649,1.131,0.649,2.05C27.712,30.015,27.5,30.685,27.062,31.146z"/>
-				<path id="learnmoretext" fill="#FFFFFF" d="M36.847,27.285c0-1.549-1.026-2.512-2.68-2.512h-3.183v8.646h1.809v-3.622h0.621l2.255,3.622h2.032
-					l-2.361-3.811C36.288,29.26,36.847,28.403,36.847,27.285z M34.18,28.107h-1.387v-1.645h1.387c0.594,0,0.857,0.254,0.857,0.822
-					S34.774,28.107,34.18,28.107z"/>
-				<polygon id="learnmoretext" fill="#FFFFFF" points="40.528,29.665 43.442,29.665 43.442,27.976 40.528,27.976 40.528,26.463 44.161,26.463 
-					44.161,24.773 38.718,24.773 38.718,33.419 44.282,33.419 44.282,31.729 40.528,31.729 	"/>
-			</g>
-				</svg></a>
-		</div>
-	</div>
-</div>
+  <header class="slideshow slideshow--large" ng-controller="SlideshowCtrl">
+    <div
+      style="background-image: url(/images/daniel_issue1.jpg)"
+      ng-style="offset"
+      class="slide bg-cover bg-center bg-dark-grey"></div>
+    <div
+      style="background-image: url(/images/daniel_issue1.jpg)"
+      class="slide bg-cover bg-center bg-dark-grey"></div>
+    <div
+      style="background-image: url(/images/daniel_issue1.jpg)"
+      class="slide bg-cover bg-center bg-dark-grey"></div>
+  </header>
 
-<!----Slider---->
+  <section class="aa white bg-black py2">
+    <div class="container">
+      <h1 class="h2 apercu-medium center col col-8 pre-2 post-2">A subscription record club &amp; digital music journal published quarterly</h1>
+    </div>
+    <div class="container clearfix mb4">
+      <div class="col col-3 center py2 bg-dark-grey round">
+        <h2 class="h2 lydian lh2 gold">Exclusive<br> Tracks</h2>
+        <img src="images/features-01.svg" alt="record" width="96" class="fit mb2" />
+        <p class="mb0">Four 45s featuring exclusive material for subscribers</p>
+      </div>
+      <div class="col col-3 center py2 bg-dark-grey round">
+        <h2 class="h2 lydian lh2 gold">Delivered<br> Quarterly</h2>
+        <img src="images/features-02.svg" alt="four" width="96" class="fit mb2" />
+        <p class="mb0">Shipping included, straight to your door</p>
+      </div>
+      <div class="col col-3 center py2 bg-dark-grey round">
+        <h2 class="h2 lydian lh2 gold">Digital<br> Journal</h2>
+        <img src="images/features-03.svg" alt="computer" width="144" class="fit mb2" />
+        <p class="mb0">Three features to accompany each release</p>
+      </div>
+      <div class="col col-3 center py2 bg-dark-grey round">
+        <h2 class="h2 lydian lh2 gold">One<br> Year</h2>
+        <img src="images/features-04.svg" alt="branded box" width="96" class="fit mb2" />
+        <p class="mb0">7" box to fill, Singles Club pin, 45 adapter + more</p>
+      </div>
+    </div>
+    <div class="container clearfix">
+      <div class="col col-6 pre-3 post-3">
+        <a href="http://subscribe.singlesclub.fm" class="p apercu-medium caps caps--t2 mb2 button button-block button-gold">Subscribe Now</a>
+      </div>
+    </div>
+  </section>
 
-<div class="slider">
-		<ul class="slides">
-			<li class="slide">
-				<a href="http://shop.singlesclub.fm/products/singles-club-2014-subscription">
-				<div class="slideimage" id="slide1">
-								<!--
-								<div class="container">
-									<div class="slide1content">
-										<img src="img/logo_mobile.svg">
-									</div>
-								</div>
-								-->
-				</div>
-				</a>
-			</li>
-			<!--
-			<li class="slide"><div class="slideimage" id="slide2"></div></li>
-			<li class="slide"><div class="slideimage" id="slide3"></div></li>
-			-->
-		</ul>
-</div>
+  <section class="aa center white bg-black bg-cover bg-center" style="background-image: url(/images/shop_image2.jpg)">
+    <a href="http://shop.singlesclub.fm" class="block py6 link-white-static">
+      <h1 class="h1 apercu-bold caps mb0">The shop is now open</h1>
+      <p class="h2 apercu-medium mb0">Subscriptions, Records, Turntables &amp; More</p>
+    </a>
+  </section>
 
-
-<!----Learn More---->
-
-
-
-<!----Tag---->
-
-<div class="headline-bar bg_gold">
-	<div class="container">
-		<div class="section group">	
-			<div class="col span_12_of_12 headline-bar-copy black top_padding_small bottom_padding_small">
-				<span id="desktop"><h2>Four Stories. Four Singles. One Year.</h2></span>
-				<span id="mobile"><h3>Four Stories.<br>Four Singles.<br>One Year.</h3></span>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!----Arrow---->
-
-		<div class="centerobject container">
-			<svg version="1.1" id="arrow" class="col span_12_of_12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				 width="24.656px" height="12.328px" viewBox="0 0 24.656 12.328" enable-background="new 0 0 24.656 12.328" xml:space="preserve">
-			<polygon points="24.656,0 12.328,12.328 0,0 "/>
-			</svg>
-		</div>
-	
-<div class="container">
-	
-<div class="section group">
-		<div class="col span_1_of_12">
-		</div>
-		<div class="col span_10_of_12">
-			<div class="sub-description top_margin_small bottom_margin_medium mobilemargin">
-				<h2>A subscription record club &amp; digital music journal published quarterly</h2>
-			</div>
-		</div>
-		<div class="col span_1_of_12">
-		</div>
-	</div>
-
-<!----Features---->
-
-	<div class="section group mobilemargin">
-			<div class="col span_3_of_12">
-				<div class="feature bg_grey">
-					<h2>Exclusive<br>Tracks</h2>
-					<img class="feature-icon " src="img/features_record.svg">
-					<h4>Four 45’s featuring exclusive material for subscribers</h4>
-				</div>
-			</div>
-			<div class="centerobject">
-				<svg version="1.1" id="plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						 width="56px" height="56px" viewBox="0 0 56 56" enable-background="new 0 0 56 56" xml:space="preserve">
-					<circle id="circle" fill="#FFFFFF" cx="28" cy="28" r="28"/>
-					<path d="M40,26H30V16c0-1.104-0.896-2-2-2s-2,0.896-2,2v10H16c-1.104,0-2,0.896-2,2s0.896,2,2,2h10v10c0,1.104,0.896,2,2,2
-						s2-0.896,2-2V30h10c1.104,0,2-0.896,2-2S41.104,26,40,26z"/>
-				</svg>
-			</div>
-			<div class="col span_3_of_12">
-				<div class="feature bg_grey">
-					<h2>Delivered<br>Quarterly</h2>
-					<img class="feature-icon" src="img/features_4.svg">
-					<h4>Shipping included, straight to your door</h4>
-				</div>
-			</div>
-			<div class="centerobject">
-				<svg version="1.1" id="plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						 width="56px" height="56px" viewBox="0 0 56 56" enable-background="new 0 0 56 56" xml:space="preserve">
-					<circle id="circle" fill="#FFFFFF" cx="28" cy="28" r="28"/>
-					<path d="M40,26H30V16c0-1.104-0.896-2-2-2s-2,0.896-2,2v10H16c-1.104,0-2,0.896-2,2s0.896,2,2,2h10v10c0,1.104,0.896,2,2,2
-						s2-0.896,2-2V30h10c1.104,0,2-0.896,2-2S41.104,26,40,26z"/>
-				</svg>
-			</div>
-			<div class="col span_3_of_12">
-				<div class="feature bg_grey">
-					<h2>Digital<br>Journal</h2>
-					<img class="feature-icon" src="img/features_journal.svg">
-					<h4>Three features to accompany each release</h4>
-				</div>
-			</div>
-			<div class="centerobject">
-				<svg version="1.1" id="plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							 width="56px" height="56px" viewBox="0 0 56 56" enable-background="new 0 0 56 56" xml:space="preserve">
-						<circle id="circle" fill="#FFFFFF" cx="28" cy="28" r="28"/>
-						<path d="M40,26H30V16c0-1.104-0.896-2-2-2s-2,0.896-2,2v10H16c-1.104,0-2,0.896-2,2s0.896,2,2,2h10v10c0,1.104,0.896,2,2,2
-							s2-0.896,2-2V30h10c1.104,0,2-0.896,2-2S41.104,26,40,26z"/>
-				</svg>
-			</div>
-			<div class="col span_3_of_12">
-				<div class="feature bg_grey">
-					<h2>One<br>Year</h2>
-					<img class="feature-icon" src="img/features_box.svg">
-					<h4>7" box to fill, Singles Club Pin, 45 adapter + more</h4>
-				</div>
-			</div>
-	</div>
-<!----The Pitch---->		
-
-
-	
-	<div class="section group  mobilemargin">
-		<div class="span_3_of_12 col"></div>
-		<div class="span_6_of_12 col ">
-			<a href="http://subscribe.singlesclub.fm" class="top_margin_medium button bottom_margin_medium">Subscribe Now</a>
-		</div>
-		<div class="span_3_of_12 col"></div>
-	</div>		
-	
-	
-</div>
-
-<!----Shop---->
-
-<a href="http://shop.singlesclub.fm">
-<div class="shopbanner top_margin_large">
-	<div class="section group">
-		<div class="col span_12_of_12 shopbannercopy">
-			<span id="desktop"><h1> THE SHOP IS NOW OPEN</h1>
-			<h2>Subscriptions, Records, Turntables & More</h2></span>
-			<span id="mobile"><h1>THE SHOP</h1><h2>NOW OPEN</h2></span>
-		</div>
-	</div>
-</div>
-</a>
-
-
-<!----Mail Club----> 
-
-<div class="mailclub bg_grey top_padding_large bottom_padding_large">
-	<div class="container">
-		<div class="section group mailclubhead mobilemargin">
-			<div class="col span_3_of_12">
-			<h5>Mail Club</h5>
-			</div>
-			<div class="col span_9_of_12">
-			</div>
-		</div>
-    <form class="section group mobilemargin" action="http://singlesclub.us6.list-manage.com/subscribe/post" method="POST">
-      <div class="col span_3_of_12">
+  <section class="px2 py3 aa bg-dark-grey">
+    <div class="clearfix">
+      <div class="col col-12">
+        <h1 class="apercu-medium p mb0 caps gold">Mail Club</h1>
+      </div>
+    </div>
+    <form class="clearfix" action="http://singlesclub.us6.list-manage.com/subscribe/post" method="POST">
+      <div class="col col-3">
         <input type="hidden" name="u" value="27badb2e91">
         <input type="hidden" name="id" value="1781494ce0">
-        <input type="text" value ="E-MAIL" name="MERGE0" class="input grey"  id="form" onclick="this.focus();this.select()"onfocus="this.value=''; this.onfocus=null;"/>
+        <input type="text" value ="E-MAIL" name="MERGE0" class="input input-white small mb1 x100"  id="form" onclick="this.focus();this.select()"onfocus="this.value=''; this.onfocus=null;"/>
       </div>
-      <div class="col span_1_of_12">
-        <input type="submit" id="submitbutton" value="ok" name="submit" class="button_small"/>
+      <div class="col col-1">
+        <input type="submit" id="submitbutton" value="ok" name="submit" class="apercu button button-block mb1 caps button-gold"/>
       </div>
-      <div class="col span_4_of_12 mobilenewsletter">
-        <p>Join our newsletter for new tunes, mix tapes, and features every month.</p>
-      </div>
-      <div class="col span_4_of_12">
-          <ul class="social">
-            <li class="socialmargin"><a href="https://twitter.com/singlesclubfm" class="ss-icon">twitter</a></li>
-            <li class="socialmargin"><a href="http://www.facebook.com/singlesclubfm" class="ss-icon">facebook</a></li>
-            <li class="socialmargin"><a href="http://singlesclubfm.tumblr.com/" class="ss-icon">tumblr</a></li>
-            <li class="socialmargin"><a href="http://www.instagram.com/singlesclubfm" class="ss-icon">instagram</a></li>
-            <li><a href="https://soundcloud.com/singlesclubfm" class="ss-icon">soundcloud</a></li>
-          </ul>
+      <div class="col col-4 pre-4 right-align mobile-center">
+        <ul class="list list-inline p">
+          <li class=""><a href="https://twitter.com/singlesclubfm" class="ss-icon">twitter</a></li>
+          <li class=""><a href="http://www.facebook.com/singlesclubfm" class="ss-icon">facebook</a></li>
+          <li class=""><a href="http://singlesclubfm.tumblr.com/" class="ss-icon">tumblr</a></li>
+          <li class=""><a href="http://www.instagram.com/singlesclubfm" class="ss-icon">instagram</a></li>
+          <li><a href="https://soundcloud.com/singlesclubfm" class="ss-icon">soundcloud</a></li>
+        </ul>
       </div>
     </form>
-		<div class="section group mobilemargin">
-			<div class="col span_4_of_12 desktopnewsletter">
-				<p>Join our newsletter for new tunes, mix tapes, and features every month.</p>
-			</div>
-			<div class="col span_8_of_12"></div>
-		</div>
-	</div>
-</div>
+    <div class="clearfix">
+      <div class="col col-6 mobile-center mid-grey">
+        <p class="h4">Join our newsletter for new tunes, mix tapes, and features every month.</p>
+      </div>
+    </div>
+  </section>
 
-<!----Footer---->
+  <footer class="center px2 py2 grey bg-black">
+    <ul class="list-inline">
+      <li><a href="mailto:hello@singlesclub.fm" class="apercu-bold caps link-grey">Contact</a></li>
+      <li><a href="http://shop.singlesclub.fm" class="apercu-bold caps link-grey">Shop</a></li>
+      <li><a href="http://subscribe.singlesclub.fm" class="apercu-bold caps link-grey">Subscribe</a></li>
+    </ul>
+    <p class="small mb0">P.O. Box 550 Brooklyn NY 11211<br>
+      © 2014 Singles Club LLC - All Rights Reserved</p>
+  </footer>
 
-<div class="footer">
-	<div class="container  top_margin_medium bottom_margin_medium">	
-		<div class="section group span_12_of_12">
-			<ul class="footerlinks">
-				<li class="footermargin"><a href="#"> </a></li>
-				<li class="footermargin"><a href="mailto:hello@singlesclub.fm">Contact</a></li>
-				<li class="footermargin"><a href="http://shop.singlesclub.fm">Shop</a></li>
-				<li><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
-			</ul>
-		</div>
-		<div class="section group span_12_of_12">
-			<div class="copyright top_margin_medium">
-				<p>P.O. Box 550 Brooklyn NY 11211</p>
-				<p>&copy; 2014 Singles Club LLC - All Rights Reserved</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-		<script type="text/javascript">
-			var glide = $('.slider').glide().data('api_glide');
-
-				$(window).on('keyup', function (key) {
-					if (key.keyCode === 13) {
-						glide.jump(3, console.log('Wooo!'));
-					};
-				});
-
-				$('.slider-arrow').on('click', function() {
-					console.log(glide.current());
-				});
-		</script>
+  <script src="js/config.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
+  <script src="js/angular-carousel.js"></script>
+  <script src="js/angular-scroll.js"></script>
+  <script src="js/angular-parallax.js"></script>
+  <script src="js/scrollfix.js"></script>
+  <script src="js/angular-fitvids.js"></script>
+  <script src="js/singlesclub.js"></script>
 
 </body>
 </html>
