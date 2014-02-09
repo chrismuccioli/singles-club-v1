@@ -51,7 +51,8 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 
 h3, .h3 {
@@ -104,8 +105,17 @@ dl, ol, ul, p, .p {
   .mobile-center { text-align: center; }
 }
 
+//line height
+
 .lh1 { line-height: 1; }
 .lh2 { line-height: 1.25; }
+
+// Letter Spacing
+
+.ls05 { letter-spacing: .05em;}
+.ls1 { letter-spacing: .1em;}
+.ls5 { letter-spacing: .2em;}
+
 
 // Prevent flashing fonts with fontdeck
 // The recommended method flashes the entire body - not sure what the psychological

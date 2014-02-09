@@ -40,7 +40,8 @@ h1, .h1 {
   line-height: 3rem; }
 
 h2, .h2 {
-  font-size: 1.5rem; }
+  font-size: 2rem;
+  line-height: 3rem; }
 
 h3, .h3 {
   font-size: 1rem;
@@ -67,7 +68,8 @@ dl, ol, ul, p, .p {
     line-height: 5rem; }
 
   .h2 {
-    font-size: 2rem;}
+    font-size: 2rem;
+    line-height: 3rem; }
 
   p, .p {
     font-size: 1.125rem; }
@@ -92,18 +94,6 @@ dl, ol, ul, p, .p {
 
 .center {
   text-align: center; }
-  
-.ls05 {
-	letter-spacing: .05em;
-}
-
-.ls1 {
-	letter-spacing: .1em;
-}
-
-.ls2 {
-	letter-spacing: .2em;
-}
 
 .right-align {
   text-align: right; }
@@ -116,6 +106,15 @@ dl, ol, ul, p, .p {
 
 .lh2 {
   line-height: 1.25; }
+
+.ls05 {
+  letter-spacing: .05em; }
+
+.ls1 {
+  letter-spacing: .1em; }
+
+.ls5 {
+  letter-spacing: .2em; }
 
 .wf-loading .apercu,
 .wf-loading .apercu-medium,
@@ -265,10 +264,9 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 .pl3 {
   padding-left: 3rem; }
-  
+
 .pl4 {
-	padding-left: 4rem;
-}
+  padding-left: 4rem; }
 
 .p4 {
   padding: 4rem; }
@@ -402,9 +400,6 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
   .l-x50 {
     width: 50%; }
-    
-  .l-x60 {
-    width: 60%; }
 
   .l-x75 {
     width: 75%; }
@@ -1285,12 +1280,6 @@ html:hover [class^="ss-"] {
 /* Legacy */
 .ss-fivehundredpx:before, .ss-fivehundredpx.right:after {
   content: ''; }
-  
-.transparent {
-	zoom: 1;
-	filter: alpha(opacity=50);
-	opacity: 0.5;
-}
 
 @font-face {
   font-family: 'LydianBT-Italic';
