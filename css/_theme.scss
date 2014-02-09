@@ -5,6 +5,7 @@ $dark-grey: #111111;
 $grey: #303030;
 $mid-grey: #666;
 $light-grey: #999;
+$blue: #5200FF;
 
   // Deprecated
   $green: #79f6b9;
@@ -62,7 +63,7 @@ a {
   color: $gold;
   text-decoration: none;
   &:hover {
-    color: darken($gold,10%);
+    color: $blue;
   }
 }
 .nav-white a,
@@ -70,7 +71,7 @@ a {
   color: #fff;
   text-decoration: none;
   &:hover {
-    color: $gold;
+    color: $blue;
   }
 }
 .link-white-static {
@@ -83,14 +84,14 @@ a {
   color: $grey;
   text-decoration: none;
   &:hover {
-    color: $gold;
+    color: $blue;
   }
 }
 .link-mid-grey {
   color: $mid-grey;
   text-decoration: none;
   &:hover {
-    color: $gold;
+    color: $blue;
   }
 }
 
@@ -109,7 +110,7 @@ a {
   }
   &:hover {
     svg path {
-      fill: $gold;
+      fill: $blue;
     }
   }
 }
@@ -120,7 +121,7 @@ a {
   }
   &:hover {
     svg path {
-      fill: $gold;
+      fill: $blue;
     }
   }
 }
@@ -135,7 +136,7 @@ a {
   color: #fff;
   background-color: $grey;
   &:hover {
-    background-color: $gold;
+    background-color: $blue;
   }
 }
 
@@ -144,7 +145,7 @@ a {
   background-color: $gold;
   &:hover {
     color: #fff;
-    background-color: darken($gold,10%);
+    background-color: $blue;
   }
 }
 
@@ -158,10 +159,10 @@ a {
     fill: #fff;
   }
   &:hover {
-    color: $gold;
-    border-color: $gold;
+    color: $blue;
+    border-color: $blue;
     svg path {
-      fill: $gold;
+      fill: $blue;
     }
   }
 }
