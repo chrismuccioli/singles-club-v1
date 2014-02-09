@@ -5,14 +5,10 @@
 var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel', 'duParallax', 'fitVids']);
 
 singlesclub.controller('MenuCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
-  $scope.herro = 'derp';
-
   $scope.flyoutIsOpen = false;
-
   $scope.toggleFlyout = function() {
     $scope.flyoutIsOpen = !$scope.flyoutIsOpen;
   };
-
 }]);
 
 singlesclub.controller('ModalCtrl', ['$scope', function($scope) {
@@ -32,11 +28,45 @@ singlesclub.controller('ParallaxCtrl', ['$scope', 'parallaxHelper', function($sc
   $scope.rotation = parallaxHelper.createAnimator(-.02);
 }]);
 
+singlesclub.controller('SlideshowCtrl', ['$scope', '$timeout', function($scope, $timeout) {
+  $scope.index = 0;
+  $scope.offset = { marginLeft: 0 + '%' };
+  var slides = document.getElementsByClassName('slide');
+  console.log(slides);
+  console.log(slides.length);
+
+  $scope.next = function() {
+    if($scope.index + 1 < slides.length) {
+      $scope.index++; 
+    } else {
+      $scope.index = 0;
+    }
+    $scope.offset = { marginLeft: $scope.index * -100 + '%' };
+
+  };
+  $scope.previous = function() {
+    if($scope.index > 0) {
+      $scope.index--;
+    } else {
+      $scope.index = slides.length - 1;
+    }
+    $scope.offset = { marginLeft: $scope.index * -100 + '%' };
+  };
+
+  // Auto-advance
+  // interval sets the time in ms before transitioning slides
+  // transition speed is handled via css
+  var interval = 4000;
+  var advance = function() {
+    $scope.next();
+    $timeout(advance, interval);
+  }
+  $timeout(advance, interval);
+
+}]);
 
 
-/* PLANGULAR
-   A Highly Customizable SoundCloud Player
-   http://jxnblk.github.io/Plangular */
+/* PLANGULAR http://jxnblk.github.io/Plangular */
 singlesclub.directive('plangular', function ($document, $rootScope, $http) {
     // Define the audio engine
     var audio = $document[0].createElement('audio');
@@ -163,5 +193,4 @@ singlesclub.filter('playTime', function() {
       };
     };
   });
-
 
