@@ -67,8 +67,7 @@ dl, ol, ul, p, .p {
     line-height: 5rem; }
 
   .h2 {
-    font-size: 2rem;
-    line-height: 3rem; }
+    font-size: 2rem;}
 
   p, .p {
     font-size: 1.125rem; }
@@ -93,6 +92,18 @@ dl, ol, ul, p, .p {
 
 .center {
   text-align: center; }
+  
+.ls05 {
+	letter-spacing: .05em;
+}
+
+.ls1 {
+	letter-spacing: .1em;
+}
+
+.ls2 {
+	letter-spacing: .2em;
+}
 
 .right-align {
   text-align: right; }
@@ -254,6 +265,10 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 .pl3 {
   padding-left: 3rem; }
+  
+.pl4 {
+	padding-left: 4rem;
+}
 
 .p4 {
   padding: 4rem; }
@@ -894,7 +909,8 @@ a {
   color: #fff;
   background-color: #303030; }
   .button-grey:hover {
-    background-color: #5200ff; }
+    background-color: #5200ff;
+    color: #fff; }
 
 .button-gold {
   color: #fff;
