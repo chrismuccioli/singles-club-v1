@@ -26,17 +26,27 @@ body {
   font-weight: 600;
   font-style: normal;
 }
+
 .apercu-bold {
   font-family: 'Apercu Bold', Calibri, sans-serif;
   font-weight: bold;
   font-style: normal;
 }
 
-.lydian {
+.lydian-italic {
   font-family: LydianBT-Italic, georgia;
   font-weight: lighter;
   //font-style: italic;
-  letter-spacing: .05em;
+}
+
+.lydian {
+  font-family: LydianBT-Roman, georgia;
+  font-weight: normal;
+}
+
+.lydian-bold {
+  font-family: LydianBT-Bold, georgia;
+  font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
@@ -114,7 +124,8 @@ dl, ol, ul, p, .p {
 
 .ls05 { letter-spacing: .05em;}
 .ls1 { letter-spacing: .1em;}
-.ls5 { letter-spacing: .2em;}
+.ls1-05 { letter-spacing: .105;}
+.ls2 { letter-spacing: .2em;}
 
 
 // Prevent flashing fonts with fontdeck

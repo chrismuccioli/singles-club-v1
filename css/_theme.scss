@@ -179,3 +179,8 @@ a {
           user-select: none;
 }
 
+.transparent {
+	zoom: 1;
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+}

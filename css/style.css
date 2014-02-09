@@ -27,10 +27,17 @@ body {
   font-weight: bold;
   font-style: normal; }
 
-.lydian {
+.lydian-italic {
   font-family: LydianBT-Italic, georgia;
-  font-weight: lighter;
-  letter-spacing: .05em; }
+  font-weight: lighter; }
+
+.lydian {
+  font-family: LydianBT-Roman, georgia;
+  font-weight: normal; }
+
+.lydian-bold {
+  font-family: LydianBT-Bold, georgia;
+  font-weight: normal; }
 
 h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
   margin-bottom: 2rem; }
@@ -113,7 +120,10 @@ dl, ol, ul, p, .p {
 .ls1 {
   letter-spacing: .1em; }
 
-.ls5 {
+.ls1-05 {
+  letter-spacing: .105; }
+
+.ls2 {
   letter-spacing: .2em; }
 
 .wf-loading .apercu,
@@ -383,6 +393,9 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
   .m-x50 {
     width: 50%; }
 
+  .m-x60 {
+    width: 60%; }
+
   .m-x75 {
     width: 75%; }
 
@@ -400,6 +413,9 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
   .l-x50 {
     width: 50%; }
+
+  .l-x60 {
+    width: 60%; }
 
   .l-x75 {
     width: 75%; }
@@ -488,8 +504,8 @@ html, body {
   .ui-scrollfix .ui-scrollfix-show {
     display: block; }
   .ui-scrollfix .ui-scrollfix-hide {
-    -webkit-transform: translateX(-4rem);
-    transform: translateX(-4rem); }
+    -webkit-transform: translateX(-4.5rem);
+    transform: translateX(-4.5rem); }
 
 .z1 {
   z-index: 1; }
@@ -939,6 +955,11 @@ a {
   -ms-user-select: none;
   user-select: none; }
 
+.transparent {
+  zoom: 1;
+  filter: alpha(opacity=90);
+  opacity: 0.9; }
+
 @-webkit-keyframes popin {
   from {
     -webkit-transform: scale(0.8); }
@@ -1285,3 +1306,13 @@ html:hover [class^="ss-"] {
   font-family: 'LydianBT-Italic';
   src: url("../fonts/lydian-italic.eot");
   src: url("../fonts/lydian-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/lydian-italic.woff") format("woff"), url("../fonts/lydian-italic.ttf") format("truetype"), url("../fonts/lydian-italic.svg#wf") format("svg"); }
+
+@font-face {
+  font-family: 'LydianBT-Roman';
+  src: url("webfonts/29DC3E_0_0.eot");
+  src: url("webfonts/29DC3E_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/29DC3E_0_0.woff") format("woff"), url("webfonts/29DC3E_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'LydianBT-Bold';
+  src: url("webfonts/29DC45_0_0.eot");
+  src: url("webfonts/29DC45_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/29DC45_0_0.woff") format("woff"), url("webfonts/29DC45_0_0.ttf") format("truetype"); }
