@@ -4,6 +4,7 @@ $black: #000;
 $dark-grey: #111111;
 $grey: #303030;
 $mid-grey: #666;
+$light-grey: #999;
 
   // Deprecated
   $green: #79f6b9;
@@ -29,6 +30,7 @@ body {
 .green { color: $green; }
 .gold { color: $gold; }
 .tan { color: $tan; }
+.light-grey { color: $light-grey; }
 
 .peach { color: $peach; }
 .bg-peach-to-cream {

@@ -1,9 +1,8 @@
 @charset "UTF-8";
 body {
-  font-family: 'Reader Regular', sans-serif;
-  font-weight: normal;
+  font-family: 'Apercu Light', sans-serif;
+  font-weight: 200;
   font-style: normal;
-  font-weight: 400;
   line-height: 1.75rem;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
@@ -11,6 +10,11 @@ body {
 .apercu {
   font-family: 'Apercu Regular', sans-serif;
   font-weight: normal;
+  font-style: normal; }
+
+.apercu-light {
+  font-family: 'Apercu Light', Calibri, sans-serif;
+  font-weight: 200;
   font-style: normal; }
 
 .apercu-medium {
@@ -778,6 +782,9 @@ body {
 
 .tan {
   color: #aa9785; }
+
+.light-grey {
+  color: #999999; }
 
 .peach {
   color: #fde8d7; }
