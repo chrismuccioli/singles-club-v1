@@ -1285,6 +1285,12 @@ html:hover [class^="ss-"] {
 /* Legacy */
 .ss-fivehundredpx:before, .ss-fivehundredpx.right:after {
   content: ''; }
+  
+.transparent {
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
 
 @font-face {
   font-family: 'LydianBT-Italic';
