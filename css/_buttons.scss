@@ -1,0 +1,79 @@
+// Buttons
+
+.sq4 { width: 4rem; height: 4rem; }
+
+.button {
+  // Button style reset
+  //font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  
+  display: inline-block;
+  height: auto;
+  min-height: 3rem;
+  line-height: 3rem;
+  padding: 0 2rem;
+  border-radius: 2px;
+}
+
+.button-small {
+  height: auto;
+  min-height: 2rem;
+  line-height: 2rem;
+  padding: 0 1.5rem;
+}
+
+.button-circle {
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  text-align: center;
+  border-radius: 50%;
+  svg {
+    padding: .375rem;
+  }
+}
+.button-circle-big {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1.25rem; 
+  }
+}
+
+// Buttons for svg icons
+.button-icon {
+  display: inline-block;
+  svg {
+    padding: .75rem;
+  }
+}
+.button-icon-small {
+  svg {
+    padding: .5rem;
+  }
+}
+
+// Buttons for SS icons
+.button-ss-icon {
+  display: inline-block;
+  line-height: 2rem;
+  padding: 0 .5rem;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0 .5rem;
+}
+

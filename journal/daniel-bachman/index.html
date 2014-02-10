@@ -4,52 +4,54 @@
   <meta charset="utf-8">
   <title>Singles Club Issue 01</title>
   <meta name="description" content="Singles Club Inaugural Issue">
+	<meta name="keywords" content="record club, vinyl, records, music, indie, lp">
+	<meta name="author" content="www.singlesclub.fm">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/favicon.png" />
   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="css/style.css" />
-
+  <link rel="stylesheet" href="../../css/style.css" />
   <meta property="og:type" content="website">
   <meta property="og:image" content="">
   <meta property="og:url" content="http://singlesclub.fm/journal/daniel-bachman">
   <meta property="og:title" content="Singles Club Issue 01">
   <meta property="og:description" content="Singles Club Inaugural Issue">
   <meta property="fb:app_id" content="1450710301810527">
+	<script type="text/javascript">
+    var html = document.getElementsByTagName('html')[0];
+    html.className += '  wf-loading';
+    setTimeout(function() {
+      html.className = html.className.replace(' wf-loading', '');
+    }, 5000);
 
-  <script type="text/javascript">
     WebFontConfig = { fontdeck: { id: '39874' } };
+
     (function() {
       var wf = document.createElement('script');
-      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
       wf.type = 'text/javascript';
       wf.async = 'true';
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(wf, s);
     })();
   </script>
-  
-  <!--comment comment -->
-
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
-
 </head>
 
 <body class="" ng-app="singlesclub" ng-controller="MenuCtrl">
 
   <nav class="absolute t0 r0 l0">
-    <div class="container aa white">
+    <div class="container white">
       <div class="l-table">
         <div class="l-table-cell col-5 mobile-hide">
-          <p class="apercu small bold caps italic center mb0 pl3">Part record club. Part music journal.</p>
+          <p class="lydian h4 caps ls1 center mb0 pl3">Part record club. Part music journal.</p>
         </div>
         <div class="l-table-cell center col-2 py1">
           <a href="/">
-            <img src="images/logo.svg" alt="Singles Club" class="inline-block fit" />
+            <img src="/images/logo.svg" alt="Singles Club" class="inline-block fit" />
           </a>
         </div>
         <div class="l-table-cell col-5 mobile-hide">
-          <ul class="apercu bold caps small center list-inline mb0 nav-white">
+          <ul class="apercu h4 caps ls1 center list-inline mb0 nav-white">
             <li><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
             <li><a href="/journal/daniel-bachman">Journal</a></li>
             <li><a href="http://blog.singlesclub.fm">Blog</a></li>
@@ -60,24 +62,24 @@
     </div>
   </nav>
 
-  <div class="flyout scroll-y apercu aa white bg-black" ng-class="{ 'is-open': flyoutIsOpen }">
+  <div class="flyout scroll-y apercu aa bg-black" ng-class="{ 'is-open': flyoutIsOpen }">
     <div class="py4">
       <ul class="list-simple lh2 mb4 nav-white">
         <li>
           <a href="#bringing-it-all-back-home" ng-click="toggleFlyout()" class="block mb2">
-            <p class="h2 bold mb1">Bringing It All<br>Back Home</p>
+            <p class="h2 apercu lh2 aa mb1"><span class="p bold gold">1</span><br>Bringing It All<br>Back Home</p>
             <span class="mid-grey">A Day With Daniel Bachman</span>
           </a>
         </li>
         <li>
           <a href="#label-head-josh-rosenthal" ng-click="toggleFlyout()" class="block mb2">
-            <p class="h2 bold mb1">Label Head</p>
+            <p class="h2 apercu aa lh2 mb1"><span class="p bold gold">2</span><br>Label Head</p>
             <span class="mid-grey">Why Tompkins Square Records<br>is here to stay</span>
           </a>
         </li>
         <li>
           <a href="#roadshow" ng-click="toggleFlyout()" class="block mb2">
-            <p class="h2 bold mb1">Roadshow</p>
+            <p class="h2 apercu aa lh2 mb1"><span class="p bold gold">3</span><br>Roadshow</p>
             <span class="mid-grey">Daniel shares some deep cuts<br>he found on tour</span>
           </a>
         </li>
@@ -90,8 +92,8 @@
         <li><a href="http://shop.singlesclub.fm">Shop</a></li>
       </ul>
     </div>
-    <div class="absolute t0 r0 b0 py4 center" style="padding-right:.5rem;padding-left:.5rem;">
-      <div ng-click="toggleFlyout()" class="apercu caps mb1" style="line-height:1.125">
+    <div class="absolute t0 r0 b0 py4 center" style="padding-right:1rem;padding-left:1rem;">
+      <div ng-click="toggleFlyout()" class="lydian-bold white caps mb1" style="line-height:1.35">
         F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
       </div>
       <img src="images/issuemeta.svg" />
@@ -99,7 +101,7 @@
   </div>
 
   <div class="fixed t0 l0 z4">
-    <a href ng-click="toggleFlyout()" class="inline-block bar button-icon white" style="padding:.5rem .375rem;">
+    <a href ng-click="toggleFlyout()" class="inline-block bar button-icon white" style="padding:.5rem .9rem;">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="16px" height="16px" viewBox="0.5 0.5 32 32" enable-background="new 0.5 0.5 32 32" xml:space="preserve">
       <path d="M30.5,14.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0
@@ -112,27 +114,26 @@
     </a>
   </div>
 
-  <div plangular src="https://soundcloud.com/singlesclubfm/coming-home" class="table center min-y100 bg-black bg-cover bg-center" style="background-image: url(images/Hero_Comp.jpg)">
-    <header class="table-row y100 px2 aa white">
+  <div plangular src="https://soundcloud.com/singlesclubfm/coming-home" class="table center min-y100 bg-black bg-cover bg-center" style="background-image: url(images/Hero_NoComp.jpg)">
+    <header class="table-row y100 px2 white">
       <div class="table-cell x100">
         <div class="container py4">
-          <img src="images/hero_danieltext.png" alt="Daniel Bachman" class="fit m-x50 l-x50 mt6 mb2" />
-          <div class="mb4">
+        <p class="lydian-bold caps aa ls2 mb1">Issue #1</p>
+          <img src="images/hero_danieltext.png" alt="Daniel Bachman" class="fit m-x50 l-x60" />
+          <h2 class="apercu-light aa h2 lh1 mb1"><!--Issue #1--></h2>
             <a href="#bringing-it-all-back-home"
               ng-click="player.play(track)"
               ng-hide="player.playing == track"
-              class="button button-gold caps mb2">
+              class="apercu-medium h3 ls05 aa button button-gold mb1">
                 Listen &amp; Begin
             </a>
             <a href="#!"
               ng-click="player.pause()"
               ng-show="player.playing == track"
               ng-cloak
-              class="button button-grey caps mb2">
+              class="button button-grey caps mb1">
                 Pause
             </a>
-          </div>
-          <h2 class="apercu-bold h2 caps mb1">Side A: Daniel Bachman &ndash; Coming Home</h2>
           <p class="small gold mb1">Audio is recommended for this feature.<br> Just hit begin and start reading.</p>
           <img src="images/stereo.svg" alt="Stereo" />
         </div>
@@ -140,15 +141,15 @@
     </header>
 
     <div class="" ui-scrollfix>
-      <div class="ui-scrollfix-hide mobile-hide fixed t0 b0 l0 aa center white bg-black" style="padding: 4rem .5rem 0 .5rem;">
-        <div ng-click="toggleFlyout()" class="apercu caps mb1" style="line-height:1.125">
+      <div class="ui-scrollfix-hide mobile-hide fixed t0 b0 l0 aa center white transparent bg-black" style="padding: 4rem 1rem 0 1rem;">
+        <div ng-click="toggleFlyout()" class="lydian-bold white caps mb1" style="line-height:1.35">
           F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
         </div>
         <img src="images/issuemeta.svg" />
       </div>
-      <div class="clearfix bar aa white bg-black ui-scrollfix-show slidedown">
+      <div class="clearfix bar transparent aa white bg-black ui-scrollfix-show slidedown">
         <div class="left mr2 nav-white mobile-hide">
-          <a href ng-click="toggleFlyout()" class="apercu pl3 caps caps--t2 white">Features</a>
+          <a href ng-click="toggleFlyout()"  class="lydian-bold pl4 caps ls2 white">Features</a>
         </div>
         <div class="right px1 nowrap">
           <a
@@ -163,11 +164,11 @@
             class="button-ss-icon link-white">
             <span class="ss-icon ss-social ss-twitter"></span>
           </a>
-          <a href="http://subscribe.singlesclub.fm" class="apercu caps ml1 button button-small button-grey mobile-hide">Subscribe</a>
+          <a href="http://subscribe.singlesclub.fm" class="apercu-medium h3 ls05 aa ml1 button button-small button-grey mobile-hide">Subscribe</a>
         </div>
         <div class="clearfix px1 ml3">
           <div class="left mr1">
-            <span class="left mr1 gold mobile-hide">Side A: Coming Home</span>
+            <span class="left mr1 apercu-medium aa gold mobile-hide">Side A: Coming Home</span>
             <a href
               ng-click="player.play(track)"
               ng-hide="player.playing == track"
@@ -214,13 +215,13 @@
     </div>
   </div><!-- end plangular -->
 
-  <article id="bringing-it-all-back-home" class="responsive mt6">
+  <article id="bringing-it-all-back-home" class="responsive pt4">
     <section class="py2">
       <div class="container clearfix">
         <div class="col col-10 pre-1 post-1">
           <img src="images/daniel_headline.jpg" alt="Bringing it all back home" class="fit" />
-          <h2 class="h2 center apercu caps mb2">A Day with Daniel Bachman</h2>
-          <p class="apercu center lh2 mb0">Written by<br> Sunny Eckerle</p>
+          <h2 class="h2 center apercu mb2">A Day with Daniel Bachman</h2>
+          <p class="lydian center ls2 caps light-grey lh2 mb0">Written by Sunny Eckerle</p>
         </div>
       </div>
     </section>
@@ -236,12 +237,12 @@
       </div>
       <div class="col col-3">
         <img data-src="images/daniel_jesusimasinner.jpg" src="images/blank-500x500.gif" alt="Jesus I'm a Sinner" class="fit" />
-        <p class="small">Daniels latest LP, released October 2013</p>
+        <p class="small mid-grey mobile-center">Daniels latest LP, released October 2013</p>
       </div>
     </section>
     <section class="container col-10 pre-1 post-1 mb4">
       <img data-src="images/daniel_image_comp.jpg" src="images/blank-1400x933.gif" alt="Studio" class="fit" />
-      <p class="small ">Daniel on the steps of Forrest Floor Studios</p>
+      <p class="small mid-grey mobile-center">Daniel on the steps of Forrest Floor Studios</p>
     </section>
     <section class="container mb2">
       <div class="col col-8 pre-2 post-2">
@@ -261,7 +262,7 @@
         alt="lyrics"
         class="x50 fit" />
     </section>
-    <p class="small p1">Walking up the hill to Forrest&rsquo;s home</p>
+    <p class="small p1 mid-grey mobile-center">Walking up the hill to Forrest&rsquo;s home</p>
     <section class="container mt2 mb2">
       <div class="col col-8 pre-2 post-2">
         <p>Forrest gives us a tour of the area including a botany lesson, complete with tastings. We all pluck a bud of honeysuckle and carefully pull out the stemen for a small taste of sweetness. We're invited into Forrest's home, just up the hill, to see his father's guitar workshop and even try our hand at a few of the fully handmade instruments.</p>
@@ -274,7 +275,7 @@
       </div>
       <div class="col col-4 mt2">
         <img data-src="images/DanielCar2.jpg" src="images/blank-1400x933.gif" alt="Daniel's car" class="fit" />
-        <p class="small">Daniel&rsquo;s road-worn Volvo</p>
+        <p class="small mid-grey mobile-center">Daniel&rsquo;s road-worn Volvo</p>
       </div>
     </section>
     <section class="container mb2">
@@ -303,7 +304,7 @@
       />
     </div>
   </section>
-  <p class="small p1 mb2">The journey from Rappahannock to Fredericksberg, Virginia</p>
+  <p class="small mobile-center mid-grey p1 mb2">The journey from Rappahannock to Fredericksberg, Virginia</p>
 
   <article class="responsive">
     <section class="container mb2">
@@ -317,7 +318,7 @@
   <section class="relative table responsive min-y100 center bg-cover aa white" style="background-image: url(images/Watch_Comp.jpg)" ng-controller="ModalCtrl">
     <div class="table-cell py4">
       <h3 class="apercu-bold h2 caps">Watch</h3>
-      <a href ng-click="openModal()" class="button-circle button-circle-big mb2 button-border button-border-big">
+      <a href ng-click="openModal()" class="button-circle button-circle-big button-gold button-icon-gold mb2">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
         <g>
@@ -481,15 +482,15 @@
     </div>
   </section>
 
-  <article id="label-head-josh-rosenthal" class="responsive py4 bg-peach-to-cream">
+  <article id="label-head-josh-rosenthal" class="responsive pt4 bg-peach-to-cream">
     <section class="container center mt4">
       <div class="clearfix">
         <div class="col col-8 pre-2 post-2">
           <img src="images/labelhead_intro.png" alt="Label head" class="fit" />
         </div>
       </div>
-      <h2 class="apercu h2 caps mb2">Why Tompkins Square Records is here to stay</h2>
-      <p class="apercu lh2">Written by<br> Adam Lehrer</p>
+      <h2 class="apercu h2 mb2">Why Tompkins Square Records is here to stay</h2>
+      <p class="lydian caps light-grey ls2 lh2">Written by Adam Lehrer</p>
     </section>
     <section class="container mb2">
       <div class="col-8 pre-2 post-2">
@@ -561,12 +562,12 @@
     </section>
   </article>
 
-  <article id="roadshow" class="pb4 bg-cream">
+  <article id="roadshow" class="py4 bg-cream">
     <header class="container">
       <div class="col col-10 pre-1 post-1 center">
         <img src="images/roadshow_intro.jpg" alt="Roadshow" class="fit" />
-        <h2 class="h2 caps mt2">Daniel shares some deep cuts he found on tour</h2>
-        <p class="apercu lh2 mb0">Written by<br> Daniel Bachman</p>
+        <h2 class="h2 mt2">Daniel shares some deep cuts he found on tour</h2>
+        <p class="lydian-bold mid-grey caps ls2 lh2 mb0">Written by Daniel Bachman</p>
       </div>
     </header>
 
@@ -578,9 +579,9 @@
       </div>
       <div class="clearfix">
         <div class="col col-3 pre-1">
-          <p class="apercu caps mb0 lh1 tan">Artist:</p>
+          <p class="apercu-medium mb0 lh1">Artist:</p>
           <h1 class="h2 lh2">White Cloud</h1>
-          <p class="apercu caps mb0 lh1 tan">Album:</p>
+          <p class="apercu-medium mb0 lh1">Album:</p>
           <h1 class="h2 lh2">S/T</h1>
         </div>
         <div class="col col-7 post-1">
@@ -595,9 +596,9 @@
       </div>
       <div class="clearfix">
         <div class="col col-3 pre-1">
-          <p class="apercu caps lh1 mb0 tan">Artist:</p>
+          <p class="apercu-medium lh1 mb0">Artist:</p>
           <h1 class="h2 lh2">Jim Kennedy</h1>
-          <p class="apercu caps lh1 mb0 tan">Album:</p>
+          <p class="apercu-medium lh1 mb0">Album:</p>
           <h1 class="h2 lh2">Just Being Natural</h1>
         </div>
         <div class="col col-7 post-1">
@@ -612,9 +613,9 @@
       </div>
       <div class="clearfix">
         <div class="col col-3 pre-1">
-          <p class="apercu caps lh1 mb0 tan">Artist:</p>
+          <p class="apercu-medium lh1 mb0">Artist:</p>
           <h1 class="h2 lh2">Ernest Martin</h1>
-          <p class="apercu caps lh1 mb0 tan">Album:</p>
+          <p class="apercu-medium lh1 mb0">Album:</p>
           <h1 class="h2 lh2">The Last Inauguration</h1>
         </div>
         <div class="col col-7 post-1">
@@ -629,9 +630,9 @@
       </div>
       <div class="clearfix">
         <div class="col col-3 pre-1">
-          <p class="apercu caps lh1 mb0 tan">Artist:</p>
+          <p class="apercu-medium lh1 mb0">Artist:</p>
           <h1 class="h2 lh2">Peter Green</h1>
-          <p class="apercu caps lh1 mb0 tan">Album:</p>
+          <p class="apercu-medium lh1 mb0">Album:</p>
           <h1 class="h2 lh2">End Of The Game</h1>
         </div>
         <div class="col col-7 post-1">
@@ -646,9 +647,9 @@
       </div>
       <div class="clearfix">
         <div class="col col-3 pre-1">
-          <p class="apercu caps lh1 mb0 tan">Artist:</p>
+          <p class="apercu-medium lh1 mb0">Artist:</p>
           <h1 class="h2 lh2">Early Upchurch</h1>
-          <p class="apercu caps lh1 mb0 tan">Album:</p>
+          <p class="apercu-medium lh1 mb0">Album:</p>
           <h1 class="h2 lh2">Everybody Will Be Happy Over There</h1>
         </div>
         <div class="col col-7 post-1">
@@ -664,9 +665,9 @@
       </div>
       <div class="clearfix">
         <div class="col col-3 pre-1">
-          <p class="apercu caps lh1 mb0 tan">Artist:</p>
+          <p class="apercu-medium lh1 mb0">Artist:</p>
           <h1 class="h2 lh2">Jerry Garcia</h1>
-          <p class="apercu caps lh1 mb0 tan">Album:</p>
+          <p class="apercu-medium lh1 mb0">Album:</p>
           <h1 class="h2 lh2">S/T</h1>
         </div>
         <div class="col col-7 post-1">
@@ -676,66 +677,100 @@
     </section>
   </article>
 
-  <section id="credits" class="px2 py3 bg-peach">
-    <h1 class="apercu-medium h2 caps">Credits</h1>
+  <section id="credits" class="px2 py3 aa mid-grey bg-dark-grey">
+    <h1 class="apercu-medium p gold">Credits</h1>
     <div class="clearfix">
       <ul class="list-simple h3 col col-3 ml0">
         <li class="mb1">
-          <p class="apercu-medium caps lh2" style="margin-top:.25rem; margin-bottom:.25rem;">Art Direction, Design &amp; Photography</p>
-          Chris Muccioli
+          <p class="apercu-medium lh2" style="margin-top:.25rem; margin-bottom:.25rem;">Art Direction, Design<br> &amp; Photography</p>
+          <a href="#" class="link-mid-grey" target="_blank">Chris Muccioli</a>
         </li>
         <li class="mb1">
-          <p class="apercu-medium caps mb0">Editor</p>
-          Jeffrey Silverstein
+          <p class="apercu-medium mb0">Editor</p>
+          <a href="#" class="link-mid-grey" target="_blank">Jeffrey Silverstein</a>
         </li>
         <li>
-          <p class="apercu-medium caps mb0">Code</p>
-          Brent Jackson
+          <p class="apercu-medium mb0">Code</p>
+          <a href="http://jxnblk.com" class="link-mid-grey" target="_blank">Brent Jackson</a>
         </li>
       </ul>
       <ul class="list-simple col col-3">
         <li class="mb1">
-          <p class="apercu-medium caps mb0">Writers</p>
+          <p class="apercu-medium mb0">Writers</p>
           <p class="h3">
-            Sunny Eckerle<br>
-            Adam Lehrer<br>
-            Daniel Bachman
+            <a href="#" class="link-mid-grey" target="_blank">Sunny Eckerle</a><br>
+            <a href="#" class="link-mid-grey" target="_blank">Adam Lehrer</a><br>
+            <a href="#" class="link-mid-grey" target="_blank">Daniel Bachman</a>
           </p>
         </li>
         <li>
-          <p class="apercu-medium caps mb0">Video Editor</p>
-          Tomasz Werner
+          <p class="apercu-medium mb0">Video Editor</p>
+          <a href="#" class="link-mid-grey" target="_blank">Tomasz Werner</a>
         </li>
       </ul>
       <ul class="list-simple col col-3 mr0">
-        <p class="apercu-medium caps mb0">Special Thanks</p>
+        <p class="apercu-medium mb0">Special Thanks</p>
         <p class="h3">
-          Daniel Bachman<br>
-          Forrest Marquisee<br>
-          Michael Muccioli<br>
-          Josh Rosenthal<br>
-          Matt at Gotta Groove<br>
-          Diana at JLM<br>
-          VG Kids Printing<br>
-          Steady Printshop<br>
-          &amp; our Backers
+          <a href="#" class="link-mid-grey" target="_blank">Daniel Bachman</a><br>
+          <a href="#" class="link-mid-grey" target="_blank">Forrest Marquisee</a><br>
+          <a href="#" class="link-mid-grey" target="_blank">Michael Muccioli</a><br>
+          <a href="#" class="link-mid-grey" target="_blank">Josh Rosenthal</a><br>
+          <a href="#" class="link-mid-grey" target="_blank">Matt at Gotta Groove</a><br>
+          <a href="#" class="link-mid-grey" target="_blank">Diana at JLM</a><br>
+          <a href="#" class="link-mid-grey" target="_blank">VG Kids Printing</a><br>
+          <a href="#" class="link-mid-grey" target="_blank">Steady Printshop</a><br>
+          <a href="#" class="link-mid-grey" target="_blank">&amp; our Backers</a><br>
         </p>
       </ul>
-    <div class="col col-3">
-      <h3 class="apercu-medium p caps mb0">SIDE A: Coming Home</h3>
-      <p class="small">Written &amp; recorded by Daniel Bachman
-        at Forrest Floor Studios in Rappahannock, VA.</p>
-      <h3 class="apercu-medium p caps mb0">SIDE B: Interview</h3>
-      <p class="small">Recorded &amp; mixed by Chris Muccioli
-        in Brooklyn, NY.</p>
-      <h3 class="apercu-medium p caps mb0">SIDE A &amp; B</h3>
-      <p class="small">Mastered by Joe Lambert in Brooklyn, NY
-        Pressed by Gotta Groove in Cleveland, OH</p>
-      <div class="mb1">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Singles Club Inaugural Issue" data-url="http://singlesclub.fm/journal/daniel-bachman" data-via="singlesclubfm">Tweet</a>
-        <div class="fb-like" data-href="http://singlesclub.fm/journal/daniel-bachman" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+      <div class="col col-3">
+        <h3 class="apercu-medium p mb0">Side A: Coming Home</h3>
+        <p class="small">Written &amp; recorded by Daniel Bachman
+          at Forrest Floor Studios in Rappahannock, VA.</p>
+        <h3 class="apercu-medium p mb0">Side B: Interview</h3>
+        <p class="small">Recorded &amp; mixed by Chris Muccioli
+          in Brooklyn, NY.</p>
+        <h3 class="apercu-medium p mb0">Side A &amp; B</h3>
+        <p class="small">Mastered by Joe Lambert in Brooklyn, NY
+          Pressed by Gotta Groove in Cleveland, OH</p>
+        <div class="mb1">
+          <div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Singles Club Inaugural Issue" data-url="http://singlesclub.fm/journal/daniel-bachman" data-via="singlesclubfm">Tweet</a>
+          </div>
+          <div class="fb-like" data-href="http://singlesclub.fm/journal/daniel-bachman" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div>
       </div>
-      <a href="http://subscribe.singlesclub.fm" class="apercu mall caps button button-small button-grey">Subscribe</a>
+    </div>
+  </section>
+
+  <section class="px2 py3 aa bg-dark-grey">
+    <div class="clearfix">
+      <div class="col col-12">
+        <h1 class="apercu-medium p mb0 gold">Mail Club</h1>
+      </div>
+    </div>
+    <form class="clearfix" action="http://singlesclub.us6.list-manage.com/subscribe/post" method="POST">
+      <div class="col col-3">
+        <input type="hidden" name="u" value="27badb2e91">
+        <input type="hidden" name="id" value="1781494ce0">
+        <input type="text" value ="E-MAIL" name="MERGE0" class="input input-white small mb1 x100"  id="form" onclick="this.focus();this.select()"onfocus="this.value=''; this.onfocus=null;"/>
+      </div>
+      <div class="col col-1">
+        <input type="submit" id="submitbutton" value="ok" name="submit" class="apercu button button-block mb1 caps button-gold"/>
+      </div>
+      <div class="col col-4 pre-4 right-align mobile-center">
+        <ul class="list list-inline p">
+          <li class="h3"><a href="https://twitter.com/singlesclubfm" class="ss-icon">twitter</a></li>
+          <li class="h3"><a href="http://www.facebook.com/singlesclubfm" class="ss-icon">facebook</a></li>
+          <li class="h3"><a href="http://singlesclubfm.tumblr.com/" class="ss-icon">tumblr</a></li>
+          <li class="h3"><a href="http://www.instagram.com/singlesclubfm" class="ss-icon">instagram</a></li>
+          <li class="h3"><a href="https://soundcloud.com/singlesclubfm" class="ss-icon">soundcloud</a></li>
+        </ul>
+      </div>
+    </form>
+    <div class="clearfix">
+      <div class="col col-6 mobile-center mid-grey">
+        <p class="h4">Join our newsletter for new tunes, mix tapes, and features every month.</p>
+      </div>
     </div>
   </section>
 
@@ -750,11 +785,11 @@
   </footer>
 
 
-  <script src="js/config.js"></script>
+  <script src="../../js/config.js"></script>
 
   <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script src="js/jquery.unveil.min.js"></script>
-  <script src="js/jquery.smooth-scroll.min.js"></script>
+  <script src="../../js/jquery.unveil.min.js"></script>
+  <script src="../../js/jquery.smooth-scroll.min.js"></script>
   <script>
     $(document).ready(function() {
       $("img").unveil(512);
@@ -763,12 +798,12 @@
   </script>
 
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
-  <script src="js/angular-carousel.js"></script>
-  <script src="js/angular-scroll.js"></script>
-  <script src="js/angular-parallax.js"></script>
-  <script src="js/scrollfix.js"></script>
-  <script src="js/angular-fitvids.js"></script>
-  <script src="js/singlesclub.js"></script>
+  <script src="../../js/angular-carousel.js"></script>
+  <script src="../../js/angular-scroll.js"></script>
+  <script src="../../js/angular-parallax.js"></script>
+  <script src="../../js/scrollfix.js"></script>
+  <script src="../../js/angular-fitvids.js"></script>
+  <script src="../../js/singlesclub.js"></script>
 
   <script>
     // Twitter

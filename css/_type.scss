@@ -1,0 +1,143 @@
+// Typography 
+
+body {
+  font-family: 'Apercu Light', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 1.75rem;
+  -webkit-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+.apercu {
+  font-family: 'Apercu Regular', sans-serif; 
+  font-weight: normal;
+  font-style: normal;
+}
+
+.apercu-light {
+  font-family: 'Apercu Light', Calibri, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.apercu-medium {
+  font-family: 'Apercu Medium', Calibri, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.apercu-bold {
+  font-family: 'Apercu Bold', Calibri, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.lydian-italic {
+  font-family: LydianBT-Italic, georgia;
+  font-weight: lighter;
+  //font-style: italic;
+}
+
+.lydian {
+  font-family: LydianBT-Roman, georgia;
+  font-weight: normal;
+}
+
+.lydian-bold {
+  font-family: LydianBT-Bold, georgia;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
+  margin-bottom: 2rem;
+}
+
+// Base Type Scale
+
+h1, .h1 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h3, .h3 {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+h4, .h4 {
+  font-size: .875rem;
+  line-height: 1rem;
+}
+h5, .h6, h6,
+small, .small {
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+dl, ol, ul, p, .p {
+  font-size: 1rem;
+}
+
+// Responsive Type Scale
+@media (min-width: 768px) {
+  body {
+    line-height: 2rem;
+  }
+  .h1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+  .h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  p, .p {
+    font-size: 1.125rem;
+  }
+  .small { font-size: .75rem; }
+}
+
+// Utilities
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.regular { font-weight: normal; }
+.caps { text-transform: uppercase; letter-spacing: .05em; }
+.caps--t2 { letter-spacing: .2em; }
+.center { text-align: center; }
+.right-align  { text-align: right; }
+@media (max-width: 768px) {
+  .mobile-center { text-align: center; }
+}
+
+//line height
+
+.lh1 { line-height: 1; }
+.lh2 { line-height: 1.25; }
+
+// Letter Spacing
+
+.ls05 { letter-spacing: .05em;}
+.ls1 { letter-spacing: .1em;}
+.ls1-05 { letter-spacing: .105;}
+.ls2 { letter-spacing: .2em;}
+
+
+// Prevent flashing fonts with fontdeck
+// The recommended method flashes the entire body - not sure what the psychological
+// impact of perceived load time is, but my guess is not that much better.
+// Instead this method only hides elements styled with the fonts that are loading
+//.wf-loading body {
+.wf-loading {
+  .apercu,
+  .apercu-medium,
+  .apercu-bold {
+    visibility: hidden;
+  }
+}
+

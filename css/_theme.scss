@@ -1,0 +1,188 @@
+// Theme
+
+$black: #000;
+$dark-grey: #111111;
+$grey: #303030;
+$mid-grey: #cdcdcd;
+$light-grey: #e3e3e3;
+$blue: #5200FF;
+$white: #fff;
+
+  // Deprecated
+  $green: #79f6b9;
+
+$gold: #dea439;
+
+// Feature 2
+$peach: #fde8d7;
+$cream: #f7f3ef;
+
+// Feature 3
+$tan: #aa9785;
+
+body {
+  color: $grey;
+}
+
+.white { color: #fff; }
+.black { color: $black; }
+.dark-grey { color: $dark-grey; }
+.grey  { color: $grey; }
+.mid-grey { color: $mid-grey; }
+.green { color: $green; }
+.gold { color: $gold; }
+.tan { color: $tan; }
+.light-grey { color: $light-grey; }
+
+.peach { color: $peach; }
+.bg-peach-to-cream {
+  background-image: linear-gradient($white, $cream);
+}
+.bg-cream { background-color: $cream; }
+
+.bg-white { background-color: #fff; }
+.bg-black { background-color: $black; }
+.bg-dark-grey { background-color: $dark-grey; }
+.bg-grey  { background-color: $grey; }
+.bg-mid-grey { background-color: $mid-grey; }
+.bg-light-grey { background-color: $light-grey; }
+.bg-green { background-color: $green; }
+.bg-gold { background-color: $gold; }
+
+.bg-peach { background-color: $peach; }
+
+.bg-cover { background-size: cover; }
+.bg-contain { background-size: contain; }
+.bg-center { background-position: center center; }
+
+.round { border-radius: 2px; }
+
+.circle { border-radius: 50%; }
+
+.aa { -webkit-font-smoothing: antialiased; }
+
+a {
+  color: $gold;
+  text-decoration: none;
+  &:hover {
+    color: $blue;
+  }
+}
+.nav-white a,
+.link-white {
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: $blue;
+  }
+}
+.link-white-static {
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+.link-grey {
+  color: $grey;
+  text-decoration: none;
+  &:hover {
+    color: $blue;
+  }
+}
+.link-mid-grey {
+  color: $mid-grey;
+  text-decoration: none;
+  &:hover {
+    color: $blue;
+  }
+}
+
+.input-white {
+  background-color: #fff;
+  border-radius: .125rem;
+  &:focus {
+    outline: none;
+    border: 1px solid $gold;
+  }
+}
+
+.button-icon {
+  svg path {
+    fill: #fff;
+  }
+  &:hover {
+    svg path {
+      fill: $blue;
+    }
+  }
+}
+
+.button-icon-grey {
+  svg path {
+    fill: $mid-grey;
+  }
+  &:hover {
+    svg path {
+      fill: $blue;
+    }
+  }
+}
+.button-icon-gold {
+  svg path { fill: #fff; }
+  &:hover {
+    svg path { fill: #fff; }
+  }
+}
+
+.button-grey {
+  color: #fff;
+  background-color: $grey;
+  &:hover {
+    background-color: $blue;
+    color: #fff;
+  }
+}
+
+.button-gold {
+  color: #fff;
+  background-color: $gold;
+  &:hover {
+    color: #fff;
+    background-color: $blue;
+  }
+}
+
+.button-border {
+  color: #fff;
+  border-width: .125rem;
+  border-style: solid;
+  // border color should inherit from the foreground color, but it's not...
+  border-color: #fff;
+  svg path {
+    fill: #fff;
+  }
+  &:hover {
+    color: $blue;
+    border-color: $blue;
+    svg path {
+      fill: $blue;
+    }
+  }
+}
+
+.button-border-big {
+  border-width: .25rem;
+}
+
+.noselect {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.transparent {
+	zoom: 1;
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+}
