@@ -3,9 +3,10 @@
 $black: #000;
 $dark-grey: #111111;
 $grey: #303030;
-$mid-grey: #666;
-$light-grey: #999999;
+$mid-grey: #cdcdcd;
+$light-grey: #e3e3e3;
 $blue: #5200FF;
+$white: #fff;
 
   // Deprecated
   $green: #79f6b9;
@@ -35,7 +36,7 @@ body {
 
 .peach { color: $peach; }
 .bg-peach-to-cream {
-  background-image: linear-gradient($peach, $cream);
+  background-image: linear-gradient($white, $cream);
 }
 .bg-cream { background-color: $cream; }
 
@@ -44,6 +45,7 @@ body {
 .bg-dark-grey { background-color: $dark-grey; }
 .bg-grey  { background-color: $grey; }
 .bg-mid-grey { background-color: $mid-grey; }
+.bg-light-grey { background-color: $light-grey; }
 .bg-green { background-color: $green; }
 .bg-gold { background-color: $gold; }
 

@@ -801,7 +801,7 @@ body {
   color: #303030; }
 
 .mid-grey {
-  color: #666666; }
+  color: #cdcdcd; }
 
 .green {
   color: #79f6b9; }
@@ -813,13 +813,13 @@ body {
   color: #aa9785; }
 
 .light-grey {
-  color: #999999; }
+  color: #e3e3e3; }
 
 .peach {
   color: #fde8d7; }
 
 .bg-peach-to-cream {
-  background-image: linear-gradient(#fde8d7, #f7f3ef); }
+  background-image: linear-gradient(white, #f7f3ef); }
 
 .bg-cream {
   background-color: #f7f3ef; }
@@ -837,7 +837,10 @@ body {
   background-color: #303030; }
 
 .bg-mid-grey {
-  background-color: #666666; }
+  background-color: #cdcdcd; }
+
+.bg-light-grey {
+  background-color: #e3e3e3; }
 
 .bg-green {
   background-color: #79f6b9; }
@@ -892,7 +895,7 @@ a {
     color: #5200ff; }
 
 .link-mid-grey {
-  color: #666666;
+  color: #cdcdcd;
   text-decoration: none; }
   .link-mid-grey:hover {
     color: #5200ff; }
@@ -910,7 +913,7 @@ a {
   fill: #5200ff; }
 
 .button-icon-grey svg path {
-  fill: #666666; }
+  fill: #cdcdcd; }
 .button-icon-grey:hover svg path {
   fill: #5200ff; }
 
