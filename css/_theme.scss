@@ -64,6 +64,7 @@ body {
 a {
   color: $gold;
   text-decoration: none;
+  transition: color .3s ease;
   &:hover {
     color: $blue;
   }
@@ -98,11 +99,11 @@ a {
 }
 
 .input-white {
-  background-color: #fff;
+  background-color: rgba(#fff,.8);
   border-radius: .125rem;
   &:focus {
     outline: none;
-    border: 1px solid $gold;
+    background-color: #fff;
   }
 }
 
