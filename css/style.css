@@ -924,14 +924,16 @@ a {
 
 .button-grey {
   color: #fff;
-  background-color: #303030; }
+  background-color: #303030;
+  transition: background-color .3s ease; }
   .button-grey:hover {
     background-color: #5200ff;
     color: #fff; }
 
 .button-gold {
   color: #fff;
-  background-color: #dea439; }
+  background-color: #dea439;
+  transition: background-color .3s ease; }
   .button-gold:hover {
     color: #fff;
     background-color: #5200ff; }

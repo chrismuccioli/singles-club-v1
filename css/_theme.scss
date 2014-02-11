@@ -137,6 +137,7 @@ a {
 .button-grey {
   color: #fff;
   background-color: $grey;
+  transition: background-color .3s ease;
   &:hover {
     background-color: $blue;
     color: #fff;
@@ -146,6 +147,7 @@ a {
 .button-gold {
   color: #fff;
   background-color: $gold;
+  transition: background-color .3s ease;
   &:hover {
     color: #fff;
     background-color: $blue;
@@ -181,8 +183,11 @@ a {
           user-select: none;
 }
 
+// This makes contents transparent
+// zoom and filter are only necessary for IE support
 .transparent {
 	zoom: 1;
 	filter: alpha(opacity=90);
 	opacity: 0.9;
 }
+
