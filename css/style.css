@@ -1312,10 +1312,10 @@ html:hover [class^="ss-"] {
 
 @font-face {
   font-family: 'LydianBT-Roman';
-  src: url("webfonts/29DC3E_0_0.eot");
-  src: url("webfonts/29DC3E_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/29DC3E_0_0.woff") format("woff"), url("webfonts/29DC3E_0_0.ttf") format("truetype"); }
+  src: url("../fonts/lydian.eot");
+  src: url("../fonts/lydian.eot?#iefix") format("embedded-opentype"), url("../fonts/lydian.woff") format("woff"), url("../fonts/lydian.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'LydianBT-Bold';
-  src: url("webfonts/29DC45_0_0.eot");
-  src: url("webfonts/29DC45_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/29DC45_0_0.woff") format("woff"), url("webfonts/29DC45_0_0.ttf") format("truetype"); }
+  src: url("../fonts/lydian-bold.eot");
+  src: url("../fonts/lydian-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/lydian-bold.woff") format("woff"), url("../fonts/lydian-bold.ttf") format("truetype"); }
