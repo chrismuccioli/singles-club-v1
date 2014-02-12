@@ -56,7 +56,7 @@ singlesclub.controller('SlideshowCtrl', ['$scope', '$timeout', function($scope, 
   // Auto-advance
   // interval sets the time in ms before transitioning slides
   // transition speed is handled via css
-  var interval = 4000;
+  var interval = 8000;
   var advance = function() {
     $scope.next();
     $timeout(advance, interval);
