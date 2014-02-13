@@ -74,11 +74,13 @@
   .rn-carousel-control.rn-carousel-control-prev {
     left: 2rem; }
     .rn-carousel-control.rn-carousel-control-prev:before {
-      content: "<"; }
+      content: url(../images/icon-nav-left.svg);
+    }
   .rn-carousel-control.rn-carousel-control-next {
     right: 2rem; }
     .rn-carousel-control.rn-carousel-control-next:before {
-      content: ">"; }
+      content: url(../images/icon-nav-right.svg);
+    }
 
 @media (max-width: 640px) {
   .rn-carousel-control {
