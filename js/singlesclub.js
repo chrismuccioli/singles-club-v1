@@ -4,13 +4,6 @@
 
 var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel', 'duParallax', 'fitVids']);
 
-singlesclub.controller('MenuCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
-  $scope.flyoutIsOpen = false;
-  $scope.toggleFlyout = function() {
-    $scope.flyoutIsOpen = !$scope.flyoutIsOpen;
-  };
-}]);
-
 singlesclub.controller('ModalCtrl', ['$scope', function($scope) {
   $scope.modalIsOpen = false;
   $scope.openModal = function() {

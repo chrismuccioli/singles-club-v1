@@ -37,7 +37,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
 </head>
 
-<body ng-app="singlesclub" ng-controller="MenuCtrl">
+<body ng-app="singlesclub">
 
   <nav class="absolute t0 r0 l0 z1">
     <div class="container white">
@@ -62,7 +62,7 @@
     </div>
   </nav>
 
-  <div class="flyout scroll-y apercu aa white bg-black mobile-show" ng-class="{ 'is-open': flyoutIsOpen }">
+  <div class="js-flyout flyout scroll-y apercu aa white bg-black mobile-show">
     <div class="py4">
       <ul class="h3 bold list-simple nav nav-white">
         <li><a href="/">Home</a></li>
@@ -82,7 +82,7 @@
   </div>
 
   <div class="fixed t0 l0 z4 mobile-show">
-    <a href ng-click="toggleFlyout()" class="inline-block bar button-icon white" style="padding:.5rem .375rem;">
+    <a href class="js-toggle-flyout inline-block bar button-icon white" style="padding:.5rem .375rem;">
       <svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 32 32" fill="#ffffff">
         <rect y="4" width="32" height="4"/> <rect y="14" width="32" height="4"/> <rect y="24" width="32" height="4"/>
       </svg>
@@ -202,6 +202,24 @@
       © 2014 Singles Club LLC - All Rights Reserved</p>
   </footer>
 
+  <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var flyoutIsOpen = false,
+          $flyout = $('.js-flyout');
+      var toggleFlyout = function(){
+        if(flyoutIsOpen) {
+          $flyout.removeClass('is-open');
+        } else {
+          $flyout.addClass('is-open');
+        }
+        flyoutIsOpen = !flyoutIsOpen;
+      };
+      $('.js-toggle-flyout').click(function(){
+        toggleFlyout();
+      });
+    });
+  </script>
   <script src="js/config.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
   <script src="js/angular-carousel.js"></script>

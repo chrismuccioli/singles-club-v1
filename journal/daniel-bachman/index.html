@@ -41,7 +41,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
 </head>
 
-<body class="" ng-app="singlesclub" ng-controller="MenuCtrl">
+<body class="" ng-app="singlesclub">
 
   <nav class="absolute t0 r0 l0">
     <div class="container white">
@@ -66,23 +66,24 @@
     </div>
   </nav>
 
-  <div class="flyout scroll-y apercu aa bg-black" ng-class="{ 'is-open': flyoutIsOpen }">
+  <!-- add .is-open class to show -->
+  <div class="js-flyout flyout scroll-y apercu aa bg-black">
     <div class="py4">
       <ul class="list-simple lh2 mb4 nav-white">
         <li>
-          <a href="#bringing-it-all-back-home" ng-click="toggleFlyout()" class="block mb2">
+          <a href="#bringing-it-all-back-home" class="js-toggle-flyout block mb2">
             <p class="h2 apercu lh2 aa mb1"><span class="p bold gold">1</span><br>Bringing It All<br>Back Home</p>
             <span class="mid-grey">A Day With Daniel Bachman</span>
           </a>
         </li>
         <li>
-          <a href="#label-head-josh-rosenthal" ng-click="toggleFlyout()" class="block mb2">
+          <a href="#label-head-josh-rosenthal" class="js-toggle-flyout block mb2">
             <p class="h2 apercu aa lh2 mb1"><span class="p bold gold">2</span><br>Label Head</p>
             <span class="mid-grey">Why Tompkins Square Records<br>is here to stay</span>
           </a>
         </li>
         <li>
-          <a href="#roadshow" ng-click="toggleFlyout()" class="block mb2">
+          <a href="#roadshow" class="js-toggle-flyout block mb2">
             <p class="h2 apercu aa lh2 mb1"><span class="p bold gold">3</span><br>Roadshow</p>
             <span class="mid-grey">Daniel shares some deep cuts<br>he found on tour</span>
           </a>
@@ -97,7 +98,7 @@
       </ul>
     </div>
     <div class="absolute t0 r0 b0 py4 center" style="padding-right:1rem;padding-left:1rem;">
-      <div ng-click="toggleFlyout()" class="lydian-bold white caps mb1" style="line-height:1.35">
+      <div class="js-toggle-flyout lydian-bold white caps mb1" style="line-height:1.35">
         F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
       </div>
       <img src="images/issuemeta.svg" />
@@ -105,7 +106,7 @@
   </div>
 
   <div class="fixed t0 l0 z4">
-    <a href ng-click="toggleFlyout()" class="inline-block bar button-icon white" style="padding:.5rem .9rem;">
+    <a href class="js-toggle-flyout inline-block bar button-icon white" style="padding:.5rem .9rem;">
       <svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 32 32" fill="#ffffff">
         <rect y="4" width="32" height="4"/>
         <rect y="14" width="32" height="4"/>
@@ -127,6 +128,7 @@
               class="apercu-medium h3 ls05 aa button button-gold mb1">
                 Listen &amp; Begin
             </a>
+      <a href="#label-head-josh-rosenthal" class="block mb2">label head test</a>
             <a href="#!"
               ng-click="player.pause()"
               ng-show="player.playing == track"
@@ -142,14 +144,14 @@
 
     <div class="" ui-scrollfix>
       <div class="ui-scrollfix-hide mobile-hide fixed t0 b0 l0 aa center white bg-transparent" style="padding: 4rem 1rem 0 1rem;">
-        <div ng-click="toggleFlyout()" class="lydian-bold white caps mb1" style="line-height:1.35">
+        <div class="js-toggle-flyout lydian-bold white caps mb1" style="line-height:1.35">
           F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
         </div>
         <img src="images/issuemeta.svg" />
       </div>
       <div class="clearfix bar bg-transparent aa white ui-scrollfix-show slidedown">
         <div class="left mr2 nav-white mobile-hide">
-          <a href ng-click="toggleFlyout()"  class="lydian-bold pl4 caps ls3 white">Features</a>
+          <a href class="js-toggle-flyout lydian-bold pl4 caps ls3 white">Features</a>
         </div>
         <div class="right px1 nowrap">
           <a
@@ -791,6 +793,19 @@
     $(document).ready(function() {
       $("img").unveil(1536);
       $('a').smoothScroll({offset: 4, speed: 250});
+      var flyoutIsOpen = false,
+          $flyout = $('.js-flyout');
+      var toggleFlyout = function(){
+        if(flyoutIsOpen) {
+          $flyout.removeClass('is-open');
+        } else {
+          $flyout.addClass('is-open');
+        }
+        flyoutIsOpen = !flyoutIsOpen;
+      };
+      $('.js-toggle-flyout').click(function(){
+        toggleFlyout();
+      });
     });
   </script>
 
