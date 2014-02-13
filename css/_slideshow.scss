@@ -2,12 +2,17 @@
 
 .slideshow {
   overflow: hidden;
-  //overflow-x: scroll;
   font-size: 0;
   white-space: nowrap;
 }
 .slideshow--large {
-  height: 34rem;
+  height: 20rem;
+  @media (min-width: 768px) {
+    height: 28rem;
+  }
+  @media (min-width: 1024px) {
+    height: 34rem;
+  }
 }
 .slide {
   display: inline-block;
