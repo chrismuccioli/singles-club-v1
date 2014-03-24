@@ -1,3 +1,3 @@
 <?php 
-header("Location: http://shop.singlesclub.fm/products/singles-club-2014-subscription"); 
+header("Location: http://shop.singlesclub.fm/product/singles-club-2014-subscription"); 
 ?>
