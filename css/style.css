@@ -47,7 +47,7 @@ h1, .h1 {
   line-height: 3rem; }
 
 h2, .h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 3rem; }
 
 h3, .h3 {
@@ -79,7 +79,7 @@ dl, ol, ul, p, .p {
     line-height: 3rem; }
 
   p, .p {
-    font-size: 1.125rem; }
+    font-size: 1rem; }
 
   .small {
     font-size: .75rem; } }
@@ -165,6 +165,9 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 .mx-auto {
   margin-right: auto;
   margin-left: auto; }
+
+.mb-0 {
+  margin-bottom: -.75rem; }
 
 .mb0 {
   margin-bottom: 0; }
@@ -274,6 +277,12 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 .py3 {
   padding-top: 3rem;
   padding-bottom: 3rem; }
+
+.pl1 {
+  padding-left: 1rem; }
+
+.pl2 {
+  padding-left: 2rem; }
 
 .pl3 {
   padding-left: 3rem; }
@@ -555,8 +564,8 @@ html, body {
 @media (min-width: 768px) {
   .col {
     float: left;
-    margin-left: 0.8%;
-    margin-right: 0.8%; }
+    margin-left: 0.5%;
+    margin-right: 0.5%; }
 
   .container {
     overflow: hidden;
@@ -570,47 +579,47 @@ html, body {
 
   .col-11,
   .span_11_of_12 {
-    width: 90.06667%; }
+    width: 90.66667%; }
 
   .col-10,
   .span_10_of_12 {
-    width: 81.73333%; }
+    width: 82.33333%; }
 
   .col-9,
   .span_9_of_12 {
-    width: 73.4%; }
+    width: 74%; }
 
   .col-8,
   .span_8_of_12 {
-    width: 65.06667%; }
+    width: 65.66667%; }
 
   .col-7,
   .span_7_of_12 {
-    width: 56.73333%; }
+    width: 57.33333%; }
 
   .col-6,
   .span_6_of_12 {
-    width: 48.4%; }
+    width: 49%; }
 
   .col-5,
   .span_5_of_12 {
-    width: 40.06667%; }
+    width: 40.66667%; }
 
   .col-4,
   .span_4_of_12 {
-    width: 31.73333%; }
+    width: 32.33333%; }
 
   .col-3,
   .span_3_of_12 {
-    width: 23.4%; }
+    width: 24%; }
 
   .col-2,
   .span_2_of_12 {
-    width: 15.06667%; }
+    width: 15.66667%; }
 
   .col-1,
   .span_1_of_12 {
-    width: 6.73333%; }
+    width: 7.33333%; }
 
   .pre-6 {
     padding-left: 50%; }
@@ -668,7 +677,6 @@ html, body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  display: inline-block;
   height: auto;
   min-height: 3rem;
   line-height: 3rem;
@@ -790,6 +798,13 @@ html, body {
   height: 100%;
   transition: margin-left 1s ease; }
 
+.issue1 {
+  background-image: url(../images/fb_singlesclubdanielbachman.jpg);
+  background-position: center;
+  background-size: 100%;
+  height: 200px;
+  width: 100%; }
+
 @media (max-width: 768px) {
   .mobile-hide {
     display: none; } }
@@ -827,6 +842,9 @@ body {
 
 .light-grey {
   color: #e3e3e3; }
+
+.red {
+  color: #ff0033; }
 
 .peach {
   color: #fde8d7; }
@@ -949,6 +967,14 @@ a {
   background-color: orange;
   transition: background-color .3s ease; }
   .button-gold:hover {
+    color: #fff;
+    background-color: #cf8703; }
+
+.button-red {
+  color: #fff;
+  background-color: #ff0033;
+  transition: background-color .3s ease; }
+  .button-red:hover {
     color: #fff;
     background-color: #cf8703; }
 

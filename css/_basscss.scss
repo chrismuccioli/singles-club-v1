@@ -21,6 +21,8 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 .mx-auto { margin-right: auto; margin-left: auto; }
 
+.mb-0 { margin-bottom: -.75rem; }
+
 .mb0 { margin-bottom: 0; }
 
 .m1  { margin: 1rem; }
@@ -67,8 +69,9 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 .px3 { padding-right: 3rem; padding-left: 3rem; }
 .py3 { padding-top: 3rem; padding-bottom: 3rem; }
 
+.pl1 { padding-left: 1rem; }
+.pl2 { padding-left: 2rem; }
 .pl3 { padding-left: 3rem; }
-
 .pl4 { padding-left: 4rem; }
 
 .p4  { padding: 4rem; }

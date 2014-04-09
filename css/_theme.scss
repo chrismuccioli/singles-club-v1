@@ -7,6 +7,7 @@ $mid-grey: #cdcdcd;
 $light-grey: #e3e3e3;
 $blue: #CF8703;
 $white: #fff;
+$red: #ff0033;
 
   // Deprecated
   $green: #79f6b9;
@@ -33,6 +34,7 @@ body {
 .gold { color: $gold; }
 .tan { color: $tan; }
 .light-grey { color: $light-grey; }
+.red { color: $red; }
 
 .peach { color: $peach; }
 .bg-peach-to-cream {
@@ -148,6 +150,16 @@ a {
 .button-gold {
   color: #fff;
   background-color: $gold;
+  transition: background-color .3s ease;
+  &:hover {
+    color: #fff;
+    background-color: $blue;
+  }
+}
+
+.button-red {
+  color: #fff;
+  background-color: $red;
   transition: background-color .3s ease;
   &:hover {
     color: #fff;
