@@ -801,12 +801,214 @@ html, body {
   height: 100%;
   transition: margin-left 1s ease; }
 
+body {
+  color: #303030; }
+
+.white {
+  color: #fff; }
+
+.black {
+  color: black; }
+
+.dark-grey {
+  color: #111111; }
+
+.grey {
+  color: #303030; }
+
+.mid-grey {
+  color: #cdcdcd; }
+
+.green {
+  color: #79f6b9; }
+
+.gold {
+  color: orange; }
+
+.tan {
+  color: #aa9785; }
+
+.light-grey {
+  color: #e3e3e3; }
+
+.red {
+  color: #ff0033; }
+
+.peach {
+  color: #fde8d7; }
+
+.bg-peach-to-cream {
+  background-image: linear-gradient(white, #f7f3ef); }
+
+.bg-cream {
+  background-color: #f7f3ef; }
+
+.bg-white {
+  background-color: #fff; }
+
+.bg-black {
+  background-color: black; }
+
+.bg-dark-grey {
+  background-color: #111111; }
+
+.bg-grey {
+  background-color: #303030; }
+
+.bg-mid-grey {
+  background-color: #cdcdcd; }
+
+.bg-light-grey {
+  background-color: #e3e3e3; }
+
+.bg-green {
+  background-color: #79f6b9; }
+
+.bg-gold {
+  background-color: orange; }
+
+.bg-peach {
+  background-color: #fde8d7; }
+
+.bg-cover {
+  background-size: cover; }
+
+.bg-contain {
+  background-size: contain; }
+
+.bg-center {
+  background-position: center center; }
+
+.round {
+  border-radius: 2px; }
+
+.circle {
+  border-radius: 50%; }
+
+.aa {
+  -webkit-font-smoothing: antialiased; }
+
+a {
+  color: orange;
+  text-decoration: none;
+  transition: color .3s ease; }
+  a:hover {
+    color: #cf8703; }
+
+.nav-white a,
+.link-white {
+  color: #fff;
+  text-decoration: none; }
+  .nav-white a:hover,
+  .link-white:hover {
+    color: #cf8703; }
+
+.link-white-static {
+  color: #fff; }
+  .link-white-static:hover {
+    color: #fff; }
+
+.link-grey {
+  color: #303030;
+  text-decoration: none; }
+  .link-grey:hover {
+    color: #cf8703; }
+
+.link-mid-grey {
+  color: #cdcdcd;
+  text-decoration: none; }
+  .link-mid-grey:hover {
+    color: #cf8703; }
+
+.input-white {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: .125rem; }
+  .input-white:focus {
+    outline: none;
+    background-color: #fff; }
+
+.button-icon svg path {
+  fill: #fff; }
+.button-icon:hover svg path {
+  fill: #cf8703; }
+
+.button-icon-grey svg path {
+  fill: #cdcdcd; }
+.button-icon-grey:hover svg path {
+  fill: #cf8703; }
+
+.button-icon-gold svg path {
+  fill: #fff; }
+.button-icon-gold:hover svg path {
+  fill: #fff; }
+
+.button-grey {
+  color: #fff;
+  background-color: #303030;
+  transition: background-color .3s ease; }
+  .button-grey:hover {
+    background-color: #cf8703;
+    color: #fff; }
+
+.button-gold {
+  color: #fff;
+  background-color: orange;
+  transition: background-color .3s ease; }
+  .button-gold:hover {
+    color: #fff;
+    background-color: #cf8703; }
+
+.button-red {
+  color: #fff;
+  background-color: #ff0033;
+  transition: background-color .3s ease; }
+  .button-red:hover {
+    color: #fff;
+    background-color: #cf8703; }
+
+.button-border {
+  color: #fff;
+  border-width: .125rem;
+  border-style: solid;
+  border-color: #fff; }
+  .button-border svg path {
+    fill: #fff; }
+  .button-border:hover {
+    color: #cf8703;
+    border-color: #cf8703; }
+    .button-border:hover svg path {
+      fill: #cf8703; }
+
+.button-border-big {
+  border-width: .25rem; }
+
+.noselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.bg-transparent {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.bg-transparent-70 {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7); }
+
 .issue1 {
   background-image: url(../images/fb_singlesclubdanielbachman.jpg);
   background-position: center;
   background-size: 100%;
   height: 300px;
   width: 100%; }
+
+.vert-line {
+  width: 2px;
+  height: 200px;
+  background: #ff0033;
+  margin-left: auto;
+  margin-right: auto; }
 
 @media (max-width: 768px) {
   .mobile-hide {
