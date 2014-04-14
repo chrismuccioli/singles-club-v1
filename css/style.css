@@ -55,7 +55,7 @@ h3, .h3 {
   line-height: 1.75rem; }
 
 h4, .h4 {
-  font-size: 1rem;
+  font-size: .85rem;
   line-height: 1rem; }
 
 h5, .h6, h6,
@@ -113,6 +113,12 @@ dl, ol, ul, p, .p {
 
 .lh2 {
   line-height: 1.25; }
+
+.lh3 {
+  line-height: 1.5; }
+
+.ls-1 {
+  letter-spacing: -.1em; }
 
 .ls05 {
   letter-spacing: .05em; }
@@ -243,6 +249,9 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 .mb8 {
   margin-bottom: 8rem; }
+
+.mt8 {
+  margin-top: 8rem; }
 
 .mx-auto {
   margin-right: auto;
@@ -802,7 +811,7 @@ html, body {
   transition: margin-left 1s ease; }
 
 body {
-  color: #303030; }
+  color: black; }
 
 .white {
   color: #fff; }
@@ -889,11 +898,11 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 a {
-  color: orange;
+  color: #ff0033;
   text-decoration: none;
   transition: color .3s ease; }
   a:hover {
-    color: #cf8703; }
+    color: white; }
 
 .nav-white a,
 .link-white {
@@ -901,7 +910,7 @@ a {
   text-decoration: none; }
   .nav-white a:hover,
   .link-white:hover {
-    color: #cf8703; }
+    color: white; }
 
 .link-white-static {
   color: #fff; }
@@ -912,13 +921,13 @@ a {
   color: #303030;
   text-decoration: none; }
   .link-grey:hover {
-    color: #cf8703; }
+    color: white; }
 
 .link-mid-grey {
   color: #cdcdcd;
   text-decoration: none; }
   .link-mid-grey:hover {
-    color: #cf8703; }
+    color: white; }
 
 .input-white {
   background-color: rgba(255, 255, 255, 0.8);
@@ -930,12 +939,12 @@ a {
 .button-icon svg path {
   fill: #fff; }
 .button-icon:hover svg path {
-  fill: #cf8703; }
+  fill: white; }
 
 .button-icon-grey svg path {
   fill: #cdcdcd; }
 .button-icon-grey:hover svg path {
-  fill: #cf8703; }
+  fill: white; }
 
 .button-icon-gold svg path {
   fill: #fff; }
@@ -947,8 +956,12 @@ a {
   background-color: #303030;
   transition: background-color .3s ease; }
   .button-grey:hover {
-    background-color: #cf8703;
+    background-color: white;
     color: #fff; }
+
+.button-grey-no-hover {
+  color: #111111;
+  background-color: #303030; }
 
 .button-gold {
   color: #fff;
@@ -956,15 +969,15 @@ a {
   transition: background-color .3s ease; }
   .button-gold:hover {
     color: #fff;
-    background-color: #cf8703; }
+    background-color: white; }
 
 .button-red {
   color: #fff;
   background-color: #ff0033;
   transition: background-color .3s ease; }
   .button-red:hover {
-    color: #fff;
-    background-color: #cf8703; }
+    color: black;
+    background-color: white; }
 
 .button-border {
   color: #fff;
@@ -974,10 +987,10 @@ a {
   .button-border svg path {
     fill: #fff; }
   .button-border:hover {
-    color: #cf8703;
-    border-color: #cf8703; }
+    color: white;
+    border-color: white; }
     .button-border:hover svg path {
-      fill: #cf8703; }
+      fill: white; }
 
 .button-border-big {
   border-width: .25rem; }
@@ -1003,12 +1016,27 @@ a {
   height: 300px;
   width: 100%; }
 
+.recordclub {
+  background-image: url(../images/player.jpg);
+  background-position: center;
+  background-size: 100%; }
+
 .vert-line {
-  width: 2px;
-  height: 200px;
+  width: 1px;
+  height: 150px;
   background: #ff0033;
   margin-left: auto;
   margin-right: auto; }
+
+.vert-line-short {
+  width: 1px;
+  height: 75px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.rule {
+  width: 100%;
+  height: 1px; }
 
 @media (max-width: 768px) {
   .mobile-hide {
@@ -1019,7 +1047,7 @@ a {
     display: none; } }
 
 body {
-  color: #303030; }
+  color: black; }
 
 .white {
   color: #fff; }
@@ -1106,11 +1134,11 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 a {
-  color: orange;
+  color: #ff0033;
   text-decoration: none;
   transition: color .3s ease; }
   a:hover {
-    color: #cf8703; }
+    color: white; }
 
 .nav-white a,
 .link-white {
@@ -1118,7 +1146,7 @@ a {
   text-decoration: none; }
   .nav-white a:hover,
   .link-white:hover {
-    color: #cf8703; }
+    color: white; }
 
 .link-white-static {
   color: #fff; }
@@ -1129,13 +1157,13 @@ a {
   color: #303030;
   text-decoration: none; }
   .link-grey:hover {
-    color: #cf8703; }
+    color: white; }
 
 .link-mid-grey {
   color: #cdcdcd;
   text-decoration: none; }
   .link-mid-grey:hover {
-    color: #cf8703; }
+    color: white; }
 
 .input-white {
   background-color: rgba(255, 255, 255, 0.8);
@@ -1147,12 +1175,12 @@ a {
 .button-icon svg path {
   fill: #fff; }
 .button-icon:hover svg path {
-  fill: #cf8703; }
+  fill: white; }
 
 .button-icon-grey svg path {
   fill: #cdcdcd; }
 .button-icon-grey:hover svg path {
-  fill: #cf8703; }
+  fill: white; }
 
 .button-icon-gold svg path {
   fill: #fff; }
@@ -1164,8 +1192,12 @@ a {
   background-color: #303030;
   transition: background-color .3s ease; }
   .button-grey:hover {
-    background-color: #cf8703;
+    background-color: white;
     color: #fff; }
+
+.button-grey-no-hover {
+  color: #111111;
+  background-color: #303030; }
 
 .button-gold {
   color: #fff;
@@ -1173,15 +1205,15 @@ a {
   transition: background-color .3s ease; }
   .button-gold:hover {
     color: #fff;
-    background-color: #cf8703; }
+    background-color: white; }
 
 .button-red {
   color: #fff;
   background-color: #ff0033;
   transition: background-color .3s ease; }
   .button-red:hover {
-    color: #fff;
-    background-color: #cf8703; }
+    color: black;
+    background-color: white; }
 
 .button-border {
   color: #fff;
@@ -1191,10 +1223,10 @@ a {
   .button-border svg path {
     fill: #fff; }
   .button-border:hover {
-    color: #cf8703;
-    border-color: #cf8703; }
+    color: white;
+    border-color: white; }
     .button-border:hover svg path {
-      fill: #cf8703; }
+      fill: white; }
 
 .button-border-big {
   border-width: .25rem; }

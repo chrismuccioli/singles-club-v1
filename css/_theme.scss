@@ -5,7 +5,7 @@ $dark-grey: #111111;
 $grey: #303030;
 $mid-grey: #cdcdcd;
 $light-grey: #e3e3e3;
-$blue: #CF8703;
+$blue: #ffffff;
 $white: #fff;
 $red: #ff0033;
 
@@ -22,7 +22,7 @@ $cream: #f7f3ef;
 $tan: #aa9785;
 
 body {
-  color: $grey;
+  color: $black;
 }
 
 .white { color: #fff; }
@@ -64,7 +64,7 @@ body {
 .aa { -webkit-font-smoothing: antialiased; }
 
 a {
-  color: $gold;
+  color: $red;
   text-decoration: none;
   transition: color .3s ease;
   &:hover {
@@ -147,6 +147,11 @@ a {
   }
 }
 
+.button-grey-no-hover {
+  color: $dark-grey;
+  background-color: $grey;
+}
+
 .button-gold {
   color: #fff;
   background-color: $gold;
@@ -162,7 +167,7 @@ a {
   background-color: $red;
   transition: background-color .3s ease;
   &:hover {
-    color: #fff;
+    color: $black;
     background-color: $blue;
   }
 }
