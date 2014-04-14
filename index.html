@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="/favicon.png" />
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link href="/css/style.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
   <meta property="og:type" content="website">
   <meta property="og:image" content="">
   <meta property="og:url" content="http://singlesclub.fm/journal/daniel-bachman">
@@ -37,14 +37,13 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
 </head>
 
-<body ng-app="singlesclub" ng-controller="MenuCtrl">
+<body ng-app="singlesclub">
 
-  <!-- new header nav -->
   <nav class="absolute t0 r0 l0 z1">
     <div class="container white">
       <div class="l-table">
         <div class="l-table-cell col-5 mobile-hide">
-          <p class="lydian h4 caps ls1 center mb0 pl3">Part record club. Part music journal.</p>
+          <p class="lydian h4 caps ls1 center mb0 pl2">Part record club. Part music journal.</p>
         </div>
         <div class="l-table-cell center col-2 py1">
           <a href="/">
@@ -53,7 +52,7 @@
         </div>
         <div class="l-table-cell col-5 mobile-hide">
           <ul class="apercu h4 caps ls1 center list-inline mb0 nav-white">
-            <li><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
+            <li><a href="http://www.singlesclub.fm/subscribe">Subscribe</a></li>
             <li><a href="/journal/daniel-bachman">Journal</a></li>
             <li><a href="http://blog.singlesclub.fm">Blog</a></li>
             <li><a href="http://shop.singlesclub.fm">Shop</a></li>
@@ -63,84 +62,95 @@
     </div>
   </nav>
 
-  <div class="flyout scroll-y apercu aa white bg-black mobile-show" ng-class="{ 'is-open': flyoutIsOpen }">
+  <div class="js-flyout flyout scroll-y apercu aa white bg-black mobile-show">
     <div class="py4">
-      <ul class="h2 bold list-simple nav-white">
+      <ul class="h3 bold list-simple nav nav-white">
         <li><a href="/">Home</a></li>
-        <li><a href="http://subscribe.singlesclub.fm">Subscribe</a></li>
+        <li><a href="http://www.singlesclub.fm/subscribe">Subscribe</a></li>
         <li><a href="/journal/daniel-bachman">Journal</a></li>
         <li><a href="http://blog.singlesclub.fm">Blog</a></li>
         <li><a href="http://shop.singlesclub.fm">Shop</a></li>
+      </ul>
+      <ul class="list list-inline nav-white">
+        <li><a href="https://twitter.com/singlesclubfm" class="ss-icon">twitter</a></li>
+        <li><a href="http://www.facebook.com/singlesclubfm" class="ss-icon">facebook</a></li>
+        <li><a href="http://singlesclubfm.tumblr.com/" class="ss-icon">tumblr</a></li>
+        <li><a href="http://www.instagram.com/singlesclubfm" class="ss-icon">instagram</a></li>
+        <li><a href="https://soundcloud.com/singlesclubfm" class="ss-icon">soundcloud</a></li>
       </ul>
     </div>
   </div>
 
   <div class="fixed t0 l0 z4 mobile-show">
-    <a href ng-click="toggleFlyout()" class="inline-block bar button-icon white" style="padding:.5rem .375rem;">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         width="16px" height="16px" viewBox="0.5 0.5 32 32" enable-background="new 0.5 0.5 32 32" xml:space="preserve">
-        <path d="M30.5,14.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0 C32.5,15.395,31.605,14.5,30.5,14.5L30.5,14.5z"/>
-        <path d="M30.5,4.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0C32.5,5.395,31.605,4.5,30.5,4.5 L30.5,4.5z"/>
-        <path d="M30.5,24.5h-28c-1.105,0-2,0.895-2,2l0,0c0,1.105,0.895,2,2,2h28c1.105,0,2-0.895,2-2l0,0 C32.5,25.395,31.605,24.5,30.5,24.5L30.5,24.5z"/>
+    <a href class="js-toggle-flyout inline-block bar button-icon white" style="padding:.5rem .375rem;">
+      <svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 32 32" fill="#ffffff">
+        <rect y="4" width="32" height="4"/> <rect y="14" width="32" height="4"/> <rect y="24" width="32" height="4"/>
       </svg>
     </a>
   </div>
-  <!-- end new header nav -->
 
   <header class="slideshow slideshow--large" ng-controller="SlideshowCtrl">
-    <div
-      style="background-image: url(/images/daniel_issue1.jpg)"
-      ng-style="offset"
-      class="slide bg-cover bg-center bg-dark-grey"></div>
-    <div
-      style="background-image: url(/images/daniel_issue1.jpg)"
-      class="slide bg-cover bg-center bg-dark-grey"></div>
-    <div
-      style="background-image: url(/images/daniel_issue1.jpg)"
-      class="slide bg-cover bg-center bg-dark-grey"></div>
-  </header>
-  	<section class="bg-dark-grey">
-  	<div class="container center">
-      <h1 class="h2 apercu-light aa light-grey lh1 mt3 mb1 col col-8 pre-2 post-2">A subscription record club &amp; <br>digital music journal published quarterly</h1>
-      <p class="lydian-bold caps aa ls05 mb2">The Inaugural Volume Available Now</p>
+      <div
+      style="background-image: url(images/homepage-banner-2.jpg)"
+      class="slide relative bg-cover bg-center bg-dark-grey">
+        <a href="/journal/daniel-bachman" class="absolute t0 r0 b0 l0 block"></a>
     </div>
-  	</section>
+    <div
+      style="background-image: url(images/homepage-banner-4.jpg)"
+      ng-style="offset"
+      class="slide relative bg-cover bg-center bg-dark-grey">
+        <a href="http://www.singlesclub.fm/subscribe" class="absolute t0 r0 b0 l0 block"></a>
+    </div>
+    <div
+      style="background-image: url(images/homepage-banner-1.jpg)"
+      class="slide relative bg-cover bg-center bg-dark-grey">
+        <a href="http://shop.singlesclub.fm" class="absolute t0 r0 b0 l0 block"></a>
+    </div>
+  </header>
+
+  <section class="py2 bg-dark-grey">
+  	<div class="container center">
+      <h1 class="h2 apercu aa light-grey lh1 mt1 mb1 col col-8 pre-2 post-2">A subscription record club &amp; <br>digital music journal published quarterly</h1>
+      <!--<p><a href="http://www.singlesclub.fm/subscribe" class="lydian-bold caps aa gold ls05 mb0">Volume #1 out now</a></p>
+    </div>-->
+  </section>
+  
   <section class="aa white bg-black py2">
-    <div class="container clearfix mt0 mb2">
+    <div class="container clearfix mt2 mb2">
       <div class="col col-3 center py2 bg-light-grey round">
-        <h2 class="h2 lydian-bold lh1 black">Exclusive<br> Tracks</h2>
-        <img src="images/features-01.svg" alt="record" width="96" class="fit mb2" />
-        <p class="black apercu-light aa center ml2 lh2 mr2 mb0">Four 45s featuring exclusive material for subscribers.</p>
+        <h2 class="h2 lydian-bold lh1 mb1 black">Exclusive<br> Tracks</h2>
+        <img src="images/features-01.svg" alt="record" width="80" class="fit mb1" />
+        <p class="black apercu-light aa center ml2 lh2 mr2 mb0">Four 45s <br>featuring exclusive material for subscribers.</p>
       </div>
       <div class="col col-3 center py2 bg-light-grey round">
-        <h2 class="h2 lydian-bold lh1 black">Delivered<br> Quarterly</h2>
-        <img src="images/features-02.svg" alt="four" width="96" class="fit mb2" />
-        <p class="black apercu-light aa ml2 center lh2 mr2 mb0">4 Singles. Shipping included. Straight to your door &amp; inbox.</p>
+        <h2 class="h2 lydian-bold lh1 mb1 black">Delivered<br> Quarterly</h2>
+        <img src="images/features-02.svg" alt="four" width="80" class="fit mb1" />
+        <p class="black apercu-light aa ml2 center lh2 mr2 mb0">4 Singles,<br> delivered straight to your door &amp; inbox.</p>
       </div>
       <div class="col col-3 center py2 bg-light-grey round">
-        <h2 class="h2 lydian-bold lh1 black">Digital<br> Journal</h2>
-        <img src="images/features-03.svg" alt="computer" width="144" class="fit mb2" />
-        <p class="black apercu-light aa ml2 center lh2 mr2 mb0">Three features, photos, & more to accompany each release.</p>
+        <h2 class="h2 lydian-bold lh1 mb1 black">Digital<br> Journal</h2>
+        <img src="images/features-03.svg" alt="computer" width="96" class="fit mt1 mb1" />
+        <p class="black apercu-light aa ml2 center lh2 mr2 mb0">Features, photos, &amp; more to accompany each release.</p>
       </div>
       <div class="col col-3 center py2 bg-light-grey round">
-        <h2 class="h2 lydian-bold lh1 black">One<br> Year</h2>
-        <img src="images/features-04.svg" alt="branded box" width="96" class="fit mb2" />
-        <p class="black apercu-light aa ml2 center lh2 mr2 mb0">7" box to fill, Singles Club pin &amp; more all limited to 250 copies.</p>
+        <h2 class="h2 lydian-bold lh1 mb1 black">One<br> Year</h2>
+        <img src="images/features-04.svg" alt="branded box" width="80" class="fit mb1" />
+        <p class="black apercu-light aa ml2 center lh2 mr2 mb0">Custom 7" box, Singles Club pin &amp; more. All limited to 250 copies.</p>
       </div>
     </div>
         <div class="container mb1 center">
       <!--<h1 class="h2 apercu-light aa white lh1 mt1 col col-8 pre-2 post-2">A subscription record club &amp; <br>digital music journal published quarterly</h1>-->
-      <p class="mb1 lh1"><span class="lydian-bold light-grey">Featuring:</span> Daniel Bachman, Small Sur, Woodsman & Wisdom Tooth</p>
+      <p class="mb1 lh1"><span class="lydian-italic ls1 light-grey">Featuring:</span> Daniel Bachman, Small Sur, Woodsman & Wisdom Tooth</p>
            <h1 class="h2 apercu-light aa light-grey lh1 col col-8 pre-2 post-2">Get a full year for &#36;65 including shipping</h1>
     </div>
     <div class="container clearfix">
       <div class="col col-4 pre-4 post-4">
-        <a href="http://subscribe.singlesclub.fm" class="apercu-medium h3 aa mb2 button button-block button-gold">Learn More & Subscribe</a>
+        <a href="http://www.singlesclub.fm/subscribe" class="apercu-medium h3 aa mb4 button button-block button-gold">Learn More & Subscribe</a>
       </div>
     </div>
   </section>
 
-  <section class="aa center white bg-black bg-cover pt4 pb4 bg-center" style="background-image: url(/images/shop_image2.jpg)">
+  <section class="aa center white bg-black bg-cover pt4 pb4 bg-center" style="background-image: url(images/shop-image-3.jpg)">
     <a href="http://shop.singlesclub.fm" class="block py6 link-white-static">
       <!--
       <h1 class="h1 apercu-bold caps mb0">The shop is now open</h1>
@@ -149,34 +159,36 @@
     </a>
   </section>
 
-  <section class="px2 py3 aa bg-dark-grey">
-    <div class="clearfix">
-      <div class="col col-12">
-        <h1 class="apercu-medium p mb0 gold">Mail Club</h1>
+  <section class="py3 aa bg-dark-grey">
+    <div class="container">
+      <div class="clearfix">
+        <div class="col col-12">
+          <h1 class="apercu-medium p mb0 gold">Mail Club</h1>
+        </div>
       </div>
-    </div>
-    <form class="clearfix" action="http://singlesclub.us6.list-manage.com/subscribe/post" method="POST">
-      <div class="col col-3">
-        <input type="hidden" name="u" value="27badb2e91">
-        <input type="hidden" name="id" value="1781494ce0">
-        <input type="text" value ="E-MAIL" name="MERGE0" class="input input-white small mb1 x100"  id="form" onclick="this.focus();this.select()"onfocus="this.value=''; this.onfocus=null;"/>
-      </div>
-      <div class="col col-1">
-        <input type="submit" id="submitbutton" value="ok" name="submit" class="apercu button button-block mb1 caps button-gold"/>
-      </div>
-      <div class="col col-4 pre-4 right-align mobile-center">
-        <ul class="list list-inline p">
-          <li class=""><a href="https://twitter.com/singlesclubfm" class="ss-icon">twitter</a></li>
-          <li class=""><a href="http://www.facebook.com/singlesclubfm" class="ss-icon">facebook</a></li>
-          <li class=""><a href="http://singlesclubfm.tumblr.com/" class="ss-icon">tumblr</a></li>
-          <li class=""><a href="http://www.instagram.com/singlesclubfm" class="ss-icon">instagram</a></li>
-          <li><a href="https://soundcloud.com/singlesclubfm" class="ss-icon">soundcloud</a></li>
-        </ul>
-      </div>
-    </form>
-    <div class="clearfix">
-      <div class="col col-6 mobile-center mid-grey">
-        <p class="h4">Join our newsletter for new tunes, mix tapes, and features every month.</p>
+      <form class="clearfix" action="http://singlesclub.us6.list-manage.com/subscribe/post" method="POST">
+        <div class="col col-3">
+          <input type="hidden" name="u" value="27badb2e91">
+          <input type="hidden" name="id" value="1781494ce0">
+          <input type="text" value ="E-MAIL" name="MERGE0" class="input input-white small mb1 x100"  id="form" onclick="this.focus();this.select()"onfocus="this.value=''; this.onfocus=null;"/>
+        </div>
+        <div class="col col-1">
+          <input type="submit" id="submitbutton" value="ok" name="submit" class="apercu button button-small button-block mb1 caps button-gold"/>
+        </div>
+        <div class="col col-4 pre-4 right-align mobile-center">
+          <ul class="list list-inline">
+            <li><a href="https://twitter.com/singlesclubfm" class="ss-icon">twitter</a></li>
+            <li><a href="http://www.facebook.com/singlesclubfm" class="ss-icon">facebook</a></li>
+            <li><a href="http://singlesclubfm.tumblr.com/" class="ss-icon">tumblr</a></li>
+            <li><a href="http://www.instagram.com/singlesclubfm" class="ss-icon">instagram</a></li>
+            <li><a href="https://soundcloud.com/singlesclubfm" class="ss-icon">soundcloud</a></li>
+          </ul>
+        </div>
+      </form>
+      <div class="clearfix">
+        <div class="col col-6 mobile-center mid-grey">
+          <p class="h4">Join our newsletter for new tunes, mix tapes, and features every month.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -191,6 +203,24 @@
       © 2014 Singles Club LLC - All Rights Reserved</p>
   </footer>
 
+  <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var flyoutIsOpen = false,
+          $flyout = $('.js-flyout');
+      var toggleFlyout = function(){
+        if(flyoutIsOpen) {
+          $flyout.removeClass('is-open');
+        } else {
+          $flyout.addClass('is-open');
+        }
+        flyoutIsOpen = !flyoutIsOpen;
+      };
+      $('.js-toggle-flyout').click(function(){
+        toggleFlyout();
+      });
+    });
+  </script>
   <script src="js/config.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
   <script src="js/angular-carousel.js"></script>

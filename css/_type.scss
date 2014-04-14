@@ -36,7 +36,6 @@ body {
 .lydian-italic {
   font-family: LydianBT-Italic, georgia;
   font-weight: lighter;
-  //font-style: italic;
 }
 
 .lydian {
@@ -126,6 +125,7 @@ dl, ol, ul, p, .p {
 .ls1 { letter-spacing: .1em;}
 .ls1-05 { letter-spacing: .105;}
 .ls2 { letter-spacing: .2em;}
+.ls3 { letter-spacing: .3em;}
 
 
 // Prevent flashing fonts with fontdeck

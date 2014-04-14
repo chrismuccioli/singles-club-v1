@@ -5,13 +5,13 @@ $dark-grey: #111111;
 $grey: #303030;
 $mid-grey: #cdcdcd;
 $light-grey: #e3e3e3;
-$blue: #5200FF;
+$blue: #CF8703;
 $white: #fff;
 
   // Deprecated
   $green: #79f6b9;
 
-$gold: #dea439;
+$gold: #FFA500;
 
 // Feature 2
 $peach: #fde8d7;
@@ -64,6 +64,7 @@ body {
 a {
   color: $gold;
   text-decoration: none;
+  transition: color .3s ease;
   &:hover {
     color: $blue;
   }
@@ -98,11 +99,11 @@ a {
 }
 
 .input-white {
-  background-color: #fff;
+  background-color: rgba(#fff,.8);
   border-radius: .125rem;
   &:focus {
     outline: none;
-    border: 1px solid $gold;
+    background-color: #fff;
   }
 }
 
@@ -137,6 +138,7 @@ a {
 .button-grey {
   color: #fff;
   background-color: $grey;
+  transition: background-color .3s ease;
   &:hover {
     background-color: $blue;
     color: #fff;
@@ -146,6 +148,7 @@ a {
 .button-gold {
   color: #fff;
   background-color: $gold;
+  transition: background-color .3s ease;
   &:hover {
     color: #fff;
     background-color: $blue;
@@ -181,8 +184,13 @@ a {
           user-select: none;
 }
 
-.transparent {
-	zoom: 1;
-	filter: alpha(opacity=90);
-	opacity: 0.9;
+.bg-transparent {
+  background-color: black;
+  background-color: rgba(#000, .9);
 }
+
+.bg-transparent-70 {
+  background-color: black;
+  background-color: rgba(#000, .7);
+}
+

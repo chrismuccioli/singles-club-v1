@@ -4,13 +4,6 @@
 
 var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel', 'duParallax', 'fitVids']);
 
-singlesclub.controller('MenuCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
-  $scope.flyoutIsOpen = false;
-  $scope.toggleFlyout = function() {
-    $scope.flyoutIsOpen = !$scope.flyoutIsOpen;
-  };
-}]);
-
 singlesclub.controller('ModalCtrl', ['$scope', function($scope) {
   $scope.modalIsOpen = false;
   $scope.openModal = function() {
@@ -56,7 +49,7 @@ singlesclub.controller('SlideshowCtrl', ['$scope', '$timeout', function($scope, 
   // Auto-advance
   // interval sets the time in ms before transitioning slides
   // transition speed is handled via css
-  var interval = 4000;
+  var interval = 8000;
   var advance = function() {
     $scope.next();
     $timeout(advance, interval);
