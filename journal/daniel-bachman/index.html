@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../../css/style.css" />
   <meta property="og:type" content="website">
   <!-- Adjust this image for Facebook posts -->
-  <meta property="og:image" content="/images/fb_singlesclubdanielbachman.jpg">
+  <meta property="og:image" content="http://www.singlesclub.fm/images/fb_singlesclubdanielbachman.jpg">
   <meta property="og:url" content="http://singlesclub.fm/journal/daniel-bachman">
   <!-- Adjust this image for Facebook title -->
   <meta property="og:title" content="Singles Club Issue 1: Daniel Bachman">
@@ -38,6 +38,16 @@
       s.parentNode.insertBefore(wf, s);
     })();
   </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48085107-1', 'singlesclub.fm');
+  ga('send', 'pageview');
+ 
+  </script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
 </head>
 
@@ -47,7 +57,7 @@
     <div class="container white">
       <div class="l-table">
         <div class="l-table-cell col-5 mobile-hide">
-          <p class="lydian h4 caps ls1 center mb0 pl2">Part record club. Part music journal.</p>
+          <h4 class="lydian caps ls1 center mb0">Part record club. Part music journal.</h4>
         </div>
         <div class="l-table-cell center col-2 py1">
           <a href="/">
@@ -55,7 +65,7 @@
           </a>
         </div>
         <div class="l-table-cell col-5 mobile-hide">
-          <ul class="apercu h4 caps ls1 center list-inline mb0 nav-white">
+          <ul class="apercu h5 caps ls1 center list-inline mb0 nav-white">
             <li><a href="http://www.singlesclub.fm/subscribe">Subscribe</a></li>
             <li><a href="/journal/daniel-bachman">Journal</a></li>
             <li><a href="http://blog.singlesclub.fm">Blog</a></li>
@@ -98,10 +108,10 @@
       </ul>
     </div>
     <div class="absolute t0 r0 b0 py4 center" style="padding-right:1rem;padding-left:1rem;">
+      <img src="images/issuemeta.svg" />
       <div class="js-toggle-flyout lydian-bold white caps mb1" style="line-height:1.35">
         F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
       </div>
-      <img src="images/issuemeta.svg" />
     </div>
   </div>
 
@@ -125,7 +135,7 @@
             <a href="#bringing-it-all-back-home"
               ng-click="player.play(track)"
               ng-hide="player.playing == track"
-              class="apercu-medium h3 ls05 aa button button-gold mb1">
+              class="p apercu-medium ls05 aa button button-gold mb2">
                 Listen &amp; Begin
             </a>
             <a href="#!"
@@ -142,13 +152,13 @@
     </header>
 
     <div class="" ui-scrollfix>
-      <div class="ui-scrollfix-hide mobile-hide fixed t0 b0 l0 aa center white bg-transparent" style="padding: 4rem 1rem 0 1rem;">
+      <div class="ui-scrollfix-hide mobile-hide fixed t0 b0 l0 aa center white bg-black" style="padding: 4rem 1rem 0 1rem;">
+        <img src="images/issuemeta.svg" />
         <div class="js-toggle-flyout lydian-bold white caps mb1" style="line-height:1.35">
           F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
         </div>
-        <img src="images/issuemeta.svg" />
       </div>
-      <div class="clearfix bar bg-transparent aa white ui-scrollfix-show slidedown">
+      <div class="clearfix bar aa white ui-scrollfix-show bg-black slidedown">
         <div class="left mr2 nav-white mobile-hide">
           <a href class="js-toggle-flyout lydian-bold pl4 caps ls3 white">Features</a>
         </div>
@@ -205,9 +215,11 @@
       <div class="container clearfix">
         <div class="col col-10 pre-1 post-1">
           <img src="images/daniel_headline.jpg" alt="Bringing it all back home" class="fit" />
-          <h2 class="h2 center apercu mb2">A Day With Daniel Bachman</h2>
-          <p class="lydian center ls2 caps light-grey lh2 mb0">Written by Sunny Eckerle</p>
+          <h2 class="h2 center apercu-light mb2">A Day With Daniel Bachman</h2>
+          <p class="lydian center ls1 black lh2 mb0">Written by Sunny Eckerle</p>
+          <div class="vert-line-short bg-black mt2"></div>
         </div>
+
       </div>
     </section>
     <section class="container clearfix">
