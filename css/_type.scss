@@ -110,6 +110,7 @@ dl, ol, ul, p, .p {
 .caps--t2 { letter-spacing: .2em; }
 .center { text-align: center; }
 .right-align  { text-align: right; }
+.shadow { text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6); }
 @media (max-width: 768px) {
   .mobile-center { text-align: center; }
 }

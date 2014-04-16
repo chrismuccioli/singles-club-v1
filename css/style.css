@@ -105,6 +105,9 @@ dl, ol, ul, p, .p {
 .right-align {
   text-align: right; }
 
+.shadow {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6); }
+
 @media (max-width: 768px) {
   .mobile-center {
     text-align: center; } }
