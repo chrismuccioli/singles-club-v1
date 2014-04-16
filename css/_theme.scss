@@ -50,6 +50,7 @@ body {
 .bg-light-grey { background-color: $light-grey; }
 .bg-green { background-color: $green; }
 .bg-gold { background-color: $gold; }
+.bg-red { background-color: $red; }
 
 .bg-peach { background-color: $peach; }
 
@@ -67,7 +68,7 @@ a {
   color: $red;
   text-decoration: none;
   transition: color .3s ease;
-  &:hover {
+  &:hover { 
     color: $blue;
   }
 }

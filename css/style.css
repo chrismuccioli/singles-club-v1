@@ -876,6 +876,9 @@ body {
 .bg-gold {
   background-color: orange; }
 
+.bg-red {
+  background-color: #ff0033; }
+
 .bg-peach {
   background-color: #fde8d7; }
 
@@ -1111,6 +1114,9 @@ body {
 
 .bg-gold {
   background-color: orange; }
+
+.bg-red {
+  background-color: #ff0033; }
 
 .bg-peach {
   background-color: #fde8d7; }
