@@ -5,7 +5,7 @@ $dark-grey: #111111;
 $grey: #303030;
 $mid-grey: #cdcdcd;
 $light-grey: #e3e3e3;
-$blue: #ffffff;
+$blue: #CF8703;
 $white: #fff;
 $red: #ff0033;
 
@@ -69,15 +69,22 @@ a {
   text-decoration: none;
   transition: color .3s ease;
   &:hover { 
-    color: $blue;
+    color: darken($red,20%);
   }
 }
+.link-red {
+  color: $red;
+  &:hover {
+    color: $white;
+  }
+}
+
 .nav-white a,
 .link-white {
   color: #fff;
   text-decoration: none;
   &:hover {
-    color: $blue;
+    color: $white;
   }
 }
 .link-white-static {
@@ -90,14 +97,14 @@ a {
   color: $grey;
   text-decoration: none;
   &:hover {
-    color: $blue;
+    color: $white;
   }
 }
 .link-mid-grey {
   color: $mid-grey;
   text-decoration: none;
   &:hover {
-    color: $blue;
+    color: $white;
   }
 }
 
@@ -116,7 +123,7 @@ a {
   }
   &:hover {
     svg path {
-      fill: $blue;
+      fill: $white;
     }
   }
 }
@@ -127,7 +134,7 @@ a {
   }
   &:hover {
     svg path {
-      fill: $blue;
+      fill: $white;
     }
   }
 }
@@ -143,7 +150,7 @@ a {
   background-color: $grey;
   transition: background-color .3s ease;
   &:hover {
-    background-color: $blue;
+    background-color: $white;
     color: #fff;
   }
 }
@@ -159,7 +166,7 @@ a {
   transition: background-color .3s ease;
   &:hover {
     color: #fff;
-    background-color: $blue;
+    background-color: $white;
   }
 }
 
@@ -169,7 +176,7 @@ a {
   transition: background-color .3s ease;
   &:hover {
     color: $black;
-    background-color: $blue;
+    background-color: $white;
   }
 }
 
@@ -183,10 +190,10 @@ a {
     fill: #fff;
   }
   &:hover {
-    color: $blue;
-    border-color: $blue;
+    color: $white;
+    border-color: $white;
     svg path {
-      fill: $blue;
+      fill: $white;
     }
   }
 }
