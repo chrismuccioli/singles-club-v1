@@ -1,0 +1,61 @@
+// Homepage
+
+@import "theme";
+
+.issue1 {
+	background-image:url(../images/homepage-issue-danielbachman.jpg);
+	background-position: center;
+	background-size: 100%;
+	height: 300px;
+	width: 100%;
+}
+
+.issue2 {
+	background-image:url(../images/homepage-issue-smallsur.jpg);
+	background-position: top;
+	background-size: 100%;
+	height: 300px;
+	width: 100%;
+}
+
+.issue3 {
+	background-image:url(../images/homepage-issue-woodsman.jpg);
+	background-position: center;
+	background-size: 100%;
+	height: 300px;
+	width: 100%;
+}
+
+.issue4 {
+	background-image:url(../images/homepage-issue-wisdomtooth.jpg);
+	background-position: top;
+	background-size: 100%;
+	height: 300px;
+	width: 100%;
+}
+
+.recordclub {
+	background-image:url(../images/player.jpg);
+	background-position: center;
+	background-size: 100%;
+}
+
+.vert-line {
+	width: 1px;
+	height: 150px;
+	background: $red;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.vert-line-short {
+	width: 1px;
+	height: 75px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rule {
+	width: 100%;
+	height: 1px;
+}
