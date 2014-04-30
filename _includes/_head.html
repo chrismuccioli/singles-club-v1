@@ -17,6 +17,11 @@
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="fb:app_id" content="1450710301810527">
+  <style>
+    <!-- the .wf-loading class is used to control FOUT (flash of unstyled text) -->
+    html { transition: opacity .2s ease; }
+    .wf-loading { opacity: 0; }
+  </style>
 	<script type="text/javascript">
     var html = document.getElementsByTagName('html')[0];
     html.className += '  wf-loading';
