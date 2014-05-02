@@ -1,3 +1,10 @@
+---
+title: "Singles Club – Issue 2: Small Sur"
+description: "Singles Club Issue 2: Small Sur"
+url: "http://singlesclub.fm/journal/small-sur"
+socialimage: ""
+---
+<!--
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,7 +24,6 @@
   <meta property="og:description" content="{{ page.description }}">
   <meta property="fb:app_id" content="1450710301810527">
   <style>
-    <!-- the .wf-loading class is used to control FOUT (flash of unstyled text) -->
     html { transition: opacity .2s ease; }
     .wf-loading { opacity: 0; }
   </style>
@@ -38,24 +44,16 @@
     })();
   </script>
 </head>
-
-<!--
----
-title: "Singles Club – Issue 2: Small Sur"
-description: "Singles Club Issue 2: Small Sur"
-url: "http://singlesclub.fm/journal/small-sur"
-socialimage: ""
----
-{% include _head.html %}
 -->
 
-
+{% include _head.html %}
 
 <body class="" ng-app="singlesclub">
 
+  {% include _player-nav.html track="https://soundcloud.com/singlesclubfm/coming-home" %}
   <!-- include global nav or issue nav bar here -->
 
-  <header class="table table-fixed center min-y100 white bg-dark-grey bg-cover bg-center">
+  <header class="table table-fixed center min-y100 white bg-mid-grey bg-cover bg-center">
     <div class="table-cell">
       <p class="apercu-light caps ls2 mb1">Issue #2</p>
       <h1>Small Sur</h1>
@@ -156,6 +154,7 @@ socialimage: ""
   </section>
 
 
+<!--
 
 <script src="/js/config.js"></script>
 
@@ -192,7 +191,6 @@ socialimage: ""
 <script src="/js/angular-fitvids.js"></script>
 <script src="/js/singlesclub.js"></script>
 
-<!--
 <script> !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs"); </script>
 
 <div id="fb-root"></div>
@@ -210,11 +208,9 @@ socialimage: ""
 -->
 
 
-  <!--
   {% include _newsletter.html %}
   {% include _footer.html %}
   {% include _scripts.html %}
-  -->
 
 </body>
 </html>

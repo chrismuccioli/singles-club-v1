@@ -1,0 +1,43 @@
+<div class="clearfix bar fixed r0 l0 white bg-black" plangular data-src="{{ include.track }}">
+  <div class="left">
+    <a href="#!">Home</a>
+  </div>
+  <div class="right px1 nowrap">
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url }}" target="_blank" class="button-ss-icon link-white">
+      <span class="ss-icon ss-social ss-facebook"></span>
+    </a>
+    <a href="https://twitter.com/intent/tweet?text={{ page.description }}&url={{ page.url }}" target="_blank" class="button-ss-icon link-white">
+      <span class="ss-icon ss-social ss-twitter"></span>
+    </a>
+  </div>
+  {% raw %}
+    <div class="clearfix px1 ml3">
+      <div class="left mr1">
+        <span class="left mr1 apercu-medium aa gold mobile-hide">{{ track.title }}</span>
+        <a href
+          ng-click="player.play(track)"
+          ng-hide="player.playing == track"
+          class="button-icon button-icon-small popin">
+            <svg width="16px" height="16px" viewbox="0 0 20 32" xmlns="http://www.w3.org/2000/svg">
+              <polygon fill="#ffffff" points="0,0 20,16 0,32"/>
+            </svg>
+        </a>
+        <a href
+          ng-click="player.pause()"
+          ng-show="player.playing == track"
+          class="button-icon button-icon-small popin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 32 32" fill="#ffffff">
+              <rect x="4" y="4" width="8" height="24"/>
+              <rect x="20" y="4" width="8" height="24"/>
+            </svg>
+        </a>
+      </div>
+      <div class="progress clearfix" style="">
+        <div class="progress-background bg-grey"></div>
+        <div class="progress-buffer"></div>
+        <div class="progress-played bg-gold" style="width: {{ currentTime / duration * 100 }}%"></div>
+        <div class="progress-overlay" ng-click="seekTo($event)"></div>
+      </div>
+    </div>
+  {% endraw %}
+</div>
