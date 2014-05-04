@@ -367,9 +367,6 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 .nowrap {
   white-space: nowrap; }
 
-.fullwidth {
-  height: 400px; }
-
 .list-simple {
   list-style: none;
   padding-left: 0; }
@@ -1088,8 +1085,8 @@ s
 .smallsur-f1-2 {
   background-image: url(../journal/small-sur/images/image3-smallsur.jpg);
   background-position: center;
-  height: 400px;
-  width: 400px; }
+  height: 500px;
+  width: 500px; }
 
 .smallsur-f1-3 {
   background-image: url(../journal/small-sur/images/image3-smallsur.jpg);
