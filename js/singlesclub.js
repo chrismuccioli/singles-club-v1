@@ -2,7 +2,8 @@
 
 'use strict';
 
-var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel', 'duParallax', 'fitVids']);
+//var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel', 'duParallax', 'fitVids']);
+var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel', 'fitVids']);
 
 singlesclub.controller('ModalCtrl', ['$scope', function($scope) {
   $scope.modalIsOpen = false;
@@ -14,11 +15,12 @@ singlesclub.controller('ModalCtrl', ['$scope', function($scope) {
   };
 }]);
 
-singlesclub.controller('ParallaxCtrl', ['$scope', 'parallaxHelper', function($scope, parallaxHelper) {
-  $scope.foreground = parallaxHelper.createAnimator(-0.1);
-  $scope.background = parallaxHelper.createAnimator(0.1);
-  $scope.background2 = parallaxHelper.createAnimator(-0.2);
-  $scope.rotation = parallaxHelper.createAnimator(-.02);
+//singlesclub.controller('ParallaxCtrl', ['$scope', 'parallaxHelper', function($scope, parallaxHelper) {
+singlesclub.controller('ParallaxCtrl', ['$scope', function($scope) {
+  //$scope.foreground = parallaxHelper.createAnimator(-0.1);
+  //$scope.background = parallaxHelper.createAnimator(0.1);
+  //$scope.background2 = parallaxHelper.createAnimator(-0.2);
+  //$scope.rotation = parallaxHelper.createAnimator(-.02);
 }]);
 
 singlesclub.controller('SlideshowCtrl', ['$scope', '$timeout', function($scope, $timeout) {
