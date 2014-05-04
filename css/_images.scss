@@ -1,0 +1,28 @@
+$fullwidth-height: 500px;
+
+//Issue 1
+
+
+//Issue 2
+
+.smallsur-f1-4 {
+		background-image:url(../journal/small-sur/images/image3-smallsur.jpg);
+		background-position: center;
+		background-size: 100%;
+		height: $fullwidth-height;
+		width: 100%;
+}
+
+.smallsur-f1-2 {
+		background-image:url(../journal/small-sur/images/image3-smallsur.jpg);
+		background-position: center;
+		height: 400px;
+		width: 400px;
+}
+
+.smallsur-f1-3 {
+		background-image:url(../journal/small-sur/images/image3-smallsur.jpg);
+		background-position: center;
+		height: 500px;
+		width: 500px;
+}
