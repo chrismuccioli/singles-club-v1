@@ -1082,17 +1082,11 @@ s
   height: 500px;
   width: 100%; }
 
-.smallsur-f1-2 {
-  background-image: url(../journal/small-sur/images/image3-smallsur.jpg);
+.smallsur-f2-sunrise {
+  background-image: url(../journal/small-sur/images/feature2-sunrise.jpg);
   background-position: center;
-  height: 500px;
-  width: 500px; }
-
-.smallsur-f1-3 {
-  background-image: url(../journal/small-sur/images/image3-smallsur.jpg);
-  background-position: center;
-  height: 500px;
-  width: 500px; }
+  height: 800px;
+  width: 100%; }
 
 @media (max-width: 768px) {
   .mobile-hide {
