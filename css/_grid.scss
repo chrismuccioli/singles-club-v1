@@ -1,114 +1,65 @@
 // Grid
-// Based on Responsive Grid responsivegridsystem.com
+// Based on Tempo
 
 
-// Use .clearfix instead of section or group
-
-$gutter: 1%;
+$gutter: 1rem;
  
 .container {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  overflow: hidden;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+.row {
+  overflow: hidden;
+  margin-right: -$gutter/2;
+  margin-left: -$gutter/2;
+}
+
 
 @media (min-width: 768px){
   .col {
     float:left;
-    margin-left: $gutter/2;
-    margin-right: $gutter/2;
+    box-sizing: border-box;
+    padding-right: $gutter/2;
+    padding-left: $gutter/2;
   }
 
-  // 12 column grid
+  .col-12 { width: 100%; }
+  .col-11 { width: percentage(11/12); }
+  .col-10 { width: percentage(10/12); }
+  .col-9 { width: percentage(9/12); }
+  .col-8 { width: percentage(8/12); }
+  .col-7 { width: percentage(7/12); }
+  .col-6 { width: percentage(6/12); }
+  .col-5 { width: percentage(5/12); }
+  .col-4 { width: percentage(4/12); }
+  .col-3 { width: percentage(3/12); }
+  .col-2 { width: percentage(2/12); }
+  .col-1 { width: percentage(1/12); }
 
-  .container {
-    overflow: hidden;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  .pre-6 { margin-left: percentage(6/12); }
+  .pre-5 { margin-left: percentage(5/12); }
+  .pre-4 { margin-left: percentage(4/12); }
+  .pre-3 { margin-left: percentage(3/12); }
+  .pre-2 { margin-left: percentage(2/12); }
+  .pre-1 { margin-left: percentage(1/12); }
 
-  .col-12,
-  .span_12_of_12 {
-    width: 100%;
-  }
+  .post-6 { margin-right: percentage(6/12); }
+  .post-5 { margin-right: percentage(5/12); }
+  .post-4 { margin-right: percentage(4/12); }
+  .post-3 { margin-right: percentage(3/12); }
+  .post-2 { margin-right: percentage(2/12); }
+  .post-1 { margin-right: percentage(1/12); }
 
-  .col-11,
-  .span_11_of_12 {
-    width: percentage(11/12) - $gutter;
-  }
-
-  .col-10,
-  .span_10_of_12 {
-    width: percentage(10/12) - $gutter;
-  }
-
-  .col-9,
-  .span_9_of_12 {
-    width: percentage(9/12) - $gutter;
-  }
-
-  .col-8,
-  .span_8_of_12 {
-    width: percentage(8/12) - $gutter;
-  }
-
-  .col-7,
-  .span_7_of_12 {
-    width: percentage(7/12) - $gutter;
-  }
-
-  .col-6,
-  .span_6_of_12 {
-    width: percentage(6/12) - $gutter;
-  }
-
-  .col-5,
-  .span_5_of_12 {
-    width: percentage(5/12) - $gutter;
-  }
-
-  .col-4,
-  .span_4_of_12 {
-    width: percentage(4/12) - $gutter;
-  }
-
-  .col-3,
-  .span_3_of_12 {
-    width: percentage(3/12) - $gutter;
-  }
-
-  .col-2,
-  .span_2_of_12 {
-    width: percentage(2/12) - $gutter;
-  }
-
-  .col-1,
-  .span_1_of_12 {
-    width: percentage(1/12) - $gutter;
-  }
-
-  .pre-6 { padding-left: percentage(6/12); }
-  .pre-5 { padding-left: percentage(5/12); }
-  .pre-4 { padding-left: percentage(4/12); }
-  .pre-3 { padding-left: percentage(3/12); }
-  .pre-2 { padding-left: percentage(2/12); }
-  .pre-1 { padding-left: percentage(1/12); }
-
-  .post-6 { padding-right: percentage(6/12); }
-  .post-5 { padding-right: percentage(5/12); }
-  .post-4 { padding-right: percentage(4/12); }
-  .post-3 { padding-right: percentage(3/12); }
-  .post-2 { padding-right: percentage(2/12); }
-  .post-1 { padding-right: percentage(1/12); }
-
+  // Check it these are used
   .mr0 { margin-right: 0; }
   .ml0 { margin-left: 0; }
 
 }
 
 // for debugging
-.outline, .outline * {
-  outline: 1px solid blue;
-}
+.outline, .outline * { outline: 1px solid blue; }
 
 
