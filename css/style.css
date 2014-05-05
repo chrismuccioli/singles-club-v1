@@ -88,6 +88,9 @@ dl, ol, ul, p, .p {
 .italic {
   font-style: italic; }
 
+.mega {
+  font-size: 6rem; }
+
 .regular {
   font-weight: normal; }
 
