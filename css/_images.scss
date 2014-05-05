@@ -1,0 +1,32 @@
+$fullwidth-height: 800px;
+
+//Issue 1
+
+
+//Issue 2
+
+.smallsur-f1-4 {
+		background-image:url(../journal/small-sur/images/image3-smallsur.jpg);
+		background-position: top;
+		background-size: 100%;
+		height: $fullwidth-height;
+		width: 100%;
+}
+
+.smallsur-f2-sunrise {
+		background-image:url(../journal/small-sur/images/feature2-sunrise.jpg);
+		background-position: center;
+		height: 800px;
+		width: 100%;
+}
+
+.neil-portrait {
+	width: 300px;
+	height: 300px;
+	background-position: center;
+	background-size: 100%;
+	background-image:url(../journal/small-sur/images/feature3-neil.jpg);
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
