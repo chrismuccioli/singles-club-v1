@@ -6,11 +6,16 @@
 
 <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
 <script src="{{ site.url }}/js/jquery.unveil.min.js"></script>
+
+<!--
 <script src="{{ site.url }}/js/jquery.smooth-scroll.min.js"></script>
+-->
+
 <script>
   $(document).ready(function() {
     $("img").unveil(1536);
-    $('a').smoothScroll({offset: 4, speed: 250});
+    //$('a').smoothScroll({offset: 4, speed: 250});
+    // Convert this to angular
     var flyoutIsOpen = false,
         $flyout = $('.js-flyout');
     var toggleFlyout = function(){
@@ -27,12 +32,14 @@
   });
 </script>
 
-<!-- consider moving all js to this partial -->
+
+<!--
+<script src="{{ site.url }}/js/angular-parallax.js"></script>
+<script src="{{ site.url }}/js/scrollfix.js"></script>
+-->
 
 <script src="{{ site.url }}/js/angular-carousel.js"></script>
 <script src="{{ site.url }}/js/angular-scroll.js"></script>
-<script src="{{ site.url }}/js/angular-parallax.js"></script>
-<script src="{{ site.url }}/js/scrollfix.js"></script>
 <script src="{{ site.url }}/js/angular-fitvids.js"></script>
 <script src="{{ site.url }}/js/singlesclub.js"></script>
 

@@ -2,8 +2,7 @@
 
 'use strict';
 
-//var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel', 'duParallax', 'fitVids']);
-var singlesclub = angular.module('singlesclub', ['ngTouch', 'ui.scrollfix', 'angular-carousel', 'fitVids']);
+var singlesclub = angular.module('singlesclub', ['ngTouch', 'angular-carousel', 'fitVids']);
 
 singlesclub.controller('ModalCtrl', ['$scope', function($scope) {
   $scope.modalIsOpen = false;
@@ -15,20 +14,10 @@ singlesclub.controller('ModalCtrl', ['$scope', function($scope) {
   };
 }]);
 
-//singlesclub.controller('ParallaxCtrl', ['$scope', 'parallaxHelper', function($scope, parallaxHelper) {
-singlesclub.controller('ParallaxCtrl', ['$scope', function($scope) {
-  //$scope.foreground = parallaxHelper.createAnimator(-0.1);
-  //$scope.background = parallaxHelper.createAnimator(0.1);
-  //$scope.background2 = parallaxHelper.createAnimator(-0.2);
-  //$scope.rotation = parallaxHelper.createAnimator(-.02);
-}]);
-
 singlesclub.controller('SlideshowCtrl', ['$scope', '$timeout', function($scope, $timeout) {
   $scope.index = 0;
   $scope.offset = { marginLeft: 0 + '%' };
   var slides = document.getElementsByClassName('slide');
-  console.log(slides);
-  console.log(slides.length);
 
   $scope.next = function() {
     if($scope.index + 1 < slides.length) {
@@ -167,7 +156,7 @@ singlesclub.directive('plangular', function ($document, $rootScope, $http) {
         };
       }
     }
-  });
+});
 
 // Filter to convert milliseconds to hours, minutes, seconds
 singlesclub.filter('playTime', function() {
@@ -187,5 +176,5 @@ singlesclub.filter('playTime', function() {
         return '00:00';
       };
     };
-  });
+});
 

@@ -10,7 +10,9 @@ socialimage: ""
 <body class="" ng-app="singlesclub">
 
   <!-- Replace with new nav partial -->
+  {% include _player-nav.html trackurl="https://soundcloud.com/singlesclubfm/coming-home" title="Daniel Bachman - Side A: Coming Home" %}
 
+  <!--
   <nav class="absolute t0 r0 l0">
     <div class="container px2 white">
       <div class="l-table">
@@ -33,8 +35,10 @@ socialimage: ""
       </div>
     </div>
   </nav>
+  -->
 
   <!-- add .is-open class to show -->
+  <!--
   <div class="js-flyout flyout scroll-y apercu aa bg-black">
     <div class="py4">
       <ul class="list-simple lh2 mb4 nav-white">
@@ -72,7 +76,9 @@ socialimage: ""
       </div>
     </div>
   </div>
+  -->
 
+  <!--
   <div class="fixed t0 l0 z4">
     <a href class="js-toggle-flyout inline-block bar button-icon white" style="padding:.5rem .9rem;">
       <svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 32 32" fill="#ffffff">
@@ -82,6 +88,7 @@ socialimage: ""
       </svg>
     </a>
   </div>
+  -->
 
   <div plangular src="https://soundcloud.com/singlesclubfm/coming-home" class="table center min-y100 bg-black bg-cover bg-center" style="background-image: url(images/Hero_Comp.jpg)">
     <header class="table-row y100 px2 white">
@@ -109,7 +116,8 @@ socialimage: ""
       </div>
     </header>
 
-    <div class="" ui-scrollfix>
+    <!--
+    <div class="">
       <div class="ui-scrollfix-hide mobile-hide fixed t0 b0 l0 aa center white bg-black" style="padding: 4rem 1rem 0 1rem;">
         <img src="images/issuemeta.svg" />
         <div class="js-toggle-flyout lydian-bold white caps mb1" style="line-height:1.35">
@@ -127,7 +135,6 @@ socialimage: ""
             class="button-ss-icon link-white">
               <span class="ss-icon ss-social ss-facebook"></span>
           </a>
-          <!-- Add description after ?text= in this link -->
           <a
             href="https://twitter.com/intent/tweet?text=Check out Issue 1 of @SinglesClubFM feat. Daniel Bachman -> &url=http://singlesclub.fm/journal/daniel-bachman"
             target="_blank"
@@ -166,6 +173,7 @@ socialimage: ""
         </div>
       </div>
     </div>
+    -->
   </div><!-- end plangular -->
 
   <article id="bringing-it-all-back-home" class="responsive pt4">
@@ -217,12 +225,9 @@ socialimage: ""
       </div>
     </section>
     <section
-      ng-controller="ParallaxCtrl"
       style="background-image: url(images/Sunoveroldrag.jpg); min-height: 128px;"
       class="bg-cover px2 py2 white">
       <img
-        du-parallax
-        y="foreground"
         data-src="images/sunoveroldrag_sevenpines.png"
         src="images/blank-1074x1383.gif"
         alt="lyrics"
@@ -259,7 +264,7 @@ socialimage: ""
     </section>
   </article>
 
-  <section class="relative clearfix" ng-controller="ParallaxCtrl">
+  <section class="relative clearfix">
     <img
       data-src="images/Drive.jpg"
       src="images/blank-1600x1067.gif"
@@ -267,8 +272,6 @@ socialimage: ""
     />
     <div class="relative container px2">
       <img
-        du-parallax
-        y="foreground"
         data-src="images/thisyearalone.png"
         src="images/blank-1645x709.gif"
         alt="This year alone, he's spent 9 months on the road"
@@ -480,8 +483,8 @@ socialimage: ""
         </div>
       </div>
     </section>
-    <section ng-controller="ParallaxCtrl" class="clearfix">
-      <img du-parallax y="background2" data-src="images/labelhead_collage-q10.jpg" src="images/blank-2500x1667.gif" alt="Velvet Underground" class="x100" />
+    <section class="clearfix">
+      <img data-src="images/labelhead_collage-q10.jpg" src="images/blank-2500x1667.gif" alt="Velvet Underground" class="x100" />
     </section>
     <p class="small mobile-center mid-grey p1 mb4">A selection of Tompkins Square releases throughout the years</p>
     <section class="container px2 mb2">
@@ -511,11 +514,8 @@ socialimage: ""
     <section class="container px2 mb1">
       <div class="row">
         <div class="col col-8 pre-2 post-2">
-          <div ng-controller="ParallaxCtrl">
+          <div>
             <img
-              du-parallax
-              rotation="rotation"
-              style="-webkit-transition: -webkit-transform .1s linear"
               data-src="images/labelhead_danielrecord.png"
               src="images/blank-1200x1190.png"
               alt="Tompkin's Square label"
