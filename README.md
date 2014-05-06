@@ -32,7 +32,11 @@ As you make changes, to `.sass` files, the minified css will be updated.
 
 ## Uploading site to FTP
 
-To upload to production, copy all files from `singles-club/_site` to the root of your site.
+1. Switch the `url` in `_config.yml` to the production url.
+2. Run `jekyll serve` to compile the site.
+3. Upload all files from `singles-club/_site` to the root of your site.
+
+---
 
 ## Using the grid system
 TK
