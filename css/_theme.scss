@@ -58,6 +58,8 @@ body {
 .bg-contain { background-size: contain; }
 .bg-center { background-position: center center; }
 
+.fill-grey  { fill: $grey; }
+
 .round { border-radius: 2px; }
 
 .circle { border-radius: 50%; }
