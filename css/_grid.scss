@@ -19,15 +19,20 @@ $gutter: 1rem;
   //background-color: rgba(cyan,.3);
 }
 
-.col {
+.col,
+.px-gutter,
+.col-right {
   box-sizing: border-box;
   padding-right: $gutter/2;
   padding-left: $gutter/2;
 }
 
 @media (min-width: 768px){
-  .col {
-    float:left;
+  .col { float: left; }
+  .col-right { float: right; }
+  .col-center {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .col-12 { width: 100%; }
@@ -57,7 +62,7 @@ $gutter: 1rem;
   .post-2 { margin-right: percentage(2/12); }
   .post-1 { margin-right: percentage(1/12); }
 
-  // Check it these are used
+  // Check if these are used
   .mr0 { margin-right: 0; }
   .ml0 { margin-left: 0; }
 
