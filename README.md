@@ -8,6 +8,21 @@ http://singlesclub.fm
 2. Run `jekyll serve --watch`
 3. Go to `localhost:4000` in your browser
 
+### Note about `_config.yml`
+Be sure that the correct `url` is set for each environment.
+
+For local development, use:
+
+    url: "http://localhost:4000"
+
+For gh-pages, use:
+
+    url: "http://chrismuccioli.github.io/singles-club"
+
+And for production, use:
+
+    url: "http://singlesclub.fm"
+
 ## Running Sass
 
 1. Go to the `css` folder
