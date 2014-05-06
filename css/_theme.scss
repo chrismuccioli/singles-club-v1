@@ -69,7 +69,8 @@ a {
   text-decoration: none;
   transition: color .3s ease;
   &:hover { 
-    color: darken($red,20%);
+    //color: darken($red,20%);
+    color: $mid-grey;
   }
 }
 .link-red {
@@ -166,7 +167,7 @@ a {
   transition: background-color .3s ease;
   &:hover {
     color: #fff;
-    background-color: $white;
+    background-color: $mid-grey;
   }
 }
 
@@ -176,7 +177,16 @@ a {
   transition: background-color .3s ease;
   &:hover {
     color: $black;
-    background-color: $white;
+    background-color: $mid-grey;
+  }
+}
+
+.button-highlight {
+  color: #fff;
+  transition: background-color .3s ease;
+  &:hover {
+    color: $black;
+    background-color: $mid-grey;
   }
 }
 
