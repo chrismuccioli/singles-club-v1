@@ -16,7 +16,7 @@
   </div>
   <div class="clearfix ml3">
     <div class="left mr1">
-      <span class="left mr1 apercu-medium aa gold mobile-hide">{{ include.title }}</span>
+      <span class="left mr1 apercu-medium aa highlight mobile-hide">{{ include.title }}</span>
       <a href
         ng-click="player.play(track)"
         ng-hide="player.playing == track"
@@ -44,7 +44,7 @@
       <div class="progress clearfix" style="">
         <div class="progress-background bg-grey"></div>
         <div class="progress-buffer"></div>
-        <div class="progress-played bg-gold" style="width: {{ currentTime / duration * 100 }}%"></div>
+        <div class="progress-played bg-highlight" style="width: {{ currentTime / duration * 100 }}%"></div>
         <div class="progress-overlay" ng-click="seekTo($event)"></div>
       </div>
     {% endraw %}
