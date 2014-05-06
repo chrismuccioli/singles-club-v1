@@ -15,87 +15,9 @@ socialimage: ""
   </style>
 
   <!-- Replace with new nav partial -->
-  {% include _player-nav.html trackurl="https://soundcloud.com/singlesclubfm/coming-home" title="Daniel Bachman - Side A: Coming Home" %}
-
-  <!--
-  <nav class="absolute t0 r0 l0">
-    <div class="container px2 white">
-      <div class="l-table">
-        <div class="l-table-cell col-5 mobile-hide">
-          <h5 class="lydian caps ls1 center mb0">Part record club. Part music journal.</h5>
-        </div>
-        <div class="l-table-cell center col-2 py1">
-          <a href="/">
-            <img src="/images/logo.svg" alt="Singles Club" class="inline-block fit" />
-          </a>
-        </div>
-        <div class="l-table-cell col-5 mobile-hide">
-          <ul class="apercu h5 caps ls1 center list-inline mb0 nav-white">
-            <li><a href="/journal/daniel-bachman">Current Issue</a></li>
-            <li><a href="http://shop.singlesclub.fm/product/singles-club-2014-subscription">Subscribe</a></li>
-            <li><a href="http://blog.singlesclub.fm">Blog</a></li>
-            <li><a href="http://shop.singlesclub.fm">Shop</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-  -->
-
-  <!-- add .is-open class to show -->
-  <!--
-  <div class="js-flyout flyout scroll-y apercu aa bg-black">
-    <div class="py4">
-      <ul class="list-simple lh2 mb4 nav-white">
-        <li>
-          <a href="#bringing-it-all-back-home" class="js-toggle-flyout block mb2">
-            <p class="h2 apercu lh2 aa mb1"><span class="p bold gold">1</span><br>Bringing It All<br>Back Home</p>
-            <span class="mid-grey">A Day With Daniel Bachman</span>
-          </a>
-        </li>
-        <li>
-          <a href="#label-head-josh-rosenthal" class="js-toggle-flyout block mb2">
-            <p class="h2 apercu aa lh2 mb1"><span class="p bold gold">2</span><br>Label Head</p>
-            <span class="mid-grey">Why Tompkins Square Records<br>is here to stay</span>
-          </a>
-        </li>
-        <li>
-          <a href="#roadshow" class="js-toggle-flyout block mb2">
-            <p class="h2 apercu aa lh2 mb1"><span class="p bold gold">3</span><br>Roadshow</p>
-            <span class="mid-grey">Daniel shares some deep cuts<br>he found on tour</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="list-simple nav-white mobile-show">
-        <li><a href="/">Home</a></li>
-        <li class="grey"><a href="/journal/danielbachman">Current Issue</a></li>
-        <li><a href="http://shop.singlesclub.fm/product/singles-club-2014-subscription">Subscribe</a></li>
-        <li><a href="http://blog.singlesclub.fm">Blog</a></li>
-        <li><a href="http://shop.singlesclub.fm">Shop</a></li>
-      </ul>
-    </div>
-    <div class="absolute t0 r0 b0 py4 center" style="padding-right:1rem;padding-left:1rem;">
-      <img src="images/issuemeta.svg" />
-      <div class="js-toggle-flyout lydian-bold white caps mb1" style="line-height:1.35">
-        F<br> e<br> a<br> t<br> u<br> r<br> e<br> s<br>
-      </div>
-    </div>
-  </div>
-  -->
-
-  <!--
-  <div class="fixed t0 l0 z4">
-    <a href class="js-toggle-flyout inline-block bar button-icon white" style="padding:.5rem .9rem;">
-      <svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 32 32" fill="#ffffff">
-        <rect y="4" width="32" height="4"/>
-        <rect y="14" width="32" height="4"/>
-        <rect y="24" width="32" height="4"/>
-      </svg>
-    </a>
-  </div>
-  -->
 
   <div plangular src="https://soundcloud.com/singlesclubfm/coming-home" class="table center min-y100 bg-black bg-cover bg-center" style="background-image: url(images/Hero_Comp.jpg)">
+    {% include _player-nav.html title="Daniel Bachman - Side A: Coming Home" %}
     <header class="table-row y100 px2 white">
       <div class="table-cell x100">
         <div class="container px2 py4">
@@ -105,7 +27,7 @@ socialimage: ""
             <a href="#bringing-it-all-back-home"
               ng-click="player.play(track)"
               ng-hide="player.playing == track"
-              class="p apercu-medium ls05 aa button button-gold mb2">
+              class="js-listen-begin p apercu-medium ls05 aa button button-gold mb2">
                 Listen &amp; Begin
             </a>
             <a href="#!"

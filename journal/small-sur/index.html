@@ -13,41 +13,26 @@ socialimage: ""
     .bg-highlight, .button-highlight { background-color: #f03; }
   </style>
 
-  {% include _player-nav.html trackurl="https://soundcloud.com/singlesclubfm/sc002-smallsur-wildgeese" title="Small Sur - Wild Geese" %}
+  <div plangular data-src="https://soundcloud.com/singlesclubfm/sc002-smallsur-wildgeese" class="y100">
+    {% include _player-nav.html title="Small Sur - Wild Geese" %}
 
-  <!-- Grid alignment guidelines -->
-  <!--
-  <div class="fixed r0 l0 bg-light-grey">
-    <div class="container px2">
-      <div class="row">
-        <div class="col col-1"><div class="py1 bg-gold">1</div></div>
-        <div class="col col-1"><div class="py1 bg-gold">1</div></div>
-        <div class="col col-1"><div class="py1 bg-gold">1</div></div>
-        <div class="col col-1"><div class="py1 bg-gold">1</div></div>
-        <div class="col col-1"><div class="py1 bg-gold">1</div></div>
-        <div class="col col-1"><div class="py1 bg-gold">1</div></div>
-        <div class="col col-1"><div class="py1 bg-gold">1</div></div>
-        <div class="col col-1"><div class="py1 bg-gold">1</div></div>
-        <div class="col col-1"><div class="py1 bg-gold">1</div></div>
-        <div class="col col-1"><div class="py1 bg-gold">1</div></div>
-        <div class="col col-1"><div class="py1 bg-gold">1</div></div>
-        <div class="col col-1"><div class="py1 bg-gold">1</div></div>
+    <header class="table table-fixed center min-y100 white bg-dark-grey bg-cover bg-center" style="background-image: url(images/hero-smallsur2.jpg)">
+      <div class="table-cell table-cell-bottom pt4">
+        <p class="apercu-light caps ls2 mb0">Issue #2</p>
+        <h1 class="mega mb0">Small Sur</h1>
+        {% raw %}
+          <a
+            href="#daylight-savings"
+            ng-click="player.play(track)"
+            class="js-listen-begin p apercu-medium ls05 aa button button-red mb1 mt2">
+              Listen &amp; Begin
+          </a>
+        {% endraw %}
+        <p class="small red mb1">Audio is recommended for this feature. Just hit begin and start reading.</p>
+        <img src="images/stereo.svg" alt="Stereo" class="mb2" />
       </div>
-    </div>
+    </header>
   </div>
-  -->
-
-  <header class="table table-fixed center min-y100 white bg-dark-grey bg-cover bg-center" style="background-image: url(images/hero-smallsur2.jpg)">
-    <div class="table-cell table-cell-bottom">
-      <p class="apercu-light caps ls2 mb0">Issue #2</p>
-      <h1 class="mega mb0">Small Sur</h1>
-      <a href="#" class="p apercu-medium ls05 aa button button-red mb1 mt2">
-          Listen &amp; Begin
-      </a>
-      <p class="small red mb1">Audio is recommended for this feature. Just hit begin and start reading.</p>
-      <img src="images/stereo.svg" alt="Stereo" class="mb2" />
-    </div>
-  </header>
 
   <article id="daylight-savings">
     <div class="rule bg-light-grey"></div>
