@@ -1,0 +1,29 @@
+<div class="clearfix ml3" plangular data-src="{{ include.trackurl }}">
+  <div class="left mr1">
+    <a href
+      ng-click="player.play(track)"
+      ng-hide="player.playing == track"
+      class="button-icon button-icon-small popin">
+        <svg width="16px" height="16px" viewbox="0 0 20 32" xmlns="http://www.w3.org/2000/svg" class="fill-grey">
+          <polygon points="0,0 20,16 0,32"/>
+        </svg>
+    </a>
+    <a href
+      ng-click="player.pause()"
+      ng-show="player.playing == track"
+      class="button-icon button-icon-small popin">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 32 32" class="fill-grey">
+          <rect x="4" y="4" width="8" height="24"/>
+          <rect x="20" y="4" width="8" height="24"/>
+        </svg>
+    </a>
+  </div>
+  {% raw %}
+    <div class="progress clearfix" style="">
+      <div class="progress-background bg-grey"></div>
+      <div class="progress-buffer"></div>
+      <div class="progress-played bg-highlight" style="width: {{ currentTime / duration * 100 }}%"></div>
+      <div class="progress-overlay" ng-click="seekTo($event)"></div>
+    </div>
+  {% endraw %}
+</div>
