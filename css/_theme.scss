@@ -230,3 +230,9 @@ a {
   background-color: black;
   background-color: rgba(#000, .7);
 }
+
+.circle {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}

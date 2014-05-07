@@ -40,7 +40,9 @@ body {
   font-weight: normal; }
 
 .serif {
-  font-family: Georgia, serif; }
+  font-family: Georgia, serif;
+  font-size: 19px;
+  -webkit-font-smoothing: antialiased; }
 
 h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
   margin-bottom: 2rem; }
@@ -1050,6 +1052,11 @@ s
   background-color: black;
   background-color: rgba(0, 0, 0, 0.7); }
 
+.circle {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+
 .issue1 {
   background-image: url(../images/homepage-issue-danielbachman.jpg);
   background-position: center;
@@ -1348,6 +1355,11 @@ s
 .bg-transparent-70 {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.7); }
+
+.circle {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
 
 @-webkit-keyframes popin {
   from {
