@@ -7,10 +7,10 @@
     </a>
   </div>
   <div class="right px1 nowrap">
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url }}" target="_blank" class="button-ss-icon link-white">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http://singlesclub.fm{{ page.url }}" target="_blank" class="button-ss-icon link-white">
       <span class="ss-icon ss-social ss-facebook"></span>
     </a>
-    <a href="https://twitter.com/intent/tweet?text={{ page.description }}&url={{ page.url }}" target="_blank" class="button-ss-icon link-white">
+    <a href="https://twitter.com/intent/tweet?text={{ page.description }}&url=http://singlesclub.fm{{ page.url }}" target="_blank" class="button-ss-icon link-white">
       <span class="ss-icon ss-social ss-twitter"></span>
     </a>
   </div>
@@ -35,12 +35,12 @@
           </svg>
       </a>
     </div>
-    <div class="right">
-      <a href="{{ include.trackurl }}" target="_blank" class="button-ss-icon link-grey">
-        <span class="ss-icon ss-social ss-soundcloud"></span>
-      </a>
-    </div>
     {% raw %}
+      <div class="right">
+        <a href="{{ track.permalink_url }}" target="_blank" class="button-ss-icon link-grey">
+          <span class="ss-icon ss-social ss-soundcloud"></span>
+        </a>
+      </div>
       <div class="progress clearfix" style="">
         <div class="progress-background bg-grey"></div>
         <div class="progress-buffer"></div>
