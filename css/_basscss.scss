@@ -59,6 +59,11 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 // Useful for horizontally centering elements with a fixed width
 .mx-auto { margin-right: auto; margin-left: auto; }
 
+@media (min-width:768px) {
+  .desktop-mr2 { margin-right: 2rem; }
+  .desktop-ml2 { margin-left: 2rem; }
+}
+
 // Padding
 .p1  { padding: 1rem; }
 .px1 { padding-right: 1rem; padding-left: 1rem; }
@@ -67,6 +72,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 .p2  { padding: 2rem; }
 .px2 { padding-right: 2rem; padding-left: 2rem; }
 .py2 { padding-top: 2rem; padding-bottom: 2rem; }
+.pr2 { padding-right: 2rem; }
 
 .p3  { padding: 3rem; }
 .px3 { padding-right: 3rem; padding-left: 3rem; }
@@ -107,4 +113,3 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 .fit { max-width: 100%; }
 
 .nowrap { white-space: nowrap; }
-

@@ -1,0 +1,58 @@
+
+<script src="{{ site.url }}/js/config.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
+
+<script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="{{ site.url }}/js/jquery.unveil.min.js"></script>
+<script src="{{ site.url }}/js/jquery.smooth-scroll.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $("img").unveil(1536);
+    //$('a').smoothScroll({offset: 4, speed: 250});
+    $('.js-listen-begin').smoothScroll({ offset: 4, speed: 250 });
+    // Convert this to angular
+    var flyoutIsOpen = false,
+        $flyout = $('.js-flyout');
+    var toggleFlyout = function(){
+      if(flyoutIsOpen) {
+        $flyout.removeClass('is-open');
+      } else {
+        $flyout.addClass('is-open');
+      }
+      flyoutIsOpen = !flyoutIsOpen;
+    };
+    $('.js-toggle-flyout').click(function(){
+      toggleFlyout();
+    });
+  });
+</script>
+
+
+<!--
+<script src="{{ site.url }}/js/angular-parallax.js"></script>
+<script src="{{ site.url }}/js/scrollfix.js"></script>
+-->
+
+<script src="{{ site.url }}/js/angular-carousel.js"></script>
+<script src="{{ site.url }}/js/angular-scroll.js"></script>
+<script src="{{ site.url }}/js/angular-fitvids.js"></script>
+<script src="{{ site.url }}/js/singlesclub.js"></script>
+
+<script> !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs"); </script>
+
+<div id="fb-root"></div>
+<script> (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1450710301810527"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-48085107-1', 'singlesclub.fm');
+  ga('send', 'pageview');
+</script>
+

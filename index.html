@@ -1,54 +1,20 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Singles Club - Part record club. Part music journal.</title>
-	<meta name="description" content="Part record club. Part music journal.">
-	<meta name="keywords" content="record club, vinyl, records, music, indie, lp">
-	<meta name="author" content="www.singlesclub.fm">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="/favicon.png" />
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link href="css/style.css" rel="stylesheet" />
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="">
-  <meta property="og:url" content="http://singlesclub.fm/journal/daniel-bachman">
-  <meta property="og:title" content="Singles Club Issue 01">
-  <meta property="og:description" content="Singles Club Inaugural Issue">
-  <meta property="fb:app_id" content="1450710301810527">
-	<script type="text/javascript">
-    var html = document.getElementsByTagName('html')[0];
-    html.className += '  wf-loading';
-    setTimeout(function() {
-      html.className = html.className.replace(' wf-loading', '');
-    }, 5000);
- 
-    WebFontConfig = { fontdeck: { id: '39874' } };
+---
+title: "Singles Club – Part record club. Part music journal."
+description: "Part record club. Part music journal."
+url: "http://singlesclub.fm"
+socialimage: ""
+---
 
-    (function() {
-      var wf = document.createElement('script');
-      wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.type = 'text/javascript';
-      wf.async = 'true';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(wf, s);
-    })();
-  </script>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-48085107-1', 'singlesclub.fm');
-  ga('send', 'pageview');
-
-  </script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
-</head>
+{% include _head.html %}
 
 <body ng-app="singlesclub">
 
+  <style>
+    .highlight { color: #f03; }
+    .bg-highlight, .button-highlight { background-color: #f03; }
+  </style>
+
+  <!-- replace this with global nav partial -->
   <nav class="absolute t0 r0 l0 z1">
     <div class="container white">
       <div class="l-table">
@@ -62,7 +28,7 @@
         </div>
         <div class="l-table-cell col-5 mobile-hide">
           <ul class="apercu h5 caps ls1 center list-inline mb0 nav-white">
-            <li><a href="/journal/daniel-bachman">Current Issue</a></li>
+            <li><a href="/journal/small-sur">Current Issue</a></li>
             <li><a href="http://shop.singlesclub.fm/product/singles-club-2014-subscription">Subscribe</a></li>
             <li><a href="http://blog.singlesclub.fm">Blog</a></li>
             <li><a href="http://shop.singlesclub.fm/products">Shop</a></li>
@@ -76,7 +42,7 @@
     <div class="py4">
       <ul class="h3 bold list-simple nav nav-white">
         <li><a href="/">Home</a></li>
-        <li><a href="/journal/daniel-bachman">Current Issue</a></li>
+        <li><a href="/journal/small-sur">Current Issue</a></li>
         <li><a href="http://shop.singlesclub.fm/product/singles-club-2014-subscription">Subscribe</a></li>
         <li><a href="http://blog.singlesclub.fm">Blog</a></li>
         <li><a href="http://shop.singlesclub.fm/products">Shop</a></li>
@@ -93,43 +59,36 @@
 
   <div class="fixed t0 l0 z4 mobile-show">
     <a href class="js-toggle-flyout inline-block bar button-icon white" style="padding:.5rem .375rem;">
-      <svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 32 32" fill="#ffffff">
-        <rect y="4" width="32" height="4"/> <rect y="14" width="32" height="4"/> <rect y="24" width="32" height="4"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 17 21" enable-background="new 0 0 17 21" xml:space="preserve">
+        <path fill="#ffffff" d="M16.969,14.637c0.08-2.671-1.42-4.512-4.863-5.975l-2.768-1.14c-1.595-0.669-2.981-1.434-3.62-1.995 c-0.62-0.51-0.974-1.335-0.948-2.206c0.047-1.55,1.031-2.275,3.009-2.216c0.573,0.018,1.138,0.121,1.682,0.307 c2.334,0.797,3.901,3.289,4.968,6.642c0.062,0.201,0.195,0.349,0.334,0.355c0.055,0.002,0.102-0.02,0.145-0.061 c0.07-0.068,0.111-0.192,0.111-0.331l0.004-6.932c-0.002-0.221-0.119-0.394-0.256-0.398c-0.178-0.005-0.299,0.232-0.344,0.334 c-0.104,0.241-0.232,0.311-0.551,0.301c-0.229-0.007-0.44-0.262-1.12-0.453c-2.346-0.619-3.33-0.799-4.581-0.836 C3.647-0.105,0.148,2.66,0.03,6.464c-0.074,2.462,1.525,4.217,5.348,5.87l2.917,1.232c2.954,1.258,4.139,2.451,4.088,4.127 c-0.053,1.674-1.287,2.277-3.404,2.213C8.232,19.885,7.537,20,6.709,19.717c-1.065-0.365-1.999-1.072-2.938-2.236 c-1.618-1.957-2.578-4.025-3.186-6.146C0.538,11.17,0.412,10.98,0.26,10.971c-0.054-0.002-0.104,0.02-0.147,0.061 C0.042,11.1,0,11.224,0,11.363l0.017,8.738c0,0.191,0.079,0.35,0.198,0.389c0.019,0.006,0.038,0.01,0.056,0.01 c0.121,0.006,0.237-0.104,0.345-0.326c0.136-0.277,0.357-0.375,0.82-0.363c0.295,0.012,0.434,0.084,1.279,0.285 C5.249,20.73,7.43,20.943,9.01,20.99C13.326,21.123,16.852,18.492,16.969,14.637z"/>
       </svg>
     </a>
   </div>
 
   <header class="slideshow slideshow--large" ng-controller="SlideshowCtrl">
     <div
-      style="background-image: url(images/homepage-banner-6.jpg)"
+      style="background-image: url(images/homepage-banner-8.jpg)"
       class="slide relative bg-cover bg-center bg-dark-grey">
-        <a href="http://shop.singlesclub.fm/product/singles-club-2014-subscription" class="absolute t0 r0 b0 l0 block"></a>
+        <a href="journal/small-sur" class="absolute t0 r0 b0 l0 block"></a>
     </div>
     <div
-      style="background-image: url(images/homepage-banner-5.jpg)"
+      style="background-image: url(images/homepage-banner-10.jpg)"
       ng-style="offset"
       class="slide relative bg-cover bg-center bg-dark-grey">
-        <a href="http://shop.singlesclub.fm/products" class="absolute t0 r0 b0 l0 block"></a>
-    </div>
-    <div
-      style="background-image: url(images/homepage-banner-7.jpg)"
-      class="slide relative bg-cover bg-center bg-dark-grey">
-        <a href="http://shop.singlesclub.fm" class="absolute t0 r0 b0 l0 block"></a>
+        <a href="ttp://shop.singlesclub.fm/product/singles-club-2014-subscription" class="absolute t0 r0 b0 l0 block"></a>
     </div>
   </header>
 
   <section class="py2 bg-dark-grey">
   	<div class="container center">
-      <h2 class="apercu-light aa light-grey lh1 mt1 mb2 col col-10 pre-1 post-1">A subscription record club &amp; <br>digital music journal published quarterly</h2>
-    </div>
-    <div class="container">
-      <div class="col-2 pre-5 center">
-        <a href="http://www.singlesclub.fm/subscribe" class="apercu-medium p apercu-medium aa mb1 button button-block button-red">Learn More</a>
+      <div class="row">
+        <h2 class="apercu-light aa light-grey lh1 mt1 mb2 col col-10 pre-1 post-1">A subscription record club &amp; <br>digital music journal published quarterly</h2>
       </div>
+    </div>
     </div>
   </section>
   <section class="center bg-black pt4">
-    <div class="col-1 vert-line-short bg-red pre-8">
+    <div class="vert-line-short bg-red pre-8">
     </div>
   </section>
   <section class="aa white bg-black py2">
@@ -137,81 +96,88 @@
       <h1 class="apercu-light mb1">The Journal</h1>
       <h3 class="lydian white ls05">Year One</h3>
     </div>
-    <div class="clearfix mb2 py2 desktop-px4">
-      <div class="col col-3 bg-white round">
-        <div class="issue1 bg-cover round">
-          <h1 class="apercu pl2 py1 align-left">1</h1>
-        </div>
-        <div class="px2 py2 center black">
-          <h2 class="apercu lh1 mb1 mt1">
-            Daniel Bachman
-          </h2>
-          <p class="lydian ls1 mb1">
-            Winter
-          </p>
-          <h4 class="lh3 apercu aa mb1">
-            Daniel Bachman is an American primitive-style guitar player rooted in Fredericksburg, VA. His latest album, 'Jesus, I'm a Sinner' was released on infamous roots label Tompkins Square Records, and landed him a spot at NPR’s Tiny Desk Series, thus placing him alongside some of the true guitar-slinging legends. 
-          </h4>
-          <a href="/journal/daniel-bachman" class="button center p apercu-medium button-red button-block">
-            Read Issue
-          </a>
-        </div>
-      </div>
-      <div class="col col-3 bg-white round">
-        <div class="issue2 bg-cover round">
-          <h1 class="apercu pl2 py1 align-left">2</h1>
-        </div>
-        <div class="px2 py2 center black">
-          <h2 class="apercu lh1 mb1 mt1">
-            Small Sur
-          </h2>
-          <p class="lydian ls1 mb1">
-            Spring
-          </p>
-          <h4 class="lh3 apercu aa mb1">
-            Small Sur is a Baltimore-bred folk-peace group spearheaded by songwriter Bob Keal. Keal, who left the South Dakota farm he was raised on at 14, spent time in California before landing in Maryland. Backed by a rotating cast of talented multi-instrumentalists, Keal’s soothing vocals are met with minimalist arrangements allowing the listener to simply ‘be’.
-          </h4>
-          <p class="mb1">- Out May 6th -</p>
-          <a href="http://shop.singlesclub.fm/product/singles-club-2014-subscription" class="button center p apercu-medium button-block button-red">
-            Subscribe Now
-          </a>
-        </div>
-      </div>
-      <div class="col col-3 bg-dark-grey round">
-        <div class="issue3 bg-cover round">
-          <h1 class="apercu pl2 py1 align-left">3</h1>
-        </div>
-        <div class="px2 py2 center black">
-          <h2 class="apercu lh1 mid-grey mb1 mt1">
-            Woodsman
-          </h2>
-          <p class="lydian light-grey ls1 mb1">
-            Summer
-          </p>
-          <h4 class="lh3 apercu aa mid-grey mb1">
-            Woodsman is a Brooklyn via Denver based psychedelic/free-form trio. Whether improvised or rehearsed, Woodsman’s sound remains intimate and meditative. Obviously technicality adept, they are humble and modest players. They have released five albums on various formats since 2009 and show no signs of slowing down. 
-          </h4>
-          <div class="center p button apercu-medium button-grey-no-hover">
-            Coming Soon
+    <div class="row clearfix mb2 py2 desktop-px4">
+      <div class="col col-3">
+        <div class="clearfix bg-white round">
+          <div class="issue1 bg-cover">
+            <h1 class="apercu pl2 py1 align-left">1</h1>
+          </div>
+          <div class="px2 py2 center black">
+            <h2 class="apercu lh1 mb1 mt1">
+              Daniel Bachman
+            </h2>
+            <p class="lydian ls1 mb1">
+              Winter
+            </p>
+            <h4 class="lh3 apercu aa mb1">
+              Daniel Bachman is an American primitive-style guitar player rooted in Fredericksburg, VA. His latest album, 'Jesus, I'm a Sinner' was released on infamous roots label Tompkins Square Records, and landed him a spot at NPR’s Tiny Desk Series, thus placing him alongside some of the true guitar-slinging legends. 
+            </h4>
+            <a href="/journal/daniel-bachman" class="button center p apercu-medium button-red button-block">
+              Read Issue #1
+            </a>
           </div>
         </div>
       </div>
-      <div class="col col-3 bg-dark-grey round">
-        <div class="issue4 bg-cover round">
-          <h1 class="apercu pl2 py1 align-left">4</h1>
+      <div class="col col-3">
+        <div class="clearfix bg-white round">
+          <div class="issue2 bg-cover">
+            <h1 class="apercu pl2 py1 align-left">2</h1>
+          </div>
+          <div class="px2 py2 center black">
+            <h2 class="apercu lh1 mb1 mt1">
+              Small Sur
+            </h2>
+            <p class="lydian ls1 mb1">
+              Spring
+            </p>
+            <h4 class="lh3 apercu aa mb1">
+              Small Sur is a Baltimore-bred folk-peace group spearheaded by songwriter Bob Keal. Keal, who left the South Dakota farm he was raised on at 14, spent time in California before landing in Maryland. Backed by a rotating cast of talented multi-instrumentalists, Keal’s soothing vocals are met with minimalist arrangements allowing the listener to simply ‘be’.
+            </h4>
+            <a href="/journal/small-sur" class="button center p apercu-medium button-block button-red">
+              Read Issue #2
+            </a>
+          </div>
         </div>
-        <div class="px2 py2 center black">
-          <h2 class="apercu mid-grey lh1 mb1 mt1">
-            Wisdom Tooth
-          </h2>
-          <p class="lydian light-grey ls05 mb1">
-            Fall
-          </p>
-          <h4 class="lh3 apercu aa mid-grey mb1">
-            Lancaster, PA based musician and visual artist John Andrews has been recording and touring in different projects since he was sixteen. Currently on the road playing drums in Quilt and organ in Woods, John re-visits his personal project Wisdom Tooth. 
-          </h4>
-          <div class="button center p apercu-medium button-grey-no-hover">
-            Coming Soon
+      </div>
+      <div class="col col-3">
+        <div class="clearfix bg-dark-grey round">
+          <div class="issue3 bg-cover">
+            <h1 class="apercu pl2 py1 align-left">3</h1>
+          </div>
+          <div class="px2 py2 center black">
+            <h2 class="apercu lh1 mid-grey mb1 mt1">
+              Woodsman
+            </h2>
+            <p class="lydian light-grey ls1 mb1">
+              Summer
+            </p>
+            <h4 class="lh3 apercu aa mid-grey mb1">
+              Woodsman is a Brooklyn via Denver based psychedelic/free-form trio. Whether improvised or rehearsed, Woodsman’s sound remains intimate and meditative. Obviously technicality adept, they are humble and modest players. They have released five albums on various formats since 2009 and show no signs of slowing down. 
+            </h4>
+            <div class="center p button apercu-medium button-grey-no-hover">
+              Coming Soon
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-3">
+        <div class="clearfix bg-dark-grey round">
+          <div class="issue4 bg-cover">
+            <h1 class="apercu pl2 py1 align-left">4</h1>
+          </div>
+          <div class="px2 py2 center black">
+            <h2 class="apercu mid-grey lh1 mb1 mt1">
+              Wisdom Tooth
+            </h2>
+            <p class="lydian light-grey ls05 mb1">
+              Fall
+            </p>
+            <h4 class="lh3 apercu aa mid-grey mb1">
+              Lancaster, PA based musician and visual artist John Andrews has been recording and touring in different projects since he was sixteen. Currently on the road playing drums in Quilt and organ in Woods, John re-visits his personal project Wisdom Tooth. 
+            </h4>
+            <div class="button center p apercu-medium button-grey-no-hover">
+              Coming Soon
+            </div>
           </div>
         </div>
       </div>
@@ -224,118 +190,39 @@
   </section>
   <section class="aa white bg-black recordclub bg-cover py8">
     <div class="container clearfix">
-      <div class="col col-12 center">
-        <h3 class="apercu-light shadow lh2 mb0">
-          Every quarter we release a 45 single* featuring an exclusive track for the club along with a B-Side containing an interview with the artist. All paired with a digital journal containing written features, photo, video, and more available right here.
-        </h3>
-<!--         <h3 class="center lh1 mt2 mb0 ls05 lydian-italic">
-          Volume 1 features new music from:
-        </h3>
-        <h3 class="apercu-light center lh1 mt1">
-          Daniel Bachman, Small Sur, Woodsman <br> &amp; Wisdom Tooth
-        </h3> -->
+      <div class="row">
+        <div class="col col-12 center">
+          <h3 class="apercu-light shadow lh2 mb0">
+            Every quarter we release a 45 single* featuring an exclusive track for the club along with a B-Side containing an interview with the artist. All paired with a digital journal containing written features, photo, video, and more available right here.
+          </h3>
+        </div>
       </div>
-<!--       <div class="col-8 pre-2 post-2 mb0">
-        <img src="images/record-placeholder.svg"></img>
-      </div> -->
     </div>
   </section>
-<!--   <section class="aa bg-red white center py1 mb-0">
-    <h3 class="mb0 lydian ls2"> Join the club</h3>
-  </section> -->
   <section class="aa white bg-white mt0 py4 px4"> 
     <div class="container center">
-       <h1 class="apercu-light aa dark-grey lh1 col col-12">
-        Get the full year for &#36;65 including shipping
-       </h1>
-       <p class="dark-grey lh2 col-10 pre-1 post-1 apercu">
-        <span class="lydian-bold ls05">Subscription Includes: </span> All four releases from 2014, custom 45 box, Singles Club Pin, 45 adapter, digital download of each single.
-      </p>
+      <div class="row">
+        <div class="col col-10 pre-1 post-1">
+          <h1 class="apercu-light aa dark-grey lh1"> Get the full year for &#36;65 including shipping</h1>
+          <p class="dark-grey lh2 apercu">
+            <span class="lydian-bold ls05">Subscription Includes: </span>
+            All four releases from 2014, custom 45 box, Singles Club Pin, 45 adapter, digital download of each single.
+          </p>
+        </div>
+      </div>
     </div>
     <div class="container clearfix">
-      <div class="col col-2 pre-5 post-5">
-        <a href="http://shop.singlesclub.fm/product/singles-club-2014-subscription" class="apercu-medium p apercu-medium aa button button-block button-red">Subscribe</a>
-      </div>
-    </div>
-  </section>
-  
-<!-- STORE BANNER
-  <section class="aa center white bg-black bg-cover pt4 pb4 bg-center" style="background-image: url(images/shop-image-3.jpg)">
-    <a href="http://shop.singlesclub.fm" class="block py6 link-white-static">
-    </a>
-  </section>
--->
-
-  <section class="py3 aa bg-dark-grey">
-    <div class="container">
-      <div class="clearfix">
-        <div class="col col-12">
-          <h1 class="apercu-medium p mb0 red">Mail Club</h1>
-        </div>
-      </div>
-      <form class="clearfix" action="http://singlesclub.us6.list-manage.com/subscribe/post" method="POST">
-        <div class="col col-3">
-          <input type="hidden" name="u" value="27badb2e91">
-          <input type="hidden" name="id" value="1781494ce0">
-          <input type="text" value ="E-MAIL" name="MERGE0" class="input input-white small mb1 x100"  id="form" onclick="this.focus();this.select()"onfocus="this.value=''; this.onfocus=null;"/>
-        </div>
-        <div class="col col-1">
-          <input type="submit" id="submitbutton" value="ok" name="submit" class="apercu button button-small button-block mb1 caps button-red"/>
-        </div>
-        <div class="col col-4 pre-4 right-align mobile-center">
-          <ul class="list list-inline">
-            <li><a href="https://twitter.com/singlesclubfm" class="ss-icon link-red">twitter</a></li>
-            <li><a href="http://www.facebook.com/singlesclubfm" class="ss-icon link-red">facebook</a></li>
-            <li><a href="http://singlesclubfm.tumblr.com/" class="ss-icon link-red">tumblr</a></li>
-            <li><a href="http://www.instagram.com/singlesclubfm" class="ss-icon link-red">instagram</a></li>
-            <li><a href="https://soundcloud.com/singlesclubfm" class="ss-icon link-red">soundcloud</a></li>
-          </ul>
-        </div>
-      </form>
-      <div class="clearfix">
-        <div class="col col-6 mobile-center mid-grey">
-          <p class="">Join our newsletter for new tunes, mix tapes, and features every month.</p>
+      <div class="row">
+        <div class="col col-2 pre-5 post-5">
+          <a href="http://shop.singlesclub.fm/product/singles-club-2014-subscription" class="apercu-medium p apercu-medium aa button button-block button-red">Subscribe</a>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="center px2 py2 grey bg-black">
-    <ul class="list-inline">
-      <li><a href="mailto:hello@singlesclub.fm" class="apercu-bold caps link-grey">Contact</a></li>
-      <li><a href="http://shop.singlesclub.fm/products" class="apercu-bold caps link-grey">Shop</a></li>
-      <li><a href="http://shop.singlesclub.fm/product/singles-club-2014-subscription" class="apercu-bold caps link-grey">Subscribe</a></li>
-    </ul>
-    <p class="small mb0">P.O. Box 550 Brooklyn NY 11211<br>
-      © 2014 Singles Club LLC - All Rights Reserved</p>
-  </footer>
-
-  <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      var flyoutIsOpen = false,
-          $flyout = $('.js-flyout');
-      var toggleFlyout = function(){
-        if(flyoutIsOpen) {
-          $flyout.removeClass('is-open');
-        } else {
-          $flyout.addClass('is-open');
-        }
-        flyoutIsOpen = !flyoutIsOpen;
-      };
-      $('.js-toggle-flyout').click(function(){
-        toggleFlyout();
-      });
-    });
-  </script>
-  <script src="js/config.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
-  <script src="js/angular-carousel.js"></script>
-  <script src="js/angular-scroll.js"></script>
-  <script src="js/angular-parallax.js"></script>
-  <script src="js/scrollfix.js"></script>
-  <script src="js/angular-fitvids.js"></script>
-  <script src="js/singlesclub.js"></script>
+  {% include _newsletter.html %}
+  {% include _footer.html %}
+  {% include _scripts.html %}
 
 </body>
 </html>

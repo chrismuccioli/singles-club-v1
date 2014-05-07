@@ -58,6 +58,8 @@ body {
 .bg-contain { background-size: contain; }
 .bg-center { background-position: center center; }
 
+.fill-grey  { fill: $grey; }
+
 .round { border-radius: 2px; }
 
 .circle { border-radius: 50%; }
@@ -69,7 +71,8 @@ a {
   text-decoration: none;
   transition: color .3s ease;
   &:hover { 
-    color: darken($red,20%);
+    //color: darken($red,20%);
+    color: $mid-grey;
   }
 }
 .link-red {
@@ -120,7 +123,7 @@ a {
 .button-icon {
   svg path {
     fill: #fff;
-  }
+  }s
   &:hover {
     svg path {
       fill: $white;
@@ -166,7 +169,7 @@ a {
   transition: background-color .3s ease;
   &:hover {
     color: #fff;
-    background-color: $white;
+    background-color: $mid-grey;
   }
 }
 
@@ -176,7 +179,16 @@ a {
   transition: background-color .3s ease;
   &:hover {
     color: $black;
-    background-color: $white;
+    background-color: $mid-grey;
+  }
+}
+
+.button-highlight {
+  color: #fff;
+  transition: background-color .3s ease;
+  &:hover {
+    color: $black;
+    background-color: $mid-grey;
   }
 }
 
@@ -219,3 +231,8 @@ a {
   background-color: rgba(#000, .7);
 }
 
+.circle {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
