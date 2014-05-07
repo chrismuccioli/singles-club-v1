@@ -15,13 +15,12 @@ $gutter: 1rem;
   overflow: hidden;
   margin-right: -$gutter/2;
   margin-left: -$gutter/2;
-  // debug
-  //background-color: rgba(cyan,.3);
 }
 
 .col,
 .px-gutter,
 .col-right {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-right: $gutter/2;
   padding-left: $gutter/2;
