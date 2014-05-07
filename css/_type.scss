@@ -49,7 +49,11 @@ body {
 }
 
 // Uncomment this to switch to Georgia on paragraphs
-// p, .serif { font-family: Georgia, serif; }
+// p, 
+
+.serif { 
+  font-family: Georgia, serif; 
+}
 
 h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
   margin-bottom: 2rem;
