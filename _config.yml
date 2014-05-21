@@ -3,7 +3,38 @@ name: 'Singles Club'
 # url: "http://localhost:4000"
 
 # Use this for gh-pages
-# url: "http://chrismuccioli.github.io/singles-club"
+url: "http://chrismuccioli.github.io/singles-club"
 
 # Use this for production
-url: "http://singlesclub.fm"
+# url: "http://singlesclub.fm"
+
+permalink: /blog/:title
+
+# Prose.io settings
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://chrismuccioli.github.io/singles-club/'
+  # Display's a list of links to a user from the link dropdown on markdown files. The url should be JSONP and structured as an array of objects in the following format: {"text": "Local Link", "href": "http://mapbox.com" }
+  # relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'media'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
