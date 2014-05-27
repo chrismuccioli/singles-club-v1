@@ -1,9 +1,0 @@
-name: 'Singles Club'
-
-# url: "http://localhost:4000"
-
-# Use this for gh-pages
-# url: "http://chrismuccioli.github.io/singles-club"
-
-# Use this for production
-url: "http://singlesclub.fm"
