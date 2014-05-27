@@ -1,0 +1,92 @@
+---
+title: "Redeem!"
+description: "Redeem your Singles Club subscription"
+socialimage: ""
+---
+
+{% include _head.html %}
+
+<body class="bg-black" ng-app="singlesclub">
+<style>
+    .highlight { color: $red; }
+</style>
+
+<!-- replace this with global nav partial -->
+  <nav class="absolute t0 r0 l0 z1">
+    <div class="container white">
+      <div class="l-table">
+        <div class="l-table-cell col-5 mobile-hide">
+          <h5 class="lydian lh0 caps ls1 center mb0 pl2">Part record club. Part music journal.</h5>
+        </div>
+        <div class="l-table-cell center col-2 py1">
+          <a href="/">
+            <img src="../images/logo.svg" alt="Singles Club" class="inline-block fit" />
+          </a>
+        </div>
+        <div class="l-table-cell col-5 mobile-hide">
+          <ul class="apercu h5 caps ls1 center list-inline mb0 nav-white">
+            <li><a href="/journal/small-sur">Current Issue</a></li>
+            <li><a href="http://shop.singlesclub.fm/product/singles-club-2014-subscription">Subscribe</a></li>
+            <li><a href="http://blog.singlesclub.fm">Blog</a></li>
+            <li><a href="http://shop.singlesclub.fm/products">Shop</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="js-flyout flyout scroll-y apercu aa white bg-black mobile-show">
+    <div class="py4">
+      <ul class="h3 bold list-simple nav nav-white">
+        <li><a href="/">Home</a></li>
+        <li><a href="/journal/small-sur">Current Issue</a></li>
+        <li><a href="http://shop.singlesclub.fm/product/singles-club-2014-subscription">Subscribe</a></li>
+        <li><a href="http://blog.singlesclub.fm">Blog</a></li>
+        <li><a href="http://shop.singlesclub.fm/products">Shop</a></li>
+      </ul>
+      <ul class="list list-inline nav-white">
+        <li><a href="https://twitter.com/singlesclubfm" class="ss-icon">twitter</a></li>
+        <li><a href="http://www.facebook.com/singlesclubfm" class="ss-icon">facebook</a></li>
+        <li><a href="http://singlesclubfm.tumblr.com/" class="ss-icon">tumblr</a></li>
+        <li><a href="http://www.instagram.com/singlesclubfm" class="ss-icon">instagram</a></li>
+        <li><a href="https://soundcloud.com/singlesclubfm" class="ss-icon">soundcloud</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="fixed t0 l0 z4 mobile-show">
+    <a href class="js-toggle-flyout inline-block bar button-icon white" style="padding:.5rem .375rem;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 17 21" enable-background="new 0 0 17 21" xml:space="preserve">
+        <path fill="#ffffff" d="M16.969,14.637c0.08-2.671-1.42-4.512-4.863-5.975l-2.768-1.14c-1.595-0.669-2.981-1.434-3.62-1.995 c-0.62-0.51-0.974-1.335-0.948-2.206c0.047-1.55,1.031-2.275,3.009-2.216c0.573,0.018,1.138,0.121,1.682,0.307 c2.334,0.797,3.901,3.289,4.968,6.642c0.062,0.201,0.195,0.349,0.334,0.355c0.055,0.002,0.102-0.02,0.145-0.061 c0.07-0.068,0.111-0.192,0.111-0.331l0.004-6.932c-0.002-0.221-0.119-0.394-0.256-0.398c-0.178-0.005-0.299,0.232-0.344,0.334 c-0.104,0.241-0.232,0.311-0.551,0.301c-0.229-0.007-0.44-0.262-1.12-0.453c-2.346-0.619-3.33-0.799-4.581-0.836 C3.647-0.105,0.148,2.66,0.03,6.464c-0.074,2.462,1.525,4.217,5.348,5.87l2.917,1.232c2.954,1.258,4.139,2.451,4.088,4.127 c-0.053,1.674-1.287,2.277-3.404,2.213C8.232,19.885,7.537,20,6.709,19.717c-1.065-0.365-1.999-1.072-2.938-2.236 c-1.618-1.957-2.578-4.025-3.186-6.146C0.538,11.17,0.412,10.98,0.26,10.971c-0.054-0.002-0.104,0.02-0.147,0.061 C0.042,11.1,0,11.224,0,11.363l0.017,8.738c0,0.191,0.079,0.35,0.198,0.389c0.019,0.006,0.038,0.01,0.056,0.01 c0.121,0.006,0.237-0.104,0.345-0.326c0.136-0.277,0.357-0.375,0.82-0.363c0.295,0.012,0.434,0.084,1.279,0.285 C5.249,20.73,7.43,20.943,9.01,20.99C13.326,21.123,16.852,18.492,16.969,14.637z"/>
+      </svg>
+    </a>
+  </div>
+
+<div class="container white mt6">
+  <div class="col-10 pre-1 post-1">
+  <h1 class="apercu-light mt6">Redeem your subscription</h1>
+  <h3 class="apercu-light">Thanks for purchasing a Singles Club subscription for 2014! Fill out the info below with your shipping address plus the provided code and you'll receive you're first issue in no time.<br>
+  </div>
+  <div class="col-6 pre-3">
+      <p class="no-margin">Name</p>
+      <input type="text" value="Name" name="MERGE0" class="input input-white small mb1 x100"  id="form" onclick="this.focus();this.select()" onfocus="this.value=''; this.onfocus=null;"/>
+      <p class="no-margin">Email</p>
+      <input type="text" value="E-mail" name="MERGE0" class="input input-white small mb1 x100"  id="form" onclick="this.focus();this.select()" onfocus="this.value=''; this.onfocus=null;"/>
+      <p class="no-margin">Address</p>
+      <input type="text" value="Street, Apt #" name="MERGE0" class="input input-white small mb1 x100"  id="form" onclick="this.focus();this.select()" onfocus="this.value=''; this.onfocus=null;"/>
+      <p class="no-margin">City</p>
+      <input type="text" value="Baltimore, etc" name="MERGE0" class="input input-white small mb1 x100"  id="form" onclick="this.focus();this.select()" onfocus="this.value=''; this.onfocus=null;"/>
+      <p class="no-margin">State</p>
+      <input type="text" value="MD" name="MERGE0" class="input input-white small mb1 x100"  id="form" onclick="this.focus();this.select()" onfocus="this.value=''; this.onfocus=null;"/>
+      <p class="no-margin">Zipcode</p>
+      <input type="text" value="666666" name="MERGE0" class="input input-white small mb1 x100"  id="form" onclick="this.focus();this.select()" onfocus="this.value=''; this.onfocus=null;"/>
+      <p class="no-margin">Subscriber ID</p>
+      <input type="text" value="From your subscription card" name="MERGE0" class="input input-white small mb1 x100"  id="form" onclick="this.focus();this.select()" onfocus="this.value=''; this.onfocus=null;"/>
+  </div>
+</div>
+
+</body>
+
+{% include _newsletter.html %}
+{% include _footer.html %}
+{% include _scripts.html %}
