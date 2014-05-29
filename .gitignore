@@ -2,3 +2,5 @@
 *.scssc
 
 _site/
+
+_config.yml

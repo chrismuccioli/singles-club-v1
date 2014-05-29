@@ -1,7 +1,7 @@
-// Typography 
+// Typography
 
 body {
-  font-family: 'Apercu Light', sans-serif;
+  font-family: 'Apercu Light', 'Helvetica-Light', sans-serif;
   font-weight: 200;
   font-style: normal;
   line-height: 1.75rem;
@@ -10,25 +10,25 @@ body {
 }
 
 .apercu {
-  font-family: 'Apercu Regular', sans-serif; 
+  font-family: 'Apercu Regular', 'Helvetica', sans-serif;
   font-weight: normal;
   font-style: normal;
 }
 
 .apercu-light {
-  font-family: 'Apercu Light', Calibri, sans-serif;
+  font-family: 'Apercu Light', 'Helvetica-Light', sans-serif;
   font-weight: 200;
   font-style: normal;
 }
 
 .apercu-medium {
-  font-family: 'Apercu Medium', Calibri, sans-serif;
+  font-family: 'Apercu Medium', 'Helvetica-Medium', sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
 .apercu-bold {
-  font-family: 'Apercu Bold', Calibri, sans-serif;
+  font-family: 'Apercu Bold', 'Helvetica-Bold', sans-serif;
   font-weight: bold;
   font-style: normal;
 }
@@ -49,12 +49,12 @@ body {
 }
 
 // Uncomment this to switch to Georgia on paragraphs
-// p, 
+// p,
 
-.serif { 
+.serif {
   font-family: Georgia, serif;
   font-size: 19px;
-  -webkit-font-smoothing: antialiased; 
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
