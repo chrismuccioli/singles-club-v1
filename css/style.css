@@ -823,8 +823,8 @@ html, body {
 .bar {
   height: 2rem;
   line-height: 2rem;
-  padding-top: .75rem;
-  padding-bottom: .75rem; }
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem; }
 
 .slideshow {
   overflow: hidden;
@@ -1380,21 +1380,18 @@ s
 
   to {
     -webkit-transform: scale(1); } }
-
 @-moz-keyframes popin {
   from {
     -moz-transform: scale(0.8); }
 
   to {
     -moz-transform: scale(1); } }
-
 @keyframes popin {
   from {
     transform: scale(0.8); }
 
   to {
     transform: scale(1); } }
-
 .popin {
   -webkit-animation: popin .1s linear;
   -moz-animation: popin .1s linear;
@@ -1406,21 +1403,18 @@ s
 
   to {
     -webkit-transform: translateY(0); } }
-
 @-moz-keyframes slidedown {
   from {
     -moz-transform: translateY(-100%); }
 
   to {
     -moz-transform: translateY(0); } }
-
 @keyframes slidedown {
   from {
     transform: translateY(-100%); }
 
   to {
     transform: translateY(0); } }
-
 .slidedown {
   -webkit-animation: slidedown .1s ease;
   -moz-animation: slidedown .1s ease;
@@ -1527,7 +1521,6 @@ s
   src: url("../fonts/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ss-social-regular.woff") format("woff"), url("../fonts/ss-social-regular.ttf") format("truetype"), url("../fonts/ss-social-regular.svg#SSSocialRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* This triggers a redraw in IE to Fix IE8's :before content rendering. */
 html:hover [class^="ss-"] {
   -ms-zoom: 1; }
@@ -1720,12 +1713,10 @@ html:hover [class^="ss-"] {
   font-family: 'LydianBT-Italic';
   src: url("../fonts/lydian-italic.eot");
   src: url("../fonts/lydian-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/lydian-italic.woff") format("woff"), url("../fonts/lydian-italic.ttf") format("truetype"), url("../fonts/lydian-italic.svg#wf") format("svg"); }
-
 @font-face {
   font-family: 'LydianBT-Roman';
   src: url("../fonts/lydian.eot");
   src: url("../fonts/lydian.eot?#iefix") format("embedded-opentype"), url("../fonts/lydian.woff") format("woff"), url("../fonts/lydian.ttf") format("truetype"); }
-
 @font-face {
   font-family: 'LydianBT-Bold';
   src: url("../fonts/lydian-bold.eot");
